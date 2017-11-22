@@ -1,0 +1,5 @@
+Django==1.11.4
+Pillow==4.1.0
+django_mysql
+jalali_date
+ckeditor

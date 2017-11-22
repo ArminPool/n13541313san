@@ -1,0 +1,81 @@
+{% extends 'posts/base.html' %}
+{% load tz %}
+{% load staticfiles %}
+{% block style %}
+<link rel="stylesheet" type="text/css" href="{% static 'users/profile.css' %}"/>
+{% endblock %}
+{% block title %}
+<title>صفحه کاربری</title>
+{% endblock %}
+
+{% block body %}
+<div class="container" id="profile-container">
+    <div class="jumbotron" id="breadcrumb-jumbotron">
+        <ol class="breadcrumb" style="">
+
+            <li class="active">حساب کاربری</li>
+        </ol>
+    </div>
+    <div class="post">
+
+        <div class="row">
+
+            <div class=" col-xs-12 col-sm-6 col-md-4" style="" id="img-column">
+
+                <div class="jumbotron">
+
+                    {% if user.userprofile.pro_img %}
+                    <img class="img-responsive" src="{{ user.userprofile.pro_img.url }}" title="{{user.username}}" alt="{{user.username}}">
+
+                    {% else %}
+                    <img class="img-responsive"
+                         src="http://arminyahya.pythonanywhere.com/media/uploaded/default_img_prof.jpg" title="{{user.username}}" alt="{{user.username}}">
+                    {% endif %}
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-8">
+                <div class="jumbotron">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a data-toggle="tab" href="#home">اطلاعات کاربری</a></li>
+                        <li><a data-toggle="tab" href="#menu1">پیام ها</a></li>
+
+                    </ul>
+
+                    <div class="tab-content">
+                        <div id="home" class="tab-pane fade in active">
+                            <p> نام کاربری:{{ user.username }}</p>
+                            <p>نام:{{user.first_name}}</p>
+                            <p>نام خانوادگی: {{user.last_name}}</p>
+                            <p>ایمیل: {{ user.email }}</p>
+
+                            <p>شماره تلفن: {{ userprofile.phone_number }}</p>
+                            {% get_current_timezone as TIME_ZONE %}
+                            {% for tz in timezones %}
+                            {% if tz == TIME_ZONE %}
+                            <p>
+                                منطقه زمانی:{{tz}}
+                            </p>
+                            {% endif %}
+                            {% endfor %}
+
+                            {% if user.userprofile.have_vip %}
+                            <p>شما اشتراک ویژه دارید</p>
+                            {% else %}
+                            <p>شما اشتراک ویژه ندارید</p>
+                            {% endif %}
+                        </div>
+                        <div id="menu1" class="tab-pane fade">
+                            <h3>پیام ها </h3>
+                            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                commodo consequat.</p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

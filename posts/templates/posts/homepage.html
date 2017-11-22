@@ -1,0 +1,134 @@
+{% extends 'posts/base.html' %}
+
+{% load jalali_tags %}
+{% load custom_tags %}
+{% load staticfiles %}
+
+
+{% block style %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'posts/homepage.css' %}">
+
+{% endblock %}
+
+{% block title %}
+
+<title>{{ title }}</title>
+
+{% endblock %}
+
+
+{% block body %}
+<div class="container-fluid" id="homepage-container-fluid">
+
+    <div class="post">
+        <div class="col-xs-12 col-sm-12 col-md-8" id="right-side" style="float:right;">
+
+            <div class="jumbotron">
+
+                <div class="post">
+                    {% for post in posts %}
+                    <div class="row"
+                         style="">
+
+                        <div class="col-xs-12 col-sm-12 col-md-5" id="post-img-column" style="float:right">
+
+                            <img class="img-responsive"  src="{{post.img.url}}" title="{{post.header}}" alt="{{post.header}}"
+                                 style="">
+
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-7" id="post-description-column" style=" padding:0px; ">
+
+
+                            <div class="text-center">
+                                <div class="post-bottom">
+
+                                <h2 style="padding:10px;padding-top:0px;"> {{ post.header }}</h2>
+
+                                <p>{{ post.description }}<a id="detail-link" href="{% url 'posts:detail' header=post.header %}">بیشتر</a>
+                                </p>
+</div>
+                                  <ul class="list-inline" style="padding-right:0px;">
+                                    <li>
+
+<span class="glyphicon glyphicon-user" aria-hidden="true"
+      style="font-size:15px;"></span> <a href="{% url 'posts:author' author=post.author %}" >{{ post.author }}</a>
+                                    </li>
+
+
+                                    <li style="padding:4px;">
+
+                                        <p ><span
+                                                class="glyphicon glyphicon-calendar"
+                                                aria-hidden="true"></span>
+                                            {{ post.date_published|to_jalali|persian_numeric }}</p>
+
+                                    </li>
+                                    <li>
+                                        <span class="glyphicon glyphicon-tag" aria-hidden="true"
+                                              ></span>
+                                        <a href="{% url 'posts:tag' tag=post.Main_Tag %}"
+                                           >{{ post.Main_Tag}}</a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    {% endfor %}
+                </div>
+                {% if posts.has_other_pages %}
+                <div class="pagination-panel">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            {% block pagination %}
+                            {% endblock %}
+
+
+                        </div>
+                    </div>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+
+
+    <div class="hidden-xs hidden-sm col-md-4" style="float:left; " id="left-side">
+
+
+        <div class="jumbotron" style=" ">
+            <div class="container" style="margin-top:20px; border-right: 1px solid rgba(0, 0, 0, .09);">
+
+                    <p>1 جدول سهام</p>
+
+                </div>
+
+                <div class="stock-table">
+                    <p>2 جدول سهام</p>
+
+                </div>
+                <div>
+                    <p> پربازدید ترین مقاله ها </p>
+                </div>
+                <div class="advertising">
+                    <p> بنر تبلیغاتی 1</p>
+
+                </div>
+
+                <div class="advertising">
+
+                    <p> بنر تبلیغاتی 2</p>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+{% endblock %}

@@ -1,0 +1,327 @@
+body {
+    font-family: "Lato", sans-serif;
+
+}
+
+    @font-face {
+    font-family: 'Far.Adab';
+    src:        url('http://www.fontfarsi.ir/Content/Fonts/EOT/Far_Adab.eot');
+    src: local('☺'),
+    url('http://www.fontfarsi.ir/Content/Fonts/WOFF/Far_Adab.woff') format('woff'),
+    url('http://www.fontfarsi.ir/Content/Fonts/TTF/Far_Adab.ttf') format('truetype'),
+    url('http://www.fontfarsi.ir/Content/Fonts/SVG/Far_Adab.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    }
+#navbar1{
+
+margin-bottom:0px;
+background-color:#23262F;
+}
+#left-side-toggle-open,#left-side-toggle-close{
+float:left;
+margin-left:15px;
+}
+
+.navbar-text,.navbar-default .navbar-link,.navbar-default .navbar-nav > li > a{
+color:#FFF;
+}
+
+
+.navbar-nav > li > a{
+color:#FFF;
+
+}
+.navbar-default .navbar-brand{
+position:relative;
+left:7px;
+color:#fff;
+}
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover,.navbar-default .navbar-link:hover
+,.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover{
+color:#fff;
+}
+.nav-pills{
+padding-right:0px;
+}
+.nav-pills .dropdown{
+float:right;
+
+}
+
+.dropdown-menu{
+text-align:right;
+}
+.navbar-link{
+color:#FFF;
+}
+.navbar-nav{
+padding-right:0px;
+}
+
+.navbar-toggle{
+border-radius:0px;
+}
+#navbar2{
+position:relative;
+top:0px;
+background-color:#23262F
+}
+#navbar2 input:focus{
+
+
+box-shadow:none;
+
+}
+#SideNav input{
+
+box-shadow:none;
+
+}
+.search-nav .input-group{
+margin:10px auto;
+}
+.search-nav .input-group .form-control{
+float:right;
+border-radius:0px;
+}
+.search-nav .input-group .input-group-btn button{
+position:relative;
+border-radius:0px;
+}
+#SideNav .jumbotron{
+background-color:transparent;
+}
+#SideNav .jumbotron .img-responsive {
+
+border-radius: 50%;
+width:100px;
+height:100px;
+margin:10px auto;
+}
+#SideNav .jumbotron p{
+
+text-align:center;
+font-size:15px;
+color:white;
+}
+#SideNav .jumbotron .fa,.material-icons {
+
+font-size:25px;
+}
+#SideNav .jumbotron .btn-primary{
+margin:auto 50px;
+}
+
+
+#left-side-toggle-open{
+
+border:1px solid #ddd;
+border-radius:0px;
+
+padding:9px 10px;
+margin:8px;
+color:#fff;
+margin-left:0px;
+}
+
+#left-side-toggle-close{
+
+display:none;
+border:1px solid #ddd;
+border-radius:0px;
+
+padding:9px 10px;
+margin:8px;
+color:#fff;
+margin-left:0px;
+}
+#left-side-toggle-open,#left-side-toggle-close{
+
+background-color: transparent;
+
+}
+
+#left-side-toggle-open:hover,#left-side-toggle-close:hover{
+
+background-color: #ddd;
+
+}
+#SideNav{
+    font-family:'Far.Adab',Tahoma, Sans-Serif;
+    position: relative;
+    float:left;
+    width:250px;
+    z-index: 1;
+    width:0px;
+    left: 0;
+    background-color:  	#111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    top: 100px;
+
+
+}
+
+
+#SideNav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    padding: 10px 0px;
+    text-align:center;
+    font-size:15px;
+    color:white;
+
+    transition: 0.3s;
+}
+
+#SideNav a:hover {
+    color: #f1f1f1;
+}
+
+
+.navbar-default{
+margin:0px;
+border-radius:0px;
+text-decoration:none;
+
+}
+
+.form-group{
+
+max-width:150px;
+
+}
+#login-form{
+margin:20px auto;
+
+}
+
+.login-label,.nav-side-label{
+color:#fff;
+font-size:20px;
+text-align:center;
+}
+
+#login-form .form-control{
+border:1px solid rgb(204, 204, 204);
+border-radius:0px;
+padding-right:36px;
+}
+#login-form span{
+
+display:block;
+position:absolute;
+width:34px;
+text-align:center;
+border-left:1px solid rgb(204, 204, 204);
+padding:4px; color:rgb(204, 204, 204);
+}
+#register-label{
+    font-family:'Far.Adab',Tahoma, Sans-Serif;
+color:#fff;
+font-size:15px;
+text-align:center;
+}
+.create-account{
+margin:auto 0;
+
+}
+.navbar-collapse a{
+    text-decoration:none;
+
+}
+#main a{
+    text-decoration:none;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+
+}
+.pagination {
+
+padding:0px;
+
+}
+
+
+
+
+
+
+
+
+.stock-table{
+padding:20px;
+}
+
+.navbar,.navbar-default{
+
+border:none;
+}
+
+.footer a{
+color:#fff;
+margin:10px;
+font-size:15px;
+text-decoration:none;
+
+}
+footer{
+    font-family:'Far.Adab',Tahoma, Sans-Serif;
+
+background-color:#232531;
+
+}
+#footer-jumbotron{
+padding:20px;
+background-color:#232531;
+margin-bottom:0px;
+
+}
+#copy-right-row{
+color:#fff;
+
+padding-top:10px;
+}
+#copy-right-row i{
+
+position:relative;
+top:5px;
+}
+#twitter-icon{
+height:31px;
+width:31px;
+
+}
+#telegram-icon{
+height:34px;
+width:34px;
+}
+#instagram-icon{
+height:31px;
+width:31px;
+
+}
+#social-network{
+padding-top:10px;
+}
+
+
+
+
+
+@media only screen and(min-width:586px){
+
+#main{
+
+margin-left:250px;
+
+}
+
+}

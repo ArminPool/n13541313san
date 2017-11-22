@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa-IR">
+<head>
+    <!-- Use boostrap and css file stored in product/base.css -->
+
+    {% load staticfiles %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'posts/base.css' %}">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+    {% block style %}
+    <!--  another pages which inherited from base.html can add their own style file to page !!!  -->
+    {% endblock %}
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    {% block title %}
+    <title>base</title>
+    {% endblock %}
+</head>
+
+
+<body>
+<div class="navbar navbar-fixed-top">
+    <nav class="navbar navbar-default  " id="navbar1">
+        <div class="container-fluid">
+
+ <button type="button" id="left-side-toggle-open"
+                        >&#9776;
+                </button>
+                <button type="button" id="left-side-toggle-close">
+                <i class="material-icons" id="arrow-forward">arrow_forward</i>
+
+                </button>
+
+            <div class="navbar-header" >
+
+                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                        data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="{% url 'posts:home' %}">
+                    Navasan
+                </a>
+            </div>
+
+            <div class="collapse navbar-collapse">
+
+
+                <p class="navbar-text navbar-left"><a href="/news/" class="navbar-link">اخبار</a>
+                </p>
+                <ul class="nav navbar-nav ">
+
+                    <li role="presentation" class="dropdown article-dropdown">
+
+                        <a class="dropdown-toggle navbar-link "   href="#"
+                           role="button"
+                           aria-haspopup="true" aria-expanded="false" >
+                            مقالات </a>
+                        <ul class="dropdown-menu menu1">
+                            <li><a href="{% url 'posts:articles' type='regular' %} ">مقالات</a></li>
+                            <li><a href="{% url 'posts:articles' type='analytical' %} ">مقالات تحلیلی</a></li>
+
+                        </ul>
+                    </li>
+
+
+                </ul>
+
+                <ul class="nav navbar-nav" style="">
+
+                    <li role="presentation" class="dropdown money-dropdown">
+
+                        <a  class="dropdown-toggle navbar-link" data-toggle="dropdown" href="#"
+                           role="button"
+                           aria-haspopup="true" aria-expanded="false">
+                            دسته بندی </a>
+                        <ul class="dropdown-menu menu2">
+
+                            <li><a href="{% url 'posts:tag' tag='GBPUSD' %} ">GBPUSD</a></li>
+                            <li><a href="{% url 'posts:tag' tag='USDCAD' %} ">USDCAD </a></li>
+                            <li><a href="{% url 'posts:tag' tag='USDJPY' %} ">USDJPY</a></li>
+                            <li><a href="{% url 'posts:tag' tag='EURUSD' %} ">EURUSD</a></li>
+                            <li><a href="{% url 'posts:tag' tag='USDCHF' %} ">USDCHF</a></li>
+                            <li><a href="{% url 'posts:tag' tag='NZDUSD' %} ">NZDUSD</a></li>
+                            <li><a href="{% url 'posts:tag' tag='GOLD' %} ">GOLD</a></li>
+
+                        </ul>
+                    </li>
+
+
+                </ul>
+                  <p class="navbar-text navbar-left"><a href="/calender/" class="navbar-link">تقویم اقتصادی</a>
+                </p>
+
+
+            </div>
+
+        </div>
+    </nav>
+    {% block search %}
+    <nav class=" navbar navbar-default " style="" id="navbar2">
+        <div class="container-fluid">
+            <div class="search-nav">
+
+                <form method="get" action="/search/">
+                    <div class="input-group">
+
+                        <input class="form-control" name="q" type="search"
+                               placeholder="جستجو در سایت">
+
+                        <div class="input-group-btn">
+                            <button type="submit" class="btn btn-md " style="">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+    </nav>
+    {% endblock %}
+</div>
+<div id="SideNav">
+    <div class="jumbotron">
+        <div class="container">
+            {% if user.is_authenticated %}
+            <div class="Navigation-drawer">
+            {% if user.userprofile.pro_img %}
+            <img class="img-responsive" src="{{ user.userprofile.pro_img.url }}" title="{{user.username}}" alt="{{user.username}}"
+                 style="">
+
+            {% else %}
+            <img class="img-responsive"
+                 src="http://arminyahya.pythonanywhere.com/media/uploaded/default_img_prof.jpg" title="{{user.username}}" alt="{{user.username}}">
+            {% endif %}
+
+
+            <p id="username-place">{{user.username}}</p>
+
+                <a href="/user/profile"><span class="glyphicon glyphicon-user"></span>مشاهده حساب کاربری </a>
+            <a style="" href="/user/profile/edit"><span class="glyphicon glyphicon-cog"></span>ویرایش پروفایل</a>
+            <a href="/user/logout/"><span class="glyphicon glyphicon-off"></span>خروج</a>
+
+                </div>
+            {% else %}
+            <form method="post" action="/user/login/" id="SideForm">
+                {% csrf_token %}
+                <p class="nav-side-label"> خوش آمدید </p>
+
+                <p class="login-label"> واردشوید </p>
+                <div class="form-group" id="login-form">
+                    <div class="form-group">
+                <span class="fa fa-user-circle fa-fw "
+
+                ></span>
+
+                        <input class="form-control" id="id_username" name="username" placeholder="نام کاربری"
+                                type="text"
+                                required />
+                    </div>
+                    <div class="form-group">
+
+          <span class="material-icons" style=""
+          >lock</span>
+                        <input class="form-control" id="password1" name="password1"
+                               placeholder="رمز عبور"
+
+                               type="password" required />
+                    </div>
+
+                    <button class="btn btn-primary" type="submit" style="">ورود</button>
+                </div>
+
+
+            </form>
+            <p id="register-label"> برای عضویت روی ساختن حساب کلیک کنید </p>
+            <div class="create-account" style="margin:10px 10px;">
+                <div class="text-center">
+
+
+                    <button class="btn btn-primary btn-sm" style="padding:0px 5px;"><a href="{% url 'user:register' %}">
+                        ساختن حساب </a></button>
+                </div>
+
+
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+<div id="main">
+    {% block body %}
+
+    {% endblock %}
+</div>
+<footer class="footer">
+
+    <div class="jumbotron" id="footer-jumbotron">
+        <div class="container">
+            <div class="text-center">
+                <div class="post">
+                    <div class="row">
+                        <div class="col-12">
+
+                            <a href="">
+                                درباره ما
+                            </a>
+                            <a href="/contact/">
+                                تماس با ما
+                            </a>
+                            <a href="">
+                                قوانین
+                            </a>
+                            <a href="">
+                                خرید اشتراک
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="row" id="copy-right-row">
+                        <div class="col-12">
+                            <i class="material-icons">copyright</i>
+                            هرگونه کپی برداری از محتوای نوسان ممنوع است.
+                        </div>
+                    </div>
+                    <div class="row" id="social-network">
+                        <div class="col-12">
+
+                            <a href="https:/www.telegram.com/"><img id="telegram-icon"
+                                                                    src="{% static 'posts/telegram.png' %}"
+                            ></a>
+                            <a href="https://instagram.com/"><img id="instagram-icon"
+                                                                  src="{% static 'posts/instagram.png' %}"></a>
+
+                            <a href="https://twitter.com/"><img id="twitter-icon" src="{% static 'posts/twitter.png' %}"
+                            ></a>
+
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+
+<script src="{% static 'posts/jquery.validate.js' %}"></script>
+<script src="{% static 'posts/base.js' %}"></script>
+
+{% block script %}
+{% endblock %}
+
+</html>

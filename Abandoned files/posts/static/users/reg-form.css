@@ -1,0 +1,97 @@
+#main{
+
+    background-image: url("wallstreet.jpg") ;
+
+    background-size: 1366px 800px;
+    background-attachment: fixed;
+
+}
+footer{
+display:none;
+}
+#SideNav{
+
+
+height: 100%;
+
+position: fixed;
+margin-top:0px;
+top:56px;
+
+}
+#SideNav .jumbotron{
+padding:0px;
+}
+.error-fields ul{
+list-style-type: none;
+padding-right:0px;
+}
+
+.container{
+
+
+margin :60px auto;
+max-width:380px;
+
+}
+.alert {
+border-radius:0px;
+}
+
+
+.registration .form-group .form-control{
+max-width:300px;
+border-radius:4px;
+
+
+}
+.registration{
+background-color:#F4F4F4;
+max-width:330px;
+border:1px solid #1D1E52;
+}
+
+form{
+padding:10px;
+}
+button{
+margin-bottom:10px;
+}
+
+
+.form-group{
+max-width:330px;
+padding-right:15px;
+padding-left:15px;
+}
+
+
+.form-control {
+border:1px solid rgb(204, 204, 204);
+border-radius:0px;
+padding-right:36px;
+}
+.form-group span{
+
+display:block;
+position:absolute;
+width:34px;
+text-align:center;
+border-left:1px solid rgb(204, 204, 204);
+padding:4px; color:rgb(204, 204, 204);
+}
+.password-warning{
+
+padding:10px;
+}
+
+#reg-button {
+padding-left:36px;
+}
+
+
+.form-group {
+
+margin:15px auto;
+
+}

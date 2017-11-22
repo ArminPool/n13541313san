@@ -1,0 +1,218 @@
+{% extends 'posts/base.html' %}
+
+{% load staticfiles %}
+{% block style %}
+<link rel="stylesheet" type="text/css" href="{% static 'users/reg-form.css' %}"/>
+{% endblock %}
+{% block title %}
+<title>فرم ثبت نام</title>
+{% endblock %}
+{% block search %}
+{% endblock %}
+
+
+{% block body %}
+<div class="container" id="reg-form-container">
+
+    <div class="registration">
+        <div class="reg-form-header">
+            <p>فرم ثبت نام</p>
+        </div>
+        <div class="error-fields">
+            {% if not user.is_authenticate %}
+
+            {% if form1.non_field_errors or form2.non_field_errors %}
+            <div class="alert alert-danger" id="non-field-error">
+                {% if form1.non_field_errors %}
+
+                {{ form1.non_field_errors}}
+                {% else %}
+                {{ form2.non_field_errors}}
+
+                {% endif %}
+            </div>
+
+            {% elif form1.errors or form2.errors %}
+            <div class="alert alert-danger" id="field-error">
+
+                {% if form1.username.errors %}
+                <p>{{ form1.username.errors }} </p>
+                {% endif %}
+                {% if form1.email.errors %}
+                <p>{{ form1.email.errors }} </p>
+                {% endif %}
+                {% if form1.password1.errors %}
+                <p>{{ form1.password1.errors }} </p>
+                {% endif %}
+
+                {% if form2.phone_number.errors %}
+                <p>{{ form2.phone_number.errors }} </p>
+                {% endif %}
+
+            </div>
+            {% endif %}
+
+        </div>
+        <form method="post" class="form-group" novalidate>
+            {% csrf_token %}
+            <div class="form-group">
+
+                <span class="fa fa-user-circle fa-fw"></span>
+
+                <input class="form-control" id="id_username" name="username" placeholder="نام کاربری"
+                       required="" type="text"
+                       style="">
+            </div>
+            <div class="form-group">
+                <span class="fa fa-info fa-fw"></span>
+
+                <input class="form-control" id="first_name" name="first_name" placeholder="نام" autofocus="" required=""
+                       type="text">
+            </div>
+
+
+            <div class="form-group">
+                <span class="fa fa-info fa-fw"></span>
+
+                <input class="form-control" id="last_name" name="last_name" placeholder="نام خانوادگی" autofocus=""
+                       required="" type="text">
+            </div>
+            <div class="form-group">
+                  <span class="material-icons " style="padding-bottom:1px;"
+                  >contact_mail</span>
+
+
+                <input class="form-control" id="email" name="email" placeholder="ایمیل" autofocus="" required=""
+                       type="email">
+            </div>
+            <div class="form-group">
+                  <span class="fa fa-mobile fa-fw"
+                  ></span>
+
+                <input class="form-control" id="phone_number" name="phone_number" placeholder="شماره تلفن همراه"
+                       autofocus="" required=""
+                       type="text">
+            </div>
+
+            <div class="form-group">
+
+                <span class="material-icons">location_city</span>
+                <select name="city" class="form-control" required id="id_city">
+                    <option value="">---------</option>
+
+                    <option value="آذربایجان غربی">آذربایجان غربی</option>
+
+                    <option value="آذربایجان شرقی">آذربایجان شرقی</option>
+
+                    <option value="اصفهان">اصفهان</option>
+
+                    <option value="اردبیل">اردبیل</option>
+
+                    <option value="ایلام">ایلام</option>
+
+                    <option value="بوشهر">بوشهر</option>
+
+                    <option value="تهران">تهران</option>
+
+                    <option value="چهارمحال و بختیاری">چهارمحال_و_بختیاری</option>
+
+                    <option value="خراسان جنوبی">خراسان_جنوبی</option>
+
+                    <option value="خراسان رضوی">خراسان_رضوی</option>
+
+                    <option value="خراسان شمالی">خراسان_شمالی</option>
+
+                    <option value="خوزستان">خوزستان</option>
+
+                    <option value="زنجان">زنجان</option>
+
+                    <option value="سیستان و بلوچستان">سیستان_و_بلوچستان</option>
+
+                    <option value="سمنان">سمنان</option>
+
+                    <option value="فارس">فارس</option>
+
+                    <option value="قم">قم</option>
+
+                    <option value="قزوین">قزوین</option>
+
+                    <option value="کهکیلویه و بویراحمد">کهکیلویه_و_بویراحمد</option>
+
+                    <option value="کردستان">کردستان</option>
+
+                    <option value="کرمان">کرمان</option>
+
+                    <option value="کرمانشاه">کرمانشاه</option>
+
+                    <option value="گیلان">گیلان</option>
+
+                    <option value="گلستان">گلستان</option>
+
+                    <option value="لرستان">لرستان</option>
+
+                    <option value="مازندران">مازندران</option>
+
+                    <option value="مرکزی">مرکزی</option>
+
+                    <option value="هرمزگان">هرمزگان</option>
+
+                    <option value="همدان">همدان</option>
+
+                    <option value="یزد">یزد</option>
+
+                </select>
+            </div>
+
+
+            <div class="form-group">
+                  <span class="material-icons" style="font-size:25px;"
+                  >lock</span>
+                <input class="form-control" id="password1" name="password1" autofocus="" placeholder="رمز عبور"
+                       required=""
+                       type="password">
+            </div>
+
+
+            <div class="form-group">
+                  <span class="material-icons" style="font-size:25px;"
+                  >lock</span>
+
+
+                <input class="form-control" id="password2" name="password2" placeholder="تکرار رمز" autofocus=""
+                       required=""
+                       type="password">
+            </div>
+
+
+            <div class="form-group">
+                <ul class="password-warning ">
+
+                    <li>پسورد شما نباید شبیه هیچکدام از اطلاعات شخصی شما باشد.</li>
+                    <li>پسورد شما نمیتواند پسوردی باشد که قبلا استفاده شده.</li>
+                    <li>پسورد شما باید حداقل 8 حرفی باشد.</li>
+                    <li>پسورد شما نباید کاملا عددی باشد.</li>
+                </ul>
+            </div>
+
+            <div class="form-group">
+
+                <input class="form-control " id="reg-button" type="submit" style="width:100%;position:relative;"
+                       value="تایید">
+            </div>
+        </form>
+
+
+        {% else %}
+        <p> شما قبلا ثبت نام شده اید .برای مشاهده حساب کاربری خود بر روی لینک زیر کلیک کنید</p>
+        <a href="{% url 'user:view_profile' %}">حساب کاربری</a>
+        {% endif %}
+
+    </div>
+</div>
+
+{% endblock %}
+
+{% block script %}
+<script src="{% static 'users/reg-form.js' %}"></script>
+
+{% endblock %}

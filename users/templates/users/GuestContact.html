@@ -1,0 +1,70 @@
+{% extends 'posts/base.html'%}
+{% load staticfiles %}
+
+
+{% block style %}
+<link rel="stylesheet" type="text/css" href="{% static 'users/GuestContact.css' %}"/>
+{% endblock %}
+
+{% block title %}
+<title> &nbsp;&nbsp; تماس با ما </title>
+{% endblock %}
+{% block body %}
+<div class="jumbotron" id="contact-content">
+    <div class="container">
+<h2>تماس با ما </h2>
+
+<form method="POST">
+    {% csrf_token %}
+    <div class="form-group">
+<label for="id_Guest_first_name" > نام  </label>
+    <input class="form-control" id="id_Guest_first_name" name="Guest_first_name" maxlength="10" required="" type="text">
+        </div>
+      <div class="form-group">
+<label for="id_Guest_last_name" >نام خانوادگی</label>
+    <input class="form-control" id="id_Guest_last_name" name="Guest_last_name" maxlength="10" required="" type="text">
+        </div>
+      <div class="form-group">
+<label for="id_Guest_email">ایمیل</label>
+    <input class="form-control" id="id_Guest_email" name="Guest_email" maxlength="50" required="" type="email">
+        </div>
+    <div class="form-group">
+        <label for="id_issue_options">دسته بندی</label>
+        <select class="form-control" id="id_issue_options" name="issue_options">
+            <option value="co" selected="">
+    همکاری
+            </option>
+            <option value="pb">
+مشکل در خرید
+            </option >
+            <option value="ag">
+درخواست بازی
+            </option>
+            <option value="o">
+موارد دیگر
+            </option>
+
+        </select>
+
+
+    </div>
+
+           <div class="form-group">
+  <label for="id_message">پیام</label>
+    <textarea  class="form-control" id="id_message" name="message"  rows="6" maxlength="250" required="">
+    </textarea>
+
+<div class="text-center" style="padding-top:10px;" id="send-button" >
+                <button class="btn btn-primary btn-md" type="submit" style="">
+                    ارسال
+                </button>
+                    </div>
+</div>
+
+
+
+
+</form>
+    </div>
+</div>
+{% endblock %}

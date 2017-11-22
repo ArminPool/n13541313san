@@ -1,0 +1,86 @@
+#main{
+
+background-image: url("contact-us.png");
+background-size: 1366px 800px;
+background-attachment: fixed;
+color:#fff;
+margin-top:56px;
+}
+
+#navbar2{
+
+display:none;
+}
+
+#SideNav{
+
+
+height: 100%;
+
+position: fixed;
+margin-top:0px;
+top:56px;
+
+}
+
+
+#contact-content{
+
+background-color:transparent;
+position:relative;
+
+padding-bottom:20px;
+
+}
+
+#contact-content .container{
+
+margin:0px;
+
+}
+
+#contact-content .container form{
+
+max-width:380px;
+background-color:rgba(16, 16, 18, 0.5);
+
+
+}
+
+#contact-content .form-control{
+
+box-shadow:none;
+
+}
+textarea{
+
+vertical-align: top;
+
+}
+
+#contact-content .form-group{
+
+min-width:205px;
+max-width:305px;
+margin:auto auto;
+padding:5px;
+
+}
+
+#contact-content .form-control{
+
+width:100%px;
+
+}
+
+#contact-content textarea.form-control  {
+
+resize:none;
+
+}
+
+
+
+footer{
+border-top:1px solid #fff;
+}

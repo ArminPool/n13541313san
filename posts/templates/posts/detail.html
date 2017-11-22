@@ -1,0 +1,228 @@
+{% extends 'posts/base.html' %}
+
+{% load jalali_tags %}
+{% load custom_tags %}
+{% load staticfiles %}
+
+{% block style %}
+<link rel="stylesheet" type="text/css" href="{% static 'posts/detail.css' %}">
+{% endblock %}
+
+{% block title %}
+<title>{{ post.header }}</title>
+{% endblock %}
+
+{% block body %}
+<div class="container" id="detail-container">
+    <div class="jumbotron">
+        <h2 style="text-align:center;">{{post.header }}</h2>
+        <img class="img-responsive" src="{{post.img.url}}" title="{{post.header }}" alt="{{post.header }}" style="margin:10px auto; max-width:600px; ">
+        <div id="post-text" style="padding:10px;">
+            {{post.text|safe}}
+
+            <div class="tags">
+
+<span class="glyphicon glyphicon-tags" aria-hidden="true"></span>:
+        </div>
+            </div>
+        <footer id="post-footer">
+              <div id="content-tags" >
+
+            {% for tag in post.Tags %}
+
+                        <a href="{% url 'posts:tag' tag=tag %}" style="" >{{tag}}</a>
+            {% endfor %}
+
+
+    <a href="" style="" >{{post.Main_Tag}}</a>
+
+
+
+</div>
+            <hr>
+        </footer>
+        <div class="comment-counter text-center" >
+
+             {% if post.comments.all.count %}
+        <p> {{post.comments.all.count}} نظر </p>
+        {% else %}
+        <p>تاکنون نظری ارسال نشده است.</p>
+        {% endif %}
+
+        </div>
+
+        {% if not user.is_authenticated %}
+
+        <p>برای نظر دادن ابتدا <a href="/user/login/">واردشوید</a></p>
+
+
+        {% endif %}
+
+        {% if user.is_authenticated %}
+
+        <form method="POST">{% csrf_token %}
+            <div class="form-group">
+
+        <textarea class="form-control" data-emojiable="true" name="body" rows="4" maxlength="250" required="" style="">
+    </textarea>
+                <button type="submit" class="btn btn-default">ارسال نظر</button>
+            </div>
+        </form>
+         {% endif %}
+
+
+
+        {% for comments in post.comments.all %}
+        <div class="comments">
+
+            {% if comments.is_parent and comments.is_public %}
+
+
+            {% if comments.user.userprofile.pro_img %}
+            <img
+                    src="{{ comments.user.userprofile.pro_img.url}}"  alt="{{comments.user.username}}">
+
+            {% else %}
+            <img
+                    src="http://arminyahya.pythonanywhere.com/media/uploaded/default_img_prof.jpg" alt="{{comments.user.username}}">
+            {% endif %}
+
+            <h4>{{ comments.user }}</h4>
+            <br/>
+            <br/>
+
+            <p>ارسال شده در:{{ comments.created|to_jalali|persian_numeric }}</p>
+            <div class="comment-body">
+
+                <p>{{ comments.body }}</p>
+            </div>
+            {% if user.is_authenticated %}
+            <span></span>
+            <button class="btn btn-default btn-sm">پاسخ دادن</button>
+
+            <form method="POST" style="display:none;">{% csrf_token %}
+                <div class="form-group">
+                <textarea class="form-control" name="body" rows="4" maxlength="250" required="">
+                </textarea>
+                    <input type="hidden" name="parent_id" value="{{comments.pk}}">
+                <button type="submit" class="btn btn-default btn-sm">فرستادن</button>
+                </div>
+
+            </form>
+            {% endif %}
+
+            {% if comments.children %}
+            <button class="show-replies btn btn-default btn-sm" >نمایش {{comments.children.count|persian_numeric}}پاسخ</button>
+            <div class="see-replies">
+
+
+                {% for children in comments.children %}
+                {% with comments=comments.children %}
+                {% endwith %}
+                <blockquote>
+                    <div class="children">
+
+                        {% if children.is_public %}
+
+                        {% if children.user.userprofile.pro_img %}
+                        <img
+                                src="{{ children.user.userprofile.pro_img.url}}" alt="{{children.user.username}}">
+
+                        {% else %}
+                        <img
+                                src="http://arminyahya.pythonanywhere.com/media/uploaded/default_img_prof.jpg" alt="{{children.user.username}}">
+                        {% endif %}
+                        <h4> {{ children.user }}</h4>
+                        <br/>
+                        <br/>
+
+                        <p>ارسال شده در:{{ children.created|to_jalali|persian_numeric }}</p>
+                        <div class="comment-body">
+                            <p>{{ children.body }}</p>
+                        </div>
+
+                        {% if user.is_authenticated %}
+                        <span></span>
+                        <button class="btn btn-default btn-sm">پاسخ دادن</button>
+
+                        <form method="POST" style="display:none;">{% csrf_token %}
+                            <div class="form-group">
+                            <textarea class="form-control" name="body" rows="4" maxlength="250" required="">
+                                </textarea><input type="hidden" name="parent_id" value="{{comments.pk}}">
+
+                                <button type="submit" class="btn btn-default btn-sm">فرستادن</button>
+                            </div>
+
+
+                        </form>
+                        {% endif %}
+
+
+                        {% elif not children.is_public and children.user == user %}
+                        <div class="children-not-public">
+                            {% if children.user.userprofile.pro_img %}
+                            <img
+                                    src="{{ children.user.userprofile.pro_img.url}}" alt="{{children.user.username}}">
+
+                            {% else %}
+                            <img
+                                    src="http://arminyahya.pythonanywhere.com/media/uploaded/default_img_prof.jpg" alt="{{children.user.username}}">
+                            {% endif %}
+                            <h4> {{ children.user }}</h4>
+                            <br/>
+                            <br/>
+
+                            <p>ارسال شده در:{{ children.created|to_jalali|persian_numeric }}</p>
+                            <div class="comment-body">
+                                <p>{{ children.body }}</p>
+                            </div>
+
+                            <p>نظر شما ثبت شده و منتظر تایید است.</p>
+                        </div>
+                        {% endif %}
+
+                    </div>
+
+                    {% endfor %}
+                </blockquote>
+            </div>
+            {% endif %}
+
+
+            {% elif comments.user == user and comments.is_parent and not comments.is_public %}
+            <div class="comments-not-public">
+                {% if comments.user.userprofile.pro_img %}
+                <img
+                        src="{{ comments.user.userprofile.pro_img.url}}" alt="{{comments.user.username}}">
+
+                {% else %}
+                <img
+                        src="http://arminyahya.pythonanywhere.com/media/uploaded/default_img_prof.jpg" alt="{{comments.user.username}}">
+                {% endif %}
+
+                <h4>{{ comments.user }}</h4>
+                <br/>
+                <br/>
+
+                <p>ارسال شده در:{{ comments.created|to_jalali|persian_numeric }}</p>
+                <div class="comment-body">
+
+                    <p>{{ comments.body }}</p>
+                </div>
+                <p>نظر شما ثبت شده و منتظر تایید است.</p>
+
+            </div>
+            {% endif %}
+
+
+        </div>
+        {% endfor %}
+
+    </div>
+</div>
+
+{% endblock %}
+
+{% block script %}
+<script src="{% static 'posts/detail.js' %}"></script>
+{% endblock %}

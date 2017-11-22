@@ -1,0 +1,112 @@
+
+.edit-text-block td{
+
+padding-bottom:20px;
+}
+.form-horizontal .form-group{
+
+margin-right:15px;
+margin-left:15px;
+
+
+}
+
+
+.edit_profile_panel{
+margin:10px auto;
+max-width:870px;
+margin-top:100px;
+
+}
+.edit-images-block {
+padding:auto;
+}
+.edit-images-block img{
+height:200px;
+width:200px;
+}
+#id-pro-img {
+
+margin:auto;
+position:relative;
+right:35px;
+}
+
+.form-group{
+position:relative;
+max-width:100%;
+max-height:100%;
+padding-bottom:15px;
+height:auto;
+padding-top:15px;
+}
+.form-control{
+
+width:100%;
+height:100%;
+
+}
+.edit_profile_panel .img-responsive{
+
+display:inline;
+
+}
+input[type="file"]{
+
+margin:10px auto;
+max-width:258px;
+
+
+}
+.form-horizontal .form-group{
+
+margin:0px;
+
+}
+
+.form-horizontal .control-label{
+text-align:right;
+float:right;
+}
+#edit-profile-submit{
+
+max-width:200px;
+margin:10px auto;
+
+}
+.col-sm-8{
+
+
+min-height:1px;
+}
+
+.col-sm-8 .form-control{
+
+width:100%;
+
+}
+.edit-images-block{
+
+padding-bottom:0px;
+}
+#top-part{
+padding-bottom:0px;
+margin-bottom:0px;
+
+}
+.form-control{
+
+width:100%;
+
+}
+
+@media only screen and (min-width:770px){
+
+.col-sm-8{
+position:relative;
+left:50px;
+}
+}
+
+
+

@@ -1,0 +1,136 @@
+{% extends 'posts/base.html' %}
+{% load staticfiles %}
+{% block style %}
+<link rel="stylesheet" type="text/css" href="{% static 'users/login.css' %}"/>
+{% endblock %}
+{% block title %}
+<title>ورود</title>
+{% endblock %}
+
+{% block body %}
+
+<div class="container" id="login-container">
+
+    <div id="info">
+<div>
+
+</div>
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+
+            <li>4</li>
+
+            <li>5</li>
+
+
+        </ul>
+
+    </div>
+    <div id="flexible-form">
+
+
+
+
+
+
+
+        {% block checker %}
+            {% if done  %}
+                <input id="done-checker" value="{{done}}" hidden>
+            {% endif %}
+        {% endblock %}
+          <input id="token" value="{{token}}" hidden>
+
+        <div id="form-header">
+
+        <div id="header-text"> {% block header %}
+       <span id="login-header-text">
+        ورود
+       </span>
+            <span id="reset-password-header-text">
+               عوض کردن پسورد
+            </span>
+            {% endblock %}
+        </div>
+        </div>
+        {% if error %}
+         <div class="error-fields">
+<div class="alert alert-danger">
+    {{error}}
+</div>
+
+
+              </div>
+        {% endif %}
+        <div class="description alert alert-success">
+            <span></span>
+        </div>
+
+
+        <form method="post" id="main-form">
+            {% csrf_token %}
+            {% block form %}
+
+
+            <div class="reset_password_form">
+                <div class="form-group">
+               <span class="material-icons ">contact_mail</span>
+
+
+                <input class="form-control" id="email" name="email" placeholder="ایمیل" autofocus=""
+                       type="email">
+
+                </div>
+                 <div class="form-group">
+
+                <input class="form-control"  type="submit" style="width:100%;position:relative;"
+                       value="تایید">
+            </div>
+                <span class="icon-holder">
+                <i class="material-icons" id="arrow-back">arrow_back</i>
+                    </span>
+                </div>
+
+
+            <div class="login_form">
+
+  <div class="form-group">
+                <span class="fa fa-user-circle fa-fw"></span>
+
+                <input class="form-control" id="id_username" name="username" placeholder="نام کاربری"
+                        type="text"
+                       style="">
+            </div>
+
+            <div class="form-group">
+                  <span class="material-icons" style="font-size:25px;"
+                  >lock</span>
+                <input class="form-control" id="password" name="password1" autofocus="" placeholder="رمز عبور"
+
+                       type="password">
+            </div>
+
+
+
+
+             <div class="form-group">
+
+                <input class="form-control"  type="submit" style="width:100%;position:relative;"
+                       value="تایید">
+            </div>
+                <a id="show_password_form"> پسورد خود را فراموش کرده اید؟ </a>
+                </div>
+   {% endblock %}
+
+        </form>
+
+
+
+    </div>
+</div>
+{% endblock %}
+{% block script %}
+<script src="{% static 'users/login.js' %}"></script>
+{% endblock %}
