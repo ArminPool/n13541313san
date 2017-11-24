@@ -39,6 +39,16 @@ $("footer").remove();
 var sideNav;
 var headerWidth = parseFloat($(".navbar-header").css("width")) ;
 var ScreenWidth = $(window).width();
+var ScreenHeight = $(window).height();
+if(ScreenHeight < 477){
+
+
+$('#SideNav').css('position','relative');
+$('#SideNav').css('top','0px');
+
+
+}
+
 if(ScreenWidth < 750){
 $(".navbar-default .navbar-nav > li > a").attr("data-toggle","dropdown");
 
@@ -77,6 +87,39 @@ $("#left-side-toggle-close").click(closeNav);
 
 
 $(window).on('resize', function(){
+
+
+if($(this).height() != ScreenHeight){
+
+if($(this).height() > 477){
+alert("1");
+
+$('#SideNav').css('position','fixed');
+$('#SideNav').css('top','108px');
+
+
+}
+
+else if ($(this).height() < 477 && $(this).width() < 586 ){
+$('#SideNav').css('position','relative');
+$('#SideNav').css('top','108px');
+
+}
+
+else{
+
+$('#SideNav').css('position','relative');
+$('#SideNav').css('top','0px');
+}
+
+ScreenHeight= $(this).height();
+}
+else if ($(this).height() == ScreenHeight && $(this).width() > 586 ){
+
+$('#SideNav').css('position','relative');
+$('#SideNav').css('top','0px');
+
+}
 
 if($(this).width() != ScreenWidth){
 
@@ -160,6 +203,10 @@ if(ScreenWidth < 586){
 $("footer").css("display","none");
 $("#main").css("display","none");
 $("#SideNav").css("width","100%");
+$("#SideNav").css("position","relative");
+$("#SideNav").css("top","108px");
+
+
 $("#left-side-toggle-open").css("display","none");
 
 $("#left-side-toggle-close").css("display","inline");
@@ -182,8 +229,10 @@ function closeNav(){
 sideNav = 2;
 var ScreenWidth = $(window).width();
 if(ScreenWidth < 586){
+
 $("footer").css("display","block");
 $("#main").css("display","block");
+
 
 
 $("#SideNav").css("width","0px");

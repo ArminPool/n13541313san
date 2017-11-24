@@ -15,6 +15,7 @@ class Post(models.Model):
     img = models.FileField(null=True, blank=True, upload_to='uploaded')
     description = RichTextField(config_name='awesome_ckeditor')
     text = RichTextField(config_name='awesome_ckeditor')
+
     date_published = models.DateTimeField()
     Main_Tag = models.CharField(max_length=500)
     author = models.CharField(max_length=500)
