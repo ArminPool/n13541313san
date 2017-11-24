@@ -217,9 +217,13 @@ box-shadow: 0 8px 6px -6px black;
 
 #SideNav .create-account a{
 
-color:#fff;
+color:#808b9c;
+background-color:transparent;
 }
-
+#SideNav .create-account a:hover{
+color:#fff;
+background-color:#337ab7;
+}
 #SideNav span{
 
 padding:10px;
@@ -252,6 +256,16 @@ font-size:25px;
 
 #SideNav .jumbotron .btn-primary{
 margin:auto 50px;
+}
+#SideNav button[type='submit'] {
+
+color:#808b9c;
+background-color:transparent;
+}
+#SideNav button[type='submit']:hover {
+
+color:#fff;
+background-color:#337ab7;
 }
 
                             /*      setting of side toggles                  */

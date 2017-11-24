@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
 
-
+$("footer").offset.bottom = 0;
     $('[data-toggle="datepicker"]').datepicker({
   format: 'yyyy-mm-dd'
 })

@@ -1,6 +1,6 @@
 window.onload = function loadDoc() {
 var d = new Date();
-
+alert("i'm here");
 var month = d.getMonth()+1;
 var day = d.getDate();
 
@@ -13,6 +13,6 @@ var date = d.getFullYear() + '-' +
       document.getElementById("result").innerHTML = this.responseText;
     }
   };
-  xhttp.open("GET", "http://127.0.0.1:8000/EconomicCalendar/?q="+ date, true);
+  xhttp.open("GET", "http://arminoldboy.pythonanywhere.com/EconomicCalendar/?q="+ date, true);
   xhttp.send();
   }

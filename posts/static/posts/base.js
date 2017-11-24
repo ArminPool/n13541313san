@@ -30,7 +30,7 @@ $(document).ready(function() {
     });
 var pageURL = $(location).attr("href");
 
-if( pageURL == "http://127.0.0.1:8000/user/reset-password/confirm/"){
+if( pageURL == "http://arminoldboy.pythonanywhere.com/user/reset-password/confirm/"){
 
 $("footer").remove();
 
@@ -92,7 +92,7 @@ $(window).on('resize', function(){
 if($(this).height() != ScreenHeight){
 
 if($(this).height() > 477){
-alert("1");
+
 
 $('#SideNav').css('position','fixed');
 $('#SideNav').css('top','108px');
