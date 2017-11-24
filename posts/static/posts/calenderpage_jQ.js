@@ -1,6 +1,7 @@
 $(document).ready(function() {
 
-$("footer").css("top","70px;");
+
+$("footer").css("bottom","0px");
     $('[data-toggle="datepicker"]').datepicker({
   format: 'yyyy-mm-dd'
 })

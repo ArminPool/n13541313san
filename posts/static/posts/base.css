@@ -424,7 +424,10 @@ padding:20px;
 
                             /*        footer setting started                */
 footer{
+position:absolute;
 
+left:0px;
+right:0px;
 font-family:'Far.Adab',Tahoma, Sans-Serif;
 
 background-color:#232531;
