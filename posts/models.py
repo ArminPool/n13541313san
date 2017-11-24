@@ -2,11 +2,8 @@ from ckeditor.fields import RichTextField
 from django.contrib.auth.models import User
 from django.db import models
 from django.db.models import CharField, DateField, TimeField
-from tinymce.models import HTMLField
-from tinymce import models as tinymce_models
 from django import forms
 from django.core.urlresolvers import reverse
-from tinymce.widgets import TinyMCE
 from django_mysql.models import ListTextField
 
 
