@@ -65,7 +65,7 @@ else{
 $(".navbar-brand").css("padding-left","15px");
 $(".navbar-header").css("padding-right","0px");
 }
-if( pageURL == "http://127.0.0.1:8000/"){
+if( pageURL == "http://arminoldboy.pythonanywhere.com/"){
 var ScreenWidth = $(window).width();
 if(ScreenWidth < 586){
 

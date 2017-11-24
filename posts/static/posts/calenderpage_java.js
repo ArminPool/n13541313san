@@ -1,6 +1,5 @@
 window.onload = function loadDoc() {
 var d = new Date();
-alert("i'm here");
 var month = d.getMonth()+1;
 var day = d.getDate();
 
