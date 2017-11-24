@@ -5,7 +5,6 @@ from django.shortcuts import render, redirect
 
 # Create your views here.
 from django.views.generic import ListView
-from tinymce.views import render_to_link_list
 
 from posts.form import CommentForm, CalenderForm
 from posts.models import Post, Comment, Calender
