@@ -39,9 +39,9 @@ INSTALLED_APPS = [
     'posts',
     'users',
     'jalali_date',
-    'tinymce',
+
     'ckeditor',
-    'ckeditor_uploader',
+
 
 
 ]
