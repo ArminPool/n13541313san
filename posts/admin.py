@@ -1,6 +1,5 @@
 from django.contrib import admin
 
-from news.settings import BASE_DIR
 # Register your models here.
 from django.forms import TextInput, Textarea
 

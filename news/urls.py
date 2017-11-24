@@ -1,13 +1,10 @@
 from django.conf.urls import url, include
 from django.contrib import admin
-from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from django.contrib.staticfiles.urls import static
-from rest_framework_jwt.views import obtain_jwt_token
-from rest_framework_jwt.views import refresh_jwt_token
-from rest_framework_jwt.views import verify_jwt_token
-from posts.views import contact, about_us, advertising, set_timezone, search
-from news import settings
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
+from posts.views import contact, about_us, advertising, set_timezone, search
+from . import settings
 urlpatterns = [
 
     url(r'^admin/', admin.site.urls),
