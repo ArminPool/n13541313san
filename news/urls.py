@@ -17,8 +17,6 @@ urlpatterns = [
     url(r'^about-us/$', about_us, name='about-us'),
     url(r'^advertising/$', advertising, name='advertising'),
     url(r'^timezone/$', set_timezone, name='timezone'),
-    url(r'^tinymce/', include('tinymce.urls')),
-    url(r'^ckeditor/', include('ckeditor_uploader.urls')),
 ]
 urlpatterns += staticfiles_urlpatterns()
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
