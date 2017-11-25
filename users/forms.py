@@ -7,6 +7,8 @@ from django.contrib.auth.forms import UserCreationForm
 from users.models import UserProfile, UsersMessage, GuestMessage
 
 
+
+
 class RegistrationForm(UserCreationForm):
     email = forms.EmailField(required=True)
 
@@ -33,8 +35,9 @@ class RegistrationForm(UserCreationForm):
         email = cleaned_data.get('email')
         password1 = cleaned_data.get('password1')
         password2 = cleaned_data.get('password2')
+        print(password2)
         try:
-            if not username or not email or not first_name or not last_name:
+            if not username or not email or not first_name or not last_name or not password1 or not password2:
                 print("Nothing entered")
                 self.add_error(None, 'لطفا تمام  فیلد ها را پر کنید!')
             elif User.objects.get(username=username):
@@ -47,14 +50,15 @@ class RegistrationForm(UserCreationForm):
                     print("email found")
                     self.add_error('email', 'این ایمیل قبلا استفاده شده !!!')
             except User.DoesNotExist:
+                if password2 != password1:
 
-                if len(password1) < 8:
-                    print("less than 8")
+                    self.add_error('password1', 'تکرار رمز عبور اشتباه است.')
+
+                elif entire_numeric(password1):
+                    self.add_error('password1', 'رمز عبور شما نباید کاملا عددی باشد.')
+
+                elif len(password1) < 8:
                     self.add_error('password1', 'تعداد  حروف رمز باید بیشتر از 8 باشد.')
-
-                elif password2 != password1:
-                    print("dismatch")
-                    self.add_error('password1', 'تکرار رمز عبور اشتباه است')
 
 
 def save(self, commit=True, ):
@@ -67,6 +71,13 @@ def save(self, commit=True, ):
         user.save()
 
     return user
+
+def entire_numeric(password):
+    try:
+        int(password)
+        return True
+    except ValueError:
+        return False
 
 
 class UserEditForm(forms.ModelForm):

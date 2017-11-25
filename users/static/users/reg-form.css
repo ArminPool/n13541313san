@@ -48,6 +48,13 @@ color:white;
 background-color:#1D1E52;
 
 }
+.reg-form-header p{
+
+margin:0px;
+
+}
+
+
 
 .error-fields{
 
@@ -63,9 +70,19 @@ padding-right:0px;
 }
 
 
-.alert {
+.alert{
 
 border-radius:0px;
+
+}
+.registration .error-fields .alert-danger,.alert{
+margin-bottom:0px;
+padding-top:30px;
+padding-bottom:30px;
+color:#fff;
+background-color:#E66454;
+border:none;
+
 
 }
 
@@ -85,9 +102,11 @@ border:1px solid #1D1E52;
 
 }
 
-form{
+form.form-group{
 
 padding:10px;
+margin-top:0px;
+margin-bottom:0px;
 
 }
 
