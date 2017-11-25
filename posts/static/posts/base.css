@@ -2,35 +2,55 @@ body {
  /*
  using this font for eng text
  */
-    font-family: "Lato", sans-serif;
+    font-family:sans-serif;
 
 }
 /*
  using this font for fa text
  */
 
-
 .navbar-collapse a{
     text-decoration:none;
 
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form{
+
+border:none;
+box-shadow:none;
 }
 .navbar,.navbar-default{
 
 border:none;
 
 }
+
+
+.navbar-collapse{
+
+direction:rtl;
+position:relative;
+right:97.39px;
+}
 #navbar1{
 
 margin-bottom:0px;
 background-color:#23262F;
+}
+/*
+#navbar1 .container-fluid{
+
+padding-left:40px;
+padding-right:40px;
 
 }
+*/
 
 
 .navbar-default .navbar-brand{
 
-position:relative;
-left:7px;
+position:absolute;
+
+right:70px;
 color:#fff;
 
 }
@@ -157,8 +177,13 @@ box-shadow:none;
 }
                             /*  setting position of search form     */
 .search-nav .input-group{
-
+max-width:600px;
 margin:10px auto;
+}
+.input-group-btn:last-child>.btn, .input-group-btn:last-child>.btn-group{
+
+margin-left:0px;
+
 }
 .search-nav .input-group .form-control{
 
@@ -501,6 +526,7 @@ padding-top:10px;
 color:#fff;
 
 }
+
 .dropdown:hover .dropdown-menu {
 
 padding-right:0px;

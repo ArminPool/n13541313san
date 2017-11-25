@@ -11,8 +11,14 @@
 {% endblock %}
 {% block body %}
 <div class="jumbotron" id="contact-content">
-    <div class="container">
-<h2>تماس با ما </h2>
+
+    <div class="container-fluid">
+        <h2 id="contact-header">تماس با ما </h2>
+    <p>-شما میتوانید از طریق فرم زیر پیامتان را بما بفرستید یا از طریق آیدی تلگرام ما باما در تماس باشید :</p>
+
+        <p>-آیدی تلگرام<a href="https://t.me/TAHLILGARAN_SUPPORT"> :TAHLILGARAN_SUPPORT@</a></p>
+
+
 
 <form method="POST">
     {% csrf_token %}

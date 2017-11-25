@@ -23,7 +23,7 @@ top:56px;
 }
 
 #contact-content{
-background-color:transparent;
+background-color:rgba(16, 16, 18, 0.5);
 
 position:relative;
 
@@ -32,16 +32,28 @@ padding-bottom:40px;
 
 }
 
-#contact-content .container{
+#contact-content .container-fluid{
 
 margin:0px;
 
 }
+#contact-header{
 
-#contact-content .container form{
+text-align:right;
+margin:20px auto;
+padding-bottom:15px;
+border-bottom:2px solid #fff;
+
+}
+
+#contact-content .container-fluid form{
 
 max-width:380px;
-background-color:rgba(16, 16, 18, 0.5);
+
+}
+#contact-content .container-fluid p,a{
+
+font-size:16px;
 
 }
 
@@ -49,7 +61,7 @@ background-color:rgba(16, 16, 18, 0.5);
 
 width:200px ;
 box-shadow:none;
-
+border-radius:0px;
 }
 
 #contact-content .form-group{
