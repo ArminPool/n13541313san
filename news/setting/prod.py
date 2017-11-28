@@ -6,7 +6,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'navasang_navasangold',
         'USER': 'navasang_armin',
-        'PASSWORD': '123555888navasan',
+        'PASSWORD': '123555888armin',
         'OPTIONS': {
             'charset': 'utf8mb4',
         },
