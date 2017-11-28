@@ -115,7 +115,7 @@ class UserProfile(models.Model):
 
               )
 
-    city = models.CharField(choices=cities,max_length=25, blank=False)
+    city = models.CharField(choices=cities,max_length=25, default='tehran')
     pro_img = models.FileField(null=True, blank=True, upload_to='uploaded')
     inbox = models.ManyToManyField(Inbox)
     vip = models.BooleanField(default=False)
