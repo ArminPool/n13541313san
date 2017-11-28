@@ -21,9 +21,9 @@ class UserProfile(models.Model):
 
     phone_number = models.CharField(max_length=11, blank=False)
 
-    آذربایجان_شرقی = "آذربایجان شرقی"
+    azar_sharghi = "آذربایجان شرقی"
 
-    آذربایجان_غربی = "آذربایجان غربی"
+    azar_gharbi = "آذربایجان غربی"
 
     اصفهان = "اصفهان"
     اردبیل = "اردبیل"
