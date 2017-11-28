@@ -4,12 +4,12 @@ ALLOWED_HOSTS = ['*']
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'arminoldboy$navasan',
-        'USER': 'arminoldboy',
-        'PASSWORD': '123555888mysql',
+        'NAME': 'navasang_navasangold',
+        'USER': 'navasang_armin',
+        'PASSWORD': '123555888navasan',
         'OPTIONS': {
             'charset': 'utf8mb4',
         },
-        'HOST':'arminoldboy.mysql.pythonanywhere-services.com'
+        'HOST':'localhost'
     }
 }
