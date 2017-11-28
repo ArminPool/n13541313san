@@ -84,12 +84,13 @@ WSGI_APPLICATION = 'news.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'navasan',
-        'USER': 'root',
-        'PASSWORD': '123555888mysql',
+        'NAME': 'navasang_navasangold',
+        'USER': 'navasang_armin',
+        'PASSWORD': '123555888navasan',
         'OPTIONS': {
             'charset': 'utf8mb4',
         },
+        'HOST':'localhost'
     }
 }
 
