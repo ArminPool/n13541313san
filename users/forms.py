@@ -96,7 +96,7 @@ class ProfileEditForm(forms.ModelForm):
         fields = {
 
             'pro_img',
-            'city',
+
             'phone_number',
 
         }
