@@ -91,7 +91,7 @@ DATABASES = {
             'charset': 'utf8mb4',
         },
         'HOST':'localhost',
-        'PORT':'222'
+        'PORT':'2222'
     }
 }
 
