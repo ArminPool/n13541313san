@@ -105,20 +105,19 @@ class ProfileEditForm(forms.ModelForm):
         cleaned_data = super(ProfileEditForm, self).clean()
         city = cleaned_data.get('city')
         pro_img = cleaned_data.get('pro_img')
-        print(city)
+
         website = cleaned_data.get('website')
         phone_number = cleaned_data.get('phone_number')
         regex = r'0\d{10}'
-        print('form2 lvl1')
+
         if phone_number is None:
             self.add_error(None, 'لطفا شماره تلفن خود را وارد کنید!')
         elif not re.match(regex, phone_number):
             self.add_error('phone_number', 'شماره تلفن درست وارد نشده!!!')
-            print('form2 lvl2')
+
 
         if city is None:
             self.add_error(None, 'لطفا استان خود را انتخاب کنید!')
-            print("city incorrect")
 
 
 class ContactForm(forms.ModelForm):
