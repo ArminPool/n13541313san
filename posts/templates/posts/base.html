@@ -27,18 +27,21 @@
 
 <body>
 <div class="navbar navbar-fixed-top">
-    <nav class="navbar navbar-default" id="navbar1" >
+    <nav class="navbar navbar-default" id="navbar1">
         <div class="container-fluid">
 
- <button type="button" id="left-side-toggle-open"
-                        >&#9776;
-                </button>
-                <button type="button" id="left-side-toggle-close">
+            <button type="button" id="left-side-toggle-open"
+            >&#9776;
+            </button>
+            <button type="button" id="left-side-toggle-close">
                 <i class="material-icons" id="arrow-forward">arrow_forward</i>
 
-                </button>
+            </button>
+              <a class="navbar-brand navbar-right" href="{% url 'posts:home' %}">
+                    Navasan
+                </a>
 
-            <div class="navbar-header" >
+            <div class="navbar-header">
 
                 <button type="button" class="navbar-toggle" data-toggle="collapse"
                         data-target=".navbar-collapse">
@@ -47,27 +50,29 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="{% url 'posts:home' %}">
-                    Navasan
-                </a>
+
             </div>
 
-            <div class="collapse navbar-collapse" style="float:right;">
+            <div class="collapse navbar-collapse" >
 
 
-                <p class="navbar-text"><a href="/news/" class="navbar-link">اخبار</a>
+                <p class="navbar-text navbar-right"><a href="/news/" class="navbar-link">اخبار</a>
                 </p>
-                <ul class="nav navbar-nav ">
+                <p class="navbar-text navbar-right" ><a href="{% url 'posts:articles' type='regular' %}" class="navbar-link">مقالات</a>
+                </p>
+                <ul class="nav navbar-nav  navbar-right">
 
                     <li role="presentation" class="dropdown article-dropdown">
 
-                        <a class="dropdown-toggle navbar-link "   href="#"
+                        <a class="dropdown-toggle" href="#"
                            role="button"
-                           aria-haspopup="true" aria-expanded="false" >
-                            مقالات </a>
+                           aria-haspopup="true" aria-expanded="false">
+                            تحلیل ویژه </a>
                         <ul class="dropdown-menu menu1">
-                            <li><a href="{% url 'posts:articles' type='regular' %} ">مقالات</a></li>
-                            <li><a href="{% url 'posts:articles' type='analytical' %} ">مقالات تحلیلی</a></li>
+                            <li><a href="{% url 'posts:articles' type='analytical' %} ">انس جهانی</a></li>
+                            <li><a href="{% url 'posts:articles' type='analytical' %} ">جفت ارزها</a></li>
+                            <li><a href="{% url 'posts:articles' type='analytical' %} ">دلار داخلی</a></li>
+
 
                         </ul>
                     </li>
@@ -75,14 +80,14 @@
 
                 </ul>
 
-                <ul class="nav navbar-nav" style="">
+                <ul class="nav navbar-nav navbar-right" style="">
 
                     <li role="presentation" class="dropdown money-dropdown">
 
-                        <a  class="dropdown-toggle navbar-link" data-toggle="dropdown" href="#"
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"
                            role="button"
                            aria-haspopup="true" aria-expanded="false">
-                            دسته بندی </a>
+                            چارت ها </a>
                         <ul class="dropdown-menu menu2">
 
                             <li><a href="{% url 'posts:tag' tag='GBPUSD' %} ">GBPUSD</a></li>
@@ -98,7 +103,7 @@
 
 
                 </ul>
-                  <p class="navbar-text navbar-left"><a href="/calender/" class="navbar-link">تقویم اقتصادی</a>
+                <p class="navbar-text navbar-right"><a href="/calender/" class="navbar-link">تقویم اقتصادی</a>
                 </p>
 
 
@@ -136,23 +141,25 @@
         <div class="container">
             {% if user.is_authenticated %}
             <div class="Navigation-drawer">
-            {% if user.userprofile.pro_img %}
-            <img class="img-responsive" src="{{ user.userprofile.pro_img.url }}" title="{{user.username}}" alt="{{user.username}}"
-                 style="">
+                {% if user.userprofile.pro_img %}
+                <img class="img-responsive" src="{{ user.userprofile.pro_img.url }}" title="{{user.username}}"
+                     alt="{{user.username}}"
+                     style="">
 
-            {% else %}
-            <img class="img-responsive"
-                 src="http://arminyahya.pythonanywhere.com/media/uploaded/default_img_prof.jpg" title="{{user.username}}" alt="{{user.username}}">
-            {% endif %}
+                {% else %}
+                <img class="img-responsive"
+                     src="http://arminyahya.pythonanywhere.com/media/uploaded/default_img_prof.jpg"
+                     title="{{user.username}}" alt="{{user.username}}">
+                {% endif %}
 
 
-            <p id="username-place">{{user.username}}</p>
+                <p id="username-place">{{user.username}}</p>
 
                 <a href="/user/profile"><span class="glyphicon glyphicon-user"></span>مشاهده حساب کاربری </a>
-            <a style="" href="/user/profile/edit"><span class="glyphicon glyphicon-cog"></span>ویرایش پروفایل</a>
-            <a href="/user/logout/"><span class="glyphicon glyphicon-off"></span>خروج</a>
+                <a style="" href="/user/profile/edit"><span class="glyphicon glyphicon-cog"></span>ویرایش پروفایل</a>
+                <a href="/user/logout/"><span class="glyphicon glyphicon-off"></span>خروج</a>
 
-                </div>
+            </div>
             {% else %}
             <form method="post" action="/user/login/" id="SideForm">
                 {% csrf_token %}
@@ -166,8 +173,8 @@
                 ></span>
 
                         <input class="form-control" id="id_username" name="username" placeholder="نام کاربری"
-                                type="text"
-                                required />
+                               type="text"
+                               required/>
                     </div>
                     <div class="form-group">
 
@@ -176,7 +183,7 @@
                         <input class="form-control" id="password1" name="password1"
                                placeholder="رمز عبور"
 
-                               type="password" required />
+                               type="password" required/>
                     </div>
 
                     <button class="btn btn-primary" type="submit" style="">ورود</button>

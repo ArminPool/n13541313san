@@ -22,17 +22,54 @@ max-width:650px;
 padding:0px;
 }
 #info{
-background-color:rgba(0,0,0,.4);
+
 display:table-cell;
 width:40%;
 text-align: left;
 vertical-align: top;
-border-left:none;
+padding:30px;
+border-left:4px solid #2D5DA1;
+
 }
 
-#info ul li{
+#info-header {
+text-align:center;
+font-size:22px;
+
+}
+
+
+#info-header a{
+
+font-size:25px;
+color:#000;
+
+
+}
+
+#info > ul{
+
+
+padding-right:0px;
+
+}
+#info > ul > li {
 
 list-style:none;
+text-align:right;
+font-size:17px;
+padding-bottom:10px;
+}
+
+#info ul > li span{
+
+padding-left:5px;
+
+}
+
+#info ul > li > .material-icons{
+position:relative;
+font-size:17px;
 
 }
 
