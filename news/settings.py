@@ -24,7 +24,7 @@ SECRET_KEY = '_g+$23mmc_n@@)_*j#8-l)r60d6*ci$7^3n6605((un33(72k1'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [u'navasangold.com' ]
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
