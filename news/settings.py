@@ -90,7 +90,8 @@ DATABASES = {
         'OPTIONS': {
             'charset': 'utf8mb4',
         },
-        'HOST':'localhost'
+        'HOST':'localhost',
+        'PORT':'222'
     }
 }
 
