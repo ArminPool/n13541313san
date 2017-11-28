@@ -159,13 +159,11 @@ class LoginForm(UserCreationForm):
         cleaned_data = super(LoginForm, self).clean()
         username = cleaned_data.get('username')
         password = cleaned_data.get('password1')
-        print("clean")
         try:
             if not username or not password:
-                print("error")
                 self.add_error(None, 'لطفا تمام  فیلد ها را پر کنید!')
         except:
-            print("except")
+          pass
 
 
 

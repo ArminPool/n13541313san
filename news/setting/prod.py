@@ -1,6 +1,6 @@
 from ..settings import *
 DEBUG = False
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = [u'navasangold.com']
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',

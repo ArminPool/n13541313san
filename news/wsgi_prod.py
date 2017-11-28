@@ -7,7 +7,7 @@ if project_home not in sys.path:
     sys.path.insert(0, project_home)
 
 # set environment variable to tell django where your settings.py is
-os.environ['DJANGO_SETTINGS_MODULE'] = 'news.settings'
+os.environ['DJANGO_SETTINGS_MODULE'] = 'news.setting.prod'
 
 
 # serve django via WSGI in Django < 1.7
