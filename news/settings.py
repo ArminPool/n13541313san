@@ -90,8 +90,8 @@ DATABASES = {
         'OPTIONS': {
             'charset': 'utf8mb4',
         },
-        'HOST':'ir-hs01.serversgig.com',
-        'PORT':'2222'
+        'HOST':'localhost',
+
     }
 }
 
