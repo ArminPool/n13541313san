@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 import pytz
 from django.core.paginator import Paginator, PageNotAnInteger, EmptyPage
 from django.db.models import Q

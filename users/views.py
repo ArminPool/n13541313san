@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 import pytz
 from django.contrib.auth.models import User
 from django.http import HttpResponseRedirect
