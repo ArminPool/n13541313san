@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-
 import re
 
 from django import forms
@@ -39,7 +37,7 @@ class RegistrationForm(UserCreationForm):
         password2 = cleaned_data.get('password2')
         print(password2)
         try:
-            if not username or not email or not first_name or not last_name or not password1 or not password2:
+            if not username or not email or not first_name or not last_name:
                 print("Nothing entered")
                 self.add_error(None, 'لطفا تمام  فیلد ها را پر کنید!')
             elif User.objects.get(username=username):
@@ -98,7 +96,7 @@ class ProfileEditForm(forms.ModelForm):
         fields = {
 
             'pro_img',
-
+            'city',
             'phone_number',
 
         }
