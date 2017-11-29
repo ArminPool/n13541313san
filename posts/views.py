@@ -4,7 +4,7 @@ import pytz
 from django.core.paginator import Paginator, PageNotAnInteger, EmptyPage
 from django.db.models import Q
 from django.shortcuts import render, redirect
-
+from django.core.mail import send_mail
 # Create your views here.
 from django.views.generic import ListView
 
@@ -18,7 +18,14 @@ def homepage(request):
     posts_list = Post.objects.all()
     title = "نوسان صفحه اصلی"
     template_name = 'posts/homepage.html'
-
+    send_mail(
+        'Subject here',
+        'Here is the message.',
+        'support@navasangold.com',
+        ['armin.oldboy@gmail.com'],
+        fail_silently=False,
+    )
+    print(1)
     context = {'posts': posts_list, 'title': title}
     return render(request, template_name, context)
 

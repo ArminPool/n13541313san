@@ -42,8 +42,6 @@ INSTALLED_APPS = [
 
     'ckeditor',
 
-
-
 ]
 
 MIDDLEWARE = [
@@ -84,15 +82,12 @@ WSGI_APPLICATION = 'news.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'navasang_navasangold',
-        'USER': 'navasang_armin',
-        'PASSWORD': '123555888armin',
+        'NAME': 'navasan',
+        'USER': 'root',
+        'PASSWORD': '123555888mysql',
         'OPTIONS': {
             'charset': 'utf8mb4',
         },
-        'HOST':'localhost',
-
-
     }
 }
 
@@ -136,8 +131,21 @@ LOGIN_EXEMPT_URLS = (
     r'^user/logout/$',
     r'^user/register/$'
 )
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'ir-hs01.serversgig.com'
+EMAIL_PORT = 465
+EMAIL_HOST_USER = 'support@navasangold.com'
+EMAIL_HOST_PASSWORD = '123555888navasan'
+
+
+
 # Internationalization
+
 # https://docs.djangoproject.com/en/1.11/topics/i18n/
+
+
+
 
 LANGUAGE_CODE = 'en-us'
 
@@ -155,4 +163,3 @@ STATIC_URL = '/static/'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'news/media')
 MEDIA_URL = '/media/'
-
