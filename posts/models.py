@@ -8,19 +8,28 @@ from django_mysql.models import ListTextField
 
 
 # Create your models here.
+from users.models import Author
+
 
 class Post(models.Model):
-
     header = models.CharField(max_length=500)
+
     img = models.FileField(null=True, blank=True, upload_to='uploaded')
+
     description = RichTextField(config_name='awesome_ckeditor')
+
     text = RichTextField(config_name='awesome_ckeditor')
 
     date_published = models.DateTimeField()
+
     Main_Tag = models.CharField(max_length=500)
-    author = models.CharField(max_length=500)
+
+    author = models.ForeignKey(Author, null=False)
+
     is_article = models.BooleanField(default=True)
+
     is_vip = models.BooleanField(default=True)
+
     public = models.BooleanField(default=False)
 
     Tags = ListTextField(
@@ -37,11 +46,17 @@ class Post(models.Model):
 
 class Comment(models.Model):
     post = models.ForeignKey(Post, related_name='comments')
+
     user = models.ForeignKey(User, null=True)
+
     body = models.TextField(max_length=250, null=True)
+
     created = models.DateTimeField(auto_now_add=True)
+
     approved = models.BooleanField(default=False)
+
     parent = models.ForeignKey("self", null=True, blank=True)
+
     public = models.BooleanField(default=False)
 
     def approved(self):
@@ -70,10 +85,17 @@ class Comment(models.Model):
 
 class Calender(models.Model):
     date = DateField()
+
     time = TimeField()
+
     stock = CharField(max_length=60)
+
     event = CharField(max_length=60)
+
     importance = CharField(max_length=60)
+
     actual = CharField(max_length=60)
+
     predict = CharField(max_length=60)
+
     previous = CharField(max_length=60)

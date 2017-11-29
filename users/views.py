@@ -22,7 +22,6 @@ from django.contrib.auth.decorators import login_required
 
 from users.models import UserProfile
 from posts.models import Post
-from users.token_builder import GetToken
 
 """
 This is what really needs to be explained:

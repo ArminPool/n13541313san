@@ -7,7 +7,6 @@ from django.shortcuts import render, redirect
 from django.core.mail import send_mail
 # Create your views here.
 from django.views.generic import ListView
-from rest_framework.authtoken.models import Token
 
 from posts.form import CommentForm, CalenderForm
 from posts.models import Post, Comment, Calender
@@ -81,9 +80,7 @@ def contact(request):
                 form.save(commit=True)
                 return redirect('posts:home')
             else:
-                print('invalid-users-form')
 
-                print('authenticated')
                 form = UsersContactForm()
                 return render(request, users_template_name, {'title': title})
         else:
