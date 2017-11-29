@@ -2,9 +2,14 @@
 
 import pytz
 from django.contrib.auth.models import User
-from django.http import HttpResponseRedirect
+from django.core.exceptions import ObjectDoesNotExist
+from django.core.mail import send_mail, EmailMultiAlternatives
+from django.template.loader import get_template, render_to_string
+
+from users.models import Token
+from django.http import HttpResponseRedirect, HttpResponseNotFound
 from django.shortcuts import render, redirect, render_to_response
-from django.template import RequestContext
+from django.template import RequestContext, Context
 
 from django.urls import reverse
 
@@ -17,6 +22,7 @@ from django.contrib.auth.decorators import login_required
 
 from users.models import UserProfile
 from posts.models import Post
+from users.token_builder import GetToken
 
 """
 This is what really needs to be explained:
@@ -77,17 +83,33 @@ def login_user(request):
                 return redirect(reverse('posts:home'))
             else:
 
-                return render(request, 'users/login.html',{'error':'نام کاربری یا کلمه ی عبور اشتباه است.'})
+                return render(request, 'users/login.html', {'error': 'نام کاربری یا کلمه ی عبور اشتباه است.'})
 
         elif request.POST['email'] and not (request.POST['username'] and request.POST['password1']):
-            print("email entered")
-            return render(request, 'users/login.html', {'done': 'برای شما یک ایمیل حاوی لینک ارسال شده است .'})
-    print("requset GET")
+            email = request.POST['email']
+            try:
+                if User.objects.get(email=email):
+                    token = Token.create_and_get_token()
+                    plaintext = 'شما برای عوض کردن پسورد خود درخواست داده اید!!!'
 
-    return render(request, 'users/login.html',)
+                    context = {'token':token}
+                    subject, from_email, to = 'لینک تغییر پسورد', 'support@navasangold.com', email
+                    text_content = plaintext
+                    html_content = render_to_string('users/reset_password_email.html', context)
+                    msg = EmailMultiAlternatives(subject, text_content, from_email, [to])
+                    msg.attach_alternative(html_content, "text/html")
+                    msg.send()
+
+                    return render(request, 'users/login.html',
+                                  {'message': 'برای شما یک ایمیل حاوی لینک ارسال شده است .'})
+
+            except ObjectDoesNotExist:
+                return render(request, 'users/login.html', {'message': 'این ایمیل کاربری وجود ندارد.'})
+
+    return render(request, 'users/login.html', )
 
 
-def reset_password_confirm(request):
+def reset_password_confirm(request, token):
     if request.POST:
         form = ResetUserPasswordForm(request.POST)
 
@@ -99,8 +121,14 @@ def reset_password_confirm(request):
             login(request, user)
             print("changed")
             return render(request, 'users/reset_password_confirm.html', {'message': 'پسورد شما با موفقیت تغییر کرد .'})
-    form = ResetUserPasswordForm()
-    return render(request, 'users/reset_password_confirm.html', {'form': form})
+
+    try:
+        token_object = Token.objects.get(token=token)
+
+        form = ResetUserPasswordForm()
+        return render(request, 'users/reset_password_confirm.html', {'form': form})
+    except ObjectDoesNotExist:
+        return HttpResponseNotFound('<h1>Page not found</h1>')
 
 
 def logout_user(request):

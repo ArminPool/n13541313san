@@ -1,27 +1,18 @@
+
 #main{
 
 background-image: url("wallstreet.jpg") ;
 background-size: 1366px 800px;
 background-attachment: fixed;
-margin-top:56px;
+margin-top:50px;
 
 }
 
 
-#SideNav{
 
+#left-side-toggle-open{
 
-height: 100%;
-
-position: fixed;
-margin-top:0px;
-top:56px;
-
-}
-
-#SideNav .jumbotron{
-
-padding:0px;
+display:none;
 
 }
 

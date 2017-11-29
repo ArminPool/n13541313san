@@ -39,8 +39,8 @@ INSTALLED_APPS = [
     'posts',
     'users',
     'jalali_date',
-
     'ckeditor',
+
 
 ]
 
@@ -131,8 +131,7 @@ LOGIN_EXEMPT_URLS = (
     r'^user/logout/$',
     r'^user/register/$'
 )
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_USE_TLS = True
+EMAIL_BACKEND = 'django_smtp_ssl.SSLEmailBackend'
 EMAIL_HOST = 'ir-hs01.serversgig.com'
 EMAIL_PORT = 465
 EMAIL_HOST_USER = 'support@navasangold.com'
@@ -163,3 +162,12 @@ STATIC_URL = '/static/'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'news/media')
 MEDIA_URL = '/media/'
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework.authentication.TokenAuthentication',
+    ),
+    'DEFAULT_PERMISSION_CLASSES': (
+        'rest_framework.permissions.IsAuthenticated',
+    )
+}

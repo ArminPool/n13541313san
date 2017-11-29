@@ -3,32 +3,43 @@ $(document).ready(function(){
 $("#left-side-toggle-open").css("display","none");
 $("footer").remove();
 
-if ($('#done-checker').val()){
+if ($('#message-checker').val()){
 
 $('#main-form').css('display','none');
 $('.description').fadeToggle();
-$('.description span').html($('#done-checker').val());
+$('.description .message').html($('#message-checker').val());
 }
-
 $('#show_password_form').click(function(event){
 
 
 showResetEmail();
 
 });
+$('#arrow-back-from-email-form').click(function(event){
 
-$('#arrow-back').click(function(event){
+ShowLoginFromEmailForm();
 
-ShowLogin();
+});
+$('#arrow-back-from-message-div').click(function(event){
+
+ShowLoginFromMessageDiv();
 
 });
 
 
-function ShowLogin(){
+function ShowLoginFromEmailForm(){
 $('.reset_password_form').css("display","none");
 $('#reset-password-header-text').css("display","none");
 $('.login_form').fadeToggle();
 $('#login-header-text').fadeToggle();
+
+}
+function ShowLoginFromMessageDiv(){
+$('#main-form').fadeToggle();
+$('.description').css('display','none');
+
+$('.reset_password_form').css("display","none");
+$('#reset-password-header-text').css("display","none");
 
 }
 
@@ -42,4 +53,5 @@ $('.reset_password_form').fadeToggle();
 $('#reset-password-header-text').fadeToggle();
 
 }
+
 });

@@ -167,7 +167,7 @@ display:none;
 text-align:left;
 
 }
-#arrow-back {
+#arrow-back-from-email-form,#arrow-back-from-message-div {
 display:block;
 position:relative;
 

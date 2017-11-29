@@ -23,7 +23,10 @@ box-shadow:none;
 border:none;
 
 }
+.navbar-fixed-top{
+box-shadow: rgba(0, 0, 0, 0.30) 0px 4px 5px 0px, rgba(0, 0, 0, 0.18) 0px 1px 10px 0px, rgba(0, 0, 0, 0.2) 0px 2px 4px -1px;
 
+}
 
 .navbar-fixed-top .navbar-collapse{
 
@@ -228,7 +231,7 @@ overflow-x: hidden;
 overflow-y: auto;
 transition: 0.5s;
 top: 108px;
-                                /*    adding shadow to Side Nav                    */
+ /*    adding shadow to Side Nav                    */
 
 -webkit-box-shadow: 0 8px 6px -6px black;
 -moz-box-shadow: 0 8px 6px -6px black;

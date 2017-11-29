@@ -1,9 +1,15 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 
+import random
+import string
+from threading import Timer
+
+import time
 from django.contrib.auth.models import User
 
 from django.db import models
+from django.utils.timezone import localtime, now
 
 
 class Inbox(models.Model):
@@ -115,7 +121,7 @@ class UserProfile(models.Model):
 
               )
 
-    city = models.CharField(choices=cities,max_length=25, default='tehran')
+    city = models.CharField(choices=cities, max_length=25, default='tehran')
     pro_img = models.FileField(null=True, blank=True, upload_to='uploaded')
     inbox = models.ManyToManyField(Inbox)
     vip = models.BooleanField(default=False)
@@ -133,7 +139,7 @@ class UserProfile(models.Model):
         return False
 
     @classmethod
-    def create_profile(cls, user, phone_number,city):
+    def create_profile(cls, user, phone_number, city):
         userprofile = cls.objects.create(
 
             user=user
@@ -185,3 +191,26 @@ class GuestMessage(models.Model):
 
     def __str__(self):
         return str(self.Guest_first_name) + " " + str(self.issue_options)
+
+
+class Token(models.Model):
+    token = models.CharField(max_length=60)
+    time_created = models.TimeField(auto_now_add=True)
+    expire_time = models.IntegerField(default=180)
+
+    @staticmethod
+    def parse_to_sec(time):
+        return time.hour * 3600 + time.minute * 60 + time.second
+
+    @classmethod
+    def create_and_get_token(cls):
+        token = ''.join(random.SystemRandom().choice(string.ascii_uppercase + string.digits) for _ in range(40))
+
+        token_obj = cls.objects.create(token=token,)
+        token_obj.save()
+        Timer(600, lambda:cls.delete_token(token_obj)).start()
+
+        return token
+    @staticmethod
+    def delete_token(token_obj):
+        token_obj.delete()

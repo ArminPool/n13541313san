@@ -38,11 +38,12 @@
 
 
         {% block checker %}
-            {% if done  %}
-                <input id="done-checker" value="{{done}}" hidden>
+            {% if message  %}
+                <input id="message-checker" value="{{message}}" hidden>
+
+
             {% endif %}
         {% endblock %}
-          <input id="token" value="{{token}}" hidden>
 
         <div id="form-header">
 
@@ -65,10 +66,15 @@
 
               </div>
         {% endif %}
-        <div class="description alert alert-success">
-            <span></span>
-        </div>
+        <div class="description">
+        <div class="alert alert-success">
+            <span class="message"></span>
 
+        </div>
+             <span class="icon-holder">
+                <i class="material-icons" id="arrow-back-from-message-div" >arrow_back</i>
+                    </span>
+</div>
 
         <form method="post" id="main-form">
             {% csrf_token %}
@@ -90,7 +96,7 @@
                        value="تایید">
             </div>
                 <span class="icon-holder">
-                <i class="material-icons" id="arrow-back">arrow_back</i>
+                <i class="material-icons" id="arrow-back-from-email-form" >arrow_back</i>
                     </span>
                 </div>
 

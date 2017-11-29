@@ -30,7 +30,7 @@ $(document).ready(function() {
     });
 var pageURL = $(location).attr("href");
 
-if( pageURL == "http://arminoldboy.pythonanywhere.com/user/reset-password/confirm/"){
+if( pageURL == "http://navasangold.com"){
 
 $("footer").remove();
 

@@ -3,7 +3,7 @@ from django.contrib import admin
 # Register your models here.
 from django.forms import TextInput, Textarea
 
-from users.models import UserProfile, GuestMessage, UsersMessage, Inbox
+from users.models import UserProfile, GuestMessage, UsersMessage, Inbox, Token
 
 from django.db import models
 from posts.models import Post, Comment, Calender
@@ -29,3 +29,4 @@ admin.site.register(UserProfile)
 admin.site.register(Inbox)
 admin.site.register(GuestMessage)
 admin.site.register(UsersMessage)
+admin.site.register(Token)
