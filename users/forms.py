@@ -139,7 +139,7 @@ class UsersContactForm(forms.ModelForm):
         # Here we specify which field we want from UserCreationForm
         fields = {
 
-            'author',
+            'sender',
             'issue_options',
             'message',
         }

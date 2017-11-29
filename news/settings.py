@@ -79,17 +79,7 @@ WSGI_APPLICATION = 'news.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'navasan',
-        'USER': 'root',
-        'PASSWORD': '123555888mysql',
-        'OPTIONS': {
-            'charset': 'utf8mb4',
-        },
-    }
-}
+
 
 # Password validation
 # https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators
