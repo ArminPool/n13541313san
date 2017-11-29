@@ -58,6 +58,13 @@ $(".navbar-collapse").css("border-top","2px solid #fff");
 
 
 }
+if (ScreenWidth > 951){
+
+$('#navbar1 .container-fluid').css('padding-left','46px')
+$('#navbar1 .container-fluid').css('padding-right','46px')
+
+
+}
 
 
 /*
@@ -131,7 +138,17 @@ $('#SideNav').css('top','0px');
 
 if($(this).width() != ScreenWidth){
 
+if($(this).width() < 951){
 
+$('#navbar1 .container-fluid').css('padding-left','15px')
+$('#navbar1 .container-fluid').css('padding-right','15px')
+
+}
+else{
+$('#navbar1 .container-fluid').css('padding-left','46px')
+$('#navbar1 .container-fluid').css('padding-right','46px')
+
+}
 if($(this).width() < 752){
 $(".navbar-default .navbar-nav > li > a").attr("data-toggle","dropdown");
 $(".navbar-collapse").css("margin-right","0px");

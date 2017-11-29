@@ -123,7 +123,7 @@ class UserProfile(models.Model):
 
     city = models.CharField(choices=cities, max_length=25, default='tehran')
     pro_img = models.FileField(null=True, blank=True, upload_to='uploaded')
-    inbox = models.ManyToManyField(Inbox)
+    inbox = models.ManyToManyField(Inbox,blank=True)
     vip = models.BooleanField(default=False)
 
     def __str__(self):
@@ -150,15 +150,21 @@ class UserProfile(models.Model):
         userprofile.save()
 
 
+class Author(models.Model):
+    user = models.OneToOneField(User, null=False)
+    bio = models.CharField(max_length=500)
+
+    def __str__(self):
+        return self.user.username
 """
-Note: Receiver of UsersMessage and GuestMessage is admin  cuz we don't need chat between users in a shop 
+Note: Receiver of UsersMessage and GuestMessage is admin  cuz we don't need chat between users 
 
 """
 
 
 # Here is Contact for Guest that i said before
 class UsersMessage(models.Model):
-    author = models.OneToOneField(User, related_name="author", null=True, blank=True)
+    sender = models.OneToOneField(User, related_name="sender", null=True, blank=True)
 
     cooperate = 'co'
     problem_buying = 'pb'
@@ -171,7 +177,7 @@ class UsersMessage(models.Model):
     message = models.TextField(max_length=250, null=True)
 
     def __str__(self):
-        return str(self.author) + " " + str(self.issue_options)
+        return str(self.sender) + " " + str(self.issue_options)
 
 
 # Here is Contact for Guest that i said before
@@ -206,11 +212,12 @@ class Token(models.Model):
     def create_and_get_token(cls):
         token = ''.join(random.SystemRandom().choice(string.ascii_uppercase + string.digits) for _ in range(40))
 
-        token_obj = cls.objects.create(token=token,)
+        token_obj = cls.objects.create(token=token, )
         token_obj.save()
-        Timer(600, lambda:cls.delete_token(token_obj)).start()
+        Timer(600, lambda: cls.delete_token(token_obj)).start()
 
         return token
+
     @staticmethod
     def delete_token(token_obj):
         token_obj.delete()

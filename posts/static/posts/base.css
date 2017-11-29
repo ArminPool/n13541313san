@@ -3,7 +3,7 @@ body {
  using this font for eng text
  */
     font-family:sans-serif;
-
+    background-color:#f4f4f4;
 }
 /*
  using this font for fa text
@@ -41,14 +41,9 @@ padding-left:0px;
 margin-bottom:0px;
 background-color:#23262F;
 }
-/*
-#navbar1 .container-fluid{
 
-padding-left:40px;
-padding-right:40px;
 
-}
-*/
+
 
 
 .navbar-default .navbar-brand{
@@ -537,7 +532,9 @@ padding-top:10px;
 
                   /*     changing color of dropdown-menu when screen is big enough        */
 
-                                                                                                                /*                        */
+
+
+                                                                                                               /*                        */
 @media only screen and (min-width:768px){
 
 .dropdown-toggle{
