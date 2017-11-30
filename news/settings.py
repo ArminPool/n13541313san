@@ -22,9 +22,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '_g+$23mmc_n@@)_*j#8-l)r60d6*ci$7^3n6605((un33(72k1'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
 
-ALLOWED_HOSTS = ['*']
 
 # Application definition
 
@@ -79,7 +77,21 @@ WSGI_APPLICATION = 'news.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
+DEBUG = True
+ALLOWED_HOSTS = [u'navasangold.com']
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'navasang_navasangold',
+        'USER': 'navasang_armin',
+        'PASSWORD': '123555888armin',
+        'OPTIONS': {
+            'charset': 'utf8mb4',
+        },
+        'HOST':'localhost'
 
+    }
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators
