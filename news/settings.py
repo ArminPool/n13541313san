@@ -79,7 +79,7 @@ WSGI_APPLICATION = 'news.wsgi.application'
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
 DEBUG = True
-ALLOWED_HOSTS = [u'www.navasangold.com','127.0.0.1']
+ALLOWED_HOSTS = ['www.navasangold.com','127.0.0.1']
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
