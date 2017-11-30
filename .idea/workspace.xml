@@ -4,69 +4,8 @@
     <bookmark url="file://$PROJECT_DIR$/posts/templates/posts/detail.html" line="17" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83ce492f-81ab-4045-9bd2-7537fae0f724" name="Default" comment="big change:&#10;new app added">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/specificpages/statics/specificpages/css/mql.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/specificpages/templates/specificpages/mql.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/users/static/users/css/reset_password_confirm.css" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/posts/static/posts/contact-us.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/users/static/users/background.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/users/static/users/background2.jpg" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/posts/static/posts/AS_orgin.jpg" afterPath="$PROJECT_DIR$/posts/static/posts/img/AS_orgin.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/posts/static/posts/base.css" afterPath="$PROJECT_DIR$/posts/static/posts/css/base.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/posts/static/posts/base.js" afterPath="$PROJECT_DIR$/posts/static/posts/js/base.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/posts/static/posts/calender.css" afterPath="$PROJECT_DIR$/specificpages/statics/specificpages/css/calender.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/posts/static/posts/calenderpage_jQ.js" afterPath="$PROJECT_DIR$/specificpages/statics/specificpages/js/calenderpage_jQ.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/posts/static/posts/calenderpage_java.js" afterPath="$PROJECT_DIR$/specificpages/statics/specificpages/js/calenderpage_java.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/posts/static/posts/datepicker.css" afterPath="$PROJECT_DIR$/specificpages/statics/specificpages/css/datepicker.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/posts/static/posts/detail.css" afterPath="$PROJECT_DIR$/posts/static/posts/css/detail.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/posts/static/posts/detail.js" afterPath="$PROJECT_DIR$/posts/static/posts/js/detail.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/posts/static/posts/dist/datepicker.common.js" afterPath="$PROJECT_DIR$/specificpages/statics/specificpages/dist/datepicker.common.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/posts/static/posts/dist/datepicker.css" afterPath="$PROJECT_DIR$/specificpages/statics/specificpages/dist/datepicker.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/posts/static/posts/dist/datepicker.esm.js" afterPath="$PROJECT_DIR$/specificpages/statics/specificpages/dist/datepicker.esm.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/posts/static/posts/dist/datepicker.js" afterPath="$PROJECT_DIR$/specificpages/statics/specificpages/dist/datepicker.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/posts/static/posts/dist/datepicker.min.css" afterPath="$PROJECT_DIR$/specificpages/statics/specificpages/dist/datepicker.min.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/posts/static/posts/dist/datepicker.min.js" afterPath="$PROJECT_DIR$/specificpages/statics/specificpages/dist/datepicker.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/posts/static/posts/homepage.css" afterPath="$PROJECT_DIR$/posts/static/posts/css/homepage.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/posts/static/posts/instagram.png" afterPath="$PROJECT_DIR$/posts/static/posts/img/instagram.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/posts/static/posts/jquery.validate.js" afterPath="$PROJECT_DIR$/posts/static/posts/js/jquery.validate.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/posts/static/posts/jquery.validate.min.js" afterPath="$PROJECT_DIR$/posts/static/posts/js/jquery.validate.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/posts/static/posts/telegram.png" afterPath="$PROJECT_DIR$/posts/static/posts/img/telegram.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/posts/static/posts/twitter.png" afterPath="$PROJECT_DIR$/posts/static/posts/img/twitter.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/posts/templates/posts/calender.html" afterPath="$PROJECT_DIR$/specificpages/templates/specificpages/calender.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/posts/templates/posts/economic_calender.html" afterPath="$PROJECT_DIR$/specificpages/templates/specificpages/economic_calender.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/users/static/users/GuestContact.css" afterPath="$PROJECT_DIR$/specificpages/statics/specificpages/css/GuestContact.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/users/static/users/UsersContact.css" afterPath="$PROJECT_DIR$/specificpages/statics/specificpages/css/UsersContact.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/users/static/users/contact-us.png" afterPath="$PROJECT_DIR$/specificpages/statics/specificpages/img/contact-us.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/users/static/users/edit_profile.css" afterPath="$PROJECT_DIR$/users/static/users/css/edit_profile.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/users/static/users/login-background.jpg" afterPath="$PROJECT_DIR$/users/static/users/img/login-background.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/users/static/users/login.css" afterPath="$PROJECT_DIR$/users/static/users/css/login.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/users/static/users/login.js" afterPath="$PROJECT_DIR$/users/static/users/js/login.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/users/static/users/profile.css" afterPath="$PROJECT_DIR$/users/static/users/css/profile.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/users/static/users/reg-form.css" afterPath="$PROJECT_DIR$/users/static/users/css/reg-form.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/users/static/users/reg-form.js" afterPath="$PROJECT_DIR$/users/static/users/js/reg-form.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/users/static/users/reset_password.js" afterPath="$PROJECT_DIR$/users/static/users/js/reset_password.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/users/static/users/reset_password_confirm.css" afterPath="$PROJECT_DIR$/specificpages/urls.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/users/static/users/wallstreet.jpg" afterPath="$PROJECT_DIR$/users/static/users/img/wallstreet.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/users/templates/users/GuestContact.html" afterPath="$PROJECT_DIR$/specificpages/templates/specificpages/GuestContact.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/users/templates/users/UsersContact.html" afterPath="$PROJECT_DIR$/specificpages/templates/specificpages/UsersContact.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+    <list default="true" id="83ce492f-81ab-4045-9bd2-7537fae0f724" name="Default" comment="big change:&#10;new app added :speceficpages&#10;css files and js and png files separated&#10;pages like contact-us advertising,... added to speceficpages">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/news/setting/dev.py" afterPath="$PROJECT_DIR$/news/setting/dev.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/news/settings.py" afterPath="$PROJECT_DIR$/news/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/news/urls.py" afterPath="$PROJECT_DIR$/news/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/news/wsgi.py" afterPath="$PROJECT_DIR$/news/wsgi.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/models.py" afterPath="$PROJECT_DIR$/posts/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/templates/posts/base.html" afterPath="$PROJECT_DIR$/posts/templates/posts/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/templates/posts/detail.html" afterPath="$PROJECT_DIR$/posts/templates/posts/detail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/templates/posts/homepage.html" afterPath="$PROJECT_DIR$/posts/templates/posts/homepage.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/urls.py" afterPath="$PROJECT_DIR$/posts/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/views.py" afterPath="$PROJECT_DIR$/posts/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/users/templates/users/edit_profile.html" afterPath="$PROJECT_DIR$/users/templates/users/edit_profile.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/users/templates/users/login.html" afterPath="$PROJECT_DIR$/users/templates/users/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/users/templates/users/profile.html" afterPath="$PROJECT_DIR$/users/templates/users/profile.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/users/templates/users/reg_form.html" afterPath="$PROJECT_DIR$/users/templates/users/reg_form.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/users/templates/users/reset_password_email.html" afterPath="$PROJECT_DIR$/users/templates/users/reset_password_email.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/users/views.py" afterPath="$PROJECT_DIR$/users/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -101,7 +40,7 @@
       <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/news/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
+            <state relative-caret-position="-780">
               <caret line="94" column="1" lean-forward="false" selection-start-line="94" selection-start-column="1" selection-end-line="94" selection-end-column="1" />
               <folding />
             </state>
@@ -671,27 +610,6 @@
       <option name="presentableId" value="Default" />
       <updated>1509594326097</updated>
     </task>
-    <task id="LOCAL-00005" summary="tinymce deleted">
-      <created>1511487413021</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1511487413021</updated>
-    </task>
-    <task id="LOCAL-00006" summary="posts/models cleaned from tinymce">
-      <created>1511487496538</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1511487496538</updated>
-    </task>
-    <task id="LOCAL-00007" summary="views cleaned from tinymce">
-      <created>1511487730807</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1511487730807</updated>
-    </task>
     <task id="LOCAL-00008" summary="news/url cleaned from tinymce">
       <created>1511487846350</created>
       <option name="number" value="00008" />
@@ -1014,7 +932,28 @@
       <option name="project" value="LOCAL" />
       <updated>1512015604310</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="big change:&#10;new app added :speceficpages&#10;css files and js and png files separated&#10;pages like contact-us advertising,... added to speceficpages">
+      <created>1512047346488</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1512047346489</updated>
+    </task>
+    <task id="LOCAL-00055" summary="big change:&#10;new app added :speceficpages&#10;css files and js and png files separated&#10;pages like contact-us advertising,... added to speceficpages">
+      <created>1512047517243</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1512047517243</updated>
+    </task>
+    <task id="LOCAL-00056" summary="specefic pages file added">
+      <created>1512047737600</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1512047737600</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1060,8 +999,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="wsgi-prod added and some html-css changes" />
-    <MESSAGE value="localhost added to settings" />
     <MESSAGE value="setting changed for test" />
     <MESSAGE value="port added" />
     <MESSAGE value="host changed" />
@@ -1085,7 +1022,9 @@
     <MESSAGE value="big change:&#10;reset-password created&#10;login page  updated&#10;SideNav positionfrom top changed in some pages&#10;shadow added to navbar" />
     <MESSAGE value="import django-rest-framework token deleted from posts/view" />
     <MESSAGE value="setting edited" />
-    <option name="LAST_COMMIT_MESSAGE" value="setting edited" />
+    <MESSAGE value="big change:&#10;new app added :speceficpages&#10;css files and js and png files separated&#10;pages like contact-us advertising,... added to speceficpages" />
+    <MESSAGE value="specefic pages file added" />
+    <option name="LAST_COMMIT_MESSAGE" value="specefic pages file added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1174,6 +1113,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="130">
           <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1200,6 +1140,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="156">
           <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1463,7 +1404,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/news/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
+        <state relative-caret-position="-780">
           <caret line="94" column="1" lean-forward="false" selection-start-line="94" selection-start-column="1" selection-end-line="94" selection-end-column="1" />
           <folding />
         </state>
