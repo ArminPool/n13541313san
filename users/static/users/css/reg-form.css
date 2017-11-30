@@ -1,0 +1,150 @@
+
+#main{
+
+background-image: url("wallstreet.jpg") ;
+background-size: 1366px 800px;
+background-attachment: fixed;
+margin-top:50px;
+
+}
+
+
+
+#left-side-toggle-open{
+
+display:none;
+
+}
+
+#reg-form-container{
+
+
+margin :60px auto;
+max-width:380px;
+
+}
+
+#reg-form-container p{
+
+font-size:25px;
+padding-bottom:20px;
+padding-top:20px;
+text-align:center;
+color:white;
+
+}
+
+.reg-form-header{
+
+background-color:#1D1E52;
+
+}
+.reg-form-header p{
+
+margin:0px;
+
+}
+
+
+
+.error-fields{
+
+text-align:center;
+
+}
+
+.error-fields ul{
+
+list-style-type: none;
+padding-right:0px;
+
+}
+
+
+.alert{
+
+border-radius:0px;
+
+}
+.registration .error-fields .alert-danger,.alert{
+margin-bottom:0px;
+padding-top:30px;
+padding-bottom:30px;
+color:#fff;
+background-color:#E66454;
+border:none;
+
+
+}
+
+
+.registration .form-group .form-control{
+
+max-width:300px;
+border-radius:4px;
+
+}
+
+.registration{
+
+background-color:#F4F4F4;
+max-width:330px;
+border:1px solid #1D1E52;
+
+}
+
+form.form-group{
+
+padding:10px;
+margin-top:0px;
+margin-bottom:0px;
+
+}
+
+
+.form-group{
+
+max-width:330px;
+padding-right:15px;
+padding-left:15px;
+margin:15px auto;
+
+}
+
+.form-control {
+
+border:1px solid rgb(204, 204, 204);
+border-radius:0px;
+padding-right:36px;
+
+}
+
+.form-group span{
+
+font-size:25px;
+display:block;
+position:absolute;
+width:34px;
+text-align:center;
+border-left:1px solid rgb(204, 204, 204);
+padding:4px; color:rgb(204, 204, 204);
+
+}
+
+.password-warning{
+
+padding:10px;
+
+}
+
+#reg-button {
+
+padding-left:36px;
+margin-bottom:10px;
+
+}
+
+
+footer{
+display:none;
+}

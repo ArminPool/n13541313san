@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 import pytz
+from django.contrib.auth.models import User
 from django.core.paginator import Paginator, PageNotAnInteger, EmptyPage
 from django.db.models import Q
 from django.shortcuts import render, redirect
@@ -11,7 +12,7 @@ from django.views.generic import ListView
 from posts.form import CommentForm, CalenderForm
 from posts.models import Post, Comment, Calender
 from users.forms import UsersContactForm, ContactForm
-from users.models import Inbox
+from users.models import Inbox, Author
 
 
 def homepage(request):
@@ -46,9 +47,11 @@ def tags(request, tag):
     return render(request, template_name, context)
 
 
-def author(request, author):
+def author(request, author_username):
+    author_user_obj = User.objects.get(username=author_username)
+    author = Author.objects.get(user=author_user_obj)
     posts_list = Post.objects.filter(author=author)
-
+    print("after posts_list")
     print(posts_list)
     paginator = Paginator(posts_list, 1)
     template_name = 'posts/category.html'
@@ -60,63 +63,10 @@ def author(request, author):
         posts = paginator.page(1)
     except EmptyPage:
         posts = paginator.page(paginator.num_pages)
-    context = {'posts': posts, 'tag': author}
+    context = {'posts': posts,}
+    print("before return")
     return render(request, template_name, context)
 
-
-def contact(request):
-    users_template_name = 'users/UsersContact.html'
-    guest_template_name = 'users/GuestContact.html'
-    title = "تماس با ما"
-    if request.method == 'POST':
-
-        if request.user.is_authenticated:
-
-            form = UsersContactForm(request.POST)
-            if form.is_valid():
-                # use print for debugging
-                usermassage = form.save(commit=False)
-                usermassage.author = request.user
-                form.save(commit=True)
-                return redirect('posts:home')
-            else:
-
-                form = UsersContactForm()
-                return render(request, users_template_name, {'title': title})
-        else:
-            form = ContactForm(request.POST)
-            if form.is_valid():
-                form.save()
-                return redirect('posts:home')
-            else:
-
-                form = ContactForm()
-                context = {'form': form, 'title': title}
-                return render(request, guest_template_name, context)
-
-    else:
-        if request.user.is_authenticated:
-
-            form = UsersContactForm()
-            context = {'form': form, 'title': title}
-            return render(request, users_template_name, context)
-        else:
-
-            form = ContactForm()
-            context = {'form': form, 'title': title}
-
-            return render(request, guest_template_name, context)
-
-
-def about_us(request):
-    template_name = 'posts/about-us.html'
-    return render(request, template_name)
-
-
-def advertising(request):
-    template_name = 'posts/advertising.html'
-
-    return render(request, template_name)
 
 
 def detail(request, header):
@@ -167,13 +117,6 @@ def search(request):
     return render(request, template_name, context)
 
 
-def set_timezone(request):
-    if request.method == 'POST':
-        request.session['django_timezone'] = request.POST['timezone']
-        return redirect('/')
-    else:
-        return render(request, 'posts/timezone.html', {'timezones': pytz.common_timezones})
-
 
 def articles(request, type):
     if type == 'analytical':
@@ -215,23 +158,3 @@ def news(request):
     return render(request, template_name, context)
 
 
-def calender(request):
-    title = "تقویم اقتصادی"
-    template_name = 'posts/calender.html'
-    return render(request, template_name, {'title': title})
-
-
-def economic_calender(request):
-    queryset_list = None
-    query = request.GET.get('q')
-    print(query)
-    if query:
-        queryset_list = Calender.objects.all().filter(
-            Q(date__icontains=query)
-
-        )
-
-    template_name = 'posts/economic_calender.html'
-
-    context = {'queryset': queryset_list, }
-    return render(request, template_name, context)

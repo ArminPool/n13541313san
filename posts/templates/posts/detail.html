@@ -5,7 +5,7 @@
 {% load staticfiles %}
 
 {% block style %}
-<link rel="stylesheet" type="text/css" href="{% static 'posts/detail.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'posts/css/detail.css' %}">
 {% endblock %}
 
 {% block title %}
@@ -16,47 +16,69 @@
 <div class="container" id="detail-container">
     <div class="jumbotron">
         <h2 style="text-align:center;">{{post.header }}</h2>
-        <img class="img-responsive" src="{{post.img.url}}" title="{{post.header }}" alt="{{post.header }}" style="margin:10px auto; max-width:600px; ">
+        <img class="img-responsive" src="{{post.img.url}}" title="{{post.header }}" alt="{{post.header }}"
+             style="margin:10px auto; max-width:600px; ">
         <div id="post-text" style="padding:10px;">
             {{post.text|safe}}
 
             <div class="tags">
 
-<span class="glyphicon glyphicon-tags" aria-hidden="true"></span>:
+                <span class="glyphicon glyphicon-tags" aria-hidden="true"></span>:
+            </div>
         </div>
-            </div>
         <footer id="post-footer">
-              <div id="content-tags" >
+            <div id="content-tags">
 
-            {% for tag in post.Tags %}
+                {% for tag in post.Tags %}
 
-                        <a href="{% url 'posts:tag' tag=tag %}" style="" >{{tag}}</a>
-            {% endfor %}
-
-
-    <a href="" style="" >{{post.Main_Tag}}</a>
+                <a href="{% url 'posts:tag' tag=tag %}" style="">{{tag}}</a>
+                {% endfor %}
 
 
-
-</div>
-            <hr>
-            <div id="author-bio">
-                <!--
-
-                bio !!!
+                <a href="" style="">{{post.Main_Tag}}</a>
 
 
-
-                -->
             </div>
-        </footer>
-        <div class="comment-counter text-center" >
+            <hr>
+            <div id="author-info">
+                <div class="container-fluid">
+                    <div class="post">
+                        <div class="row">
+                            <div class="col-md-11 col-sm-9 col-xs-9" id="author-info-left-side">
 
-             {% if post.comments.all.count %}
-        <p> {{post.comments.all.count}} نظر </p>
-        {% else %}
-        <p>تاکنون نظری ارسال نشده است.</p>
-        {% endif %}
+
+                                        <span id="author-username">
+                                            <a href="{% url 'posts:author-view' author_username=post.author %}" >{{ post.author }}</a>
+                                        </span>
+                                        <p id="author-bio">
+                                        {{post.author.bio}}
+                                    </p>
+
+
+                            </div>
+                            <div class="col-md-1 col-sm-3 col-xs-3" id="author-info-right-side">
+
+                                    <img class="img-responsive" id="author-img"
+                                         src="{{ post.author.user.userprofile.pro_img.url }}">
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </footer>
+        <hr>
+        <div class="comment-counter text-center">
+
+            {% if post.comments.all.count %}
+            <p> {{post.comments.all.count}} نظر </p>
+            {% else %}
+            <p>تاکنون نظری ارسال نشده است.</p>
+            {% endif %}
 
         </div>
 
@@ -77,8 +99,7 @@
                 <button type="submit" class="btn btn-default">ارسال نظر</button>
             </div>
         </form>
-         {% endif %}
-
+        {% endif %}
 
 
         {% for comments in post.comments.all %}
@@ -89,11 +110,12 @@
 
             {% if comments.user.userprofile.pro_img %}
             <img
-                    src="{{ comments.user.userprofile.pro_img.url}}"  alt="{{comments.user.username}}">
+                    src="{{ comments.user.userprofile.pro_img.url}}" alt="{{comments.user.username}}">
 
             {% else %}
             <img
-                    src="http://arminyahya.pythonanywhere.com/media/uploaded/default_img_prof.jpg" alt="{{comments.user.username}}">
+                    src="http://arminyahya.pythonanywhere.com/media/uploaded/default_img_prof.jpg"
+                    alt="{{comments.user.username}}">
             {% endif %}
 
             <h4>{{ comments.user }}</h4>
@@ -114,14 +136,15 @@
                 <textarea class="form-control" name="body" rows="4" maxlength="250" required="">
                 </textarea>
                     <input type="hidden" name="parent_id" value="{{comments.pk}}">
-                <button type="submit" class="btn btn-default btn-sm">فرستادن</button>
+                    <button type="submit" class="btn btn-default btn-sm">فرستادن</button>
                 </div>
 
             </form>
             {% endif %}
 
             {% if comments.children %}
-            <button class="show-replies btn btn-default btn-sm" >نمایش {{comments.children.count|persian_numeric}}پاسخ</button>
+            <button class="show-replies btn btn-default btn-sm">نمایش {{comments.children.count|persian_numeric}}پاسخ
+            </button>
             <div class="see-replies">
 
 
@@ -139,7 +162,8 @@
 
                         {% else %}
                         <img
-                                src="http://arminyahya.pythonanywhere.com/media/uploaded/default_img_prof.jpg" alt="{{children.user.username}}">
+                                src="http://arminyahya.pythonanywhere.com/media/uploaded/default_img_prof.jpg"
+                                alt="{{children.user.username}}">
                         {% endif %}
                         <h4> {{ children.user }}</h4>
                         <br/>
@@ -175,7 +199,8 @@
 
                             {% else %}
                             <img
-                                    src="http://arminyahya.pythonanywhere.com/media/uploaded/default_img_prof.jpg" alt="{{children.user.username}}">
+                                    src="http://arminyahya.pythonanywhere.com/media/uploaded/default_img_prof.jpg"
+                                    alt="{{children.user.username}}">
                             {% endif %}
                             <h4> {{ children.user }}</h4>
                             <br/>
@@ -206,7 +231,8 @@
 
                 {% else %}
                 <img
-                        src="http://arminyahya.pythonanywhere.com/media/uploaded/default_img_prof.jpg" alt="{{comments.user.username}}">
+                        src="http://arminyahya.pythonanywhere.com/media/uploaded/default_img_prof.jpg"
+                        alt="{{comments.user.username}}">
                 {% endif %}
 
                 <h4>{{ comments.user }}</h4>
@@ -233,5 +259,5 @@
 {% endblock %}
 
 {% block script %}
-<script src="{% static 'posts/detail.js' %}"></script>
+<script src="{% static 'posts/js/detail.js' %}"></script>
 {% endblock %}

@@ -36,6 +36,7 @@ INSTALLED_APPS = [
     'django_mysql',
     'posts',
     'users',
+    'specificpages',
     'jalali_date',
     'ckeditor',
 
@@ -78,7 +79,7 @@ WSGI_APPLICATION = 'news.wsgi.application'
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
 DEBUG = True
-ALLOWED_HOSTS = [u'navasangold.com']
+ALLOWED_HOSTS = [u'navasangold.com','127.0.0.1']
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
@@ -92,7 +93,6 @@ DATABASES = {
 
     }
 }
-
 # Password validation
 # https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators
 

@@ -1,0 +1,48 @@
+{% extends 'posts/base.html' %}
+
+
+{% load jalali_tags %}
+{% load custom_tags %}
+{% load staticfiles %}
+
+{% block style %}
+<link rel="stylesheet" href="{% static 'specificpages/css/calender.css' %}">
+<link  href="{% static 'specificpages/dist/datepicker.css' %}" rel="stylesheet">
+
+
+{% endblock %}
+ {% block title %}
+
+<title>{{title}}</title>
+    {% endblock %}
+{% block body %}
+<div class="container-fluid" id="calender-container">
+
+
+        <div class="form-group ">
+
+                 <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
+
+                <input id="input-picker" data-toggle="datepicker" type="text" class="form-control" >
+
+
+
+        </div>
+
+
+
+<div id="result" >
+
+
+    </div>
+
+</div>
+
+{% endblock %}
+
+{% block script %}
+
+<script src="{% static 'specificpages/js/dist/datepicker.js' %}"></script>
+<script src="{% static 'specificpages/js/calenderpage_jQ.js' %}"></script>
+<script src="{% static 'specificpages/js/calenderpage_java.js' %}"></script>
+{% endblock %}

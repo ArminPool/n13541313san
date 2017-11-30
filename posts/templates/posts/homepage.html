@@ -7,7 +7,7 @@
 
 {% block style %}
 
-<link rel="stylesheet" type="text/css" href="{% static 'posts/homepage.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'posts/css/homepage.css' %}">
 
 {% endblock %}
 
@@ -52,7 +52,7 @@
                                     <li>
 
 <span class="glyphicon glyphicon-user" aria-hidden="true"
-      style="font-size:15px;"></span> <a href="{% url 'posts:author' author=post.author %}" >{{ post.author }}</a>
+      style="font-size:15px;"></span> <a href="{% url 'posts:author-view' author_username=post.author %}" >{{ post.author }}</a>
                                     </li>
 
 

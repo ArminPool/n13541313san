@@ -1,0 +1,63 @@
+{% extends 'posts/base.html'%}
+{% load staticfiles %}
+
+
+{% block style %}
+<link rel="stylesheet" type="text/css" href="{% static 'specificpages/css/UsersContact.css' %}"/>
+{% endblock %}
+
+{% block title %}
+<title> &nbsp;&nbsp; تماس با ما </title>
+{% endblock %}
+{% block body %}
+<div class="jumbotron" id="contact-content">
+    <div class="container">
+
+    <h2 id="contact-header">تماس با ما </h2>
+    <p>-شما میتوانید از طریق فرم زیر پیامتان را بما بفرستید یا از طریق آیدی تلگرام ما باما در تماس باشید :</p>
+
+        <p>-آیدی تلگرام<a href="https://t.me/TAHLILGARAN_SUPPORT"> :TAHLILGARAN_SUPPORT@</a></p>
+
+        <form method="POST" class="">
+            {% csrf_token %}
+
+            <div class="form-group">
+
+                <label for="id_issue_options">دسته بندی</label>
+                <select class="form-control" id="id_issue_options" name="issue_options">
+                    <option value="co" selected="">
+                        همکاری
+                    </option>
+                    <option value="pb">
+                        مشکل در خرید
+                    </option>
+                    <option value="ag">
+                        درخواست بازی
+                    </option>
+                    <option value="o">
+                        موارد دیگر
+                    </option>
+
+                </select>
+
+            </div>
+
+            <div class="form-group">
+                <label for="id_message">پیام</label>
+                <textarea class="form-control" id="id_message" name="message" rows="4" maxlength="250" required="">
+    </textarea>
+                </div>
+             <div class="form-group">
+                <div class="text-center" style="padding-top:10px;" id="send-button" >
+                <button class="btn btn-primary btn-md"  type="submit" style="">
+                    ارسال
+                </button>
+                    </div>
+            </div>
+
+
+        </form>
+    </div>
+</div>
+
+{% endblock %}

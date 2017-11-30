@@ -1,0 +1,111 @@
+#main{
+
+background-color:#000;
+background-size: 1366px 800px;
+background-attachment: fixed;
+color:#fff;
+
+
+}
+
+
+
+#SideNav{
+
+
+height: 100%;
+
+position: fixed;
+margin-top:0px;
+top:56px;
+
+}
+
+
+#contact-content{
+padding-top:0px;
+padding-bottom:0px;
+background-color:rgba(16, 16, 18, 0.5);
+position:relative;
+padding-bottom:20px;
+
+}
+
+#contact-content .container-fluid{
+
+margin:0px;
+
+}
+#contact-header{
+
+text-align:right;
+margin:20px auto;
+padding-bottom:15px;
+border-bottom:2px solid #fff;
+
+}
+#contact-content .container-fluid p,a{
+
+font-size:16px;
+
+}
+
+
+#contact-content .container-fluid form{
+
+max-width:380px;
+
+
+}
+
+
+#contact-content .container-fluid form #contact-header{
+
+
+text-align:center;
+background-color:rgba(16, 16, 18, 0.8);
+height:50px;
+
+}
+#telegram-id{
+
+font-size:17px;
+
+}
+#contact-content .form-control{
+
+box-shadow:none;
+
+}
+textarea{
+
+vertical-align: top;
+
+}
+
+#contact-content .form-group{
+
+min-width:205px;
+max-width:305px;
+margin:auto auto;
+padding:5px;
+
+}
+
+#contact-content .form-control{
+
+width:100%;
+border-radius: 0px
+}
+
+#contact-content textarea.form-control  {
+
+resize:none;
+
+}
+
+
+
+footer{
+border-top:1px solid #fff;
+}

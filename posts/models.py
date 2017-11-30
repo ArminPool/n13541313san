@@ -6,7 +6,6 @@ from django import forms
 from django.core.urlresolvers import reverse
 from django_mysql.models import ListTextField
 
-
 # Create your models here.
 from users.models import Author
 
