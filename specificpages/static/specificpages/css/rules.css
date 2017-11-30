@@ -1,0 +1,32 @@
+footer{
+
+position:absolute;
+bottom:0px;
+
+}
+
+#rules-heading{
+
+font-size:25px;
+
+
+}
+
+#rules-container > ul > li{
+
+font-size:17px;
+padding-top:10px;
+}
+
+#rules-footer{
+
+padding-right:40px;
+
+
+}
+#rules-footer span{
+
+
+font-size:17px;
+
+}

@@ -1,10 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+{% extends 'posts/base.html'%}
+{% load staticfiles %}
+
+
+{% block style %}
+<link rel="stylesheet" type="text/css" href="{% static 'specificpages/css/rules.css' %}"/>
+{% endblock %}
+
+{% block title %}
+<title>قوانین سایت  </title>
+{% endblock %}
+{% block body %}
+<div class="container-fluid" id="rules-container">
+    <span id="rules-heading">
+    نکات و قوانین
+    </span>
+    <br>
+
+<ul>
+
+    <li> این وب سایت تابع قوانین جمهوری اسلامی ایران می باشد.</li>
+    <li>  کلیهٔ حقوق مادی و معنوی محتوای سایت متعلق به سکان نوسان گلد بوده که از طریق دامنهٔ navasangold.com در دسترس کاربران می‌باشد.</li>
+    <li> توهین به هر شخص ،  نژاد ، قوم و زبانی در این سایت ممنوع می باشد.</li>
+    <li>لطفا از بحث ها تفرقه انگیز بین اقوام ایرانی و طرح مطالبی که موجب ایجاد تنش بین اعضای سایت می گردد خودداری شود.</li>
+
+    <li>لطفا رمز عبور خود را در دسترس اشخاص دیگر قرار ندهید. </li>
+    <li>مطالبی که برای مطالعه نیاز به اشتراک ویژه دارند,فقط مخصوص کاربرایی هستند که اشتراک ویژه سایت navasangold را تهیه نمودند لذا درخواست میشود که در صورت داشتن اشتراک این مطالب را در دسترس دیگران قرار ندهید. </li>
+    <li>حفظ قوانین سایت توسط شما بما کمک میکند که مطالب بهتری را در اختیار شما قرار دهیم.  </li>
+
+</ul>
+    <div id="rules-footer">
+    <span>باتشکر</span>
+ <span> مدیر سایت سعید صفایی</span>
+    </div>
+    </div>
+
+{% endblock %}

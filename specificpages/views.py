@@ -56,6 +56,11 @@ def about_us(request):
     return render(request, template_name)
 
 
+def rules(request):
+    template_name = 'specificpages/rules.html'
+    return render(request, template_name)
+
+
 def advertising(request):
     template_name = 'specificpages/advertising.html'
 
@@ -87,5 +92,3 @@ def economic_calender(request):
 
     context = {'queryset': queryset_list, }
     return render(request, template_name, context)
-
-

@@ -1,12 +1,13 @@
 from django.conf.urls import url
 
-from specificpages.views import mql, contact, about_us, advertising, economic_calender, calender
+from specificpages.views import mql, contact, about_us, advertising, economic_calender, calender, rules
 
 app_name = 'specificpages'
 urlpatterns = [
     url(r'^mql5/$',mql,name="mql"),
     url(r'^contact/$', contact, name='Contact'),
     url(r'^about-us/$', about_us, name='about-us'),
+    url(r'^rules/$', rules, name='rules'),
     url(r'^advertising/$', advertising, name='advertising'),
     url(r'^EconomicCalendar/$', economic_calender, name='economic_calendar'),
 
