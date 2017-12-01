@@ -1,6 +1,7 @@
 from ..settings import *
+
 DEBUG = True
-ALLOWED_HOSTS = [u'navasangold.com','www.navasangold.com']
+ALLOWED_HOSTS = [u'navasangold.com', 'www.navasangold.com']
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
@@ -10,7 +11,7 @@ DATABASES = {
         'OPTIONS': {
             'charset': 'utf8mb4',
         },
-        'HOST':'localhost'
+        'HOST': 'localhost'
 
     }
 }

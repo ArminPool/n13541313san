@@ -83,14 +83,17 @@ ALLOWED_HOSTS = ['www.navasangold.com','127.0.0.1']
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'navasan',
-        'USER': 'root',
-        'PASSWORD': '123555888mysql',
+        'NAME': 'navasang_navasangold',
+        'USER': 'navasang_armin',
+        'PASSWORD': '123555888armin',
         'OPTIONS': {
             'charset': 'utf8mb4',
         },
+        'HOST': 'localhost'
+
     }
 }
+
 # Password validation
 # https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators
 
@@ -159,7 +162,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 CKEDITOR_UPLOAD_PATH = "uploaded/"
 STATIC_URL = '/static/'
-
+STATIC_ROOT='/home/navasang/public_html/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'news/media')
 MEDIA_URL = '/media/'
 
