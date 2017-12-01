@@ -83,14 +83,12 @@ ALLOWED_HOSTS = ['www.navasangold.com','127.0.0.1']
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'navasang_navasangold',
-        'USER': 'navasang_armin',
-        'PASSWORD': '123555888armin',
+        'NAME': 'navasan',
+        'USER': 'root',
+        'PASSWORD': '123555888mysql',
         'OPTIONS': {
             'charset': 'utf8mb4',
         },
-        'HOST':'localhost'
-
     }
 }
 # Password validation
