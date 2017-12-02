@@ -12,6 +12,6 @@ var date = d.getFullYear() + '-' +
       document.getElementById("result").innerHTML = this.responseText;
     }
   };
-  xhttp.open("GET", "http://arminoldboy.pythonanywhere.com/EconomicCalendar/?q="+ date, true);
+  xhttp.open("GET", "https://navasangold.com/speceficpages/EconomicCalendar/?q="+ date, true);
   xhttp.send();
   }
