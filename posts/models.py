@@ -33,8 +33,9 @@ class Post(models.Model):
 
     Tags = ListTextField(
         base_field=models.CharField(max_length=20),
-        size=3,  # Maximum of 100 ids in list
+        size=3,
     )
+    seen = models.IntegerField(default=0)
 
     class Meta:
         ordering = ['date_published']
