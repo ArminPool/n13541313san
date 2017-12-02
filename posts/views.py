@@ -35,7 +35,6 @@ def tags(request, tag):
 
     )
 
-    print(posts_list)
     paginator = Paginator(posts_list, 1)
     template_name = 'posts/category.html'
     page = request.GET.get('page', 1)
@@ -54,8 +53,7 @@ def author(request, author_username):
     author_user_obj = User.objects.get(username=author_username)
     author = Author.objects.get(user=author_user_obj)
     posts_list = Post.objects.filter(author=author)
-    print("after posts_list")
-    print(posts_list)
+
     paginator = Paginator(posts_list, 1)
     template_name = 'posts/category.html'
     page = request.GET.get('page', 1)
@@ -104,38 +102,45 @@ def detail(request, header):
         if request.user.is_authenticated:
             user_prof = request.user.userprofile
             tags_he_saw = user_prof.tags_he_saw
-            tags_he_saw.append(post.Main_Tag)
-            user_prof.save()
-
-            tags_he_saw = request.user.userprofile.tags_he_saw
-
-            if len(Counter(tags_he_saw)) >= 4:
+            if len(Counter(tags_he_saw)) == 4:
+                tag_should_remove = Counter(tags_he_saw).most_common(4)[3][0]
+                tags_he_saw.remove(tag_should_remove)
                 favourite_tag1 = Counter(tags_he_saw).most_common(4)[0][0]
                 favourite_tag2 = Counter(tags_he_saw).most_common(4)[1][0]
                 favourite_tag3 = Counter(tags_he_saw).most_common(4)[2][0]
                 favourite_tag4 = Counter(tags_he_saw).most_common(4)[3][0]
-
-                """
-                favourite_posts = Post.objects.all().filter(
-                   
-                    Q(Main_Tag=favourite_tag1) |
-                    Q(Main_Tag=favourite_tag2) |
-                    Q(Main_Tag=favourite_tag3) |
-                    Q(Main_Tag=favourite_tag4) 
-
-                ).order_by("-seen")[:3]
-                """
                 favourite_post1 = Post.objects.filter(Main_Tag=favourite_tag1).order_by("-seen")[0]
                 favourite_post2 = Post.objects.filter(Main_Tag=favourite_tag2).order_by("-seen")[0]
                 favourite_post3 = Post.objects.filter(Main_Tag=favourite_tag3).order_by("-seen")[0]
                 favourite_post4 = Post.objects.filter(Main_Tag=favourite_tag4).order_by("-seen")[0]
-                template_name = 'posts/detail.html'
+
                 context = {'form': form, 'post': post,
                            'favourite_post1': favourite_post1,
                            'favourite_post2': favourite_post2,
                            'favourite_post3': favourite_post3,
-                           'favourite_post4': favourite_post4,}
+                           'favourite_post4': favourite_post4, }
+                """
+                             favourite_posts = Post.objects.all().filter(
+
+                                 Q(Main_Tag=favourite_tag1) |
+                                 Q(Main_Tag=favourite_tag2) |
+                                 Q(Main_Tag=favourite_tag3) |
+                                 Q(Main_Tag=favourite_tag4) 
+
+                             ).order_by("-seen")[:3]
+                             """
+                template_name = 'posts/detail.html'
                 return render(request, template_name, context)
+            if Counter(tags_he_saw).get(post.Main_Tag, 0) == 5:
+                pass
+            else:
+
+                tags_he_saw.append(post.Main_Tag)
+                user_prof.save()
+                context = {'form': form, 'post': post}
+                template_name = 'posts/detail.html'
+                return render(request, template_name, context)
+
     template_name = 'posts/detail.html'
     context = {'form': form, 'post': post}
     return render(request, template_name, context)

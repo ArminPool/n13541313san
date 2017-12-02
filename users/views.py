@@ -53,7 +53,6 @@ def register(request):
 
         else:
 
-
             form1 = RegistrationForm(request.POST)
             form2 = ProfileEditForm(request.POST)
 
@@ -92,7 +91,7 @@ def login_user(request):
                     token = Token.create_and_get_token()
                     plaintext = 'شما برای عوض کردن پسورد خود درخواست داده اید!!!'
 
-                    context = {'token':token,'username':user.username}
+                    context = {'token': token, 'username': user.username}
                     subject, from_email, to = 'لینک تغییر پسورد', 'support@navasangold.com', email
                     text_content = plaintext
                     html_content = render_to_string('users/reset_password_email.html', context)
