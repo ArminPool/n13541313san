@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="83ce492f-81ab-4045-9bd2-7537fae0f724" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/specificpages/static/specificpages/js/calenderpage_java.js" afterPath="$PROJECT_DIR$/specificpages/static/specificpages/js/calenderpage_java.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/templates/posts/base.html" afterPath="$PROJECT_DIR$/posts/templates/posts/base.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -30,11 +30,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/posts/templates/posts/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="5" column="3" lean-forward="true" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
+            <state relative-caret-position="191">
+              <caret line="245" column="0" lean-forward="true" selection-start-line="245" selection-start-column="0" selection-end-line="245" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -70,7 +70,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="datepicker.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="datepicker.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/specificpages/static/specificpages/js/datepicker.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
@@ -142,7 +142,6 @@
         <option value="$PROJECT_DIR$/specificpages/urls.py" />
         <option value="$PROJECT_DIR$/specificpages/templates/specificpages/rules.html" />
         <option value="$PROJECT_DIR$/specificpages/static/specificpages/css/rules.css" />
-        <option value="$PROJECT_DIR$/posts/templates/posts/base.html" />
         <option value="$PROJECT_DIR$/specificpages/static/specificpages/css/advertising.css" />
         <option value="$PROJECT_DIR$/specificpages/templates/specificpages/advertising.html" />
         <option value="$PROJECT_DIR$/specificpages/templates/specificpages/calender.html" />
@@ -167,6 +166,7 @@
         <option value="$PROJECT_DIR$/posts/views.py" />
         <option value="$PROJECT_DIR$/posts/static/posts/js/base.js" />
         <option value="$PROJECT_DIR$/specificpages/static/specificpages/js/calenderpage_java.js" />
+        <option value="$PROJECT_DIR$/posts/templates/posts/base.html" />
       </list>
     </option>
   </component>
@@ -711,13 +711,6 @@
       <option name="presentableId" value="Default" />
       <updated>1509594326097</updated>
     </task>
-    <task id="LOCAL-00021" summary="port added">
-      <created>1511850206240</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1511850206240</updated>
-    </task>
     <task id="LOCAL-00022" summary="port added">
       <created>1511850316589</created>
       <option name="number" value="00022" />
@@ -1054,7 +1047,14 @@
       <option name="project" value="LOCAL" />
       <updated>1512222080474</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="http in calenderpage_java.js changed to https">
+      <created>1512222164806</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1512222164806</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1120,7 +1120,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="citie added to forms" />
     <MESSAGE value="city fields changed" />
     <MESSAGE value="reg-form city options changed" />
     <MESSAGE value="userprofile model changed" />
@@ -1145,7 +1144,8 @@
     <MESSAGE value="models field edited" />
     <MESSAGE value="http in base changed to https and user_favourite posts in view changed" />
     <MESSAGE value="http in calenderpage_java.js changed to https" />
-    <option name="LAST_COMMIT_MESSAGE" value="http in calenderpage_java.js changed to https" />
+    <MESSAGE value="head tag deleted from base for test" />
+    <option name="LAST_COMMIT_MESSAGE" value="head tag deleted from base for test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1421,14 +1421,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/posts/templates/posts/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="5" column="3" lean-forward="true" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/posts/static/posts/js/detail.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1006">
@@ -1473,6 +1465,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/posts/templates/posts/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="245" column="0" lean-forward="true" selection-start-line="245" selection-start-column="0" selection-end-line="245" selection-end-column="0" />
           <folding />
         </state>
       </provider>
