@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+from collections import Counter
 
 import pytz
 from django.contrib.auth.models import User
@@ -17,10 +18,12 @@ from users.models import Inbox, Author
 
 def homepage(request):
     posts_list = Post.objects.all()
+    most_seen = Post.objects.order_by("-seen")[:10]
+
     title = "نوسان صفحه اصلی"
     template_name = 'posts/homepage.html'
 
-    context = {'posts': posts_list, 'title': title}
+    context = {'posts': posts_list, 'most_seen': most_seen, 'title': title}
     return render(request, template_name, context)
 
 
@@ -63,10 +66,9 @@ def author(request, author_username):
         posts = paginator.page(1)
     except EmptyPage:
         posts = paginator.page(paginator.num_pages)
-    context = {'posts': posts,}
+    context = {'posts': posts, }
     print("before return")
     return render(request, template_name, context)
-
 
 
 def detail(request, header):
@@ -85,15 +87,55 @@ def detail(request, header):
             if parent_id:
                 comment.parent = Comment.objects.get(pk=parent_id)
                 body = str(request.POST.get("body"))
-                print(body)
                 massage = Inbox.objects.create(user=comment.parent.user, sender=request.user, body=body)
-                print(massage)
             comment.post = post
             comment.user = request.user
             comment.save()
             return redirect('posts:detail', header=post.header)
     else:
+        pre_seen = post.seen
+
+        new_seen = pre_seen + 1
+
+        post.seen = new_seen
+
+        post.save()
         form = CommentForm()
+        if request.user.is_authenticated:
+            user_prof = request.user.userprofile
+            tags_he_saw = user_prof.tags_he_saw
+            tags_he_saw.append(post.Main_Tag)
+            user_prof.save()
+
+            tags_he_saw = request.user.userprofile.tags_he_saw
+
+            if len(Counter(tags_he_saw)) >= 4:
+                favourite_tag1 = Counter(tags_he_saw).most_common(4)[0][0]
+                favourite_tag2 = Counter(tags_he_saw).most_common(4)[1][0]
+                favourite_tag3 = Counter(tags_he_saw).most_common(4)[2][0]
+                favourite_tag4 = Counter(tags_he_saw).most_common(4)[3][0]
+
+                """
+                favourite_posts = Post.objects.all().filter(
+                   
+                    Q(Main_Tag=favourite_tag1) |
+                    Q(Main_Tag=favourite_tag2) |
+                    Q(Main_Tag=favourite_tag3) |
+                    Q(Main_Tag=favourite_tag4) 
+
+                ).order_by("-seen")[:3]
+                """
+                favourite_post1 = Post.objects.filter(Main_Tag=favourite_tag1).order_by("-seen")[0]
+                favourite_post2 = Post.objects.filter(Main_Tag=favourite_tag2).order_by("-seen")[0]
+                favourite_post3 = Post.objects.filter(Main_Tag=favourite_tag3).order_by("-seen")[0]
+                favourite_post4 = Post.objects.filter(Main_Tag=favourite_tag4).order_by("-seen")[0]
+                template_name = 'posts/detail.html'
+                context = {'form': form, 'post': post,
+                           'favourite_post1': favourite_post1,
+                           'favourite_post2': favourite_post2,
+                           'favourite_post3': favourite_post3,
+                           'favourite_post4': favourite_post4,}
+                return render(request, template_name, context)
     template_name = 'posts/detail.html'
     context = {'form': form, 'post': post}
     return render(request, template_name, context)
@@ -115,7 +157,6 @@ def search(request):
         )
     context = {'posts': queryset_list, 'tag': query}
     return render(request, template_name, context)
-
 
 
 def articles(request, type):
@@ -156,5 +197,3 @@ def news(request):
         posts = paginator.page(paginator.num_pages)
     context = {'posts': posts, 'title': title}
     return render(request, template_name, context)
-
-

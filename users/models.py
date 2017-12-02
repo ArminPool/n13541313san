@@ -10,6 +10,7 @@ from django.contrib.auth.models import User
 
 from django.db import models
 from django.utils.timezone import localtime, now
+from django_mysql.models import ListTextField
 
 
 class Inbox(models.Model):
@@ -120,10 +121,12 @@ class UserProfile(models.Model):
                )
 
               )
-
+    tags_he_saw = ListTextField(
+        base_field=models.CharField(max_length=20),
+        size=80,
+        blank=True)
     city = models.CharField(choices=cities, max_length=25, default='tehran')
     pro_img = models.FileField(null=True, blank=True, upload_to='uploaded')
-    inbox = models.ManyToManyField(Inbox,blank=True)
     vip = models.BooleanField(default=False)
 
     def __str__(self):
@@ -156,6 +159,8 @@ class Author(models.Model):
 
     def __str__(self):
         return self.user.username
+
+
 """
 Note: Receiver of UsersMessage and GuestMessage is admin  cuz we don't need chat between users 
 
@@ -183,6 +188,7 @@ class UsersMessage(models.Model):
 # Here is Contact for Guest that i said before
 class GuestMessage(models.Model):
     Guest_first_name = models.CharField(max_length=10, null=True)
+
     Guest_last_name = models.CharField(max_length=10, null=True)
     Guest_email = models.EmailField(max_length=50, null=True)
     cooperate = 'co'

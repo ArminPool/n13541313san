@@ -21,7 +21,6 @@ class AdminModel(admin.ModelAdmin):
 
 
 admin.site.register(Post, AdminModel)
-
 admin.site.register(Comment)
 admin.site.register(Calender)
 

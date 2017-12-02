@@ -100,26 +100,23 @@
 
         <div class="jumbotron">
             <div class="container">
+                <div id="most-seen">
 
-                    <p>1 جدول سهام</p>
+                    {% for item in most_seen %}
 
 
+                    <div class="most-seen-post">
+                        <div class="img-of-most-seen-post">
+                        <img  src="{{item.img.url}}">
+                            </div>
+                        <div class="header-of-most-seen-post">
+                            <a  href="{% url 'posts:detail' header=item.header %}">{{item.header}}</a>
+                            </div>
+                    </div>
 
-                <div class="stock-table">
-                    <p>2 جدول سهام</p>
 
-                </div>
-                <div>
-                    <p> پربازدید ترین مقاله ها </p>
-                </div>
-                <div class="advertising">
-                    <p> بنر تبلیغاتی 1</p>
+                    {% endfor %}
 
-                </div>
-
-                <div class="advertising">
-
-                    <p> بنر تبلیغاتی 2</p>
 
                 </div>
 

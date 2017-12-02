@@ -52,7 +52,7 @@ def register(request):
             return redirect(reverse('posts:home'))
 
         else:
-            print("lvl1")
+
 
             form1 = RegistrationForm(request.POST)
             form2 = ProfileEditForm(request.POST)

@@ -429,23 +429,23 @@ border-left:1px solid rgb(204, 204, 204);
 padding:4px; color:rgb(204, 204, 204);
 }
 #register-label{
-    font-family:'Far.Adab',Tahoma, Sans-Serif;
+
+font-family:'Far.Adab',Tahoma, Sans-Serif;
 color:#fff;
 font-size:15px;
 text-align:center;
+
 }
+
 .create-account{
 margin:auto 0;
 
 }
-
                                /*       setting of Side Nav ended             */
-
 
 #main a{
     text-decoration:none;
 }
-
                             /*   setting delay when main want go left              */
 #main {
     transition: margin-right .5s;
@@ -453,35 +453,24 @@ margin:auto 0;
 
 }
 
-
 #main{
 margin-top:110px;
 margin-left:0px;
 
 }
-
-                            /*    Pagination setting         */
-
+                          /*    Pagination setting         */
 .pagination {
 
 padding:0px;
 
 }
 
-
-
 .stock-table{
 padding:20px;
 }
-
-
-
-
-
                             /*        footer setting started                */
 footer{
 position:absolute;
-bottom:0px;
 left:0px;
 right:0px;
 font-family:'Far.Adab',Tahoma, Sans-Serif;
