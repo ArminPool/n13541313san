@@ -10,7 +10,7 @@ $("#input-picker").on("change paste keyup", function() {
 
 
 
-        $.get("/EconomicCalendar/?q="+ date, function(data, status){
+        $.get("/specificpages/economicCalendar/?q="+ date, function(data, status){
             $("#result").html(data);
                         $(".date-header").css("display","none");
                          $(".date-column").css("display","none");

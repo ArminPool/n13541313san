@@ -1,6 +1,11 @@
-footer{
+ul{
 
-position:absolute;
-bottom:0px;
+list-style-type:none;
+
+}
+.heading{
+
+font-size:17px;
+
 
 }

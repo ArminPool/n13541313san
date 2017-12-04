@@ -9,7 +9,7 @@ urlpatterns = [
     url(r'^about-us/$', about_us, name='about-us'),
     url(r'^rules/$', rules, name='rules'),
     url(r'^advertising/$', advertising, name='advertising'),
-    url(r'^EconomicCalendar/$', economic_calender, name='economic_calendar'),
+    url(r'^economicCalendar/$', economic_calender, name='economic_calendar'),
 
     url(r'^calender/$', calender, name='calender'),
     # Allows to render our own login page

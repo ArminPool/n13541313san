@@ -101,10 +101,20 @@ def detail(request, header):
         form = CommentForm()
         if request.user.is_authenticated:
             user_prof = request.user.userprofile
+
             tags_he_saw = user_prof.tags_he_saw
-            if len(Counter(tags_he_saw)) == 4:
+            if Counter(tags_he_saw).get(post.Main_Tag, 0) < 5:
+                tags_he_saw.append(post.Main_Tag)
+                user_prof.save()
+
+            if len(Counter(tags_he_saw)) > 4:
+
                 tag_should_remove = Counter(tags_he_saw).most_common(4)[3][0]
                 tags_he_saw.remove(tag_should_remove)
+                user_prof.save()
+
+            elif len(Counter(tags_he_saw)) == 4:
+
                 favourite_tag1 = Counter(tags_he_saw).most_common(4)[0][0]
                 favourite_tag2 = Counter(tags_he_saw).most_common(4)[1][0]
                 favourite_tag3 = Counter(tags_he_saw).most_common(4)[2][0]
@@ -131,19 +141,9 @@ def detail(request, header):
                              """
                 template_name = 'posts/detail.html'
                 return render(request, template_name, context)
-            if Counter(tags_he_saw).get(post.Main_Tag, 0) == 5:
-                pass
-            else:
-
-                tags_he_saw.append(post.Main_Tag)
-                user_prof.save()
-                context = {'form': form, 'post': post}
-                template_name = 'posts/detail.html'
-                return render(request, template_name, context)
-
-    template_name = 'posts/detail.html'
-    context = {'form': form, 'post': post}
-    return render(request, template_name, context)
+        template_name = 'posts/detail.html'
+        context = {'form': form, 'post': post}
+        return render(request, template_name, context)
 
 
 def search(request):

@@ -3,13 +3,7 @@ $(document).ready(function() {
            /*        form validation            */
    $("#SideForm").validate({
 
-  rules: {
-    username: "required",
-    password1: {
-      required: true,
-      password: true
-    }
-  },
+
   messages: {
     username: "لطفا اسم خود را وارد کنید ",
     password1:"لطفا رمز عبور خود را وارد کنید ",
