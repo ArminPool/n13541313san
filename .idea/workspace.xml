@@ -5,46 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="83ce492f-81ab-4045-9bd2-7537fae0f724" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/posts/static/posts/fonts/eot/IRANSansWeb.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/posts/static/posts/fonts/eot/IRANSansWeb_Black.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/posts/static/posts/fonts/eot/IRANSansWeb_Bold.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/posts/static/posts/fonts/eot/IRANSansWeb_Light.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/posts/static/posts/fonts/eot/IRANSansWeb_Medium.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/posts/static/posts/fonts/eot/IRANSansWeb_UltraLight.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/posts/static/posts/fonts/ttf/IRANSansWeb.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/posts/static/posts/fonts/ttf/IRANSansWeb_Black.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/posts/static/posts/fonts/ttf/IRANSansWeb_Bold.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/posts/static/posts/fonts/ttf/IRANSansWeb_Light.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/posts/static/posts/fonts/ttf/IRANSansWeb_Medium.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/posts/static/posts/fonts/ttf/IRANSansWeb_UltraLight.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/posts/static/posts/fonts/woff/IRANSansWeb.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/posts/static/posts/fonts/woff/IRANSansWeb_Black.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/posts/static/posts/fonts/woff/IRANSansWeb_Bold.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/posts/static/posts/fonts/woff/IRANSansWeb_Light.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/posts/static/posts/fonts/woff/IRANSansWeb_Medium.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/posts/static/posts/fonts/woff/IRANSansWeb_UltraLight.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/posts/static/posts/fonts/woff2/IRANSansWeb.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/posts/static/posts/fonts/woff2/IRANSansWeb_Black.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/posts/static/posts/fonts/woff2/IRANSansWeb_Bold.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/posts/static/posts/fonts/woff2/IRANSansWeb_Light.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/posts/static/posts/fonts/woff2/IRANSansWeb_Medium.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/posts/static/posts/fonts/woff2/IRANSansWeb_UltraLight.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/specificpages/static/specificpages/css/pamm.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/specificpages/templates/specificpages/pamm.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/news/settings.py" afterPath="$PROJECT_DIR$/news/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/static/posts/css/base.css" afterPath="$PROJECT_DIR$/posts/static/posts/css/base.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/static/posts/js/base.js" afterPath="$PROJECT_DIR$/posts/static/posts/js/base.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/templates/posts/base.html" afterPath="$PROJECT_DIR$/posts/templates/posts/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/templates/posts/detail.html" afterPath="$PROJECT_DIR$/posts/templates/posts/detail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/views.py" afterPath="$PROJECT_DIR$/posts/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/specificpages/static/specificpages/css/mql.css" afterPath="$PROJECT_DIR$/specificpages/static/specificpages/css/mql.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/specificpages/static/specificpages/js/calenderpage_jQ.js" afterPath="$PROJECT_DIR$/specificpages/static/specificpages/js/calenderpage_jQ.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/specificpages/static/specificpages/js/calenderpage_java.js" afterPath="$PROJECT_DIR$/specificpages/static/specificpages/js/calenderpage_java.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/specificpages/templates/specificpages/mql.html" afterPath="$PROJECT_DIR$/specificpages/templates/specificpages/mql.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/specificpages/urls.py" afterPath="$PROJECT_DIR$/specificpages/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/users/static/users/css/login.css" afterPath="$PROJECT_DIR$/users/static/users/css/login.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/users/templates/users/login.html" afterPath="$PROJECT_DIR$/users/templates/users/login.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/specificpages/static/specificpages/css/rules.css" afterPath="$PROJECT_DIR$/specificpages/static/specificpages/css/rules.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/specificpages/templates/specificpages/rules.html" afterPath="$PROJECT_DIR$/specificpages/templates/specificpages/rules.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -76,7 +40,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/specificpages/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="894">
@@ -84,6 +48,26 @@
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="rules.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/specificpages/static/specificpages/css/rules.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="rules.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/specificpages/templates/specificpages/rules.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="312">
+              <caret line="21" column="55" lean-forward="false" selection-start-line="21" selection-start-column="55" selection-end-line="21" selection-end-column="55" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -131,8 +115,6 @@
         <option value="$PROJECT_DIR$/specificpages/statics/specificpages/css/GuestContact.css" />
         <option value="$PROJECT_DIR$/specificpages/statics/specificpages/css/UsersContact.css" />
         <option value="$PROJECT_DIR$/specificpages/views.py" />
-        <option value="$PROJECT_DIR$/specificpages/templates/specificpages/rules.html" />
-        <option value="$PROJECT_DIR$/specificpages/static/specificpages/css/rules.css" />
         <option value="$PROJECT_DIR$/specificpages/static/specificpages/css/advertising.css" />
         <option value="$PROJECT_DIR$/specificpages/templates/specificpages/advertising.html" />
         <option value="$PROJECT_DIR$/specificpages/templates/specificpages/calender.html" />
@@ -165,6 +147,8 @@
         <option value="$PROJECT_DIR$/users/static/users/css/login.css" />
         <option value="$PROJECT_DIR$/specificpages/templates/specificpages/mql.html" />
         <option value="$PROJECT_DIR$/specificpages/templates/specificpages/pamm.html" />
+        <option value="$PROJECT_DIR$/specificpages/static/specificpages/css/rules.css" />
+        <option value="$PROJECT_DIR$/specificpages/templates/specificpages/rules.html" />
       </list>
     </option>
   </component>
@@ -757,13 +741,6 @@
       <option name="presentableId" value="Default" />
       <updated>1509594326097</updated>
     </task>
-    <task id="LOCAL-00024" summary="city removed">
-      <created>1511852218728</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1511852218728</updated>
-    </task>
     <task id="LOCAL-00025" summary="HOST Changed">
       <created>1511852585647</created>
       <option name="number" value="00025" />
@@ -1100,7 +1077,14 @@
       <option name="project" value="LOCAL" />
       <updated>1512222506584</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="font added &#10;mql added&#10;pamm added&#10;login page edited">
+      <created>1512358913982</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1512358913983</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1166,8 +1150,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="reg-form city options changed" />
-    <MESSAGE value="userprofile model changed" />
     <MESSAGE value="userprofile form changed" />
     <MESSAGE value="wsgi and product setting changed" />
     <MESSAGE value="Debug true" />
@@ -1191,7 +1173,9 @@
     <MESSAGE value="http in calenderpage_java.js changed to https" />
     <MESSAGE value="head tag deleted from base for test" />
     <MESSAGE value="head tag added again" />
-    <option name="LAST_COMMIT_MESSAGE" value="head tag added again" />
+    <MESSAGE value="font added &#10;mql added&#10;pamm added&#10;login page edited" />
+    <MESSAGE value="rules edited" />
+    <option name="LAST_COMMIT_MESSAGE" value="rules edited" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1365,20 +1349,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/specificpages/static/specificpages/css/rules.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-56">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="12" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/specificpages/templates/specificpages/rules.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/specificpages/static/specificpages/css/GuestContact.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1412,6 +1382,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
           <caret line="198" column="52" lean-forward="false" selection-start-line="198" selection-start-column="30" selection-end-line="198" selection-end-column="52" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1419,6 +1390,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-312">
           <caret line="6" column="9" lean-forward="false" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1426,6 +1398,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="364">
           <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1440,6 +1413,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="166">
           <caret line="59" column="27" lean-forward="true" selection-start-line="59" selection-start-column="27" selection-end-line="59" selection-end-column="27" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1447,6 +1421,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
           <caret line="150" column="13" lean-forward="false" selection-start-line="150" selection-start-column="13" selection-end-line="150" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1454,6 +1429,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="182">
           <caret line="7" column="12" lean-forward="false" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1461,6 +1437,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1495,6 +1472,22 @@
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/specificpages/static/specificpages/css/rules.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/specificpages/templates/specificpages/rules.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="21" column="55" lean-forward="false" selection-start-line="21" selection-start-column="55" selection-end-line="21" selection-end-column="55" />
+          <folding />
         </state>
       </provider>
     </entry>
