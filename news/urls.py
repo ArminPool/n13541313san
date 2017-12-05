@@ -3,7 +3,9 @@ from django.contrib import admin
 from django.contrib.staticfiles.urls import static
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
-from posts.views import search
+from posts.views import search, economic_calender, calender
+from specificpages.views import specific_pages
+from users.views import contact
 from . import settings
 
 urlpatterns = [
@@ -13,8 +15,11 @@ urlpatterns = [
     url(r'', include('posts.urls')),
     url(r'^user/', include('users.urls')),
     url(r'^search/', search, name='search'),
-    url(r'^specificpages/', include('specificpages.urls')),
+    url(r'^specificpages/(?P<page>.+)/$',specific_pages,name="specific-pages"),
+    url(r'^economicCalendar/$', economic_calender, name='economic_calendar'),
+    url(r'^contact/$', contact, name='Contact'),
 
+    url(r'^calender/$', calender, name='calender'),
 ]
 urlpatterns += staticfiles_urlpatterns()
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

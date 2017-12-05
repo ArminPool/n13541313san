@@ -2,12 +2,15 @@
 from collections import Counter
 
 import pytz
+from dateutil.relativedelta import relativedelta
 from django.contrib.auth.models import User
 from django.core.paginator import Paginator, PageNotAnInteger, EmptyPage
 from django.db.models import Q
+from datetime import datetime
 from django.shortcuts import render, redirect
 from django.core.mail import send_mail
 # Create your views here.
+from django.utils.timezone import localtime, now
 from django.views.generic import ListView
 
 from posts.form import CommentForm, CalenderForm
@@ -17,6 +20,8 @@ from users.models import Inbox, Author
 
 
 def homepage(request):
+
+    #print(localtime(now()) + relativedelta(months=3) > localtime(now()))
     posts_list = Post.objects.all()
     most_seen = Post.objects.order_by("-seen")[:10]
 
@@ -201,4 +206,26 @@ def news(request):
     except EmptyPage:
         posts = paginator.page(paginator.num_pages)
     context = {'posts': posts, 'title': title}
+    return render(request, template_name, context)
+
+
+def calender(request):
+    title = "تقویم اقتصادی"
+    template_name = 'specificpages/calender.html'
+    return render(request, template_name, {'title': title})
+
+
+def economic_calender(request):
+    queryset_list = None
+    query = request.GET.get('q')
+    print(query)
+    if query:
+        queryset_list = Calender.objects.all().filter(
+            Q(date__icontains=query)
+
+        )
+
+    template_name = 'specificpages/economic_calender.html'
+
+    context = {'queryset': queryset_list, }
     return render(request, template_name, context)

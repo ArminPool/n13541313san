@@ -18,7 +18,7 @@ urlpatterns = [
     url(r'^profile/edit/$', views.edit_profile, name='edit_profile'),
     url(r'^change-password/$', views.change_password, name='change_password'),
 
-    url(r'^reset-password/confirm/(?P<token>.+)/$',
+    url(r'^reset-password/confirm/(?P<token>[^/]+)/(?P<user_id>[0-9]+)/$',
         views.reset_password_confirm, name='password_reset_confirm'),
 
 ]

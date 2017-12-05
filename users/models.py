@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 
+import datetime
 import random
 import string
 from threading import Timer
@@ -11,7 +12,7 @@ from django.contrib.auth.models import User
 from django.db import models
 from django.utils.timezone import localtime, now
 from django_mysql.models import ListTextField
-
+from dateutil.relativedelta import relativedelta
 
 class Inbox(models.Model):
     user = models.ForeignKey(User, null=True, related_name="message_owner")
@@ -127,7 +128,7 @@ class UserProfile(models.Model):
         blank=True)
     city = models.CharField(choices=cities, max_length=25, default='tehran')
     pro_img = models.FileField(null=True, blank=True, upload_to='uploaded')
-    vip = models.BooleanField(default=False)
+    vip_until = models.DateTimeField(default=localtime(now()))
 
     def __str__(self):
 
@@ -137,9 +138,9 @@ class UserProfile(models.Model):
 
     def have_vip(self):
 
-        if self.vip:
-            return True
-        return False
+        return self.vip_until > localtime(now())
+
+
 
     @classmethod
     def create_profile(cls, user, phone_number, city):

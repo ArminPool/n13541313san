@@ -83,15 +83,12 @@ ALLOWED_HOSTS = ['www.navasangold.com','127.0.0.1']
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'navasang_navasangold',
-        'USER': 'navasang_armin',
-        'PASSWORD': '123555888armin',
+        'NAME': 'navasan',
+        'USER': 'root',
+        'PASSWORD': '123555888mysql',
         'OPTIONS': {
             'charset': 'utf8mb4',
-            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
         },
-        'HOST': 'localhost'
-
     }
 }
 
@@ -164,8 +161,10 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 CKEDITOR_UPLOAD_PATH = "uploaded/"
 STATIC_URL = '/static/'
-STATIC_ROOT='/home/navasang/public_html/'
+STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR),"public_html", "static")
 MEDIA_ROOT = os.path.join(BASE_DIR, 'news/media')
+
+#STATIC_ROOT='/home/navasang/public_html/'
 MEDIA_URL = '/media/'
 
 REST_FRAMEWORK = {
