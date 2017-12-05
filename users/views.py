@@ -1,10 +1,12 @@
 # -*- coding: utf-8 -*-
 
 import pytz
+from dateutil.relativedelta import relativedelta
 from django.contrib.auth.models import User
 from django.core.exceptions import ObjectDoesNotExist
 from django.core.mail import send_mail, EmailMultiAlternatives
 from django.template.loader import get_template, render_to_string
+from django.utils.timezone import localtime, now
 
 from users.models import Token
 from django.http import HttpResponseRedirect, HttpResponseNotFound
@@ -23,7 +25,11 @@ from django.contrib.auth.decorators import login_required
 
 from users.models import UserProfile
 from posts.models import Post
+from flask import Flask, url_for, request
 
+from suds.client import Client
+
+app = Flask(__name__)
 """
 This is what really needs to be explained:
 I didn't want to customize django.contrib.auth.User and also i wanted to have phone_number in
@@ -79,7 +85,7 @@ def login_user(request):
             user = authenticate(username=username, password=password)
             if user is not None:
                 login(request, user)
-                return redirect(reverse('posts:home'))
+                return redirect(reverse('posts:tag', kwargs={'tag': 'برنامه نویسی'}))
             else:
 
                 return render(request, 'users/login.html', {'error': 'نام کاربری یا کلمه ی عبور اشتباه است.'})
@@ -239,3 +245,55 @@ def contact(request):
             context = {'form': form, 'title': title}
 
             return render(request, guest_template_name, context)
+
+
+def back_from_zarinpal(request, amount):
+    template_name = 'users/back-from-zarinpal.html'
+    context = {'amount': amount}
+    if amount == '':
+        vip_until = localtime(now()) + relativedelta(months=1) > localtime(now())
+        userprofile = request.user.userprofile
+        userprofile.vip_until = vip_until
+    elif amount == '':
+        vip_until = localtime(now()) + relativedelta(months=3) > localtime(now())
+        userprofile = request.user.userprofile
+        userprofile.vip_until = vip_until
+    elif amount == '':
+        vip_until = localtime(now()) + relativedelta(months=6) > localtime(now())
+        userprofile = request.user.userprofile
+        userprofile.vip_until = vip_until
+
+    return render(request, template_name, context)
+
+
+@app.route('/request/')
+def send_request(MMERCHANT_ID, ZARINPAL_WEBSERVICE, amount, description, email, mobile):
+    client = Client(ZARINPAL_WEBSERVICE)
+    result = client.service.PaymentRequest(MMERCHANT_ID,
+                                           amount,
+                                           description,
+                                           email,
+                                           mobile,
+                                           str(url_for('verify', _external=True)))
+    if result.Status == 100:
+        return redirect('https://www.zarinpal.com/pg/StartPay/' + result.Authority)
+    else:
+        return 'Error'
+
+
+@app.route('/verify/', methods=['GET', 'POST'])
+def verify(MMERCHANT_ID, ZARINPAL_WEBSERVICE, amount):
+    client = Client(ZARINPAL_WEBSERVICE)
+    if request.args.get('Status') == 'OK':
+        result = client.service.PaymentVerification(MMERCHANT_ID,
+                                                    request.args['Authority'],
+                                                    amount)
+        if result.Status == 100:
+            # return redirect('users:back-from-zarinpal')
+            return 'Transaction success. RefID: ' + str(result.RefID)
+        elif result.Status == 101:
+            return 'Transaction submitted : ' + str(result.Status)
+        else:
+            return 'Transaction failed. Status: ' + str(result.Status)
+    else:
+        return 'Transaction failed or canceled by user'

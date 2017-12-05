@@ -13,6 +13,8 @@ def specific_pages(request, page):
         template_name = 'specificpages/mql.html'
     elif page == "pamm":
         template_name = 'specificpages/pamm.html'
+    elif page == "tariffs":
+        template_name = 'specificpages/tariffs.html'
 
     else:
         return HttpResponseNotFound('<h1>Page not found</h1>')

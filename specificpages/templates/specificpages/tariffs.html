@@ -1,0 +1,45 @@
+{% extends 'posts/base.html'%}
+{% load staticfiles %}
+
+
+{% block style %}
+<link rel="stylesheet" type="text/css" href="{% static 'specificpages/css/tariffs.css' %}"/>
+{% endblock %}
+
+{% block title %}
+<title>مشاهده تعرفه ها</title>
+{% endblock %}
+{% block body %}
+<div class="container-fluid" id="tariffs-container">
+<div class="tariffs tariffs-1">
+    <img src="" class="tariffs-img" alt="tariffs-img-1">
+    <div class="description">
+    <span ></span>
+    <a class="btn btn-default btn-md link-to-bank" href="">
+خرید
+    </a>
+        </div>
+</div>
+    <div class="tariffs tariffs-2">
+    <img src="" class="tariffs-img" alt="tariffs-img-2">
+    <div class="description">
+    <span ></span>
+    <a class="btn btn-default btn-md link-to-bank" href="{% url 'user:send-to-bank'  %}">
+خرید
+    </a>
+        </div>
+</div>
+    <div class="tariffs tariffs-3">
+    <img src="" class="tariffs-img" alt="tariffs-img-3">
+    <div class="description">
+    <span></span>
+    <a class="btn btn-default btn-md link-to-bank" href="">
+خرید
+    </a>
+        </div>
+</div>
+    </div>
+
+
+
+{% endblock %}

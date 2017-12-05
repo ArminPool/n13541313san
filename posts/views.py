@@ -8,21 +8,27 @@ from django.db.models import Q
 from datetime import datetime
 from django.shortcuts import render, redirect
 from django.core.mail import send_mail
-# Create your views here.
 from django.utils.timezone import localtime, now
 from django.views.generic import ListView
+from flask import Flask
 
 from posts.form import CommentForm, CalenderForm
 from posts.models import Post, Comment, Calender
 from users.forms import UsersContactForm, ContactForm
 from users.models import Inbox, Author
 
+app = Flask(__name__)
+
+@app.route('/request')
+def hello_world():
+    return 'Hello, World!'
+
 
 def homepage(request):
-
-    #print(localtime(now()) + relativedelta(months=3) > localtime(now()))
+    # print(localtime(now()) + relativedelta(months=3) > localtime(now()))
     posts_list = Post.objects.all()
     most_seen = Post.objects.order_by("-seen")[:10]
+    app.run()
 
     title = "نوسان صفحه اصلی"
     template_name = 'posts/homepage.html'
@@ -32,25 +38,26 @@ def homepage(request):
 
 
 def tags(request, tag):
-    posts_list = Post.objects.all().filter(
-        Q(Main_Tag=tag) |
+    if request.method == "GET":
+        posts_list = Post.objects.all().filter(
+            Q(Main_Tag=tag) |
 
-        Q(Tags__icontains=tag)
+            Q(Tags__icontains=tag)
 
-    )
+        )
 
-    paginator = Paginator(posts_list, 1)
-    template_name = 'posts/category.html'
-    page = request.GET.get('page', 1)
+        paginator = Paginator(posts_list, 1)
+        template_name = 'posts/category.html'
+        page = request.GET.get('page', 1)
 
-    try:
-        posts = paginator.page(page)
-    except PageNotAnInteger:
-        posts = paginator.page(1)
-    except EmptyPage:
-        posts = paginator.page(paginator.num_pages)
-    context = {'posts': posts, 'tag': tag}
-    return render(request, template_name, context)
+        try:
+            posts = paginator.page(page)
+        except PageNotAnInteger:
+            posts = paginator.page(1)
+        except EmptyPage:
+            posts = paginator.page(paginator.num_pages)
+        context = {'posts': posts, 'tag': tag}
+        return render(request, template_name, context)
 
 
 def author(request, author_username):
