@@ -5,36 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="83ce492f-81ab-4045-9bd2-7537fae0f724" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/users/static/users/js/reset_password_confirm.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/news/Requirements" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/specificpages/urls.py" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/specificpages/static/specificpages/css/GuestContact.css" afterPath="$PROJECT_DIR$/users/static/users/css/GuestContact.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/specificpages/static/specificpages/css/UsersContact.css" afterPath="$PROJECT_DIR$/users/static/users/css/UsersContact.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/specificpages/static/specificpages/css/calender.css" afterPath="$PROJECT_DIR$/posts/static/posts/css/calender.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/specificpages/static/specificpages/css/datepicker.css" afterPath="$PROJECT_DIR$/posts/static/posts/css/datepicker.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/specificpages/static/specificpages/css/datepicker.min.css" afterPath="$PROJECT_DIR$/posts/static/posts/css/datepicker.min.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/specificpages/static/specificpages/img/contact-us.png" afterPath="$PROJECT_DIR$/users/static/users/img/contact-us.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/specificpages/static/specificpages/js/calenderpage_jQ.js" afterPath="$PROJECT_DIR$/posts/static/posts/js/calenderpage_jQ.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/specificpages/static/specificpages/js/calenderpage_java.js" afterPath="$PROJECT_DIR$/posts/static/posts/js/calenderpage_java.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/specificpages/static/specificpages/js/datepicker.common.js" afterPath="$PROJECT_DIR$/posts/static/posts/js/datepicker.common.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/specificpages/static/specificpages/js/datepicker.esm.js" afterPath="$PROJECT_DIR$/posts/static/posts/js/datepicker.esm.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/specificpages/static/specificpages/js/datepicker.js" afterPath="$PROJECT_DIR$/posts/static/posts/js/datepicker.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/specificpages/static/specificpages/js/datepicker.min.js" afterPath="$PROJECT_DIR$/posts/static/posts/js/datepicker.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/specificpages/templates/specificpages/GuestContact.html" afterPath="$PROJECT_DIR$/users/templates/users/GuestContact.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/specificpages/templates/specificpages/UsersContact.html" afterPath="$PROJECT_DIR$/users/templates/users/UsersContact.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/specificpages/templates/specificpages/calender.html" afterPath="$PROJECT_DIR$/posts/templates/posts/calender.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/specificpages/templates/specificpages/economic_calender.html" afterPath="$PROJECT_DIR$/posts/templates/posts/economic_calender.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/news/settings.py" afterPath="$PROJECT_DIR$/news/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/news/urls.py" afterPath="$PROJECT_DIR$/news/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/views.py" afterPath="$PROJECT_DIR$/posts/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/specificpages/static/specificpages/css/rules.css" afterPath="$PROJECT_DIR$/specificpages/static/specificpages/css/rules.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/specificpages/views.py" afterPath="$PROJECT_DIR$/specificpages/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/users/models.py" afterPath="$PROJECT_DIR$/users/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/users/templates/users/reset_password_confirm.html" afterPath="$PROJECT_DIR$/users/templates/users/reset_password_confirm.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/users/templates/users/reset_password_email.html" afterPath="$PROJECT_DIR$/users/templates/users/reset_password_email.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/users/urls.py" afterPath="$PROJECT_DIR$/users/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/users/views.py" afterPath="$PROJECT_DIR$/users/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -95,18 +68,28 @@
       <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/news/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="353">
-              <caret line="166" column="0" lean-forward="false" selection-start-line="166" selection-start-column="0" selection-end-line="166" selection-end-column="0" />
+            <state relative-caret-position="145">
+              <caret line="82" column="0" lean-forward="false" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="prod.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/news/setting/prod.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="78">
+              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="17" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/users/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="650">
-              <caret line="140" column="48" lean-forward="false" selection-start-line="140" selection-start-column="48" selection-end-line="140" selection-end-column="48" />
+            <state relative-caret-position="364">
+              <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding>
                 <element signature="e#24#63#0" expanded="true" />
               </folding>
@@ -114,7 +97,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="104">
@@ -188,9 +171,9 @@
         <option value="$PROJECT_DIR$/users/static/users/js/reset_password_confirm.js" />
         <option value="$PROJECT_DIR$/users/views.py" />
         <option value="$PROJECT_DIR$/users/templates/users/reset_password_email.html" />
-        <option value="$PROJECT_DIR$/users/models.py" />
         <option value="$PROJECT_DIR$/posts/views.py" />
         <option value="$PROJECT_DIR$/news/settings.py" />
+        <option value="$PROJECT_DIR$/users/models.py" />
       </list>
     </option>
   </component>
@@ -755,13 +738,6 @@
       <option name="presentableId" value="Default" />
       <updated>1509594326097</updated>
     </task>
-    <task id="LOCAL-00027" summary="HOST Changed">
-      <created>1511853888853</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1511853888853</updated>
-    </task>
     <task id="LOCAL-00028" summary="encoding added">
       <created>1511854023158</created>
       <option name="number" value="00028" />
@@ -1098,13 +1074,21 @@
       <option name="project" value="LOCAL" />
       <updated>1512460529093</updated>
     </task>
-    <option name="localTasksCounter" value="76" />
+    <task id="LOCAL-00076" summary="some file moved&#10;static root added">
+      <created>1512460590428</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1512460590430</updated>
+    </task>
+    <option name="localTasksCounter" value="77" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2489019" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2489019" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30393702" sideWeight="0.50512445" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2015748" sideWeight="0.49707174" order="10" side_tool="false" content_ui="tabs" />
@@ -1163,7 +1147,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="wsgi and product setting changed" />
     <MESSAGE value="Debug true" />
     <MESSAGE value="password for detabase changed" />
     <MESSAGE value="send email added" />
@@ -1188,7 +1171,8 @@
     <MESSAGE value="font added &#10;mql added&#10;pamm added&#10;login page edited" />
     <MESSAGE value="rules edited" />
     <MESSAGE value="some file moved&#10;static root added" />
-    <option name="LAST_COMMIT_MESSAGE" value="some file moved&#10;static root added" />
+    <MESSAGE value="database setting edited&#10;import corrected" />
+    <option name="LAST_COMMIT_MESSAGE" value="database setting edited&#10;import corrected" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1213,13 +1197,6 @@
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Temp/0001_initial.py" />
-    <entry file="file://$PROJECT_DIR$/news/setting/prod.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="3" column="17" lean-forward="true" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/posts/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="429">
@@ -1500,16 +1477,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa888.22392/zarinpal.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="12" />
-          <folding>
-            <element signature="e#228#279#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/news/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
@@ -1528,29 +1495,47 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/news/setting/prod.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="17" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa888.22392/zarinpal.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="12" />
+          <folding>
+            <element signature="e#228#279#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/news/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="166" column="0" lean-forward="false" selection-start-line="166" selection-start-column="0" selection-end-line="166" selection-end-column="0" />
+        <state relative-caret-position="145">
+          <caret line="82" column="0" lean-forward="false" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/users/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="650">
-          <caret line="140" column="48" lean-forward="false" selection-start-line="140" selection-start-column="48" selection-end-line="140" selection-end-column="48" />
+        <state relative-caret-position="364">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding>
             <element signature="e#24#63#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>

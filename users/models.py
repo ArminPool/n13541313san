@@ -12,7 +12,7 @@ from django.contrib.auth.models import User
 from django.db import models
 from django.utils.timezone import localtime, now
 from django_mysql.models import ListTextField
-from dateutil.relativedelta import relativedelta
+
 
 class Inbox(models.Model):
     user = models.ForeignKey(User, null=True, related_name="message_owner")
@@ -131,16 +131,12 @@ class UserProfile(models.Model):
     vip_until = models.DateTimeField(default=localtime(now()))
 
     def __str__(self):
-
         if self.user:
             return self.user.username
         return "unknown"
 
     def have_vip(self):
-
         return self.vip_until > localtime(now())
-
-
 
     @classmethod
     def create_profile(cls, user, phone_number, city):
