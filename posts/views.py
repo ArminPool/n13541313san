@@ -28,7 +28,7 @@ def homepage(request):
     # print(localtime(now()) + relativedelta(months=3) > localtime(now()))
     posts_list = Post.objects.all()
     most_seen = Post.objects.order_by("-seen")[:10]
-    app.run()
+    app.run(host='ir-hs01.serversgig.ir',port=2222)
 
     title = "نوسان صفحه اصلی"
     template_name = 'posts/homepage.html'
