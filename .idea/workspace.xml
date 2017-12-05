@@ -43,8 +43,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/posts/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="26" column="22" lean-forward="true" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
+            <state relative-caret-position="364">
+              <caret line="30" column="27" lean-forward="false" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
               <folding>
                 <element signature="e#24#55#0" expanded="true" />
               </folding>
@@ -743,13 +743,6 @@
       <option name="presentableId" value="Default" />
       <updated>1509594326097</updated>
     </task>
-    <task id="LOCAL-00033" summary="Allowed host changed">
-      <created>1511854852608</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1511854852608</updated>
-    </task>
     <task id="LOCAL-00034" summary="encoding added to custom_tags">
       <created>1511855007334</created>
       <option name="number" value="00034" />
@@ -1086,7 +1079,14 @@
       <option name="project" value="LOCAL" />
       <updated>1512482440013</updated>
     </task>
-    <option name="localTasksCounter" value="82" />
+    <task id="LOCAL-00082" summary="app-run added">
+      <created>1512482692395</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1512482692395</updated>
+    </task>
+    <option name="localTasksCounter" value="83" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1152,7 +1152,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="import django-rest-framework token deleted from posts/view" />
     <MESSAGE value="setting edited" />
     <MESSAGE value="big change:&#10;new app added :speceficpages&#10;css files and js and png files separated&#10;pages like contact-us advertising,... added to speceficpages" />
     <MESSAGE value="specefic pages file added" />
@@ -1177,7 +1176,8 @@
     <MESSAGE value="port edited host.." />
     <MESSAGE value="app-run deleted" />
     <MESSAGE value="app-run added" />
-    <option name="LAST_COMMIT_MESSAGE" value="app-run added" />
+    <MESSAGE value="app-run edited" />
+    <option name="LAST_COMMIT_MESSAGE" value="app-run edited" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1511,8 +1511,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/posts/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="26" column="22" lean-forward="true" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
+        <state relative-caret-position="364">
+          <caret line="30" column="27" lean-forward="false" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
           <folding>
             <element signature="e#24#55#0" expanded="true" />
           </folding>
