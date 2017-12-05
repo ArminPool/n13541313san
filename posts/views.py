@@ -2,7 +2,6 @@
 from collections import Counter
 
 import pytz
-from dateutil.relativedelta import relativedelta
 from django.contrib.auth.models import User
 from django.core.paginator import Paginator, PageNotAnInteger, EmptyPage
 from django.db.models import Q
