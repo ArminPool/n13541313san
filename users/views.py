@@ -202,8 +202,8 @@ def change_password(request):
 
 
 def contact(request):
-    users_template_name = 'specificpages/UsersContact.html'
-    guest_template_name = 'specificpages/GuestContact.html'
+    users_template_name = 'users/UsersContact.html'
+    guest_template_name = 'users/GuestContact.html'
     title = "تماس با ما"
     if request.method == 'POST':
 

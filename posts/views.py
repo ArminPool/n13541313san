@@ -17,20 +17,12 @@ from posts.models import Post, Comment, Calender
 from users.forms import UsersContactForm, ContactForm
 from users.models import Inbox, Author
 
-app = Flask(__name__)
-
-@app.route('/request')
-def hello_world():
-    return 'Hello, World!'
-
 
 def homepage(request):
     # print(localtime(now()) + relativedelta(months=3) > localtime(now()))
     posts_list = Post.objects.all()
     most_seen = Post.objects.order_by("-seen")[:10]
-    if __name__ == '__main__':
-        print(1)
-        app.run()
+
 
     title = "نوسان صفحه اصلی"
     template_name = 'posts/homepage.html'
@@ -102,7 +94,7 @@ def detail(request, header):
             comment.post = post
             comment.user = request.user
             comment.save()
-            return redirect('posts:detail', header=post.header)
+        return redirect('posts:detail', header=post.header)
     else:
         pre_seen = post.seen
 

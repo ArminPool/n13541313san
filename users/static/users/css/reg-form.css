@@ -1,7 +1,12 @@
+.navbar-fixed-top .navbar-collapse{
+
+margin-right:103px;
+}
+
 
 #main{
 
-background-image: url("wallstreet.jpg") ;
+background-image: url("../img/wallstreet.jpg") ;
 background-size: 1366px 800px;
 background-attachment: fixed;
 margin-top:50px;

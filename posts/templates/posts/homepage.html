@@ -53,18 +53,19 @@
 
 <span class="glyphicon glyphicon-user" aria-hidden="true"
       style="font-size:15px;"></span> <a href="{% url 'posts:author-view' author_username=post.author %}" >{{ post.author }}</a>
-                                    </li>
+                                 </li>
 
 
                                     <li style="padding:4px;">
 
-                                        <p ><span
+                                       <span
                                                 class="glyphicon glyphicon-calendar"
                                                 aria-hidden="true"></span>
                                             {{ post.date_published|to_jalali|persian_numeric }}</p>
 
                                     </li>
                                     <li>
+
                                         <span class="glyphicon glyphicon-tag" aria-hidden="true"
                                               ></span>
                                         <a href="{% url 'posts:tag' tag=post.Main_Tag %}"
@@ -119,6 +120,7 @@
 
 
                 </div>
+
 
 
             </div>

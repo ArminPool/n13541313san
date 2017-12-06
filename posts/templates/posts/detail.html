@@ -15,27 +15,26 @@
 {% block body %}
 <div class="container" id="detail-container">
     <div class="jumbotron">
-        <h2 style="text-align:center;">{{post.header }}</h2>
+        <h3 style="text-align:center;padding-bottom:20px;">{{post.header }}</h3>
         <img class="img-responsive" src="{{post.img.url}}" title="{{post.header }}" alt="{{post.header }}"
-             style="margin:10px auto; max-width:600px; ">
+             style="margin:10px auto; width:90%;max-width:500px; ">
         <div id="post-text" style="padding:10px;">
             {{post.text|safe}}
 
-            <div class="tags">
-
-                <span class="glyphicon glyphicon-tags" aria-hidden="true"></span>:
-            </div>
         </div>
         <footer id="post-footer">
+            <span style="font-size:17px;padding:10px;">برچسب ها :</span>
+            <br>
+            <br>
             <div id="content-tags">
 
                 {% for tag in post.Tags %}
 
-                <a href="{% url 'posts:tag' tag=tag %}" style="">{{tag}}</a>
+                <a href="{% url 'posts:tag' tag=tag %}" class="btn btn-sm btn-default" style="">{{tag}}</a>
                 {% endfor %}
 
 
-                <a href="" style="">{{post.Main_Tag}}</a>
+                <a href="" class="btn btn-sm btn-default">{{post.Main_Tag}}</a>
 
 
             </div>
@@ -74,7 +73,7 @@
                 <div class="container-fluid">
                     <div class="post">
                         <div class="row">
-                            <div class="col-md-11 col-sm-9 col-xs-9" id="author-info-left-side">
+                            <div class="col-md-10 col-sm-8 col-xs-8" id="author-info-left-side">
 
 
                                         <span id="author-username">
@@ -86,7 +85,7 @@
 
 
                             </div>
-                            <div class="col-md-1 col-sm-3 col-xs-3" id="author-info-right-side">
+                            <div class="col-md-2 col-sm-4 col-xs-4" id="author-info-right-side">
 
                                     <img class="img-responsive" id="author-img"
                                          src="{{ post.author.user.userprofile.pro_img.url }}">
