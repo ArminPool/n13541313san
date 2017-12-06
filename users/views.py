@@ -25,11 +25,9 @@ from django.contrib.auth.decorators import login_required
 
 from users.models import UserProfile
 from posts.models import Post
-from flask import Flask, url_for, request
 
 from suds.client import Client
 
-app = Flask(__name__)
 """
 This is what really needs to be explained:
 I didn't want to customize django.contrib.auth.User and also i wanted to have phone_number in
@@ -247,50 +245,105 @@ def contact(request):
             return render(request, guest_template_name, context)
 
 
-def back_from_zarinpal(request, amount):
-    template_name = 'users/back-from-zarinpal.html'
-    context = {'amount': amount}
-    if amount == '':
-        vip_until = localtime(now()) + relativedelta(months=1) > localtime(now())
-        userprofile = request.user.userprofile
+def back_from_zarinpal(user_prof, tariffs_number):
+
+    if tariffs_number == '1':
+        vip_until = localtime(now()) + relativedelta(months=1)
+        userprofile = user_prof
         userprofile.vip_until = vip_until
-    elif amount == '':
-        vip_until = localtime(now()) + relativedelta(months=3) > localtime(now())
-        userprofile = request.user.userprofile
+    elif tariffs_number == '2':
+        vip_until = localtime(now()) + relativedelta(months=3)
+        userprofile = user_prof
         userprofile.vip_until = vip_until
-    elif amount == '':
-        vip_until = localtime(now()) + relativedelta(months=6) > localtime(now())
-        userprofile = request.user.userprofile
+    elif tariffs_number == '3':
+        vip_until = localtime(now()) + relativedelta(months=6)
+        userprofile = user_prof
+        userprofile.vip_until = vip_until
+    elif tariffs_number == '4':
+        vip_until = localtime(now()) + relativedelta(months=12)
+        userprofile = user_prof
         userprofile.vip_until = vip_until
 
-    return render(request, template_name, context)
+
+MMERCHANT_ID = 'XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX'
+ZARINPAL_WEBSERVICE = 'https://www.zarinpal.com/pg/services/WebGate/wsdl'
 
 
-@app.route('/request/')
-def send_request(MMERCHANT_ID, ZARINPAL_WEBSERVICE, amount, description, email, mobile):
+def send_to_zarinpal(request, tariffs_number,):
+
+    email = request.user.email
+    mobile = request.userprofile.phone_number
+    description = ""
     client = Client(ZARINPAL_WEBSERVICE)
-    result = client.service.PaymentRequest(MMERCHANT_ID,
-                                           amount,
-                                           description,
-                                           email,
-                                           mobile,
-                                           str(url_for('verify', _external=True)))
+    result = client.service.PaymentRequest()
+    if tariffs_number == "1":
+        amount = "100000"
+        result = client.service.PaymentRequest(MMERCHANT_ID,
+                                               amount,
+                                               description,
+                                               email,
+                                               mobile,
+                                               '/verify/1')
+    elif tariffs_number == "2":
+        amount = "250000"
+        result = client.service.PaymentRequest(MMERCHANT_ID,
+                                               amount,
+                                               description,
+                                               email,
+                                               mobile,
+                                               '/verify/2')
+    elif tariffs_number == "3":
+
+        amount = "50000"
+        result = client.service.PaymentRequest(MMERCHANT_ID,
+                                               amount,
+                                               description,
+                                               email,
+                                               mobile,
+                                               '/verify/3')
+
+    elif tariffs_number == "4":
+
+        amount = "1000000"
+        result = client.service.PaymentRequest(MMERCHANT_ID,
+                                               amount,
+                                               description,
+                                               email,
+                                               mobile,
+                                               '/verify/4')
+
     if result.Status == 100:
         return redirect('https://www.zarinpal.com/pg/StartPay/' + result.Authority)
     else:
         return 'Error'
 
 
-@app.route('/verify/', methods=['GET', 'POST'])
-def verify(MMERCHANT_ID, ZARINPAL_WEBSERVICE, amount):
+def verify_after_zarinpal(request, tariffs_number):
+    amount = 0
+    if tariffs_number == "1":
+        amount = "100000"
+    elif tariffs_number == "2":
+
+        amount = "250000"
+    elif tariffs_number == "3":
+
+        amount = "500000"
+    elif tariffs_number == "4":
+        amount = "1000000"
+    user_prof = request.user.userprofile
     client = Client(ZARINPAL_WEBSERVICE)
+
     if request.args.get('Status') == 'OK':
+
+        template_name = 'users/verify_from_zarinpal'
         result = client.service.PaymentVerification(MMERCHANT_ID,
                                                     request.args['Authority'],
                                                     amount)
         if result.Status == 100:
-            # return redirect('users:back-from-zarinpal')
-            return 'Transaction success. RefID: ' + str(result.RefID)
+            back_from_zarinpal(user_prof,tariffs_number)
+            context = {'refID': result.RefID, 'tariffs_number': tariffs_number}
+            return render(request, template_name, context)
+
         elif result.Status == 101:
             return 'Transaction submitted : ' + str(result.Status)
         else:

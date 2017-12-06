@@ -29,6 +29,7 @@ def homepage(request):
     posts_list = Post.objects.all()
     most_seen = Post.objects.order_by("-seen")[:10]
     if __name__ == '__main__':
+        print(1)
         app.run()
 
     title = "نوسان صفحه اصلی"
