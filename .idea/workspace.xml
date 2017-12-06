@@ -5,55 +5,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="83ce492f-81ab-4045-9bd2-7537fae0f724" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/posts/static/posts/fonts/Material Icons/MaterialIcons-Regular.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/posts/static/posts/fonts/Material Icons/MaterialIcons-Regular.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/posts/static/posts/fonts/Material Icons/MaterialIcons-Regular.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/posts/static/posts/fonts/Material Icons/MaterialIcons-Regular.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/posts/static/posts/fonts/glyphicons/glyphicons-halflings-regular.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/posts/static/posts/fonts/glyphicons/glyphicons-halflings-regular.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/posts/static/posts/fonts/glyphicons/glyphicons-halflings-regular.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/posts/static/posts/css/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/posts/static/posts/css/font-awesome.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/posts/static/posts/js/bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/posts/static/posts/js/jquery.min.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/posts/static/posts/fonts/eot/IRANSansWeb.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/posts/static/posts/fonts/eot/IRANSansWeb_Black.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/posts/static/posts/fonts/eot/IRANSansWeb_Bold.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/posts/static/posts/fonts/eot/IRANSansWeb_Light.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/posts/static/posts/fonts/eot/IRANSansWeb_Medium.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/posts/static/posts/fonts/eot/IRANSansWeb_UltraLight.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/posts/static/posts/fonts/ttf/IRANSansWeb.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/posts/static/posts/fonts/ttf/IRANSansWeb_Black.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/posts/static/posts/fonts/ttf/IRANSansWeb_Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/posts/static/posts/fonts/ttf/IRANSansWeb_Light.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/posts/static/posts/fonts/ttf/IRANSansWeb_Medium.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/posts/static/posts/fonts/ttf/IRANSansWeb_UltraLight.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/posts/static/posts/fonts/woff/IRANSansWeb.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/posts/static/posts/fonts/woff/IRANSansWeb_Black.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/posts/static/posts/fonts/woff/IRANSansWeb_Bold.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/posts/static/posts/fonts/woff/IRANSansWeb_Light.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/posts/static/posts/fonts/woff/IRANSansWeb_Medium.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/posts/static/posts/fonts/woff/IRANSansWeb_UltraLight.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/posts/static/posts/fonts/woff2/IRANSansWeb.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/posts/static/posts/fonts/woff2/IRANSansWeb_Black.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/posts/static/posts/fonts/woff2/IRANSansWeb_Bold.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/posts/static/posts/fonts/woff2/IRANSansWeb_Light.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/posts/static/posts/fonts/woff2/IRANSansWeb_Medium.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/posts/static/posts/fonts/woff2/IRANSansWeb_UltraLight.woff2" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/posts/static/posts/fonts/font-awesome/FontAwesome.otf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/posts/static/posts/fonts/font-awesome/fontawesome-webfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/posts/static/posts/fonts/font-awesome/fontawesome-webfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/posts/static/posts/fonts/font-awesome/fontawesome-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/posts/static/posts/fonts/font-awesome/fontawesome-webfont.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/posts/static/posts/fonts/iransans/eot/IRANSansWeb.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/posts/static/posts/fonts/iransans/eot/IRANSansWeb_Black.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/posts/static/posts/fonts/iransans/eot/IRANSansWeb_Bold.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/posts/static/posts/fonts/iransans/eot/IRANSansWeb_Light.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/posts/static/posts/fonts/iransans/eot/IRANSansWeb_Medium.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/posts/static/posts/fonts/iransans/eot/IRANSansWeb_UltraLight.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/posts/static/posts/fonts/iransans/ttf/IRANSansWeb.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/posts/static/posts/fonts/iransans/ttf/IRANSansWeb_Black.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/posts/static/posts/fonts/iransans/ttf/IRANSansWeb_Bold.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/posts/static/posts/fonts/iransans/ttf/IRANSansWeb_Light.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/posts/static/posts/fonts/iransans/ttf/IRANSansWeb_Medium.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/posts/static/posts/fonts/iransans/ttf/IRANSansWeb_UltraLight.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/posts/static/posts/fonts/iransans/woff/IRANSansWeb.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/posts/static/posts/fonts/iransans/woff/IRANSansWeb_Black.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/posts/static/posts/fonts/iransans/woff/IRANSansWeb_Bold.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/posts/static/posts/fonts/iransans/woff/IRANSansWeb_Light.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/posts/static/posts/fonts/iransans/woff/IRANSansWeb_Medium.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/posts/static/posts/fonts/iransans/woff/IRANSansWeb_UltraLight.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/posts/static/posts/fonts/iransans/woff2/IRANSansWeb.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/posts/static/posts/fonts/iransans/woff2/IRANSansWeb_Black.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/posts/static/posts/fonts/iransans/woff2/IRANSansWeb_Bold.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/posts/static/posts/fonts/iransans/woff2/IRANSansWeb_Light.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/posts/static/posts/fonts/iransans/woff2/IRANSansWeb_Medium.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/posts/static/posts/fonts/iransans/woff2/IRANSansWeb_UltraLight.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/posts/static/posts/fonts/font-awesome/fontawesome-webfont.svg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/static/posts/css/base.css" afterPath="$PROJECT_DIR$/posts/static/posts/css/base.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/static/posts/css/datepicker.min.css" afterPath="$PROJECT_DIR$/posts/static/posts/css/datepicker.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/static/posts/css/detail.css" afterPath="$PROJECT_DIR$/posts/static/posts/css/detail.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/static/posts/css/homepage.css" afterPath="$PROJECT_DIR$/posts/static/posts/css/homepage.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/static/posts/js/datepicker.min.js" afterPath="$PROJECT_DIR$/posts/static/posts/js/datepicker.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/static/posts/js/jquery.validate.min.js" afterPath="$PROJECT_DIR$/posts/static/posts/js/jquery.validate.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/templates/posts/base.html" afterPath="$PROJECT_DIR$/posts/templates/posts/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/templates/posts/detail.html" afterPath="$PROJECT_DIR$/posts/templates/posts/detail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/templates/posts/homepage.html" afterPath="$PROJECT_DIR$/posts/templates/posts/homepage.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/views.py" afterPath="$PROJECT_DIR$/posts/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/users/static/users/css/reg-form.css" afterPath="$PROJECT_DIR$/users/static/users/css/reg-form.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/users/static/users/js/reg-form.js" afterPath="$PROJECT_DIR$/users/static/users/js/reg-form.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/users/views.py" afterPath="$PROJECT_DIR$/users/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -65,21 +47,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="reg-form.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/users/static/users/js/reg-form.js">
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/posts/templates/posts/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-156">
-              <caret line="15" column="35" lean-forward="true" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="base.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/posts/static/posts/js/base.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="132" column="33" lean-forward="false" selection-start-line="132" selection-start-column="22" selection-end-line="132" selection-end-column="33" />
+            <state relative-caret-position="338">
+              <caret line="121" column="48" lean-forward="true" selection-start-line="121" selection-start-column="48" selection-end-line="121" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -156,8 +128,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="6" />
-    <option name="y" value="3" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
     <option name="width" value="1382" />
     <option name="height" value="744" />
   </component>
@@ -552,6 +524,96 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="fonts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="iransans" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="news" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="news" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="posts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="posts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fonts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="glyphicons" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="news" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="news" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="posts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="posts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fonts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="font-awesome" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="news" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="news" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="posts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="posts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -791,13 +853,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1509594326097</updated>
-    </task>
-    <task id="LOCAL-00037" summary="citie added to forms">
-      <created>1511875395180</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1511875395180</updated>
     </task>
     <task id="LOCAL-00038" summary="city fields changed">
       <created>1511876214766</created>
@@ -1135,20 +1190,27 @@
       <option name="project" value="LOCAL" />
       <updated>1512551841484</updated>
     </task>
-    <option name="localTasksCounter" value="86" />
+    <task id="LOCAL-00086" summary="boostrap3&#10;jquery&#10;font-awesome&#10;material icons&#10;glyphicons &#10;downloaded and their src added to static files&#10;css and js files formatted">
+      <created>1512578325884</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1512578325885</updated>
+    </task>
+    <option name="localTasksCounter" value="87" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="6" y="3" width="1382" height="744" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18960468" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18960468" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30393702" sideWeight="0.50512445" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32913387" sideWeight="0.49707174" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2015748" sideWeight="0.49707174" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22204724" sideWeight="0.49487555" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22204724" sideWeight="0.49487555" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1200,7 +1262,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="specefic pages file added" />
     <MESSAGE value="workspace changed" />
     <MESSAGE value="statics corrected to static" />
     <MESSAGE value="advertising page and rules page added and allowed hosts edited" />
@@ -1225,7 +1286,8 @@
     <MESSAGE value="app-run edited" />
     <MESSAGE value="base scripts moved to bottom of page&#10;zarinpal urls and views added" />
     <MESSAGE value="boostrap3&#10;jquery&#10;font-awesome&#10;material icons&#10;glyphicons &#10;downloaded and their src added to static files&#10;css and js files formatted" />
-    <option name="LAST_COMMIT_MESSAGE" value="boostrap3&#10;jquery&#10;font-awesome&#10;material icons&#10;glyphicons &#10;downloaded and their src added to static files&#10;css and js files formatted" />
+    <MESSAGE value="some file wasn't added into git &#10;now they are" />
+    <option name="LAST_COMMIT_MESSAGE" value="some file wasn't added into git &#10;now they are" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1530,14 +1592,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/posts/templates/posts/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="35" column="20" lean-forward="false" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/users/static/users/css/reg-form.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2911">
@@ -1556,6 +1610,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/users/static/users/js/reg-form.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-156">
+          <caret line="15" column="35" lean-forward="true" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/posts/static/posts/js/base.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
@@ -1564,10 +1626,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/users/static/users/js/reg-form.js">
+    <entry file="file://$PROJECT_DIR$/posts/templates/posts/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-156">
-          <caret line="15" column="35" lean-forward="true" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
+        <state relative-caret-position="338">
+          <caret line="121" column="48" lean-forward="true" selection-start-line="121" selection-start-column="48" selection-end-line="121" selection-end-column="48" />
           <folding />
         </state>
       </provider>
