@@ -171,12 +171,14 @@ $(".open[role=presentation]").removeClass().addClass("dropdown").addClass("money
 
 
 }
+if($(".trading-accounts-dropdown.open").length > 0){
 
+$(".open[role=presentation]").removeClass().addClass("dropdown").addClass("trading-accounts-dropdown");
 
 }
 
 
-
+}
 
 
 var headerWidth = parseFloat($(".navbar-header").css("width")) ;
