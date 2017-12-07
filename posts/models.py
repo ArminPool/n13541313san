@@ -13,7 +13,7 @@ from users.models import Author
 class Post(models.Model):
     header = models.CharField(max_length=500)
 
-    img = models.FileField(null=True, blank=True, upload_to='uploaded')
+    img = models.ImageField(null=True, blank=True, upload_to='uploaded')
 
     description = RichTextField(config_name='awesome_ckeditor')
 

@@ -127,7 +127,7 @@ class UserProfile(models.Model):
         size=80,
         blank=True)
     city = models.CharField(choices=cities, max_length=25, default='tehran')
-    pro_img = models.FileField(null=True, blank=True, upload_to='uploaded')
+    pro_img = models.ImageField(null=True, blank=True, upload_to='uploaded')
     vip_until = models.DateTimeField(default=localtime(now()))
 
     def __str__(self):

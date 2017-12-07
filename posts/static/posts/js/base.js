@@ -47,8 +47,9 @@ if(ScreenWidth < 752){
 $(".navbar-default .navbar-nav > li > a").attr("data-toggle","dropdown");
 
 $(".navbar-collapse").css("margin-right","0px");
-$(".navbar-right").css("padding-right","0px");
 $(".navbar-collapse").css("border-top","2px solid #fff");
+
+$(".navbar-right").css("padding-right","0px");
 
 
 }
@@ -154,11 +155,22 @@ $(".navbar-collapse").css("border-top","2px solid #fff");
 
 }
 else{
-$(".navbar-collapse").css("margin-right","148.39px");
+$(".navbar-collapse").css("margin-right","253px");
 
 $(".navbar-default .navbar-nav > li > a").attr("data-toggle","");
 $("p.navbar-right").css("padding-right","15px");
 $(".navbar-collapse").css("border-top","none");
+if($(".article-dropdown.open").length > 0){
+
+$(".open[role=presentation]").removeClass().addClass("dropdown").addClass("article-dropdown");
+
+}
+if($(".money-dropdown.open").length > 0){
+
+$(".open[role=presentation]").removeClass().addClass("dropdown").addClass("money-dropdown");
+
+
+}
 
 
 }
