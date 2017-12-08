@@ -51,6 +51,13 @@ body {
  */
     font-family:IRANSans;
     background-color:#f4f4f4;
+
+}
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
 }
 span,p{
 font-family:IRANSans;
@@ -75,7 +82,7 @@ border:none;
 }
 .navbar-fixed-top{
 box-shadow: rgba(0, 0, 0, 0.30) 0px 4px 5px 0px, rgba(0, 0, 0, 0.18) 0px 1px 10px 0px, rgba(0, 0, 0, 0.2) 0px 2px 4px -1px;
-
+margin-bottom:0px;
 }
 
 .navbar-fixed-top .navbar-collapse{
@@ -314,12 +321,12 @@ width:250px;
 z-index: 1;
 width:0px;
 right: 0;
-background-color:#111;
+background-image: linear-gradient(rgb(55, 73, 98), rgb(6, 7, 10) 90%);
 overflow-x: hidden;
 
 overflow-y: auto;
 transition: 0.5s;
-top: 108px;
+top: 154px;
  /*    adding shadow to Side Nav                    */
 
 -webkit-box-shadow: 0 8px 6px -6px black;
@@ -370,9 +377,14 @@ background-color:transparent;
 #SideNav .jumbotron .img-responsive {
 
 border:.5px solid #808b9c;
+border-radius:100%;
 width:100px;
 height:100px;
 margin:10px auto;
+}
+#SideNav .jumbotron #username-place{
+
+padding-bottom:15px;
 }
 #SideNav .jumbotron p{
 

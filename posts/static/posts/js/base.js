@@ -106,26 +106,28 @@ if($(this).height() > 477){
 
 
 $('#SideNav').css('position','fixed');
-$('#SideNav').css('top','108px');
+$('#SideNav').css('top','134px');
 
 
 }
-
+/*
 else if ($(this).height() < 477 && $(this).width() < 586 ){
 $('#SideNav').css('position','relative');
-$('#SideNav').css('top','108px');
-
+$('#SideNav').css('top','134px');
+console.log("2");
 }
-
+*/
 else{
+console.log("3");
 
 $('#SideNav').css('position','relative');
-$('#SideNav').css('top','0px');
+$('#SideNav').css('top','134px');
 }
 
 ScreenHeight= $(this).height();
 }
 else if ($(this).height() == ScreenHeight && $(this).width() > 586 ){
+console.log("4");
 
 $('#SideNav').css('position','relative');
 $('#SideNav').css('top','0px');
@@ -253,7 +255,7 @@ $("footer").css("display","none");
 $("#main").css("display","none");
 $("#SideNav").css("width","100%");
 $("#SideNav").css("position","relative");
-$("#SideNav").css("top","108px");
+$("#SideNav").css("top","134px");
 
 
 $("#left-side-toggle-open").css("display","none");

@@ -35,11 +35,11 @@
             </button>
 
 
-              <a  href="{% url 'posts:home' %}" class="navbar-brand" >
-                  <div>
-                   <img  src="{% static 'posts/img/Logo grey transparent.png' %}"  >
-               </div>
-                </a>
+            <a href="{% url 'posts:home' %}" class="navbar-brand">
+                <div>
+                    <img src="{% static 'posts/img/Logo grey transparent.png' %}">
+                </div>
+            </a>
 
             <div class="navbar-header">
 
@@ -53,15 +53,16 @@
 
             </div>
 
-            <div class="collapse navbar-collapse" >
+            <div class="collapse navbar-collapse">
 
 
                 <p class="navbar-text navbar-right"><a href="/news/" class="navbar-link">اخبار</a>
                 </p>
-                <p class="navbar-text navbar-right" ><a href="{% url 'posts:articles' type='regular' %}" class="navbar-link">مقالات</a>
+                <p class="navbar-text navbar-right"><a href="{% url 'posts:articles' type='regular' %}"
+                                                       class="navbar-link">مقالات</a>
                 </p>
 
-                      <ul class="nav navbar-nav  navbar-right">
+                <ul class="nav navbar-nav  navbar-right">
 
                     <li role="presentation" class="dropdown education-dropdown">
 
@@ -72,18 +73,21 @@
                         <ul class="dropdown-menu menu1">
                             <li class="dropdown-header" style=""><span>آموزش های آنلاین</span></li>
 
-                            <li><a href="{% url 'posts:tag' tag='مبانی بازار بورس ارز جهانی' %} ">مبانی بازار بورس ارز جهانی</a></li>
+                            <li><a href="{% url 'posts:tag' tag='مبانی بازار بورس ارز جهانی' %} ">مبانی بازار بورس ارز
+                                جهانی</a></li>
                             <li class="divider"></li>
 
-                            <li><a href="{% url 'posts:tag' tag='مبانی خرید و فروش جفت ارزها' %} ">مبانی خرید و فروش جفت ارزها</a></li>
+                            <li><a href="{% url 'posts:tag' tag='مبانی خرید و فروش جفت ارزها' %} ">مبانی خرید و فروش جفت
+                                ارزها</a></li>
                             <li class="divider"></li>
 
-                            <li><a href="{% url 'posts:tag' tag='مدیریت سرمایه و ریسک و روانشناسی بازار' %} ">مدیریت سرمایه و ریسک و روانشناسی بازار</a></li>
+                            <li><a href="{% url 'posts:tag' tag='مدیریت سرمایه و ریسک و روانشناسی بازار' %} ">مدیریت
+                                سرمایه و ریسک و روانشناسی بازار</a></li>
                             <li class="divider"></li>
 
                             <li><a href="{% url 'posts:tag' tag='تحلیل تکنیکال' %} ">تحلیل تکنیکال</a></li>
-<li class="divider"></li>
-                                                        <li class="dropdown-header">آموزش های حضوری</li>
+                            <li class="divider"></li>
+                            <li class="dropdown-header">آموزش های حضوری</li>
                             <li><a href="{% url 'posts:tag' tag='تحلیل تکنیکال' %} ">آخرین جلسات موجود</a></li>
 
                         </ul>
@@ -120,14 +124,15 @@
                            aria-haspopup="true" aria-expanded="false">
                             چارت ها </a>
                         <ul class="dropdown-menu menu3">
-
-                            <li><a href="{% url 'posts:tag' tag='GBPUSD' %} ">GBPUSD</a></li>
-                            <li><a href="{% url 'posts:tag' tag='USDCAD' %} ">USDCAD </a></li>
-                            <li><a href="{% url 'posts:tag' tag='USDJPY' %} ">USDJPY</a></li>
-                            <li><a href="{% url 'posts:tag' tag='EURUSD' %} ">EURUSD</a></li>
-                            <li><a href="{% url 'posts:tag' tag='USDCHF' %} ">USDCHF</a></li>
-                            <li><a href="{% url 'posts:tag' tag='NZDUSD' %} ">NZDUSD</a></li>
-                            <li><a href="{% url 'posts:tag' tag='GOLD' %} ">GOLD</a></li>
+                            <li><a href="/chart/GOLD/">GOLD</a></li>
+                            <li><a href="/chart/EURUSD/">EURUSD</a></li>
+                            <li><a href="/chart/USDJPY/">USDJPY</a></li>
+                            <li><a href="/chart/GBPUSD/">GBPUSD</a></li>
+                            <li><a href="/chart/USDCAD/">USDCAD </a></li>
+                            <li><a href="/chart/USDCHF/">USDCHF</a></li>
+                            <li><a href="/chart/AUDUSD/">AUDUSD</a></li>
+                            <li><a href="/chart/NZDUSD/">NZDUSD</a></li>
+                            <li><a href="/chart/BTCUSD/">BTCUSD</a></li>
 
                         </ul>
                     </li>
@@ -144,8 +149,8 @@
                             حساب ها </a>
                         <ul class="dropdown-menu menu4">
 
-                            <li><a href="/specificpages/mql/">mql</a></li>
-                            <li><a href="/specificpages/pamm/">pamm </a></li>
+                            <li><a href="/mql/">MQL5</a></li>
+                            <li><a href="/pamm/">PAMM(FXTM) </a></li>
 
                         </ul>
                     </li>
@@ -232,7 +237,7 @@
                         <input class="form-control" id="password1" name="password1"
                                placeholder="رمز عبور"
 
-                               type="password"  required/>
+                               type="password" required/>
                     </div>
 
                     <button class="btn btn-primary" type="submit" id="submit-button" style="">ورود</button>
@@ -294,12 +299,13 @@
                         <div class="col-12">
 
                             <a href="https://t.me/signal_navasan"><img id="telegram-icon"
-                                                                    src="{% static 'posts/img/telegram.png' %}"
+                                                                       src="{% static 'posts/img/telegram.png' %}"
                             ></a>
                             <a href="https://instagram.com/"><img id="instagram-icon"
                                                                   src="{% static 'posts/img/instagram.png' %}"></a>
 
-                            <a href="https://twitter.com/"><img id="twitter-icon" src="{% static 'posts/img/twitter.png' %}"
+                            <a href="https://twitter.com/"><img id="twitter-icon"
+                                                                src="{% static 'posts/img/twitter.png' %}"
                             ></a>
 
 
@@ -322,7 +328,165 @@
 <script src="{% static 'posts/js/perfect-scrollbar.js' %}"></script>
 
 <script src="{% static 'posts/js/base.js' %}"></script>
+<!--
 
+<script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+<script type="text/javascript">
+new TradingView.widget({
+  "autosize": true,
+  "symbol": "FX:EURUSD",
+  "interval": "D",
+  "timezone": "Asia/Tehran",
+  "theme": "Light",
+  "style": "1",
+  "locale": "fa_IR",
+  "toolbar_bg": "#f1f3f6",
+  "enable_publishing": true,
+  "withdateranges": true,
+  "hide_side_toolbar": false,
+  "allow_symbol_change": true,
+  "hideideasbutton": true
+});
+
+</script>
+<script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+<script type="text/javascript">
+new TradingView.widget({
+  "autosize": true,
+  "symbol": "FX:USDJPY",
+  "interval": "D",
+  "timezone": "Asia/Tehran",
+  "theme": "Light",
+  "style": "1",
+  "locale": "fa_IR",
+  "toolbar_bg": "#f1f3f6",
+  "enable_publishing": true,
+  "withdateranges": true,
+  "hide_side_toolbar": false,
+  "allow_symbol_change": true,
+  "hideideasbutton": true
+});
+
+</script>
+
+<script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+<script type="text/javascript">
+new TradingView.widget({
+  "autosize": true,
+  "symbol": "FX:GBPUSD",
+  "interval": "D",
+  "timezone": "Asia/Tehran",
+  "theme": "Light",
+  "style": "1",
+  "locale": "fa_IR",
+  "toolbar_bg": "#f1f3f6",
+  "enable_publishing": true,
+  "withdateranges": true,
+  "hide_side_toolbar": false,
+  "allow_symbol_change": true,
+  "hideideasbutton": true
+});
+
+</script>
+
+<script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+<script type="text/javascript">
+new TradingView.widget({
+  "autosize": true,
+  "symbol": "USDCAD",
+  "interval": "D",
+  "timezone": "Asia/Tehran",
+  "theme": "Light",
+  "style": "1",
+  "locale": "fa_IR",
+  "toolbar_bg": "#f1f3f6",
+  "enable_publishing": true,
+  "withdateranges": true,
+  "hide_side_toolbar": false,
+  "allow_symbol_change": true,
+  "hideideasbutton": true
+});
+
+</script>
+
+<script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+<script type="text/javascript">
+new TradingView.widget({
+  "autosize": true,
+  "symbol": "FX:USDCHF",
+  "interval": "D",
+  "timezone": "Asia/Tehran",
+  "theme": "Light",
+  "style": "1",
+  "locale": "fa_IR",
+  "toolbar_bg": "#f1f3f6",
+  "enable_publishing": true,
+  "withdateranges": true,
+  "hide_side_toolbar": false,
+  "allow_symbol_change": true,
+  "hideideasbutton": true
+});
+
+</script>
+
+
+<script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+<script type="text/javascript">
+new TradingView.widget({
+  "autosize": true,
+  "symbol": "FX:AUDUSD",
+  "interval": "D",
+  "timezone": "Asia/Tehran",
+  "theme": "Light",
+  "style": "1",
+  "locale": "fa_IR",
+  "toolbar_bg": "#f1f3f6",
+  "enable_publishing": true,
+  "withdateranges": true,
+  "hide_side_toolbar": false,
+  "allow_symbol_change": true,
+  "hideideasbutton": true
+});
+</script>
+
+<script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+<script type="text/javascript">
+new TradingView.widget({
+  "autosize": true,
+  "symbol": "FX_IDC:NZDUSD",
+  "interval": "D",
+  "timezone": "Asia/Tehran",
+  "theme": "Light",
+  "style": "1",
+  "locale": "fa_IR",
+  "toolbar_bg": "#f1f3f6",
+  "enable_publishing": true,
+  "withdateranges": true,
+  "hide_side_toolbar": false,
+  "allow_symbol_change": true,
+  "hideideasbutton": true
+});
+</script>
+
+<script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+<script type="text/javascript">
+new TradingView.widget({
+  "autosize": true,
+  "symbol": "BITSTAMP:BTCUSD",
+  "interval": "D",
+  "timezone": "Asia/Tehran",
+  "theme": "Light",
+  "style": "1",
+  "locale": "fa_IR",
+  "toolbar_bg": "#f1f3f6",
+  "enable_publishing": true,
+  "withdateranges": true,
+  "hide_side_toolbar": false,
+  "allow_symbol_change": true,
+  "hideideasbutton": true
+});
+</script>
+-->
 
 {% block script %}
 {% endblock %}
