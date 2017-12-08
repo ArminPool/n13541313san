@@ -85,9 +85,10 @@ margin-right:253px;
 margin-left:0px;
 padding-left:0px;
 padding-right:0px;
-padding-top:15px;
+padding-top:0px;
 padding-bottom:15px;
 }
+
 
 #navbar1{
 
@@ -98,16 +99,24 @@ background-color:#23262F;
 
 
 .navbar-default .navbar-brand{
-
+display:inline;
 float:right;
-color:#fff;
 padding-left:15px;
 padding-right:15px;
-width:200px;
+height:auto;
+width:auto;
 
-height:80px;
 padding-top:20px;
 }
+.navbar-default .navbar-brand img{
+
+width:170px;
+
+height:45px;
+
+}
+
+
 
 
 
@@ -153,8 +162,8 @@ float:right;
 
 .navbar-default .navbar-nav > li > .dropdown-toggle{
 
-padding-right:0px;
-padding-left:0px;
+
+padding:20px 0px;
 }
 
 
@@ -184,6 +193,17 @@ padding-left:0px;
 
 }
 
+.dropdown-header{
+
+text-align:center;
+padding-bottom:10px;
+color:#fff;
+font-size:16px;
+}
+.navbar-nav .open .dropdown-menu .dropdown-header, .navbar-nav .open .dropdown-menu > li > a {
+    padding: 5px 15px 10px 25px;
+}
+
 .dropdown-menu{
 
 padding-right:35px;
@@ -204,7 +224,7 @@ text-align:right;
                             /*        pulling english texts right                 */
 .menu2{
 
-text-align:left;
+text-align:right;
 
 }
 .navbar-right{
@@ -591,7 +611,24 @@ width:31px;
 padding-top:10px;
 }
 
-                             /*     setting of footed ended           */
+.navbar-collapse::-webkit-scrollbar {
+    width: 16px;
+    background-color:#47484a;
+}
+
+/* Track */
+.navbar-collapse::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+/* Handle */
+.navbar-collapse::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background:#f0e9ee;
+}
+                           /*     setting of footed ended           */
+
 
 
 
@@ -602,6 +639,12 @@ padding-top:10px;
                                                                                                                /*                        */
 @media only screen and (min-width:768px){
 
+.navbar-fixed-top .navbar-collapse{
+
+
+padding-top:15px;
+
+}
 .navbar-default .navbar-nav > li > .dropdown-toggle{
 
 padding:20px;
@@ -618,6 +661,12 @@ padding-right:0px;
 display: block;
 margin-top: 0;
 right:0px;
+
+
+}
+.dropdown-header{
+
+color:#777;
 
 
 }

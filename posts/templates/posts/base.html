@@ -7,6 +7,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{% static 'posts/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'posts/css/perfect-scrollbar.css' %}">
 
     <link rel="stylesheet" type="text/css" href="{% static 'posts/css/base.css' %}">
 
@@ -32,8 +33,12 @@
                 <i class="material-icons" id="arrow-forward">arrow_forward</i>
 
             </button>
-              <a  href="{% url 'posts:home' %}">
-                   <img src="{% static 'posts/img/Logo grey transparent.png' %}" class="navbar-brand" >
+
+
+              <a  href="{% url 'posts:home' %}" class="navbar-brand" >
+                  <div>
+                   <img  src="{% static 'posts/img/Logo grey transparent.png' %}"  >
+               </div>
                 </a>
 
             <div class="navbar-header">
@@ -55,6 +60,37 @@
                 </p>
                 <p class="navbar-text navbar-right" ><a href="{% url 'posts:articles' type='regular' %}" class="navbar-link">مقالات</a>
                 </p>
+
+                      <ul class="nav navbar-nav  navbar-right">
+
+                    <li role="presentation" class="dropdown education-dropdown">
+
+                        <a class="dropdown-toggle" href="#"
+                           role="button"
+                           aria-haspopup="true" aria-expanded="false">
+                            آموزش </a>
+                        <ul class="dropdown-menu menu1">
+                            <li class="dropdown-header" style=""><span>آموزش های آنلاین</span></li>
+
+                            <li><a href="{% url 'posts:tag' tag='مبانی بازار بورس ارز جهانی' %} ">مبانی بازار بورس ارز جهانی</a></li>
+                            <li class="divider"></li>
+
+                            <li><a href="{% url 'posts:tag' tag='مبانی خرید و فروش جفت ارزها' %} ">مبانی خرید و فروش جفت ارزها</a></li>
+                            <li class="divider"></li>
+
+                            <li><a href="{% url 'posts:tag' tag='مدیریت سرمایه و ریسک و روانشناسی بازار' %} ">مدیریت سرمایه و ریسک و روانشناسی بازار</a></li>
+                            <li class="divider"></li>
+
+                            <li><a href="{% url 'posts:tag' tag='تحلیل تکنیکال' %} ">تحلیل تکنیکال</a></li>
+<li class="divider"></li>
+                                                        <li class="dropdown-header">آموزش های حضوری</li>
+                            <li><a href="{% url 'posts:tag' tag='تحلیل تکنیکال' %} ">آخرین جلسات موجود</a></li>
+
+                        </ul>
+                    </li>
+
+
+                </ul>
                 <ul class="nav navbar-nav  navbar-right">
 
                     <li role="presentation" class="dropdown article-dropdown">
@@ -63,7 +99,7 @@
                            role="button"
                            aria-haspopup="true" aria-expanded="false">
                             تحلیل ویژه </a>
-                        <ul class="dropdown-menu menu1">
+                        <ul class="dropdown-menu menu2">
                             <li><a href="{% url 'posts:articles' type='analytical' %} ">انس جهانی</a></li>
                             <li><a href="{% url 'posts:articles' type='analytical' %} ">جفت ارزها</a></li>
                             <li><a href="{% url 'posts:articles' type='analytical' %} ">دلار داخلی</a></li>
@@ -83,7 +119,7 @@
                            role="button"
                            aria-haspopup="true" aria-expanded="false">
                             چارت ها </a>
-                        <ul class="dropdown-menu menu2">
+                        <ul class="dropdown-menu menu3">
 
                             <li><a href="{% url 'posts:tag' tag='GBPUSD' %} ">GBPUSD</a></li>
                             <li><a href="{% url 'posts:tag' tag='USDCAD' %} ">USDCAD </a></li>
@@ -106,7 +142,7 @@
                            role="button"
                            aria-haspopup="true" aria-expanded="false">
                             حساب ها </a>
-                        <ul class="dropdown-menu menu3">
+                        <ul class="dropdown-menu menu4">
 
                             <li><a href="/specificpages/mql/">mql</a></li>
                             <li><a href="/specificpages/pamm/">pamm </a></li>
@@ -283,8 +319,10 @@
 <script src="{% static 'posts/js/bootstrap.min.js' %}"></script>
 
 <script src="{% static 'posts/js/jquery.validate.js' %}"></script>
+<script src="{% static 'posts/js/perfect-scrollbar.js' %}"></script>
 
 <script src="{% static 'posts/js/base.js' %}"></script>
+
 
 {% block script %}
 {% endblock %}

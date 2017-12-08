@@ -18,6 +18,7 @@ $(document).ready(function() {
 
 
 
+// or just with selector string
 
     $(function(){
         $('input').blur();
@@ -160,6 +161,12 @@ $(".navbar-collapse").css("margin-right","253px");
 $(".navbar-default .navbar-nav > li > a").attr("data-toggle","");
 $("p.navbar-right").css("padding-right","15px");
 $(".navbar-collapse").css("border-top","none");
+
+if($(".education-dropdown.open").length > 0){
+
+$(".open[role=presentation]").removeClass().addClass("dropdown").addClass("education-dropdown");
+
+}
 if($(".article-dropdown.open").length > 0){
 
 $(".open[role=presentation]").removeClass().addClass("dropdown").addClass("article-dropdown");
