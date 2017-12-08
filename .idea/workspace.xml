@@ -5,21 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="83ce492f-81ab-4045-9bd2-7537fae0f724" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/specificpages/static/specificpages/css/charts.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/specificpages/templates/specificpages/AUDUSD.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/specificpages/templates/specificpages/BTCUSD.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/specificpages/templates/specificpages/GBPUSD.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/specificpages/templates/specificpages/NZDUSD.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/specificpages/templates/specificpages/USDCHF.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/specificpages/templates/specificpages/eurusd.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/specificpages/templates/specificpages/gold.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/specificpages/templates/specificpages/usdjpy.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/specificpages/templates/specificpages/USDCAD.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/news/urls.py" afterPath="$PROJECT_DIR$/news/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/static/posts/css/base.css" afterPath="$PROJECT_DIR$/posts/static/posts/css/base.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/static/posts/js/base.js" afterPath="$PROJECT_DIR$/posts/static/posts/js/base.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/templates/posts/base.html" afterPath="$PROJECT_DIR$/posts/templates/posts/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/urls.py" afterPath="$PROJECT_DIR$/posts/urls.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -31,16 +18,6 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AUDUSD.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/specificpages/templates/specificpages/AUDUSD.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="9" column="22" lean-forward="false" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="BTCUSD.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/specificpages/templates/specificpages/BTCUSD.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -56,6 +33,26 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="78">
               <caret line="9" column="22" lean-forward="false" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/news/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="82" column="0" lean-forward="false" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="prod.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/news/setting/prod.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="78">
+              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -111,7 +108,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="USDJPY.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="USDJPY.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/specificpages/templates/specificpages/USDJPY.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="156">
@@ -137,7 +134,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/news/settings.py" />
         <option value="$PROJECT_DIR$/specificpages/static/specificpages/css/tariffs.css" />
         <option value="$PROJECT_DIR$/specificpages/templates/specificpages/tariffs.html" />
         <option value="$PROJECT_DIR$/news/zarinpal-requirements.txt" />
@@ -188,6 +184,7 @@
         <option value="$PROJECT_DIR$/specificpages/templates/specificpages/USDCAD.html" />
         <option value="$PROJECT_DIR$/specificpages/templates/specificpages/USDCHF.html" />
         <option value="$PROJECT_DIR$/specificpages/templates/specificpages/USDJPY.html" />
+        <option value="$PROJECT_DIR$/news/settings.py" />
       </list>
     </option>
   </component>
@@ -766,20 +763,6 @@
       <option name="presentableId" value="Default" />
       <updated>1509594326097</updated>
     </task>
-    <task id="LOCAL-00044" summary="Debug true">
-      <created>1511878356012</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1511878356012</updated>
-    </task>
-    <task id="LOCAL-00045" summary="password for detabase changed">
-      <created>1511878506915</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1511878506915</updated>
-    </task>
     <task id="LOCAL-00046" summary="password for detabase changed">
       <created>1511878554822</created>
       <option name="number" value="00046" />
@@ -1109,21 +1092,34 @@
       <option name="project" value="LOCAL" />
       <updated>1512719218164</updated>
     </task>
-    <option name="localTasksCounter" value="93" />
+    <task id="LOCAL-00093" summary="charts added">
+      <created>1512737077339</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1512737077341</updated>
+    </task>
+    <task id="LOCAL-00094" summary="setting changed">
+      <created>1512737541832</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1512737541832</updated>
+    </task>
+    <option name="localTasksCounter" value="95" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32576868" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32576868" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35748032" sideWeight="0.45348838" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32913387" sideWeight="0.49707174" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2015748" sideWeight="0.49707174" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4976378" sideWeight="0.49707174" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35748032" sideWeight="0.54651165" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35748032" sideWeight="0.54651165" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1151,11 +1147,36 @@
       </list>
     </option>
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="go for collectstatic" />
     <MESSAGE value="most visited posts and recomended posts added &#10;stict mode added to db" />
     <MESSAGE value="models field edited" />
     <MESSAGE value="http in base changed to https and user_favourite posts in view changed" />
@@ -1180,7 +1201,8 @@
     <MESSAGE value="mql5 image added" />
     <MESSAGE value="scroll bar edited" />
     <MESSAGE value="charts added" />
-    <option name="LAST_COMMIT_MESSAGE" value="charts added" />
+    <MESSAGE value="setting changed" />
+    <option name="LAST_COMMIT_MESSAGE" value="setting changed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1189,13 +1211,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/posts/static/posts/js/jquery.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1066">
-          <caret line="3239" column="3" lean-forward="false" selection-start-line="3239" selection-start-column="3" selection-end-line="3239" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/posts/static/posts/js/jquery.validate.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1170">
@@ -1355,14 +1370,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/news/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3536">
-          <caret line="136" column="19" lean-forward="false" selection-start-line="136" selection-start-column="19" selection-end-line="136" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1548,6 +1555,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="156">
           <caret line="6" column="14" lean-forward="true" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/news/setting/prod.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/news/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="82" column="0" lean-forward="false" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
           <folding />
         </state>
       </provider>
