@@ -51,13 +51,7 @@ body {
  */
     font-family:IRANSans;
     background-color:#f4f4f4;
-
-}
-html {
-  height: 100%;
-}
-body {
-  min-height: 100%;
+    height:100%;
 }
 span,p{
 font-family:IRANSans;
@@ -545,7 +539,6 @@ margin:auto 0;
 }
 
 #main{
-margin-top:154px;
 margin-left:0px;
 
 }
@@ -645,7 +638,6 @@ padding-top:10px;
 
 
                   /*     changing color of dropdown-menu when screen is big enough        */
-
 
 
                                                                                                                /*                        */

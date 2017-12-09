@@ -17,6 +17,10 @@ $(document).ready(function() {
 });
 
 
+$('body').css('padding-top',$('.navbar-fixed-top').css("height"));
+
+
+
 
 // or just with selector string
 
@@ -99,6 +103,7 @@ $("#left-side-toggle-close").click(closeNav);
 
 $(window).on('resize', function(){
 
+$('body').css('padding-top',"" + $('.navbar-fixed-top').css("height"));
 
 if($(this).height() != ScreenHeight){
 
@@ -121,7 +126,7 @@ else{
 console.log("3");
 
 $('#SideNav').css('position','relative');
-$('#SideNav').css('top','134px');
+$('#SideNav').css('top','0px');
 }
 
 ScreenHeight= $(this).height();
@@ -255,7 +260,7 @@ $("footer").css("display","none");
 $("#main").css("display","none");
 $("#SideNav").css("width","100%");
 $("#SideNav").css("position","relative");
-$("#SideNav").css("top","134px");
+$("#SideNav").css("top","0px");
 
 
 $("#left-side-toggle-open").css("display","none");

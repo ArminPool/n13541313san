@@ -7,7 +7,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{% static 'posts/css/bootstrap.min.css' %}">
-    <link rel="stylesheet" type="text/css" href="{% static 'posts/css/perfect-scrollbar.css' %}">
 
     <link rel="stylesheet" type="text/css" href="{% static 'posts/css/base.css' %}">
 
@@ -149,7 +148,7 @@
                             حساب ها </a>
                         <ul class="dropdown-menu menu4">
 
-                            <li><a href="/mql/">MQL5</a></li>
+                            <li><a href="/mql5/">MQL5</a></li>
                             <li><a href="/pamm/">PAMM(FXTM) </a></li>
 
                         </ul>
@@ -325,168 +324,9 @@
 <script src="{% static 'posts/js/bootstrap.min.js' %}"></script>
 
 <script src="{% static 'posts/js/jquery.validate.js' %}"></script>
-<script src="{% static 'posts/js/perfect-scrollbar.js' %}"></script>
 
 <script src="{% static 'posts/js/base.js' %}"></script>
-<!--
 
-<script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
-<script type="text/javascript">
-new TradingView.widget({
-  "autosize": true,
-  "symbol": "FX:EURUSD",
-  "interval": "D",
-  "timezone": "Asia/Tehran",
-  "theme": "Light",
-  "style": "1",
-  "locale": "fa_IR",
-  "toolbar_bg": "#f1f3f6",
-  "enable_publishing": true,
-  "withdateranges": true,
-  "hide_side_toolbar": false,
-  "allow_symbol_change": true,
-  "hideideasbutton": true
-});
-
-</script>
-<script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
-<script type="text/javascript">
-new TradingView.widget({
-  "autosize": true,
-  "symbol": "FX:USDJPY",
-  "interval": "D",
-  "timezone": "Asia/Tehran",
-  "theme": "Light",
-  "style": "1",
-  "locale": "fa_IR",
-  "toolbar_bg": "#f1f3f6",
-  "enable_publishing": true,
-  "withdateranges": true,
-  "hide_side_toolbar": false,
-  "allow_symbol_change": true,
-  "hideideasbutton": true
-});
-
-</script>
-
-<script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
-<script type="text/javascript">
-new TradingView.widget({
-  "autosize": true,
-  "symbol": "FX:GBPUSD",
-  "interval": "D",
-  "timezone": "Asia/Tehran",
-  "theme": "Light",
-  "style": "1",
-  "locale": "fa_IR",
-  "toolbar_bg": "#f1f3f6",
-  "enable_publishing": true,
-  "withdateranges": true,
-  "hide_side_toolbar": false,
-  "allow_symbol_change": true,
-  "hideideasbutton": true
-});
-
-</script>
-
-<script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
-<script type="text/javascript">
-new TradingView.widget({
-  "autosize": true,
-  "symbol": "USDCAD",
-  "interval": "D",
-  "timezone": "Asia/Tehran",
-  "theme": "Light",
-  "style": "1",
-  "locale": "fa_IR",
-  "toolbar_bg": "#f1f3f6",
-  "enable_publishing": true,
-  "withdateranges": true,
-  "hide_side_toolbar": false,
-  "allow_symbol_change": true,
-  "hideideasbutton": true
-});
-
-</script>
-
-<script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
-<script type="text/javascript">
-new TradingView.widget({
-  "autosize": true,
-  "symbol": "FX:USDCHF",
-  "interval": "D",
-  "timezone": "Asia/Tehran",
-  "theme": "Light",
-  "style": "1",
-  "locale": "fa_IR",
-  "toolbar_bg": "#f1f3f6",
-  "enable_publishing": true,
-  "withdateranges": true,
-  "hide_side_toolbar": false,
-  "allow_symbol_change": true,
-  "hideideasbutton": true
-});
-
-</script>
-
-
-<script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
-<script type="text/javascript">
-new TradingView.widget({
-  "autosize": true,
-  "symbol": "FX:AUDUSD",
-  "interval": "D",
-  "timezone": "Asia/Tehran",
-  "theme": "Light",
-  "style": "1",
-  "locale": "fa_IR",
-  "toolbar_bg": "#f1f3f6",
-  "enable_publishing": true,
-  "withdateranges": true,
-  "hide_side_toolbar": false,
-  "allow_symbol_change": true,
-  "hideideasbutton": true
-});
-</script>
-
-<script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
-<script type="text/javascript">
-new TradingView.widget({
-  "autosize": true,
-  "symbol": "FX_IDC:NZDUSD",
-  "interval": "D",
-  "timezone": "Asia/Tehran",
-  "theme": "Light",
-  "style": "1",
-  "locale": "fa_IR",
-  "toolbar_bg": "#f1f3f6",
-  "enable_publishing": true,
-  "withdateranges": true,
-  "hide_side_toolbar": false,
-  "allow_symbol_change": true,
-  "hideideasbutton": true
-});
-</script>
-
-<script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
-<script type="text/javascript">
-new TradingView.widget({
-  "autosize": true,
-  "symbol": "BITSTAMP:BTCUSD",
-  "interval": "D",
-  "timezone": "Asia/Tehran",
-  "theme": "Light",
-  "style": "1",
-  "locale": "fa_IR",
-  "toolbar_bg": "#f1f3f6",
-  "enable_publishing": true,
-  "withdateranges": true,
-  "hide_side_toolbar": false,
-  "allow_symbol_change": true,
-  "hideideasbutton": true
-});
-</script>
--->
 
 {% block script %}
 {% endblock %}
