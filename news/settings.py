@@ -40,7 +40,6 @@ INSTALLED_APPS = [
     'jalali_date',
     'ckeditor',
 
-
 ]
 
 MIDDLEWARE = [
@@ -79,21 +78,38 @@ WSGI_APPLICATION = 'news.wsgi.application'
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
 DEBUG = True
-ALLOWED_HOSTS = ['www.navasangold.com','127.0.0.1']
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'navasang_navasangold',
-        'USER': 'navasang_armin',
-        'PASSWORD': '123555888armin',
-        'OPTIONS': {
-            'charset': 'utf8mb4',
-            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
-        },
-        'HOST': 'localhost'
 
+if DEBUG:
+
+    ALLOWED_HOSTS = ['www.navasangold.com', '127.0.0.1']
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.mysql',
+            'NAME': 'navasan',
+            'USER': 'root',
+            'PASSWORD': '123555888mysql',
+            'OPTIONS': {
+                'charset': 'utf8mb4',
+            },
+        }
     }
-}
+else:
+
+    ALLOWED_HOSTS = [u'navasangold.com', 'www.navasangold.com']
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.mysql',
+            'NAME': 'navasang_navasangold',
+            'USER': 'navasang_armin',
+            'PASSWORD': '123555888armin',
+            'OPTIONS': {
+                'charset': 'utf8mb4',
+                'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
+            },
+            'HOST': 'localhost'
+
+        }
+    }
 
 # Password validation
 # https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators
@@ -141,8 +157,6 @@ EMAIL_PORT = 465
 EMAIL_HOST_USER = 'support@navasangold.com'
 EMAIL_HOST_PASSWORD = '123555888navasan'
 
-
-
 # Internationalization
 
 # https://docs.djangoproject.com/en/1.11/topics/i18n/
@@ -163,10 +177,10 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 CKEDITOR_UPLOAD_PATH = "uploaded/"
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR),"public_html", "static")
+STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), "public_html", "static")
 MEDIA_ROOT = os.path.join(BASE_DIR, 'news/media')
 
-#STATIC_ROOT='/home/navasang/public_html/'
+# STATIC_ROOT='/home/navasang/public_html/'
 MEDIA_URL = '/media/'
 
 REST_FRAMEWORK = {
