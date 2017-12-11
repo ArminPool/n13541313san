@@ -62,8 +62,8 @@
       <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/users/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="27" column="47" lean-forward="false" selection-start-line="27" selection-start-column="47" selection-end-line="27" selection-end-column="47" />
+            <state relative-caret-position="160">
+              <caret line="147" column="19" lean-forward="false" selection-start-line="147" selection-start-column="8" selection-end-line="147" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -72,8 +72,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/users/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="274" column="17" lean-forward="false" selection-start-line="274" selection-start-column="17" selection-end-line="274" selection-end-column="17" />
+            <state relative-caret-position="233">
+              <caret line="273" column="22" lean-forward="true" selection-start-line="273" selection-start-column="22" selection-end-line="273" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -764,13 +764,6 @@
       <option name="presentableId" value="Default" />
       <updated>1509594326097</updated>
     </task>
-    <task id="LOCAL-00055" summary="big change:&#10;new app added :speceficpages&#10;css files and js and png files separated&#10;pages like contact-us advertising,... added to speceficpages">
-      <created>1512047517243</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1512047517243</updated>
-    </task>
     <task id="LOCAL-00056" summary="specefic pages file added">
       <created>1512047737600</created>
       <option name="number" value="00056" />
@@ -1107,7 +1100,14 @@
       <option name="project" value="LOCAL" />
       <updated>1512967828822</updated>
     </task>
-    <option name="localTasksCounter" value="104" />
+    <task id="LOCAL-00104" summary="user view changed">
+      <created>1512967839118</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1512967839118</updated>
+    </task>
+    <option name="localTasksCounter" value="105" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1494,16 +1494,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/users/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="24" column="37" lean-forward="true" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="51" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/news/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
@@ -1548,16 +1538,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/users/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="27" column="47" lean-forward="false" selection-start-line="27" selection-start-column="47" selection-end-line="27" selection-end-column="47" />
+        <state relative-caret-position="160">
+          <caret line="147" column="19" lean-forward="false" selection-start-line="147" selection-start-column="8" selection-end-line="147" selection-end-column="19" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/users/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="24" column="37" lean-forward="true" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/users/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="274" column="17" lean-forward="false" selection-start-line="274" selection-start-column="17" selection-end-line="274" selection-end-column="17" />
+        <state relative-caret-position="233">
+          <caret line="273" column="22" lean-forward="true" selection-start-line="273" selection-start-column="22" selection-end-line="273" selection-end-column="22" />
           <folding />
         </state>
       </provider>

@@ -269,10 +269,11 @@ MMERCHANT_ID = '07842040-dd2f-11e7-b265-005056a205be'
 ZARINPAL_WEBSERVICE = 'https://www.zarinpal.com/pg/services/WebGate/wsdl'
 
 
-def send_to_zarinpal(request, tariffs_number,):
+def send_to_zarinpal(request, tariffs_number):
     user = request.user
     email = request.user.email
-    mobile = user.userprofile.phone_number
+    userprofile = User.objects.get(email=email)
+    mobile = userprofile.phone_number
     description = ""
     client = Client(ZARINPAL_WEBSERVICE)
     result = client.service.PaymentRequest()
