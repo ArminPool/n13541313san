@@ -283,7 +283,7 @@ def send_to_zarinpal(request, tariffs_number):
                                                description,
                                                email,
                                                mobile,
-                                               'http://www.navasangold.com/user/verify-after-zarinpal/verify/1')
+                                               'http://www.navasangold.com/user/verify-after-zarinpal/1/')
         print(2)
         if result.Status == 100:
             print(3)
@@ -353,7 +353,7 @@ def verify_after_zarinpal(request, tariffs_number):
         print(7)
         template_name = 'users/verify_from_zarinpal'
         result = client.service.PaymentVerification(MMERCHANT_ID,
-                                                    request.GET.get['Authority'],
+                                                    request.GET.get('Authority'),
                                                     amount)
         if result.Status == 100:
             back_from_zarinpal(user_prof,tariffs_number)
