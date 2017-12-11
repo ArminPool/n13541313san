@@ -265,7 +265,7 @@ def back_from_zarinpal(user_prof, tariffs_number):
         userprofile.vip_until = vip_until
 
 
-MMERCHANT_ID = 'XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX'
+MMERCHANT_ID = '07842040-dd2f-11e7-b265-005056a205be'
 ZARINPAL_WEBSERVICE = 'https://www.zarinpal.com/pg/services/WebGate/wsdl'
 
 
@@ -277,7 +277,7 @@ def send_to_zarinpal(request, tariffs_number,):
     client = Client(ZARINPAL_WEBSERVICE)
     result = client.service.PaymentRequest()
     if tariffs_number == "1":
-        amount = "100000"
+        amount = "11000"
         result = client.service.PaymentRequest(MMERCHANT_ID,
                                                amount,
                                                description,
@@ -321,7 +321,7 @@ def send_to_zarinpal(request, tariffs_number,):
 def verify_after_zarinpal(request, tariffs_number):
     amount = 0
     if tariffs_number == "1":
-        amount = "100000"
+        amount = "11000"
     elif tariffs_number == "2":
 
         amount = "250000"

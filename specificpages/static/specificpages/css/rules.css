@@ -1,4 +1,4 @@
-#rules-container{
+.specificpage-container{
 
 padding-bottom:30px;
 
@@ -11,7 +11,7 @@ font-size:25px;
 
 }
 
-#rules-container > ul > li{
+.specificpage-container > ul > li{
 
 font-size:17px;
 padding-top:10px;

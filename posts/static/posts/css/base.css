@@ -52,6 +52,8 @@ body {
     font-family:IRANSans;
     background-color:#f4f4f4;
     height:100%;
+
+
 }
 span,p{
 font-family:IRANSans;
@@ -549,6 +551,7 @@ padding:0px;
 
 }
 
+
 .stock-table{
 padding:20px;
 }
@@ -634,7 +637,11 @@ padding-top:10px;
 }
                            /*     setting of footed ended           */
 
+.specificpage-container{
 
+padding-bottom:50px;
+
+}
 
 
                   /*     changing color of dropdown-menu when screen is big enough        */
