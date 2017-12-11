@@ -276,13 +276,20 @@ def send_to_zarinpal(request, tariffs_number):
     description = "پرداخت مبلغ اشتراک به سایت نوسان گلد"
     client = Client(ZARINPAL_WEBSERVICE)
     if tariffs_number == "1":
-        amount = "11000"
+        print(1)
+        amount = "1000"
         result = client.service.PaymentRequest(MMERCHANT_ID,
                                                amount,
                                                description,
                                                email,
                                                mobile,
                                                'http://www.navasangold.com/user/verify-after-zarinpal/verify/1')
+        print(2)
+        if result.Status == 100:
+            print(3)
+            return redirect('https://www.zarinpal.com/pg/StartPay/' + result.Authority)
+        else:
+            return 'Error'
     elif tariffs_number == "2":
         amount = "250000"
         result = client.service.PaymentRequest(MMERCHANT_ID,
@@ -291,6 +298,10 @@ def send_to_zarinpal(request, tariffs_number):
                                                email,
                                                mobile,
                                                '/verify/2')
+        if result.Status == 100:
+            return redirect('https://www.zarinpal.com/pg/StartPay/' + result.Authority)
+        else:
+            return 'Error'
     elif tariffs_number == "3":
 
         amount = "50000"
@@ -300,6 +311,10 @@ def send_to_zarinpal(request, tariffs_number):
                                                email,
                                                mobile,
                                                '/verify/3')
+        if result.Status == 100:
+            return redirect('https://www.zarinpal.com/pg/StartPay/' + result.Authority)
+        else:
+            return 'Error'
 
     elif tariffs_number == "4":
 
@@ -311,16 +326,18 @@ def send_to_zarinpal(request, tariffs_number):
                                                mobile,
                                                '/verify/4')
 
-    if result.Status == 100:
-        return redirect('https://www.zarinpal.com/pg/StartPay/' + result.Authority)
-    else:
-        return 'Error'
+        if result.Status == 100:
+            return redirect('https://www.zarinpal.com/pg/StartPay/' + result.Authority)
+        else:
+            return 'Error'
 
 
 def verify_after_zarinpal(request, tariffs_number):
+    print(4)
     amount = 0
     if tariffs_number == "1":
-        amount = "11000"
+        amount = "1000"
+        print(5)
     elif tariffs_number == "2":
 
         amount = "250000"
@@ -331,9 +348,9 @@ def verify_after_zarinpal(request, tariffs_number):
         amount = "1000000"
     user_prof = request.user.userprofile
     client = Client(ZARINPAL_WEBSERVICE)
-
+    print(6)
     if request.args.get('Status') == 'OK':
-
+        print(7)
         template_name = 'users/verify_from_zarinpal'
         result = client.service.PaymentVerification(MMERCHANT_ID,
                                                     request.args['Authority'],
