@@ -1,0 +1,24 @@
+{% extends 'posts/base.html' %}
+
+
+{% block title %}
+<title>پرداخت تایید شد</title>
+{% endblock %}
+
+
+
+{% block body %}
+<div class="container-fluid" id="verify-container">
+
+    <p>پرداخت شما با موفقیت انجام شد .</p>
+    <p>شماره تراکنش:{{refID}}</p>
+   {% if tariff_number == 1 %}
+    <p>اشتراک 1ماهه برای شما فعال شد .</p>
+    {% elif tariff_number == 2 %}
+    <p>اشتراک 3ماهه برای شما فعال شد .</p>
+    {% elif tariff_number == 3 %}
+    <p>اشتراک 6ماهه برای شما فعال شد .</p>
+    {% else %}
+    <p>اشتراک 4ماهه برای شما فعال شد .</p>
+</div>
+{% endblock %}
