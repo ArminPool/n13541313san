@@ -273,9 +273,8 @@ def send_to_zarinpal(request, tariffs_number):
     user = request.user
     email = request.user.email
     mobile = user.userprofile.phone_number
-    description = ""
+    description = "پرداخت مبلغ اشتراک به سایت نوسان گلد"
     client = Client(ZARINPAL_WEBSERVICE)
-    result = client.service.PaymentRequest()
     if tariffs_number == "1":
         amount = "11000"
         result = client.service.PaymentRequest(MMERCHANT_ID,
@@ -283,7 +282,7 @@ def send_to_zarinpal(request, tariffs_number):
                                                description,
                                                email,
                                                mobile,
-                                               '/verify/1')
+                                               'http://www.navasangold.com/user/verify-after-zarinpal/verify/1')
     elif tariffs_number == "2":
         amount = "250000"
         result = client.service.PaymentRequest(MMERCHANT_ID,

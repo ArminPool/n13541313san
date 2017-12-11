@@ -85,7 +85,7 @@ if DEBUG:
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.mysql',
-            'NAME': 'navasan',
+            'NAME': 'navasangold',
             'USER': 'root',
             'PASSWORD': '123555888mysql',
             'OPTIONS': {
