@@ -270,9 +270,9 @@ ZARINPAL_WEBSERVICE = 'https://www.zarinpal.com/pg/services/WebGate/wsdl'
 
 
 def send_to_zarinpal(request, tariffs_number,):
-
+    user = request.user
     email = request.user.email
-    mobile = request.user.userprofile.phone_number
+    mobile = user.userprofile.phone_number
     description = ""
     client = Client(ZARINPAL_WEBSERVICE)
     result = client.service.PaymentRequest()

@@ -62,8 +62,8 @@
       <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/users/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1222">
-              <caret line="131" column="5" lean-forward="false" selection-start-line="131" selection-start-column="5" selection-end-line="131" selection-end-column="5" />
+            <state relative-caret-position="165">
+              <caret line="27" column="47" lean-forward="false" selection-start-line="27" selection-start-column="47" selection-end-line="27" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -73,7 +73,7 @@
         <entry file="file://$PROJECT_DIR$/users/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="197">
-              <caret line="274" column="25" lean-forward="false" selection-start-line="274" selection-start-column="25" selection-end-line="274" selection-end-column="25" />
+              <caret line="274" column="17" lean-forward="false" selection-start-line="274" selection-start-column="17" selection-end-line="274" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -164,9 +164,9 @@
         <option value="$PROJECT_DIR$/news/urls.py" />
         <option value="$PROJECT_DIR$/users/urls.py" />
         <option value="$PROJECT_DIR$/specificpages/templates/specificpages/tariffs.html" />
-        <option value="$PROJECT_DIR$/users/models.py" />
         <option value="$PROJECT_DIR$/users/migrations/0007_auto_20171211_0750.py" />
         <option value="$PROJECT_DIR$/news/setting/prod.py" />
+        <option value="$PROJECT_DIR$/users/models.py" />
         <option value="$PROJECT_DIR$/users/views.py" />
       </list>
     </option>
@@ -764,20 +764,6 @@
       <option name="presentableId" value="Default" />
       <updated>1509594326097</updated>
     </task>
-    <task id="LOCAL-00053" summary="setting edited">
-      <created>1512015604309</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1512015604310</updated>
-    </task>
-    <task id="LOCAL-00054" summary="big change:&#10;new app added :speceficpages&#10;css files and js and png files separated&#10;pages like contact-us advertising,... added to speceficpages">
-      <created>1512047346488</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1512047346489</updated>
-    </task>
     <task id="LOCAL-00055" summary="big change:&#10;new app added :speceficpages&#10;css files and js and png files separated&#10;pages like contact-us advertising,... added to speceficpages">
       <created>1512047517243</created>
       <option name="number" value="00055" />
@@ -1107,21 +1093,35 @@
       <option name="project" value="LOCAL" />
       <updated>1512967075530</updated>
     </task>
-    <option name="localTasksCounter" value="102" />
+    <task id="LOCAL-00102" summary="user view changed">
+      <created>1512967363416</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1512967363416</updated>
+    </task>
+    <task id="LOCAL-00103" summary="user view changed">
+      <created>1512967828822</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1512967828822</updated>
+    </task>
+    <option name="localTasksCounter" value="104" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1852123" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16251831" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35748032" sideWeight="0.45348838" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32913387" sideWeight="0.49707174" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4976378" sideWeight="0.49707174" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22362205" sideWeight="0.54651165" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.296063" sideWeight="0.54651165" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1179,7 +1179,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="head tag added again" />
     <MESSAGE value="font added &#10;mql added&#10;pamm added&#10;login page edited" />
     <MESSAGE value="rules edited" />
     <MESSAGE value="some file moved&#10;static root added" />
@@ -1204,7 +1203,8 @@
     <MESSAGE value="body bug cuz of navbar-fixed-top fixed" />
     <MESSAGE value="zarinpal test1" />
     <MESSAGE value="Debug True for testing" />
-    <option name="LAST_COMMIT_MESSAGE" value="Debug True for testing" />
+    <MESSAGE value="user view changed" />
+    <option name="LAST_COMMIT_MESSAGE" value="user view changed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1538,14 +1538,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/users/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1222">
-          <caret line="131" column="5" lean-forward="false" selection-start-line="131" selection-start-column="5" selection-end-line="131" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/news/setting/prod.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="312">
@@ -1554,10 +1546,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/users/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="27" column="47" lean-forward="false" selection-start-line="27" selection-start-column="47" selection-end-line="27" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/users/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="197">
-          <caret line="274" column="25" lean-forward="false" selection-start-line="274" selection-start-column="25" selection-end-line="274" selection-end-column="25" />
+          <caret line="274" column="17" lean-forward="false" selection-start-line="274" selection-start-column="17" selection-end-line="274" selection-end-column="17" />
           <folding />
         </state>
       </provider>
