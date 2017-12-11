@@ -351,7 +351,7 @@ def verify_after_zarinpal(request, tariffs_number):
     print(6)
     if request.GET.get('Status') == 'OK':
         print(7)
-        template_name = 'users/verify_from_zarinpal.html'
+        template_name = 'users/verify_after_zarinpal.html'
         result = client.service.PaymentVerification(MMERCHANT_ID,
                                                     request.GET['Authority'],
                                                     amount)

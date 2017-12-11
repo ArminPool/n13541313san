@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="83ce492f-81ab-4045-9bd2-7537fae0f724" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/users/templates/users/verify_after_zarinpal.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/users/models.py" afterPath="$PROJECT_DIR$/users/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/users/views.py" afterPath="$PROJECT_DIR$/users/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -62,8 +62,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/users/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="359" column="49" lean-forward="false" selection-start-line="359" selection-start-column="49" selection-end-line="359" selection-end-column="49" />
+            <state relative-caret-position="1929">
+              <caret line="353" column="52" lean-forward="false" selection-start-line="353" selection-start-column="52" selection-end-line="353" selection-end-column="52" />
               <folding />
             </state>
           </provider>
@@ -736,13 +736,6 @@
       <option name="presentableId" value="Default" />
       <updated>1509594326097</updated>
     </task>
-    <task id="LOCAL-00065" summary="models field edited">
-      <created>1512207022639</created>
-      <option name="number" value="00065" />
-      <option name="presentableId" value="LOCAL-00065" />
-      <option name="project" value="LOCAL" />
-      <updated>1512207022639</updated>
-    </task>
     <task id="LOCAL-00066" summary="models field edited">
       <created>1512207225091</created>
       <option name="number" value="00066" />
@@ -1079,7 +1072,14 @@
       <option name="project" value="LOCAL" />
       <updated>1512977768377</updated>
     </task>
-    <option name="localTasksCounter" value="114" />
+    <task id="LOCAL-00114" summary="verify html added">
+      <created>1512977910341</created>
+      <option name="number" value="00114" />
+      <option name="presentableId" value="LOCAL-00114" />
+      <option name="project" value="LOCAL" />
+      <updated>1512977910341</updated>
+    </task>
+    <option name="localTasksCounter" value="115" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1151,8 +1151,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="port edited host.." />
-    <MESSAGE value="app-run deleted" />
     <MESSAGE value="app-run added" />
     <MESSAGE value="app-run edited" />
     <MESSAGE value="base scripts moved to bottom of page&#10;zarinpal urls and views added" />
@@ -1176,7 +1174,9 @@
     <MESSAGE value="user view changed" />
     <MESSAGE value="request.GET['Authority']" />
     <MESSAGE value="str(result.RefID)" />
-    <option name="LAST_COMMIT_MESSAGE" value="str(result.RefID)" />
+    <MESSAGE value="verify html added" />
+    <MESSAGE value="template name corrected" />
+    <option name="LAST_COMMIT_MESSAGE" value="template name corrected" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1540,8 +1540,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/users/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="359" column="49" lean-forward="false" selection-start-line="359" selection-start-column="49" selection-end-line="359" selection-end-column="49" />
+        <state relative-caret-position="1929">
+          <caret line="353" column="52" lean-forward="false" selection-start-line="353" selection-start-column="52" selection-end-line="353" selection-end-column="52" />
           <folding />
         </state>
       </provider>
