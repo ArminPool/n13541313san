@@ -353,7 +353,7 @@ def verify_after_zarinpal(request, tariffs_number):
         print(7)
         template_name = 'users/verify_from_zarinpal.html'
         result = client.service.PaymentVerification(MMERCHANT_ID,
-                                                    request.GET.get('Authority'),
+                                                    request.GET['Authority'],
                                                     amount)
         if result.Status == 100:
             back_from_zarinpal(user_prof,tariffs_number)
