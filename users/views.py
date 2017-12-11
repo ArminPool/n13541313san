@@ -251,18 +251,25 @@ def back_from_zarinpal(user_prof, tariffs_number):
         vip_until = localtime(now()) + relativedelta(months=1)
         userprofile = user_prof
         userprofile.vip_until = vip_until
+        userprofile.save()
     elif tariffs_number == '2':
         vip_until = localtime(now()) + relativedelta(months=3)
         userprofile = user_prof
         userprofile.vip_until = vip_until
+        userprofile.save()
+
     elif tariffs_number == '3':
         vip_until = localtime(now()) + relativedelta(months=6)
         userprofile = user_prof
         userprofile.vip_until = vip_until
+        userprofile.save()
+
     elif tariffs_number == '4':
         vip_until = localtime(now()) + relativedelta(months=12)
         userprofile = user_prof
         userprofile.vip_until = vip_until
+        userprofile.save()
+
 
 
 MMERCHANT_ID = '07842040-dd2f-11e7-b265-005056a205be'
