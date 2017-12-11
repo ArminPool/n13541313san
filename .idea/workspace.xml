@@ -59,21 +59,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/users/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="355" column="76" lean-forward="false" selection-start-line="355" selection-start-column="76" selection-end-line="355" selection-end-column="76" />
+            <state relative-caret-position="320">
+              <caret line="359" column="49" lean-forward="false" selection-start-line="359" selection-start-column="49" selection-end-line="359" selection-end-column="49" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa2572.6228/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
-              <caret line="40" column="76" lean-forward="false" selection-start-line="40" selection-start-column="52" selection-end-line="40" selection-end-column="76" />
+              <caret line="43" column="82" lean-forward="false" selection-start-line="43" selection-start-column="65" selection-end-line="43" selection-end-column="82" />
               <folding />
             </state>
           </provider>
@@ -736,13 +736,6 @@
       <option name="presentableId" value="Default" />
       <updated>1509594326097</updated>
     </task>
-    <task id="LOCAL-00063" summary="go for collectstatic">
-      <created>1512119701745</created>
-      <option name="number" value="00063" />
-      <option name="presentableId" value="LOCAL-00063" />
-      <option name="project" value="LOCAL" />
-      <updated>1512119701745</updated>
-    </task>
     <task id="LOCAL-00064" summary="most visited posts and recomended posts added &#10;stict mode added to db">
       <created>1512206543899</created>
       <option name="number" value="00064" />
@@ -1079,7 +1072,14 @@
       <option name="project" value="LOCAL" />
       <updated>1512977293525</updated>
     </task>
-    <option name="localTasksCounter" value="112" />
+    <task id="LOCAL-00112" summary="request.GET['Authority']">
+      <created>1512977642369</created>
+      <option name="number" value="00112" />
+      <option name="presentableId" value="LOCAL-00112" />
+      <option name="project" value="LOCAL" />
+      <updated>1512977642369</updated>
+    </task>
+    <option name="localTasksCounter" value="113" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1151,8 +1151,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="database setting edited&#10;import corrected" />
-    <MESSAGE value="some files added for zarinpal test&#10;flask app test1" />
     <MESSAGE value="port edited host.." />
     <MESSAGE value="app-run deleted" />
     <MESSAGE value="app-run added" />
@@ -1176,7 +1174,9 @@
     <MESSAGE value="zarinpal test4 request.args =&gt;request.GET.get" />
     <MESSAGE value="zarinpal test5  .get method changed from []  to ()" />
     <MESSAGE value="user view changed" />
-    <option name="LAST_COMMIT_MESSAGE" value="user view changed" />
+    <MESSAGE value="request.GET['Authority']" />
+    <MESSAGE value="str(result.RefID)" />
+    <option name="LAST_COMMIT_MESSAGE" value="str(result.RefID)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1530,18 +1530,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/users/views.py">
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa2572.6228/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="355" column="76" lean-forward="false" selection-start-line="355" selection-start-column="76" selection-end-line="355" selection-end-column="76" />
+        <state relative-caret-position="204">
+          <caret line="43" column="82" lean-forward="false" selection-start-line="43" selection-start-column="65" selection-end-line="43" selection-end-column="82" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa2572.6228/views.py">
+    <entry file="file://$PROJECT_DIR$/users/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="40" column="76" lean-forward="false" selection-start-line="40" selection-start-column="52" selection-end-line="40" selection-end-column="76" />
+        <state relative-caret-position="320">
+          <caret line="359" column="49" lean-forward="false" selection-start-line="359" selection-start-column="49" selection-end-line="359" selection-end-column="49" />
           <folding />
         </state>
       </provider>
