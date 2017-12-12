@@ -18,7 +18,7 @@ class Post(models.Model):
                               processors=[ResizeToFill(700, 450)],
 
                               format='JPEG',
-                              options={'quality': 60}, null=False)
+                              options={'quality': 60}, null=True,blank=False)
 
     description = RichTextField(config_name='awesome_ckeditor')
 
