@@ -4,12 +4,12 @@
     <bookmark url="file://$PROJECT_DIR$/posts/templates/posts/detail.html" line="17" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83ce492f-81ab-4045-9bd2-7537fae0f724" name="Default" comment="&#10;print() deleted from users/view posts/view">
+    <list default="true" id="83ce492f-81ab-4045-9bd2-7537fae0f724" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/users/static/users/img/contact-us.jpg" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/users/static/users/img/contact-us.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/users/static/users/img/login-background.jpg" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/users/static/users/img/wallstreet.jpg" afterPath="$PROJECT_DIR$/users/static/users/img/wallstreet.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/views.py" afterPath="$PROJECT_DIR$/posts/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/users/static/users/css/GuestContact.css" afterPath="$PROJECT_DIR$/users/static/users/css/GuestContact.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/users/static/users/css/UsersContact.css" afterPath="$PROJECT_DIR$/users/static/users/css/UsersContact.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/users/views.py" afterPath="$PROJECT_DIR$/users/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -31,13 +31,37 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UsersContact.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UsersContact.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/users/static/users/css/UsersContact.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="156">
               <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mql5.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/specificpages/static/specificpages/img/mql5.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/posts/templates/posts/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="7306">
+              <caret line="311" column="26" lean-forward="true" selection-start-line="311" selection-start-column="26" selection-end-line="311" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Logo grey transparent.png" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/posts/static/posts/img/Logo grey transparent.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
@@ -112,8 +136,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
+    <option name="x" value="25" />
+    <option name="y" value="50" />
     <option name="width" value="1382" />
     <option name="height" value="744" />
   </component>
@@ -482,6 +506,32 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="news" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="news" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="posts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="posts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -549,18 +599,18 @@
     <property name="add_unversioned_files" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\armin\news\users\static\users\img" />
+      <recent name="C:\Users\armin\news\posts\static\posts\img" />
+      <recent name="C:\Users\armin\news\posts\static\posts\fonts\font-awsome" />
+      <recent name="C:\Users\armin\news\posts\static" />
+      <recent name="C:\Users\armin\news\posts\static\posts\fonts\glyphicons" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\armin\news\posts\static\posts\css" />
       <recent name="C:\Users\armin\news\posts\static\posts\js" />
       <recent name="C:\Users\armin\news\specificpages\static\specificpages\img" />
       <recent name="C:\Users\armin\news\posts\static\posts\img" />
-      <recent name="C:\Users\armin\news\posts\static\posts\fonts" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\armin\news\posts\static\posts\img" />
-      <recent name="C:\Users\armin\news\posts\static\posts\fonts\font-awsome" />
-      <recent name="C:\Users\armin\news\posts\static" />
-      <recent name="C:\Users\armin\news\posts\static\posts\fonts\glyphicons" />
       <recent name="C:\Users\armin\news\posts\static\posts\fonts" />
     </key>
   </component>
@@ -721,13 +771,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1509594326097</updated>
-    </task>
-    <task id="LOCAL-00070" summary="http in calenderpage_java.js changed to https">
-      <created>1512222164806</created>
-      <option name="number" value="00070" />
-      <option name="presentableId" value="LOCAL-00070" />
-      <option name="project" value="LOCAL" />
-      <updated>1512222164806</updated>
     </task>
     <task id="LOCAL-00071" summary="head tag deleted from base for test">
       <created>1512222263578</created>
@@ -1065,14 +1108,20 @@
       <option name="project" value="LOCAL" />
       <updated>1513090741291</updated>
     </task>
-    <option name="localTasksCounter" value="119" />
+    <task id="LOCAL-00119" summary="SideNav fixed in contact-us&#10;print() deleted from users/view posts/view">
+      <created>1513091541015</created>
+      <option name="number" value="00119" />
+      <option name="presentableId" value="LOCAL-00119" />
+      <option name="project" value="LOCAL" />
+      <updated>1513091541016</updated>
+    </task>
+    <option name="localTasksCounter" value="120" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <frame x="25" y="50" width="1382" height="744" extended-state="0" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23426062" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23426062" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35748032" sideWeight="0.45348838" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4976378" sideWeight="0.49707174" order="10" side_tool="false" content_ui="tabs" />
@@ -1137,8 +1186,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="boostrap3&#10;jquery&#10;font-awesome&#10;material icons&#10;glyphicons &#10;downloaded and their src added to static files&#10;css and js files formatted" />
-    <MESSAGE value="some file wasn't added into git &#10;now they are" />
     <MESSAGE value="logo added &#10;navbar fixed&#10;contact link edited" />
     <MESSAGE value="some references corrected and pamm and mql added to navbar" />
     <MESSAGE value="mql and pamm edited" />
@@ -1162,7 +1209,9 @@
     <MESSAGE value="templaye corrected and profile.save added to view" />
     <MESSAGE value="setting db changed" />
     <MESSAGE value="instagram link added /login css fixed /roles text edited and inbox added/print() deleted from users/view" />
-    <option name="LAST_COMMIT_MESSAGE" value="instagram link added /login css fixed /roles text edited and inbox added/print() deleted from users/view" />
+    <MESSAGE value="SideNav fixed in contact-us&#10;print() deleted from users/view posts/view" />
+    <MESSAGE value="imges compressed" />
+    <option name="LAST_COMMIT_MESSAGE" value="imges compressed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1171,27 +1220,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/posts/static/posts/css/bootstrap.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1749">
-          <caret line="4343" column="21" lean-forward="false" selection-start-line="4343" selection-start-column="21" selection-end-line="4343" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/specificpages/templates/specificpages/USDCAD.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="14" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/posts/static/posts/js/base.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="262" column="28" lean-forward="false" selection-start-line="262" selection-start-column="28" selection-end-line="262" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/specificpages/templates/specificpages/software.html" />
     <entry file="file://$PROJECT_DIR$/specificpages/templates/specificpages/AUDUSD.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -1267,13 +1295,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
           <caret line="8" column="23" lean-forward="false" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/posts/static/posts/css/base.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1404">
-          <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1466,14 +1487,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/posts/templates/posts/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="311" column="26" lean-forward="true" selection-start-line="311" selection-start-column="26" selection-end-line="311" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/users/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2468">
@@ -1514,6 +1527,37 @@
           <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/users/static/users/img/wallstreet.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/posts/static/posts/css/base.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="463">
+          <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/specificpages/static/specificpages/img/mql5.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/posts/templates/posts/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7306">
+          <caret line="311" column="26" lean-forward="true" selection-start-line="311" selection-start-column="26" selection-end-line="311" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/posts/static/posts/img/Logo grey transparent.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
   </component>
