@@ -1,6 +1,6 @@
 #main{
-
-background-image: url("../img/contact-us.png");
+//compressed imgs are .jpg
+background-image: url("../img/contact-us.jpg");
 
 background-size: 1366px 800px;
 background-attachment: fixed;
