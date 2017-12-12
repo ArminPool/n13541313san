@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 
-import datetime
+from imagekit.models import ImageSpecField, ProcessedImageField
+from imagekit.processors import ResizeToFill
 import random
 import string
 from threading import Timer
@@ -129,7 +130,11 @@ class UserProfile(models.Model):
         size=80,
         blank=True)
     city = models.CharField(choices=cities, max_length=25, default='tehran')
-    pro_img = models.ImageField(null=True, blank=True, upload_to='uploaded',)
+    pro_img = ProcessedImageField(upload_to='uploaded',
+
+                                  format='JPEG',
+                                  options={'quality': 60}, null=True, blank=True)
+
     vip_until = models.DateTimeField(default=django.utils.timezone.now)
     # Remember Many to Many fields doesn't show in mysql commend line
     inbox = models.ManyToManyField(Inbox, blank=True)

@@ -5,7 +5,8 @@ from django.db.models import CharField, DateField, TimeField
 from django import forms
 from django.core.urlresolvers import reverse
 from django_mysql.models import ListTextField
-
+from imagekit.models import ImageSpecField, ProcessedImageField
+from imagekit.processors import ResizeToFill
 # Create your models here.
 from users.models import Author
 
@@ -13,7 +14,11 @@ from users.models import Author
 class Post(models.Model):
     header = models.CharField(max_length=500)
 
-    img = models.ImageField(null=True, blank=True, upload_to='uploaded')
+    img = ProcessedImageField(upload_to='uploaded',
+                              processors=[ResizeToFill(700, 450)],
+
+                              format='JPEG',
+                              options={'quality': 60}, null=False)
 
     description = RichTextField(config_name='awesome_ckeditor')
 
