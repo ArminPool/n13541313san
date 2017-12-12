@@ -4,8 +4,8 @@
     <bookmark url="file://$PROJECT_DIR$/posts/templates/posts/detail.html" line="17" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83ce492f-81ab-4045-9bd2-7537fae0f724" name="Default" comment="comments fixed">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/users/static/users/img/login-background.jpg" afterPath="" />
+    <list default="true" id="83ce492f-81ab-4045-9bd2-7537fae0f724" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/users/static/users/img/login-background.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -143,8 +143,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
+    <option name="x" value="48" />
+    <option name="y" value="32" />
     <option name="width" value="1382" />
     <option name="height" value="744" />
   </component>
@@ -779,13 +779,6 @@
       <option name="presentableId" value="Default" />
       <updated>1509594326097</updated>
     </task>
-    <task id="LOCAL-00074" summary="rules edited">
-      <created>1512359112514</created>
-      <option name="number" value="00074" />
-      <option name="presentableId" value="LOCAL-00074" />
-      <option name="project" value="LOCAL" />
-      <updated>1512359112514</updated>
-    </task>
     <task id="LOCAL-00075" summary="some file moved&#10;static root added">
       <created>1512460529092</created>
       <option name="number" value="00075" />
@@ -1122,11 +1115,18 @@
       <option name="project" value="LOCAL" />
       <updated>1513096637640</updated>
     </task>
-    <option name="localTasksCounter" value="123" />
+    <task id="LOCAL-00123" summary="trick git add :C">
+      <created>1513096727055</created>
+      <option name="number" value="00123" />
+      <option name="presentableId" value="LOCAL-00123" />
+      <option name="project" value="LOCAL" />
+      <updated>1513096727055</updated>
+    </task>
+    <option name="localTasksCounter" value="124" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="48" y="32" width="1382" height="744" extended-state="0" />
     <layout>
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23426062" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1193,8 +1193,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="mql and pamm edited" />
-    <MESSAGE value="mql5 image added" />
     <MESSAGE value="scroll bar edited" />
     <MESSAGE value="charts added" />
     <MESSAGE value="setting changed" />
@@ -1218,7 +1216,9 @@
     <MESSAGE value="imges compressed" />
     <MESSAGE value="login-background compressed added and .jpg added to this imgs" />
     <MESSAGE value="comments fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="comments fixed" />
+    <MESSAGE value="trick git add :C" />
+    <MESSAGE value="login-background added" />
+    <option name="LAST_COMMIT_MESSAGE" value="login-background added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
