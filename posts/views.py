@@ -70,7 +70,6 @@ def author(request, author_username):
     except EmptyPage:
         posts = paginator.page(paginator.num_pages)
     context = {'posts': posts, }
-    print("before return")
     return render(request, template_name, context)
 
 
@@ -218,7 +217,6 @@ def calender(request):
 def economic_calender(request):
     queryset_list = None
     query = request.GET.get('q')
-    print(query)
     if query:
         queryset_list = Calender.objects.all().filter(
             Q(date__icontains=query)

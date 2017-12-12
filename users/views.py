@@ -167,7 +167,6 @@ def edit_profile(request):
         userform = UserEditForm(request.POST, instance=request.user)
 
         if profileform.is_valid() and userform.is_valid():
-            print("success")
             profileform.save()
             userform.save()
             request.session['django_timezone'] = request.POST['timezone']
@@ -340,11 +339,9 @@ def send_to_zarinpal(request, tariffs_number):
 
 
 def verify_after_zarinpal(request, tariffs_number):
-    print(4)
     amount = 0
     if tariffs_number == "1":
         amount = "1000"
-        print(5)
     elif tariffs_number == "2":
 
         amount = "250000"
@@ -355,9 +352,7 @@ def verify_after_zarinpal(request, tariffs_number):
         amount = "1000000"
     user_prof = request.user.userprofile
     client = Client(ZARINPAL_WEBSERVICE)
-    print(6)
     if request.GET.get('Status') == 'OK':
-        print(7)
         template_name = 'users/verify_after_zarinpal.html'
         result = client.service.PaymentVerification(MMERCHANT_ID,
                                                     request.GET['Authority'],
