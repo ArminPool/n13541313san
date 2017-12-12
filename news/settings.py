@@ -96,6 +96,7 @@ if DEBUG:
 else:
 
     ALLOWED_HOSTS = [u'navasangold.com', 'www.navasangold.com']
+    #correct database character :ALTER TABLE your_table_name CONVERT TO CHARACTER SET utf8 COLLATE utf8_general_ci;
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.mysql',

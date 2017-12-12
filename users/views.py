@@ -283,7 +283,7 @@ def send_to_zarinpal(request, tariffs_number):
     description = "پرداخت مبلغ اشتراک به سایت نوسان گلد"
     client = Client(ZARINPAL_WEBSERVICE)
     if tariffs_number == "1":
-        print(1)
+
         amount = "1000"
         result = client.service.PaymentRequest(MMERCHANT_ID,
                                                amount,
@@ -291,9 +291,9 @@ def send_to_zarinpal(request, tariffs_number):
                                                email,
                                                mobile,
                                                'http://www.navasangold.com/user/verify-after-zarinpal/1/')
-        print(2)
+
         if result.Status == 100:
-            print(3)
+
             return redirect('https://www.zarinpal.com/pg/StartPay/' + result.Authority)
         else:
             return 'Error'

@@ -2,16 +2,11 @@
 background-image: url("../img/login-background.jpg") ;
 background-size: 1366px 800px;
 background-attachment: fixed;
-margin-top:50px;
 min-height:620px;
 }
 
 
-.navbar-fixed-top .navbar-collapse{
 
-margin-right:97px;
-
-}
 #navbar2{
 
 display:none;
