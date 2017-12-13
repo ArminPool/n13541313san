@@ -93,8 +93,8 @@
       <file leaf-file-name="sitemap.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/news/sitemap.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+            <state relative-caret-position="93">
+              <caret line="16" column="25" lean-forward="false" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
               <folding>
                 <element signature="e#0#43#0" expanded="true" />
               </folding>
@@ -675,13 +675,6 @@
       <option name="presentableId" value="Default" />
       <updated>1509594326097</updated>
     </task>
-    <task id="LOCAL-00097" summary="wsgi_prod changed">
-      <created>1512808636652</created>
-      <option name="number" value="00097" />
-      <option name="presentableId" value="LOCAL-00097" />
-      <option name="project" value="LOCAL" />
-      <updated>1512808636653</updated>
-    </task>
     <task id="LOCAL-00098" summary="body bug cuz of navbar-fixed-top fixed">
       <created>1512815071991</created>
       <option name="number" value="00098" />
@@ -1018,7 +1011,14 @@
       <option name="project" value="LOCAL" />
       <updated>1513165681846</updated>
     </task>
-    <option name="localTasksCounter" value="146" />
+    <task id="LOCAL-00146" summary="reverse name fixed">
+      <created>1513165775961</created>
+      <option name="number" value="00146" />
+      <option name="presentableId" value="LOCAL-00146" />
+      <option name="project" value="LOCAL" />
+      <updated>1513165775961</updated>
+    </task>
+    <option name="localTasksCounter" value="147" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1110,8 +1110,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="instagram link added /login css fixed /roles text edited and inbox added/print() deleted from users/view" />
-    <MESSAGE value="SideNav fixed in contact-us&#10;print() deleted from users/view posts/view" />
     <MESSAGE value="imges compressed" />
     <MESSAGE value="login-background compressed added and .jpg added to this imgs" />
     <MESSAGE value="comments fixed" />
@@ -1135,7 +1133,9 @@
     <MESSAGE value="for loop edited" />
     <MESSAGE value="static urls added to an list inside staticsitemap class" />
     <MESSAGE value="sitemap mistake fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="sitemap mistake fixed" />
+    <MESSAGE value="reverse name fixed" />
+    <MESSAGE value="StaticSiteMap changeFreq changed to monthly" />
+    <option name="LAST_COMMIT_MESSAGE" value="StaticSiteMap changeFreq changed to monthly" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1516,8 +1516,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/news/sitemap.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+        <state relative-caret-position="93">
+          <caret line="16" column="25" lean-forward="false" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
           <folding>
             <element signature="e#0#43#0" expanded="true" />
           </folding>

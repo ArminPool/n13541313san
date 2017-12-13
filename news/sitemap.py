@@ -14,7 +14,7 @@ class PostsSitemap(Sitemap):
 
 class StaticSitemap(Sitemap):
     priority = 0.6
-    changefreq = 'daily'
+    changefreq = 'monthly'
 
     # The below method returns all urls defined in urls.py file
     def items(self):
