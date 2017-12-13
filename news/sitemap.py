@@ -1,7 +1,7 @@
 from django.contrib.sitemaps import Sitemap
 from posts.models import Post
 
-from news.urls import urlpatterns as homeUrls
+import news.urls as homeurls
 
 
 class PostsSitemap(Sitemap):
@@ -22,7 +22,7 @@ class StaticSitemap(Sitemap):
     # The below method returns all urls defined in urls.py file
     def items(self):
         mylist = []
-        for url in homeUrls:
+        for url in homeurls.urlpatterns:
             mylist.append('home:' + url.name)
         return mylist
 
