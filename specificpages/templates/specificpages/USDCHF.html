@@ -1,6 +1,12 @@
 {% extends 'posts/base.html' %}
 {% load staticfiles %}
 
+{% block meta %}
+<meta name="keywords" content="چارت,نوسان گلد, USDCHF">
+<meta name="description" content="وارد این قسمت شوید و روی چارت USDCHF تحلیل کنید.منوی چارت فارسی و شما براحتی میتوانید از قابلیت های مختلف منو روی چارت استفاده کنید.">
+
+{% endblock %}
+
 {% block style %}
 <link rel="stylesheet" type="text/css" href="{% static 'specificpages/css/charts.css' %}"/>
 

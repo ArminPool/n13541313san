@@ -4,9 +4,13 @@
 {% load custom_tags %}
 {% load staticfiles %}
 
+{% block meta %}
+<meta name="keywords" content="navasangold, نوسان گلد, طلا, تحلیل اقتصادی, اخبار بورس">
+<meta name="description" content="نوسان گلد سایت خبری و مشاوره ای امکاناتی مثل تقویم اقتصادی،اخبار و تحلیل های ویژه و تخصصی  استادان مجرد در زمینه ی طلا توسط برای شما فراهم می آورد.">
+
+{% endblock %}
 
 {% block style %}
-
 <link rel="stylesheet" type="text/css" href="{% static 'posts/css/homepage.css' %}">
 
 {% endblock %}

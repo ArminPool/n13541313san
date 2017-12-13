@@ -1,6 +1,13 @@
 {% extends 'posts/base.html' %}
 
 {% load staticfiles %}
+
+{% block meta %}
+<meta name="keywords" content="ثبت نام در نوسان گلد">
+<meta name="description" content="به جمع کاربرای نوسان گلد بپیوندید و از امکانات ما بهرمند شوید.">
+
+{% endblock %}
+
 {% block style %}
 <link rel="stylesheet" type="text/css" href="{% static 'users/css/reg-form.css' %}"/>
 {% endblock %}

@@ -1,6 +1,13 @@
 {% extends 'posts/homepage.html' %}
 
 {% load staticfiles %}
+
+{% block meta %}
+<meta name="keywords" content="{{tag}}">
+<meta name="description" content="پست های مرتبط با موضوع {{tag}}">
+
+{% endblock %}
+
 {% block title %}
 <title>{{ tag }}</title>
 {% endblock %}

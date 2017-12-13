@@ -1,6 +1,13 @@
 {% extends 'posts/base.html' %}
 {% load staticfiles %}
 
+{% block meta %}
+<meta name="keywords" content="HTML, CSS, XML, XHTML, JavaScript">
+<meta name="description" content="Free Web tutorials on HTML and CSS">
+<meta name="author" content="John Doe">
+
+{% endblock %}
+
 {% block style %}
 <link rel="stylesheet" type="text/css" href="{% static 'specificpages/css/pamm.css' %}">
 {% endblock %}

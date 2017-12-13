@@ -1,6 +1,10 @@
 {% extends 'posts/base.html'%}
 {% load staticfiles %}
 
+{% block meta %}
+<meta name="description" content="با استفاده از فرمی که در این قسمت قرار گرفته است شما میتوانید انتقادات و یا پشنهادات خود را به ما ارسال کنید.">
+
+{% endblock %}
 
 {% block style %}
 <link rel="stylesheet" type="text/css" href="{% static 'users/css/GuestContact.css' %}"/>

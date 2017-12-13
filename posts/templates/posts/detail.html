@@ -4,6 +4,13 @@
 {% load custom_tags %}
 {% load staticfiles %}
 
+{% block meta %}
+<meta name="keywords" content="{{post.MainTag}},{% for tag in post.Tags %} {{tag}},{% endfor %}">
+<meta name="description" content="{{post.description}}">
+<meta name="author" content="{{post.author.username}}">
+
+{% endblock %}
+
 {% block style %}
 <link rel="stylesheet" type="text/css" href="{% static 'posts/css/detail.css' %}">
 {% endblock %}
