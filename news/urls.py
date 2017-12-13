@@ -49,4 +49,3 @@ urlpatterns = [
                       name='django.contrib.sitemaps.views.sitemap'), ] + staticfiles_urlpatterns() + static(
     settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
-urlpatterns += staticfiles_urlpatterns()
