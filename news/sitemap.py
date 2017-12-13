@@ -18,7 +18,7 @@ class StaticSitemap(Sitemap):
 
     # The below method returns all urls defined in urls.py file
     def items(self):
-        mylist = ['pamm', 'mql', 'Gold', 'EURUSD', 'USDJPY', 'GBPUSD', 'USDCHF', 'AUDUSD'
+        mylist = ['pamm', 'mql', 'GOLD', 'EURUSD', 'USDJPY', 'GBPUSD', 'USDCHF', 'AUDUSD'
             , 'NZDUSD', 'BTCUSD', 'calender', 'Contact', 'search', 'metatrader', 'rules'
                   ]
 

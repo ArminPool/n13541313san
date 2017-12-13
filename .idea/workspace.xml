@@ -23,8 +23,8 @@
             <file leaf-file-name="urls.py" pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/news/urls.py">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="159">
-                    <caret line="20" column="24" lean-forward="false" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+                  <state relative-caret-position="341">
+                    <caret line="36" column="98" lean-forward="false" selection-start-line="36" selection-start-column="94" selection-end-line="36" selection-end-column="98" />
                     <folding>
                       <element signature="e#0#41#0" expanded="true" />
                     </folding>
@@ -93,8 +93,8 @@
       <file leaf-file-name="sitemap.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/news/sitemap.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="23" column="7" lean-forward="false" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
+            <state relative-caret-position="416">
+              <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
               <folding>
                 <element signature="e#0#43#0" expanded="true" />
               </folding>
@@ -675,13 +675,6 @@
       <option name="presentableId" value="Default" />
       <updated>1509594326097</updated>
     </task>
-    <task id="LOCAL-00096" summary="adding specific htmls">
-      <created>1512807987705</created>
-      <option name="number" value="00096" />
-      <option name="presentableId" value="LOCAL-00096" />
-      <option name="project" value="LOCAL" />
-      <updated>1512807987706</updated>
-    </task>
     <task id="LOCAL-00097" summary="wsgi_prod changed">
       <created>1512808636652</created>
       <option name="number" value="00097" />
@@ -1018,7 +1011,14 @@
       <option name="project" value="LOCAL" />
       <updated>1513165527195</updated>
     </task>
-    <option name="localTasksCounter" value="145" />
+    <task id="LOCAL-00145" summary="sitemap mistake fixed">
+      <created>1513165681846</created>
+      <option name="number" value="00145" />
+      <option name="presentableId" value="LOCAL-00145" />
+      <option name="project" value="LOCAL" />
+      <updated>1513165681846</updated>
+    </task>
+    <option name="localTasksCounter" value="146" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1110,7 +1110,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="setting db changed" />
     <MESSAGE value="instagram link added /login css fixed /roles text edited and inbox added/print() deleted from users/view" />
     <MESSAGE value="SideNav fixed in contact-us&#10;print() deleted from users/view posts/view" />
     <MESSAGE value="imges compressed" />
@@ -1135,7 +1134,8 @@
     <MESSAGE value="from news.urls import urlpatterns&#10; deleted" />
     <MESSAGE value="for loop edited" />
     <MESSAGE value="static urls added to an list inside staticsitemap class" />
-    <option name="LAST_COMMIT_MESSAGE" value="static urls added to an list inside staticsitemap class" />
+    <MESSAGE value="sitemap mistake fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="sitemap mistake fixed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1496,16 +1496,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/news/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="20" column="24" lean-forward="false" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/posts/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="156">
@@ -1514,10 +1504,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/news/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="36" column="98" lean-forward="false" selection-start-line="36" selection-start-column="94" selection-end-line="36" selection-end-column="98" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/news/sitemap.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="23" column="7" lean-forward="false" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
+        <state relative-caret-position="416">
+          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding>
             <element signature="e#0#43#0" expanded="true" />
           </folding>
