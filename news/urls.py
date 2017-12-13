@@ -3,12 +3,17 @@ from django.contrib import admin
 from django.contrib.staticfiles.urls import static
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from django.views.generic import TemplateView
+from django.contrib.sitemaps.views import sitemap
 
+from news.sitemap import PostsSitemap
 from posts.views import search, economic_calender, calender
 from specificpages.views import specific_pages
 from users.views import contact
 from . import settings
 
+sitemaps = {
+    'posts': PostsSitemap()
+}
 urlpatterns = [
 
     url(r'^admin/', admin.site.urls),
@@ -37,6 +42,7 @@ urlpatterns = [
     url(r'^contact-us/$', contact, name='Contact'),
 
     url(r'^calender/$', calender, name='calender'),
-]
+
+    url(r'^sitemap\.xml$', sitemap, {'sitemaps': sitemaps}, name='django.contrib.sitemaps.views.sitemap'),]
 urlpatterns += staticfiles_urlpatterns()
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

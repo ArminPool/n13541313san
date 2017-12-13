@@ -18,7 +18,7 @@ class Post(models.Model):
                               processors=[ResizeToFill(700, 450)],
 
                               format='JPEG',
-                              options={'quality': 60}, null=True,blank=False)
+                              options={'quality': 60}, null=True, blank=False)
 
     description = RichTextField(config_name='awesome_ckeditor')
 
@@ -47,6 +47,9 @@ class Post(models.Model):
 
     def __str__(self):
         return self.header
+
+    def get_absolute_url(self):
+        return '/posts' + str(self.header) + '/'
 
 
 class Comment(models.Model):

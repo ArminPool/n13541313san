@@ -1,6 +1,7 @@
 from django.contrib import admin
 
 # Register your models here.
+from django.contrib.sitemaps.views import sitemap
 from django.forms import TextInput, Textarea
 
 from users.models import UserProfile, GuestMessage, UsersMessage, Inbox, Token, Author
