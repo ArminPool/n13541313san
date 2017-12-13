@@ -5,14 +5,15 @@ from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from django.views.generic import TemplateView
 from django.contrib.sitemaps.views import sitemap
 
-from news.sitemap import PostsSitemap
+from news.sitemap import PostsSitemap, StaticSitemap
 from posts.views import search, economic_calender, calender
 from specificpages.views import specific_pages
 from users.views import contact
 from . import settings
 
 sitemaps = {
-    'posts': PostsSitemap()
+    'post': PostsSitemap(),
+    'static': StaticSitemap(),
 }
 urlpatterns = [
 
