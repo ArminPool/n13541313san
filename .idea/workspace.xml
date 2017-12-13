@@ -10,7 +10,6 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/specificpages/templates/specificpages/usdjpy.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/news/sitemap.py" afterPath="$PROJECT_DIR$/news/sitemap.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/news/urls.py" afterPath="$PROJECT_DIR$/news/urls.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -77,9 +76,11 @@
       <file leaf-file-name="sitemap.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/news/sitemap.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="78">
-              <caret line="3" column="10" lean-forward="false" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
-              <folding />
+            <state relative-caret-position="182">
+              <caret line="22" column="37" lean-forward="false" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
+              <folding>
+                <element signature="e#0#43#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -657,13 +658,6 @@
       <option name="presentableId" value="Default" />
       <updated>1509594326097</updated>
     </task>
-    <task id="LOCAL-00085" summary="base scripts moved to bottom of page&#10;zarinpal urls and views added">
-      <created>1512551841483</created>
-      <option name="number" value="00085" />
-      <option name="presentableId" value="LOCAL-00085" />
-      <option name="project" value="LOCAL" />
-      <updated>1512551841484</updated>
-    </task>
     <task id="LOCAL-00086" summary="boostrap3&#10;jquery&#10;font-awesome&#10;material icons&#10;glyphicons &#10;downloaded and their src added to static files&#10;css and js files formatted">
       <created>1512578325884</created>
       <option name="number" value="00086" />
@@ -1000,7 +994,14 @@
       <option name="project" value="LOCAL" />
       <updated>1513160413631</updated>
     </task>
-    <option name="localTasksCounter" value="134" />
+    <task id="LOCAL-00134" summary="sitemap url import changed for test">
+      <created>1513161096002</created>
+      <option name="number" value="00134" />
+      <option name="presentableId" value="LOCAL-00134" />
+      <option name="project" value="LOCAL" />
+      <updated>1513161096002</updated>
+    </task>
+    <option name="localTasksCounter" value="135" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1072,7 +1073,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="zarinpal test3" />
     <MESSAGE value="zarinpal test4 request.args =&gt;request.GET.get" />
     <MESSAGE value="zarinpal test5  .get method changed from []  to ()" />
     <MESSAGE value="user view changed" />
@@ -1097,7 +1097,8 @@
     <MESSAGE value="staticsitemap added" />
     <MESSAGE value="description tag deleted" />
     <MESSAGE value="description tag added egain" />
-    <option name="LAST_COMMIT_MESSAGE" value="description tag added egain" />
+    <MESSAGE value="sitemap url import changed for test" />
+    <option name="LAST_COMMIT_MESSAGE" value="sitemap url import changed for test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1471,9 +1472,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/news/sitemap.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="3" column="10" lean-forward="false" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
-          <folding />
+        <state relative-caret-position="182">
+          <caret line="22" column="37" lean-forward="false" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

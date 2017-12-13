@@ -20,7 +20,7 @@ class StaticSitemap(Sitemap):
      def items(self):
         mylist = [ ]
         for url in homeUrls:
-            mylist.append('home:'+url.name)
+            mylist.append('posts:'+url.name)
         return mylist
 
      def location(self, item):
