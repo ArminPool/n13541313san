@@ -29,5 +29,8 @@ class StaticSitemap(Sitemap):
 
     def location(self, item):
         if item == 'posts:home':
-            item.priority = 1.0
+            priority = 1.0
+        else:
+            priority = 0.6
+
         return reverse(item)
