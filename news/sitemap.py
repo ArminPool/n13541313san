@@ -21,8 +21,7 @@ class StaticSitemap(Sitemap):
         mylist = ['pamm', 'mql', 'Gold', 'EURUSD', 'USDJPY', 'GBPUSD', 'USDCHF', 'AUDUSD'
             , 'NZDUSD', 'BTCUSD', 'calender', 'Contact', 'search', 'metatrader', 'rules'
                   ]
-        for url_name in mylist:
-            mylist.append(url_name)
+
         return mylist
 
     def location(self, item):
