@@ -1,7 +1,6 @@
 from django.contrib.sitemaps import Sitemap
 from posts.models import Post
 
-from news.urls import urlpatterns
 
 
 class PostsSitemap(Sitemap):
@@ -12,19 +11,3 @@ class PostsSitemap(Sitemap):
         return Post.objects.all()
 
 
-from django.core.urlresolvers import reverse
-
-
-class StaticSitemap(Sitemap):
-    priority = 0.8
-    changefreq = 'daily'
-
-    # The below method returns all urls defined in urls.py file
-    def items(self):
-        mylist = []
-        for url in mylist:
-            mylist.append('home:' + url.name)
-        return mylist
-
-    def location(self, item):
-        return reverse(item)
