@@ -7,26 +7,13 @@ from django.urls import reverse
 from django.views.generic import TemplateView
 from django.contrib.sitemaps.views import sitemap
 
-from news.sitemap import PostsSitemap
+from news.sitemap import PostsSitemap, StaticSitemap
 from posts.views import search, economic_calender, calender
 from specificpages.views import specific_pages
 from users.views import contact
 from . import settings
 
 
-class StaticSitemap(Sitemap):
-    priority = 0.8
-    changefreq = 'daily'
-
-    # The below method returns all urls defined in urls.py file
-    def items(self):
-        mylist = []
-        for url in urlpatterns:
-            mylist.append('home:' + url.name)
-        return mylist
-
-    def location(self, item):
-        return reverse(item)
 
 
 sitemaps = {
@@ -40,22 +27,22 @@ urlpatterns = [
     url(r'', include('posts.urls')),
     url(r'^user/', include('users.urls')),
     url(r'^search/', search, name='search'),
-    url(r'^software/metatrader/$', TemplateView.as_view(template_name='specificpages/metatrader.html')),
-    url(r'^rules/$', TemplateView.as_view(template_name='specificpages/rules.html')),
-    url(r'^about-us/$', TemplateView.as_view(template_name='specificpages/about-us.html')),
-    url(r'^tariffs/$', TemplateView.as_view(template_name='specificpages/tariffs.html')),
+    url(r'^software/metatrader/$', TemplateView.as_view(template_name='specificpages/metatrader.html'),name='metatrader'),
+    url(r'^rules/$', TemplateView.as_view(template_name='specificpages/rules.html'),name='rules'),
+    url(r'^about-us/$', TemplateView.as_view(template_name='specificpages/about-us.html'),name='about-us'),
+    url(r'^tariffs/$', TemplateView.as_view(template_name='specificpages/tariffs.html'),name='tariffs'),
 
-    url(r'^mql5/$', TemplateView.as_view(template_name='specificpages/mql.html')),
-    url(r'^pamm/$', TemplateView.as_view(template_name='specificpages/pamm.html')),
-    url(r'^chart/GOLD/$', TemplateView.as_view(template_name='specificpages/GOLD.html')),
-    url(r'^chart/EURUSD/$', TemplateView.as_view(template_name='specificpages/EURUSD.html')),
-    url(r'^chart/USDJPY/$', TemplateView.as_view(template_name='specificpages/USDJPY.html')),
-    url(r'^chart/USDJPY/$', TemplateView.as_view(template_name='specificpages/GBPUSD.html')),
+    url(r'^mql5/$', TemplateView.as_view(template_name='specificpages/mql.html'),name='mql'),
+    url(r'^pamm/$', TemplateView.as_view(template_name='specificpages/pamm.html'),name='pamm'),
+    url(r'^chart/GOLD/$', TemplateView.as_view(template_name='specificpages/GOLD.html'),name='GOLD'),
+    url(r'^chart/EURUSD/$', TemplateView.as_view(template_name='specificpages/EURUSD.html'),name='EURUSD'),
+    url(r'^chart/USDJPY/$', TemplateView.as_view(template_name='specificpages/USDJPY.html'),name='USDJPY'),
+    url(r'^chart/USDJPY/$', TemplateView.as_view(template_name='specificpages/GBPUSD.html'),name='GBPUSD'),
 
-    url(r'^chart/USDCHF/$', TemplateView.as_view(template_name='specificpages/USDCHF.html')),
-    url(r'^chart/AUDUSD/$', TemplateView.as_view(template_name='specificpages/AUDUSD.html')),
-    url(r'^chart/NZDUSD/$', TemplateView.as_view(template_name='specificpages/NZDUSD.html')),
-    url(r'^chart/BTCUSD/$', TemplateView.as_view(template_name='specificpages/BTCUSD.html')),
+    url(r'^chart/USDCHF/$', TemplateView.as_view(template_name='specificpages/USDCHF.html'),name='USDCHF'),
+    url(r'^chart/AUDUSD/$', TemplateView.as_view(template_name='specificpages/AUDUSD.html'),name='AUDUSD'),
+    url(r'^chart/NZDUSD/$', TemplateView.as_view(template_name='specificpages/NZDUSD.html'),name='NZDUSD'),
+    url(r'^chart/BTCUSD/$', TemplateView.as_view(template_name='specificpages/BTCUSD.html'),name='BTCUSD'),
 
     url(r'^economicCalendar/$', economic_calender, name='economic_calendar'),
     url(r'^contact-us/$', contact, name='Contact'),

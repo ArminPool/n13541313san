@@ -8,6 +8,7 @@ from django.db.models import Q
 from datetime import datetime
 from django.shortcuts import render, redirect
 from django.core.mail import send_mail
+from django.urls import reverse
 from django.utils.timezone import localtime, now
 from django.views.generic import ListView
 from flask import Flask
@@ -20,6 +21,7 @@ from users.models import Inbox, Author
 
 def homepage(request):
     # print(localtime(now()) + relativedelta(months=3) > localtime(now()))
+
     posts_list = Post.objects.all()
     most_seen = Post.objects.order_by("-seen")[:10]
 
