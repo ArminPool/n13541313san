@@ -21,7 +21,7 @@ class StaticSitemap(Sitemap):
     # The below method returns all urls defined in urls.py file
     def items(self):
         mylist = []
-        for url in mylist:
+        for url in urlpatterns:
             mylist.append('home:' + url.name)
         return mylist
 

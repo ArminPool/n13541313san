@@ -4,12 +4,9 @@
     <bookmark url="file://$PROJECT_DIR$/posts/templates/posts/detail.html" line="24" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83ce492f-81ab-4045-9bd2-7537fae0f724" name="Default" comment="description tag added">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/specificpages/templates/specificpages/eurusd.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/specificpages/templates/specificpages/gold.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/specificpages/templates/specificpages/usdjpy.html" afterPath="" />
+    <list default="true" id="83ce492f-81ab-4045-9bd2-7537fae0f724" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/news/sitemap.py" afterPath="$PROJECT_DIR$/news/sitemap.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/news/urls.py" afterPath="$PROJECT_DIR$/news/urls.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -61,11 +58,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/news/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="445">
-              <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+            <state relative-caret-position="208">
+              <caret line="23" column="30" lean-forward="false" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -73,7 +70,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sitemap.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="sitemap.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/news/sitemap.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="338">
@@ -160,8 +157,8 @@
         <option value="$PROJECT_DIR$/posts/admin.py" />
         <option value="$PROJECT_DIR$/news/settings.py" />
         <option value="$PROJECT_DIR$/posts/models.py" />
-        <option value="$PROJECT_DIR$/news/urls.py" />
         <option value="$PROJECT_DIR$/news/sitemap.py" />
+        <option value="$PROJECT_DIR$/news/urls.py" />
       </list>
     </option>
   </component>
@@ -658,13 +655,6 @@
       <option name="presentableId" value="Default" />
       <updated>1509594326097</updated>
     </task>
-    <task id="LOCAL-00093" summary="charts added">
-      <created>1512737077339</created>
-      <option name="number" value="00093" />
-      <option name="presentableId" value="LOCAL-00093" />
-      <option name="project" value="LOCAL" />
-      <updated>1512737077341</updated>
-    </task>
     <task id="LOCAL-00094" summary="setting changed">
       <created>1512737541832</created>
       <option name="number" value="00094" />
@@ -1001,7 +991,14 @@
       <option name="project" value="LOCAL" />
       <updated>1513164464799</updated>
     </task>
-    <option name="localTasksCounter" value="142" />
+    <task id="LOCAL-00142" summary="from news.urls import urlpatterns&#10; deleted">
+      <created>1513164537859</created>
+      <option name="number" value="00142" />
+      <option name="presentableId" value="LOCAL-00142" />
+      <option name="project" value="LOCAL" />
+      <updated>1513164537859</updated>
+    </task>
+    <option name="localTasksCounter" value="143" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1073,7 +1070,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="verify html added" />
     <MESSAGE value="template name corrected" />
     <MESSAGE value="templaye corrected and profile.save added to view" />
     <MESSAGE value="setting db changed" />
@@ -1098,7 +1094,8 @@
     <MESSAGE value="urls edited" />
     <MESSAGE value="sitemap changed" />
     <MESSAGE value="sitemap" />
-    <option name="LAST_COMMIT_MESSAGE" value="sitemap" />
+    <MESSAGE value="from news.urls import urlpatterns&#10; deleted" />
+    <option name="LAST_COMMIT_MESSAGE" value="from news.urls import urlpatterns&#10; deleted" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1466,22 +1463,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/news/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="445">
-          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/news/sitemap.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="338">
           <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding>
             <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/news/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="23" column="30" lean-forward="false" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
