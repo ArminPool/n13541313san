@@ -71,8 +71,8 @@
       <file leaf-file-name="sitemap.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/news/sitemap.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="23" column="31" lean-forward="false" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
+            <state relative-caret-position="494">
+              <caret line="31" column="31" lean-forward="false" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
               <folding>
                 <element signature="e#0#43#0" expanded="true" />
               </folding>
@@ -673,13 +673,6 @@
       <option name="presentableId" value="Default" />
       <updated>1509594326097</updated>
     </task>
-    <task id="LOCAL-00099" summary="zarinpal test1">
-      <created>1512964826871</created>
-      <option name="number" value="00099" />
-      <option name="presentableId" value="LOCAL-00099" />
-      <option name="project" value="LOCAL" />
-      <updated>1512964826871</updated>
-    </task>
     <task id="LOCAL-00100" summary="Debug True for testing">
       <created>1512965482444</created>
       <option name="number" value="00100" />
@@ -1016,7 +1009,14 @@
       <option name="project" value="LOCAL" />
       <updated>1513166117780</updated>
     </task>
-    <option name="localTasksCounter" value="148" />
+    <task id="LOCAL-00148" summary="sitemap sitemap sitemap">
+      <created>1513182340358</created>
+      <option name="number" value="00148" />
+      <option name="presentableId" value="LOCAL-00148" />
+      <option name="project" value="LOCAL" />
+      <updated>1513182340359</updated>
+    </task>
+    <option name="localTasksCounter" value="149" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1108,7 +1108,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="imges compressed" />
     <MESSAGE value="login-background compressed added and .jpg added to this imgs" />
     <MESSAGE value="comments fixed" />
     <MESSAGE value="trick git add :C" />
@@ -1133,7 +1132,8 @@
     <MESSAGE value="sitemap mistake fixed" />
     <MESSAGE value="reverse name fixed" />
     <MESSAGE value="StaticSiteMap changeFreq changed to monthly" />
-    <option name="LAST_COMMIT_MESSAGE" value="StaticSiteMap changeFreq changed to monthly" />
+    <MESSAGE value="sitemap sitemap sitemap" />
+    <option name="LAST_COMMIT_MESSAGE" value="sitemap sitemap sitemap" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1456,8 +1456,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/news/sitemap.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="23" column="31" lean-forward="false" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
+        <state relative-caret-position="494">
+          <caret line="31" column="31" lean-forward="false" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
           <folding>
             <element signature="e#0#43#0" expanded="true" />
           </folding>

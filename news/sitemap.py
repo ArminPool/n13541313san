@@ -28,4 +28,6 @@ class StaticSitemap(Sitemap):
         return mylist
 
     def location(self, item):
+        if item == 'posts:home':
+            item.priority = 1.0
         return reverse(item)
