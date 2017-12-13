@@ -5,7 +5,7 @@ from posts.models import Post
 
 
 class PostsSitemap(Sitemap):
-    changefreq = "daily"
+    changefreq = "never"
     priority = 0.9
 
     def items(self):
@@ -17,10 +17,10 @@ class PostsSitemap(Sitemap):
 
 class StaticSitemap(Sitemap):
     priority = 0.6
-    changefreq = 'monthly'
+    changefreq = 'never'
 
     def items(self):
-        mylist = ['posts:home', 'pamm', 'mql', 'GOLD', 'EURUSD', 'USDJPY', 'GBPUSD', 'USDCHF', 'AUDUSD'
+        mylist = ['pamm', 'mql', 'GOLD', 'EURUSD', 'USDJPY', 'GBPUSD', 'USDCHF', 'AUDUSD'
             , 'NZDUSD', 'BTCUSD', 'calender', 'Contact', 'search', 'metatrader', 'rules'
                   ]
 
