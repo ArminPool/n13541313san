@@ -6,31 +6,25 @@ from posts.models import Post
 
 class PostsSitemap(Sitemap):
     changefreq = "daily"
-    priority = 0.8
+    priority = 0.9
 
     def items(self):
         return Post.objects.all()
 
     def lastmod(self, obj):
-        return obj.modifiedDate
+        return obj.updated_at
 
 
 class StaticSitemap(Sitemap):
     priority = 0.6
     changefreq = 'monthly'
 
-    # The below method returns all urls defined in urls.py file
     def items(self):
-        mylist = ['posts:home','pamm', 'mql', 'GOLD', 'EURUSD', 'USDJPY', 'GBPUSD', 'USDCHF', 'AUDUSD'
+        mylist = ['posts:home', 'pamm', 'mql', 'GOLD', 'EURUSD', 'USDJPY', 'GBPUSD', 'USDCHF', 'AUDUSD'
             , 'NZDUSD', 'BTCUSD', 'calender', 'Contact', 'search', 'metatrader', 'rules'
                   ]
 
         return mylist
 
     def location(self, item):
-        if item == 'posts:home':
-            priority = 1.0
-        else:
-            priority = 0.6
-
         return reverse(item)

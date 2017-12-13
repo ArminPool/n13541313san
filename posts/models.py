@@ -25,7 +25,7 @@ class Post(models.Model):
     text = RichTextField(config_name='awesome_ckeditor')
 
     date_published = models.DateTimeField()
-
+    updated_at = models.DateTimeField(auto_now=True)
     Main_Tag = models.CharField(max_length=500)
 
     author = models.ForeignKey(Author, null=False)
