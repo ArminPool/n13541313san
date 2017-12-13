@@ -8,7 +8,7 @@ from users.models import UserProfile, GuestMessage, UsersMessage, Inbox, Token, 
 from django.db import models
 from posts.models import Post, Comment, Calender
 
-
+"""
 class AdminModel(admin.ModelAdmin):
 
     exclude = ('public',)
@@ -19,8 +19,9 @@ class AdminModel(admin.ModelAdmin):
             obj.public = False
         super(AdminModel, self).save_model(request, obj, form, change)
 
+"""
 
-admin.site.register(Post, AdminModel)
+admin.site.register(Post)
 admin.site.register(Comment)
 admin.site.register(Calender)
 
