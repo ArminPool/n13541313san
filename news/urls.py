@@ -1,15 +1,33 @@
 from django.conf.urls import url, include
 from django.contrib import admin
+from django.contrib.sitemaps import Sitemap
 from django.contrib.staticfiles.urls import static
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
+from django.urls import reverse
 from django.views.generic import TemplateView
 from django.contrib.sitemaps.views import sitemap
 
-from news.sitemap import PostsSitemap, StaticSitemap
+from news.sitemap import PostsSitemap
 from posts.views import search, economic_calender, calender
 from specificpages.views import specific_pages
 from users.views import contact
 from . import settings
+
+
+class StaticSitemap(Sitemap):
+    priority = 0.8
+    changefreq = 'daily'
+
+    # The below method returns all urls defined in urls.py file
+    def items(self):
+        mylist = []
+        for url in mylist:
+            mylist.append('home:' + url.name)
+        return mylist
+
+    def location(self, item):
+        return reverse(item)
+
 
 sitemaps = {
     'post': PostsSitemap(),
