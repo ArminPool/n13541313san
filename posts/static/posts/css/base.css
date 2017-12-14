@@ -408,6 +408,16 @@ background-color:transparent;
 color:#fff;
 background-color:#337ab7;
 }
+#SideNav-bottom-links-list{
+margin-top:10px;
+
+border-top:1px solid #808b9c;
+
+}
+#SideNav .create-account #SideNav-bottom-links-list a:hover{
+background-color:transparent;
+
+}
 
                             /*      setting of side toggles                  */
 #left-side-toggle-open{

@@ -76,7 +76,7 @@ def author(request, author_username):
 
 
 def detail(request, header):
-    post = Post.objects.get(header=header)
+    post = Post.objects.get(header=header.decode())
     if request.method == 'POST':
         form = CommentForm(request.POST)
         if form.is_valid():
