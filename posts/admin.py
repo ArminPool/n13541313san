@@ -9,20 +9,20 @@ from users.models import UserProfile, GuestMessage, UsersMessage, Inbox, Token, 
 from django.db import models
 from posts.models import Post, Comment, Calender
 
-"""
-class AdminModel(admin.ModelAdmin):
 
-    exclude = ('public',)
+class AdminModel(admin.ModelAdmin):
+    exclude = ('author',)
 
     def save_model(self, request, obj, form, change):
-        obj.public = True
-        if not request.user.is_superuser:
-            obj.public = False
+        # obj.public = True
+        # if not request.user.is_superuser:
+
+        # obj.public = False
+        obj.author = Author.objects.get(user=request.user)
         super(AdminModel, self).save_model(request, obj, form, change)
 
-"""
 
-admin.site.register(Post)
+admin.site.register(Post,AdminModel)
 admin.site.register(Comment)
 admin.site.register(Calender)
 
