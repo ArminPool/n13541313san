@@ -146,8 +146,7 @@ def view_profile(request):
     all_posts = Post.objects.all()
     users = User.objects.get(id=request.user.id)
     try:
-        print(request.user)
-        print(request.user.userprofile)
+
         args = {'user': request.user, 'userprofile': request.user.userprofile, 'all_posts': all_posts,
                 'timezones': pytz.common_timezones}
         return render(request, 'users/profile.html', args)
@@ -167,6 +166,7 @@ def edit_profile(request):
         userform = UserEditForm(request.POST, instance=request.user)
 
         if profileform.is_valid() and userform.is_valid():
+
             profileform.save()
             userform.save()
             request.session['django_timezone'] = request.POST['timezone']
