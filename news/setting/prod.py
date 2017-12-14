@@ -5,7 +5,7 @@ ALLOWED_HOSTS = [u'navasangold.com', 'www.navasangold.com']
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'navasang_navasangold_prod',
+        'NAME': 'navasang_navasangold',
         'USER': 'navasang_armin',
         'PASSWORD': '123555888armin',
         'OPTIONS': {
