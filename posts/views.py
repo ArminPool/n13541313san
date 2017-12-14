@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+import urllib.parse
 from collections import Counter
 
 import pytz
@@ -24,7 +25,6 @@ def homepage(request):
 
     posts_list = Post.objects.all()
     most_seen = Post.objects.order_by("-seen")[:10]
-
 
     title = "نوسان صفحه اصلی"
     template_name = 'posts/homepage.html'
@@ -76,7 +76,7 @@ def author(request, author_username):
 
 
 def detail(request, header):
-
+    header = urllib.parse.unquote(header)
     post = Post.objects.get(header=header)
     if request.method == 'POST':
         form = CommentForm(request.POST)

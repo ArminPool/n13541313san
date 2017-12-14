@@ -4,9 +4,8 @@
     <bookmark url="file://$PROJECT_DIR$/posts/templates/posts/detail.html" line="24" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83ce492f-81ab-4045-9bd2-7537fae0f724" name="Default" comment="encoding-test">
+    <list default="true" id="83ce492f-81ab-4045-9bd2-7537fae0f724" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/urls.py" afterPath="$PROJECT_DIR$/posts/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/views.py" afterPath="$PROJECT_DIR$/posts/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -64,9 +63,11 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/posts/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="78" column="3" lean-forward="false" selection-start-line="78" selection-start-column="3" selection-end-line="78" selection-end-column="3" />
-              <folding />
+            <state relative-caret-position="130">
+              <caret line="76" column="0" lean-forward="true" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+              <folding>
+                <element signature="e#24#43#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -660,13 +661,6 @@
       <option name="presentableId" value="Default" />
       <updated>1509594326097</updated>
     </task>
-    <task id="LOCAL-00112" summary="request.GET['Authority']">
-      <created>1512977642369</created>
-      <option name="number" value="00112" />
-      <option name="presentableId" value="LOCAL-00112" />
-      <option name="project" value="LOCAL" />
-      <updated>1512977642369</updated>
-    </task>
     <task id="LOCAL-00113" summary="str(result.RefID)">
       <created>1512977768377</created>
       <option name="number" value="00113" />
@@ -1003,7 +997,14 @@
       <option name="project" value="LOCAL" />
       <updated>1513258669883</updated>
     </task>
-    <option name="localTasksCounter" value="161" />
+    <task id="LOCAL-00161" summary="encoding-test">
+      <created>1513260136400</created>
+      <option name="number" value="00161" />
+      <option name="presentableId" value="LOCAL-00161" />
+      <option name="project" value="LOCAL" />
+      <updated>1513260136401</updated>
+    </task>
+    <option name="localTasksCounter" value="162" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1449,9 +1450,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/posts/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="78" column="3" lean-forward="false" selection-start-line="78" selection-start-column="3" selection-end-line="78" selection-end-column="3" />
-          <folding />
+        <state relative-caret-position="130">
+          <caret line="76" column="0" lean-forward="true" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+          <folding>
+            <element signature="e#24#43#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
