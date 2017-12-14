@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 from collections import Counter
 
 import pytz
@@ -26,10 +25,10 @@ def homepage(request):
     most_seen = Post.objects.order_by("-seen")[:10]
 
 
-    title = "نوسان صفحه اصلی"
+    #title = "نوسان صفحه اصلی"
     template_name = 'posts/homepage.html'
 
-    context = {'posts': posts_list, 'most_seen': most_seen, 'title': title}
+    context = {'posts': posts_list, 'most_seen': most_seen,}
     return render(request, template_name, context)
 
 
@@ -76,7 +75,8 @@ def author(request, author_username):
 
 
 def detail(request, header):
-
+    encoded_header = header.encode("utf-8")
+    header = encoded_header.decode()
     post = Post.objects.get(header=header)
     if request.method == 'POST':
         form = CommentForm(request.POST)
