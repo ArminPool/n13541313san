@@ -66,14 +66,14 @@
                                        <span
                                                 class="glyphicon glyphicon-calendar"
                                                 aria-hidden="true"></span>
-                                            {{ post.date_published|to_jalali|persian_numeric }}</p>
+                                            {{ post.date_published|to_jalali|persian_numeric }}
 
                                     </li>
                                     <li>
 
                                         <span class="glyphicon glyphicon-tag" aria-hidden="true"
                                               ></span>
-                                        <a href="{% url 'posts:tag' tag=post.Main_Tag %}"
+                                        <a href="{% url 'posts:tag' tag=post.Main_Tag|urlencode %}"
                                            >{{ post.Main_Tag}}</a>
                                     </li>
                                 </ul>
