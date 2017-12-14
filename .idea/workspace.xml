@@ -52,8 +52,8 @@
       <file leaf-file-name="homepage.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/posts/templates/posts/homepage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="75" column="95" lean-forward="false" selection-start-line="75" selection-start-column="95" selection-end-line="75" selection-end-column="95" />
+            <state relative-caret-position="232">
+              <caret line="55" column="125" lean-forward="false" selection-start-line="55" selection-start-column="125" selection-end-line="55" selection-end-column="125" />
               <folding />
             </state>
           </provider>
@@ -684,13 +684,6 @@
       <option name="presentableId" value="Default" />
       <updated>1509594326097</updated>
     </task>
-    <task id="LOCAL-00104" summary="user view changed">
-      <created>1512967839118</created>
-      <option name="number" value="00104" />
-      <option name="presentableId" value="LOCAL-00104" />
-      <option name="project" value="LOCAL" />
-      <updated>1512967839118</updated>
-    </task>
     <task id="LOCAL-00105" summary="user view changed">
       <created>1512968141799</created>
       <option name="number" value="00105" />
@@ -1027,7 +1020,14 @@
       <option name="project" value="LOCAL" />
       <updated>1513187235167</updated>
     </task>
-    <option name="localTasksCounter" value="153" />
+    <task id="LOCAL-00153" summary="homepage url encoding changed">
+      <created>1513232477558</created>
+      <option name="number" value="00153" />
+      <option name="presentableId" value="LOCAL-00153" />
+      <option name="project" value="LOCAL" />
+      <updated>1513232477559</updated>
+    </task>
+    <option name="localTasksCounter" value="154" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1120,7 +1120,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="trick git add :C" />
     <MESSAGE value="login-background added" />
     <MESSAGE value="img compressor added" />
     <MESSAGE value="post img field edited" />
@@ -1145,7 +1144,8 @@
     <MESSAGE value="sitemap sitemap sitemap" />
     <MESSAGE value="updated field added to post model and post site-map priority changed" />
     <MESSAGE value="changeFreq value changed" />
-    <option name="LAST_COMMIT_MESSAGE" value="changeFreq value changed" />
+    <MESSAGE value="homepage url encoding changed" />
+    <option name="LAST_COMMIT_MESSAGE" value="homepage url encoding changed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1470,8 +1470,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/posts/templates/posts/homepage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="75" column="95" lean-forward="false" selection-start-line="75" selection-start-column="95" selection-end-line="75" selection-end-column="95" />
+        <state relative-caret-position="232">
+          <caret line="55" column="125" lean-forward="false" selection-start-line="55" selection-start-column="125" selection-end-line="55" selection-end-column="125" />
           <folding />
         </state>
       </provider>

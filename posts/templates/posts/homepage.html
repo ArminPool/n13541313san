@@ -5,9 +5,10 @@
 {% load staticfiles %}
 
 {% block meta %}
-<meta name="google-site-verification" content="qT7F4iIPwX2s1zas81T6ky3OMPB0kBvEXYC012OkRE0" />
+<meta name="google-site-verification" content="qT7F4iIPwX2s1zas81T6ky3OMPB0kBvEXYC012OkRE0"/>
 <meta name="keywords" content="navasangold, نوسان گلد, طلا, تحلیل اقتصادی, اخبار بورس">
-<meta name="description" content="نوسان گلد سایت خبری و مشاوره ای امکاناتی مثل تقویم اقتصادی،اخبار و تحلیل های ویژه و تخصصی  استادان مجرد در زمینه ی طلا توسط برای شما فراهم می آورد.">
+<meta name="description"
+      content="نوسان گلد سایت خبری و مشاوره ای امکاناتی مثل تقویم اقتصادی،اخبار و تحلیل های ویژه و تخصصی  استادان مجرد در زمینه ی طلا توسط برای شما فراهم می آورد.">
 
 {% endblock %}
 
@@ -31,14 +32,15 @@
 
             <div class="jumbotron">
 
-                <div class="post" >
+                <div class="post">
                     {% for post in posts %}
                     <div class="row"
                          style="">
 
                         <div class="col-xs-12 col-sm-12 col-md-5" id="post-img-column" style="float:right">
 
-                            <img class="img-responsive"  src="{{post.img.url}}" title="{{post.header}}" alt="{{post.header}}"
+                            <img class="img-responsive" src="{{post.img.url}}" title="{{post.header}}"
+                                 alt="{{post.header}}"
                                  style="">
 
                         </div>
@@ -48,33 +50,35 @@
                             <div class="text-center">
                                 <div class="post-bottom">
 
-                                <h2 style="padding:10px;padding-top:0px;"> {{ post.header }}</h2>
+                                    <h2 style="padding:10px;padding-top:0px;"> {{ post.header }}</h2>
 
-                                <p>{{ post.description|safe }}<a id="detail-link" href="{% url 'posts:detail' header=post.header %}">بیشتر</a>
-                                </p>
-</div>
-                                  <ul class="list-inline" style="padding-right:0px;">
+                                    <p>{{ post.description|safe }}<a id="detail-link"
+                                                                     href="{% url 'posts:detail' header=post.header|urlencode %}">بیشتر</a>
+                                    </p>
+                                </div>
+                                <ul class="list-inline" style="padding-right:0px;">
                                     <li>
 
 <span class="glyphicon glyphicon-user" aria-hidden="true"
-      style="font-size:15px;"></span> <a href="{% url 'posts:author-view' author_username=post.author %}" >{{ post.author }}</a>
-                                 </li>
+      style="font-size:15px;"></span> <a href="{% url 'posts:author-view' author_username=post.author %}">{{ post.author
+                                        }}</a>
+                                    </li>
 
 
                                     <li style="padding:4px;">
 
                                        <span
-                                                class="glyphicon glyphicon-calendar"
-                                                aria-hidden="true"></span>
-                                            {{ post.date_published|to_jalali|persian_numeric }}
+                                               class="glyphicon glyphicon-calendar"
+                                               aria-hidden="true"></span>
+                                        {{ post.date_published|to_jalali|persian_numeric }}
 
                                     </li>
                                     <li>
 
                                         <span class="glyphicon glyphicon-tag" aria-hidden="true"
-                                              ></span>
+                                        ></span>
                                         <a href="{% url 'posts:tag' tag=post.Main_Tag|urlencode %}"
-                                           >{{ post.Main_Tag}}</a>
+                                        >{{ post.Main_Tag}}</a>
                                     </li>
                                 </ul>
 
@@ -113,11 +117,11 @@
 
                     <div class="most-seen-post">
                         <div class="img-of-most-seen-post">
-                        <img  src="{{item.img.url}}">
-                            </div>
+                            <img src="{{item.img.url}}">
+                        </div>
                         <div class="header-of-most-seen-post">
-                            <a  href="{% url 'posts:detail' header=item.header %}">{{item.header}}</a>
-                            </div>
+                            <a href="{% url 'posts:detail' header=item.header %}">{{item.header}}</a>
+                        </div>
                     </div>
 
 
@@ -125,7 +129,6 @@
 
 
                 </div>
-
 
 
             </div>
