@@ -2,13 +2,13 @@
 
 from django import template
 from django.template.defaultfilters import stringfilter
+
 register = template.Library()
 
 
 @register.filter(name='persian_numeric')
 @stringfilter
 def persian_numeric(value):
-
     length = len(value)
     for char in value:
         if char is '0':
@@ -47,7 +47,9 @@ def persian_numeric(value):
     return value[length:]
 
 
+@register.filter(name='fix_spaces')
+@stringfilter
+def fix_spaces(str):
+    fixed_str = str.replace(' ', '-')
 
-
-
-
+    return fixed_str

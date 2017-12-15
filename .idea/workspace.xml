@@ -6,10 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="83ce492f-81ab-4045-9bd2-7537fae0f724" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/static/posts/css/base.css" afterPath="$PROJECT_DIR$/posts/static/posts/css/base.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/static/posts/css/homepage.css" afterPath="$PROJECT_DIR$/posts/static/posts/css/homepage.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/models.py" afterPath="$PROJECT_DIR$/posts/models.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/templates/posts/homepage.html" afterPath="$PROJECT_DIR$/posts/templates/posts/homepage.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/users/static/users/css/reg-form.css" afterPath="$PROJECT_DIR$/users/static/users/css/reg-form.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/templatetags/custom_tags.py" afterPath="$PROJECT_DIR$/posts/templatetags/custom_tags.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/views.py" afterPath="$PROJECT_DIR$/posts/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -84,18 +84,52 @@
       <file leaf-file-name="homepage.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/posts/templates/posts/homepage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="81" column="105" lean-forward="false" selection-start-line="81" selection-start-column="105" selection-end-line="81" selection-end-column="105" />
+            <state relative-caret-position="96">
+              <caret line="54" column="95" lean-forward="false" selection-start-line="54" selection-start-column="89" selection-end-line="54" selection-end-column="95" />
+              <folding>
+                <element signature="n#style#0;n#span#0;n#li#3;n#ul#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/posts/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="257">
+              <caret line="79" column="0" lean-forward="false" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
+              <folding>
+                <element signature="e#24#43#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/posts/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="234">
+              <caret line="51" column="52" lean-forward="false" selection-start-line="51" selection-start-column="52" selection-end-line="51" selection-end-column="52" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="homepage.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="homepage.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/posts/static/posts/css/homepage.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="338">
               <caret line="88" column="0" lean-forward="true" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="custom_tags.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/posts/templatetags/custom_tags.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="419">
+              <caret line="54" column="20" lean-forward="false" selection-start-line="54" selection-start-column="20" selection-end-line="54" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -117,7 +151,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/users/migrations/0001_initial.py" />
         <option value="$PROJECT_DIR$/users/migrations/0004_auto_20171212_1151.py" />
         <option value="$PROJECT_DIR$/users/static/users/css/login.css" />
         <option value="$PROJECT_DIR$/users/static/users/css/UsersContact.css" />
@@ -147,13 +180,11 @@
         <option value="$PROJECT_DIR$/users/templates/users/UsersContact.html" />
         <option value="$PROJECT_DIR$/news/settings.py" />
         <option value="$PROJECT_DIR$/news/urls.py" />
-        <option value="$PROJECT_DIR$/posts/models.py" />
         <option value="$PROJECT_DIR$/news/high-priority-page-sitemap.xml" />
         <option value="$PROJECT_DIR$/news/sitemap.py" />
         <option value="$PROJECT_DIR$/posts/admin.py" />
         <option value="$PROJECT_DIR$/posts/tests.py" />
         <option value="$PROJECT_DIR$/posts/urls.py" />
-        <option value="$PROJECT_DIR$/posts/views.py" />
         <option value="$PROJECT_DIR$/news/setting/prod.py" />
         <option value="$PROJECT_DIR$/posts/templates/posts/base.html" />
         <option value="$PROJECT_DIR$/users/templatetags/__init__.py" />
@@ -166,8 +197,11 @@
         <option value="$PROJECT_DIR$/users/static/users/css/edit_profile.css" />
         <option value="$PROJECT_DIR$/users/static/users/css/reg-form.css" />
         <option value="$PROJECT_DIR$/posts/static/posts/css/base.css" />
-        <option value="$PROJECT_DIR$/posts/templates/posts/homepage.html" />
         <option value="$PROJECT_DIR$/posts/static/posts/css/homepage.css" />
+        <option value="$PROJECT_DIR$/posts/templates/posts/homepage.html" />
+        <option value="$PROJECT_DIR$/posts/templatetags/custom_tags.py" />
+        <option value="$PROJECT_DIR$/posts/views.py" />
+        <option value="$PROJECT_DIR$/posts/models.py" />
       </list>
     </option>
   </component>
@@ -796,13 +830,6 @@
       <option name="presentableId" value="Default" />
       <updated>1509594326097</updated>
     </task>
-    <task id="LOCAL-00121" summary="login-background compressed added and .jpg added to this imgs">
-      <created>1513093590237</created>
-      <option name="number" value="00121" />
-      <option name="presentableId" value="LOCAL-00121" />
-      <option name="project" value="LOCAL" />
-      <updated>1513093590237</updated>
-    </task>
     <task id="LOCAL-00122" summary="comments fixed">
       <created>1513096637640</created>
       <option name="number" value="00122" />
@@ -1139,7 +1166,14 @@
       <option name="project" value="LOCAL" />
       <updated>1513329747642</updated>
     </task>
-    <option name="localTasksCounter" value="170" />
+    <task id="LOCAL-00170" summary="SideNav css changed and seen added to posts(in homepage) and reg-form margin-top fixed">
+      <created>1513333402157</created>
+      <option name="number" value="00170" />
+      <option name="presentableId" value="LOCAL-00170" />
+      <option name="project" value="LOCAL" />
+      <updated>1513333402157</updated>
+    </task>
+    <option name="localTasksCounter" value="171" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1212,8 +1246,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="sitemap" />
-    <MESSAGE value="from news.urls import urlpatterns&#10; deleted" />
     <MESSAGE value="for loop edited" />
     <MESSAGE value="static urls added to an list inside staticsitemap class" />
     <MESSAGE value="sitemap mistake fixed" />
@@ -1237,7 +1269,9 @@
     <MESSAGE value="edif-profile form test" />
     <MESSAGE value="edif-profile fixed" />
     <MESSAGE value="edit-profile page css" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit-profile page css" />
+    <MESSAGE value="SideNav css changed and seen added to posts(in homepage) and reg-form margin-top fixed" />
+    <MESSAGE value="spaces inside posts links replaced with -" />
+    <option name="LAST_COMMIT_MESSAGE" value="spaces inside posts links replaced with -" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1401,13 +1435,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/posts/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="1" column="7" lean-forward="true" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/news/setting/prod.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="130">
@@ -1432,14 +1459,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-10504">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/posts/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-872">
-          <caret line="16" column="32" lean-forward="false" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1471,14 +1490,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/posts/templatetags/custom_tags.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="9" selection-end-column="27" />
           <folding />
         </state>
       </provider>
@@ -1565,18 +1576,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/posts/templates/posts/homepage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="81" column="105" lean-forward="false" selection-start-line="81" selection-start-column="105" selection-end-line="81" selection-end-column="105" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/posts/static/posts/css/homepage.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="338">
           <caret line="88" column="0" lean-forward="true" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/posts/templatetags/custom_tags.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
+          <caret line="54" column="20" lean-forward="false" selection-start-line="54" selection-start-column="20" selection-end-line="54" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/posts/templates/posts/homepage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="54" column="95" lean-forward="false" selection-start-line="54" selection-start-column="89" selection-end-line="54" selection-end-column="95" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#li#3;n#ul#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/posts/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="79" column="0" lean-forward="false" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
+          <folding>
+            <element signature="e#24#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/posts/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="51" column="52" lean-forward="false" selection-start-line="51" selection-start-column="52" selection-end-line="51" selection-end-column="52" />
           <folding />
         </state>
       </provider>

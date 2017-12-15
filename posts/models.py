@@ -49,7 +49,7 @@ class Post(models.Model):
         return self.header
 
     def get_absolute_url(self):
-        return '/' + str(self.header) + '/'
+        return '/' + str(self.header).replace(' ','-') + '/'
 
 
 class Comment(models.Model):

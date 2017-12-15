@@ -76,8 +76,10 @@ def author(request, author_username):
 
 
 def detail(request, header):
-    header = urllib.parse.unquote(header)
+
+    header = urllib.parse.unquote(header).replace('-', ' ')
     post = Post.objects.get(header=header)
+
     if request.method == 'POST':
         form = CommentForm(request.POST)
         if form.is_valid():

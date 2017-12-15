@@ -52,7 +52,7 @@
                                     <h2 style="padding:10px;padding-top:0px;"> {{ post.header }}</h2>
 
                                     <p>{{ post.description|safe }}<a id="detail-link"
-                                                                     href="{% url 'posts:detail' header=post.header %}">بیشتر</a></p>
+                                                                     href="{% url 'posts:detail' header=post.header|fix_spaces %}">بیشتر</a></p>
 
                                 </div>
                                 <ul class="list-inline" style="padding-right:0px;">
