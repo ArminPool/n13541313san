@@ -367,6 +367,7 @@ padding:10px;
 }
 
 #SideNav .jumbotron{
+padding-top:10px;
 background-color:transparent;
 }
 
@@ -393,20 +394,27 @@ color:white;
 
 font-size:25px;
 }
+#SideNav label.error{
+
+
+font-weight:500;
+
+}
 
 
 #SideNav .jumbotron .btn-primary{
 margin:auto 50px;
+border-color: #808b9c;
 }
 #SideNav button[type='submit'] {
 
 color:#808b9c;
 background-color:transparent;
 }
-#SideNav button[type='submit']:hover {
+#SideNav button[type='submit']:hover,#SideNav a.btn-primary:hover {
 
 color:#fff;
-background-color:#337ab7;
+background-color:transparent;
 }
 #SideNav-bottom-links-list{
 margin-top:10px;
@@ -525,6 +533,12 @@ width:34px;
 text-align:center;
 border-left:1px solid rgb(204, 204, 204);
 padding:4px; color:rgb(204, 204, 204);
+}
+
+#login-form .material-icons,.fa-user-circle:before {
+
+color:#1E90FF;
+
 }
 #register-label{
 
