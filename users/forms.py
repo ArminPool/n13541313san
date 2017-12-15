@@ -3,6 +3,7 @@ import re
 from django import forms
 from django.contrib.auth.models import User
 from django.contrib.auth.forms import UserCreationForm
+from imagekit.forms import ProcessedImageField
 
 from users.models import UserProfile, UsersMessage, GuestMessage
 
@@ -91,6 +92,10 @@ class UserEditForm(forms.ModelForm):
 
 
 class ProfileEditForm(forms.ModelForm):
+    pro_img = ProcessedImageField(upload_to='uploaded',
+
+                                  format='JPEG',
+                                  options={'quality': 60}, null=True, blank=True)
     class Meta:
         model = UserProfile
         fields = {
