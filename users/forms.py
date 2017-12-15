@@ -92,18 +92,14 @@ class UserEditForm(forms.ModelForm):
 
 
 class ProfileEditForm(forms.ModelForm):
-    pro_img = ProcessedImageField(upload_to='uploaded',
-
-                                  format='JPEG',
-                                  options={'quality': 60}, null=True, blank=True)
     class Meta:
         model = UserProfile
         fields = {
 
-            'pro_img',
+
             'city',
             'phone_number',
-
+            'pro_img'
         }
 
     def clean(self):
@@ -116,13 +112,14 @@ class ProfileEditForm(forms.ModelForm):
         regex = r'0\d{10}'
 
         if phone_number is None:
+            print(0)
             self.add_error(None, 'لطفا شماره تلفن خود را وارد کنید!')
         elif not re.match(regex, phone_number):
+            print(1)
             self.add_error('phone_number', 'شماره تلفن درست وارد نشده!!!')
 
 
-        if city is None:
-            self.add_error(None, 'لطفا استان خود را انتخاب کنید!')
+
 
 
 class ContactForm(forms.ModelForm):

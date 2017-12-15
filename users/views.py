@@ -158,9 +158,17 @@ def view_profile(request):
         return render(request, 'users/profile.html', args)
 
 
+cities = ["آذربایجان شرقی","آذربایجان غرقی","اصفهان","اردبیل","بوشهر","ایلام","بوشهر","تهران","چهارمحال و بختیاری",
+          "خراسان جنوبی","خراسان رضوی","خراسان شمالی","خوزستان","خوزستان","زنجان",
+          "سیستان و بلوچستان","سمنان","فارس","قم","قزوین","کهکیلویه و بویراحمد","کردستان",
+          "کرمان","کرمانشاه","گیلان","گلستان","لرستان","مازندران","مرکزی","هرمزگان","همدان",
+          "یزد"]
+
+
 # request.FILES is for save uploaded picture
 @login_required
 def edit_profile(request):
+    print(cities.__len__())
     if request.method == 'POST':
         profileform = ProfileEditForm(request.POST, request.FILES, instance=request.user.userprofile)
         userform = UserEditForm(request.POST, instance=request.user)
@@ -174,12 +182,13 @@ def edit_profile(request):
 
         else:
 
-            args = {'profileform': profileform, 'userform': userform, 'timezones': pytz.common_timezones}
+            args = {'profileform': profileform, 'userform': userform, 'timezones': pytz.common_timezones,
+                    'cities': cities}
             return render(request, 'users/edit_profile.html', args)
     else:
         profileform = ProfileEditForm(instance=request.user.userprofile)
         userform = UserEditForm(instance=request.user)
-        args = {'profileform': profileform, 'userform': userform, 'timezones': pytz.common_timezones}
+        args = {'profileform': profileform, 'userform': userform, 'timezones': pytz.common_timezones, 'cities': cities}
         return render(request, 'users/edit_profile.html', args)
 
 
@@ -245,7 +254,6 @@ def contact(request):
 
 
 def back_from_zarinpal(user_prof, tariffs_number):
-
     if tariffs_number == '1':
         vip_until = localtime(now()) + relativedelta(months=1)
         userprofile = user_prof
@@ -268,7 +276,6 @@ def back_from_zarinpal(user_prof, tariffs_number):
         userprofile = user_prof
         userprofile.vip_until = vip_until
         userprofile.save()
-
 
 
 MMERCHANT_ID = '07842040-dd2f-11e7-b265-005056a205be'
@@ -358,7 +365,7 @@ def verify_after_zarinpal(request, tariffs_number):
                                                     request.GET['Authority'],
                                                     amount)
         if result.Status == 100:
-            back_from_zarinpal(user_prof,tariffs_number)
+            back_from_zarinpal(user_prof, tariffs_number)
             context = {'refID': str(result.RefID), 'tariffs_number': tariffs_number}
             return render(request, template_name, context)
 
