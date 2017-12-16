@@ -29,7 +29,7 @@
 
                     {% else %}
                     <img class="img-responsive"
-                         src="http://arminyahya.pythonanywhere.com/media/uploaded/default_img_prof.jpg" title="{{user.username}}" alt="{{user.username}}">
+                        src="{% static 'users/img/anonymous-user.jpg' %}" title="{{user.username}}" alt="{{user.username}}">
                     {% endif %}
                 </div>
             </div>
