@@ -30,9 +30,15 @@ class Post(models.Model):
 
     author = models.ForeignKey(Author, null=False)
 
-    is_article = models.BooleanField(default=True)
+    is_article = models.BooleanField(default=False)
 
-    is_vip = models.BooleanField(default=True)
+    is_vip = models.BooleanField(default=False)
+
+    is_universal_ons = models.BooleanField(default=False)
+
+    is_pairs_of_currencies = models.BooleanField(default=False)
+
+    is_domestic_dollar = models.BooleanField(default=False)
 
     public = models.BooleanField(default=False)
 

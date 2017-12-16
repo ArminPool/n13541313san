@@ -25,7 +25,7 @@
         </div>
         <div class="panel-body">
 
-            <form method="post" enctype="multipart/form-data" class="form-horizontal">
+            <form method="post" enctype="multipart/form-data" id="edit-profile-form">
                 {% csrf_token %}
 
                 <div class="form-group" id="top-part">
@@ -45,7 +45,7 @@
 
                         </div>
                         <div class="text-center">
-                            <div class="form-group">
+                            <div class="form-group image-field">
 
 
                                 <p>انتخاب عکس</p>
@@ -61,7 +61,7 @@
                 <div class="form-group">
                     <label class="col-sm-2 control-label"  >نام:</label>
 
-                    <div class="col-sm-8" >
+                    <div class="col-sm-10" >
                         <input class="form-control "  id="first_name" name="first_name" value="{{user.first_name}}"
                                autofocus=""
                                type="text">
@@ -73,7 +73,7 @@
                 <div class="form-group" style="">
 
                     <label class="control-label col-sm-2" >نام خانوادگی:</label>
-                    <div class="col-sm-8">
+                    <div class="col-sm-10">
                         <input class="form-control" id="last_name" name="last_name" value="{{user.last_name}}"
                                autofocus=""
                                type="text">
@@ -82,7 +82,7 @@
                     <div class="form-group">
                     <label class="control-label col-sm-2" >شماره تلفن همراه:</label>
 
-                    <div class="col-sm-8">
+                    <div class="col-sm-10">
                         <input class="form-control" id="phone_number" name="phone_number"
                                value="{{user.userprofile.phone_number}}"
                                autofocus=""
@@ -93,7 +93,7 @@
                      <div class="form-group">
 
                     <label class="control-label col-sm-2" >شهر:</label>
-                         <div class="col-sm-8">
+                         <div class="col-sm-10">
                 <select name="city" class="form-control" required id="id_city">
 
                {% for city in cities %}
@@ -110,7 +110,7 @@
                     {% get_current_timezone as TIME_ZONE %}
                     <label for="timezone" class="control-label col-sm-2 " >منطقه
                         زمانی:</label>
-                    <div class="col-sm-8 ">
+                    <div class="col-sm-10 ">
                         <select name="timezone" id="timezone" class="form-control">
                             {% for tz in timezones %}
                             <option value="{{ tz }}" {% if tz == TIME_ZONE %} selected{% endif %}>{{ tz }}</option>

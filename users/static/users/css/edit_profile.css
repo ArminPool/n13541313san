@@ -1,13 +1,8 @@
-.form-horizontal .form-group{
-
-margin:0px;
 
 
-}
+#edit-profile-form .control-label{
 
-.form-horizontal .control-label{
-
-text-align:right;
+text-align:center;
 float:right;
 
 }
@@ -60,6 +55,13 @@ max-height:100%;
 padding-bottom:15px;
 height:auto;
 padding-top:15px;
+min-height:65px;
+
+}
+
+.image-field{
+
+max-height:100px;
 
 }
 
@@ -89,7 +91,7 @@ width:100%;
 
 
 
-.form-horizontal .form-control{
+#edit-profile-form .form-control{
 
 width:100%;
 height:100%;
@@ -103,6 +105,13 @@ margin:10px auto;
 }
 
 @media only screen and (min-width:770px){
+
+#edit-profile-form .form-group{
+
+margin:15px 50px;
+
+
+}
 
 .col-sm-8{
 

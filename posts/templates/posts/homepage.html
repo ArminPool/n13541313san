@@ -47,11 +47,11 @@
 
 
                             <div class="text-center">
-                                <div class="post-bottom">
+                                <div class="post-stuff">
 
                                     <h2 style="padding:10px;padding-top:0px;"> {{ post.header }}</h2>
 
-                                    <p>{{ post.description|safe }}<a id="detail-link"
+                                    <p>{{ post.description|safe|striptags }}<a id="detail-link"
                                                                      href="{% url 'posts:detail' header=post.header|fix_spaces %}">بیشتر</a></p>
 
                                 </div>

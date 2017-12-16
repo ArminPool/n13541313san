@@ -111,7 +111,7 @@ if($(this).height() > 477){
 
 
 $('#SideNav').css('position','fixed');
-$('#SideNav').css('top','134px');
+$('#SideNav').css('top',$('.navbar-fixed-top').css("height"));
 
 
 }
@@ -123,7 +123,6 @@ console.log("2");
 }
 */
 else{
-console.log("3");
 
 $('#SideNav').css('position','relative');
 $('#SideNav').css('top','0px');
@@ -132,7 +131,6 @@ $('#SideNav').css('top','0px');
 ScreenHeight= $(this).height();
 }
 else if ($(this).height() == ScreenHeight && $(this).width() > 586 ){
-console.log("4");
 
 $('#SideNav').css('position','relative');
 $('#SideNav').css('top','0px');

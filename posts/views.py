@@ -76,7 +76,6 @@ def author(request, author_username):
 
 
 def detail(request, header):
-
     header = urllib.parse.unquote(header).replace('-', ' ')
     post = Post.objects.get(header=header)
 
@@ -174,9 +173,17 @@ def search(request):
 
 
 def articles(request, type):
-    if type == 'analytical':
-        posts_list = Post.objects.filter(is_vip=True, is_article=True)
-        title = "مقالات تحلیلی"
+    if type == 'universal_ons':
+        posts_list = Post.objects.filter(is_universal_ons=True, is_vip=True)
+        title = "تحلیلات انس جهانی"
+
+    elif type == 'pairs_of_currencies':
+        posts_list = Post.objects.filter(is_pairs_of_currencies=True, is_vip=True)
+        title = "تحلیلات جفت ارزها"
+
+    elif type == 'domestic_dollar':
+        posts_list = Post.objects.filter(is_domestic_dollar=True, is_vip=True)
+        title = "تحلیلات دلار داخلی"
 
     else:
         posts_list = Post.objects.filter(is_vip=False, is_article=True)

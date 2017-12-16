@@ -403,7 +403,9 @@ font-weight:500;
 
 
 #SideNav .jumbotron .btn-primary{
-margin:auto 50px;
+margin:auto;
+width:100%;
+max-width:200px;
 border-color: #808b9c;
 }
 #SideNav button[type='submit'] {
@@ -500,7 +502,7 @@ text-decoration:none;
 
 .form-group{
 
-max-width:150px;
+max-width:200px;
 
 }
                             /*      Setting  of login form  started                  */
