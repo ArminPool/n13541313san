@@ -180,7 +180,7 @@ def articles(request, type):
         posts_list = Post.objects.filter(is_vip=False, is_article=True)
         title = "مقالات"
     elif request.user.is_authenticated:
-        if request.user.userprofile.have_vip():
+        if request.user.userprofile.have_vip:
             if type == 'universal_ons':
                 posts_list = Post.objects.filter(is_universal_ons=True, is_vip=True)
                 title = "تحلیلات انس جهانی"
