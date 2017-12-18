@@ -44,7 +44,7 @@ urlpatterns = [
     url(r'^chart/NZDUSD/$', TemplateView.as_view(template_name='specificpages/NZDUSD.html'),name='NZDUSD'),
     url(r'^chart/BTCUSD/$', TemplateView.as_view(template_name='specificpages/BTCUSD.html'),name='BTCUSD'),
 
-    url(r'^economicCalendar/$', economic_calender, name='economic_calendar'),
+    url(r'^economicCalender/$', economic_calender, name='economic_calendar'),
     url(r'^contact-us/$', contact, name='Contact'),
 
     url(r'^calender/$', calender, name='calender'),
