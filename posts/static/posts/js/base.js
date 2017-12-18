@@ -29,7 +29,8 @@ $('body').css('padding-top',$('.navbar-fixed-top').css("height"));
     });
 var pageURL = $(location).attr("href");
 
-if( pageURL == "https://navasangold.com"){
+if( pageURL == "https://navasangold.com/" || pageURL == "http://navasangold.com/"
+ || pageURL == "https://www.navasangold.com/" || pageURL == "http://www.navasangold.com/"){
 
 $("footer").remove();
 
