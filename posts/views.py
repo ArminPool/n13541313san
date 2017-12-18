@@ -175,7 +175,11 @@ def search(request):
 
 
 def articles(request, type):
-    if request.user.is_authenticated:
+    title, posts_list = '', ''
+    if type == 'regular':
+        posts_list = Post.objects.filter(is_vip=False, is_article=True)
+        title = "مقالات"
+    elif request.user.is_authenticated:
         if request.user.userprofile.have_vip():
             if type == 'universal_ons':
                 posts_list = Post.objects.filter(is_universal_ons=True, is_vip=True)
@@ -189,24 +193,22 @@ def articles(request, type):
                 posts_list = Post.objects.filter(is_domestic_dollar=True, is_vip=True)
                 title = "تحلیلات دلار داخلی"
 
-            else:
-                posts_list = Post.objects.filter(is_vip=False, is_article=True)
-                title = "مقالات"
-
-            paginator = Paginator(posts_list, 6)
-            template_name = 'posts/homepage.html'
-            page = request.GET.get('page', 1)
-
-            try:
-                posts = paginator.page(page)
-            except PageNotAnInteger:
-                posts = paginator.page(1)
-            except EmptyPage:
-                posts = paginator.page(paginator.num_pages)
-            context = {'posts': posts, 'title': title}
-            return render(request, template_name, context)
     else:
         return HttpResponseNotFound('<h1>.شما اشتراک لازم برای مشاهده این صفحه رو ندارید</h1>')
+
+    paginator = Paginator(posts_list, 6)
+    template_name = 'posts/homepage.html'
+    page = request.GET.get('page', 1)
+
+    try:
+        posts = paginator.page(page)
+    except PageNotAnInteger:
+        posts = paginator.page(1)
+    except EmptyPage:
+        posts = paginator.page(paginator.num_pages)
+    context = {'posts': posts, 'title': title}
+    return render(request, template_name, context)
+
 
 def news(request):
     posts_list = Post.objects.filter(is_vip=False, is_article=False)

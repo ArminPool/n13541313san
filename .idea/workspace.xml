@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="83ce492f-81ab-4045-9bd2-7537fae0f724" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/static/posts/js/base.js" afterPath="$PROJECT_DIR$/posts/static/posts/js/base.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/views.py" afterPath="$PROJECT_DIR$/posts/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -35,16 +35,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="390">
               <caret line="24" column="35" lean-forward="false" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="edit_profile.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/users/templates/users/edit_profile.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1066">
-              <caret line="41" column="80" lean-forward="false" selection-start-line="41" selection-start-column="63" selection-end-line="41" selection-end-column="80" />
               <folding />
             </state>
           </provider>
@@ -90,11 +80,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/posts/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="26">
-              <caret line="208" column="42" lean-forward="false" selection-start-line="208" selection-start-column="42" selection-end-line="208" selection-end-column="42" />
+            <state relative-caret-position="-546">
+              <caret line="181" column="36" lean-forward="true" selection-start-line="181" selection-start-column="36" selection-end-line="181" selection-end-column="36" />
               <folding>
                 <element signature="e#24#43#0" expanded="true" />
               </folding>
@@ -102,21 +92,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="base.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/posts/static/posts/js/base.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="32" column="20" lean-forward="true" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
+            <state relative-caret-position="208">
+              <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="profile.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/users/templates/users/profile.html">
+      <file leaf-file-name="category.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/posts/templates/posts/category.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="806">
-              <caret line="31" column="73" lean-forward="false" selection-start-line="31" selection-start-column="73" selection-end-line="31" selection-end-column="73" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="homepage.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/posts/static/posts/css/homepage.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="178" column="13" lean-forward="false" selection-start-line="178" selection-start-column="13" selection-end-line="178" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -179,7 +179,6 @@
         <option value="$PROJECT_DIR$/posts/static/posts/css/detail.css" />
         <option value="$PROJECT_DIR$/posts/static/posts/css/base.css" />
         <option value="$PROJECT_DIR$/posts/templates/posts/homepage.html" />
-        <option value="$PROJECT_DIR$/posts/static/posts/css/homepage.css" />
         <option value="$PROJECT_DIR$/posts/models.py" />
         <option value="$PROJECT_DIR$/users/static/users/css/edit_profile.css" />
         <option value="$PROJECT_DIR$/posts/templates/posts/base.html" />
@@ -187,8 +186,9 @@
         <option value="$PROJECT_DIR$/users/templates/users/edit_profile.html" />
         <option value="$PROJECT_DIR$/posts/templates/posts/detail.html" />
         <option value="$PROJECT_DIR$/users/views.py" />
-        <option value="$PROJECT_DIR$/posts/views.py" />
+        <option value="$PROJECT_DIR$/posts/static/posts/css/homepage.css" />
         <option value="$PROJECT_DIR$/posts/static/posts/js/base.js" />
+        <option value="$PROJECT_DIR$/posts/views.py" />
       </list>
     </option>
   </component>
@@ -843,20 +843,6 @@
       <option name="presentableId" value="Default" />
       <updated>1509594326097</updated>
     </task>
-    <task id="LOCAL-00128" summary="admin permission for posts deleted for now">
-      <created>1513141942840</created>
-      <option name="number" value="00128" />
-      <option name="presentableId" value="LOCAL-00128" />
-      <option name="project" value="LOCAL" />
-      <updated>1513141942851</updated>
-    </task>
-    <task id="LOCAL-00129" summary="google verify tag added">
-      <created>1513151171292</created>
-      <option name="number" value="00129" />
-      <option name="presentableId" value="LOCAL-00129" />
-      <option name="project" value="LOCAL" />
-      <updated>1513151171293</updated>
-    </task>
     <task id="LOCAL-00130" summary="description tag added">
       <created>1513158136339</created>
       <option name="number" value="00130" />
@@ -1186,7 +1172,21 @@
       <option name="project" value="LOCAL" />
       <updated>1513572281134</updated>
     </task>
-    <option name="localTasksCounter" value="177" />
+    <task id="LOCAL-00177" summary="footer remove condition in base.js going to fix">
+      <created>1513589890684</created>
+      <option name="number" value="00177" />
+      <option name="presentableId" value="LOCAL-00177" />
+      <option name="project" value="LOCAL" />
+      <updated>1513589890685</updated>
+    </task>
+    <task id="LOCAL-00178" summary="footer condition moved to css">
+      <created>1513590601367</created>
+      <option name="number" value="00178" />
+      <option name="presentableId" value="LOCAL-00178" />
+      <option name="project" value="LOCAL" />
+      <updated>1513590601367</updated>
+    </task>
+    <option name="localTasksCounter" value="179" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1259,8 +1259,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="updated field added to post model and post site-map priority changed" />
-    <MESSAGE value="changeFreq value changed" />
     <MESSAGE value="homepage url encoding changed" />
     <MESSAGE value="urlencoding in homepage" />
     <MESSAGE value="changing url unicode and adminpage for posts" />
@@ -1284,7 +1282,9 @@
     <MESSAGE value="bug fixed endif added" />
     <MESSAGE value="view changed for vip and stuff" />
     <MESSAGE value="footer remove condition in base.js going to fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="footer remove condition in base.js going to fix" />
+    <MESSAGE value="footer condition moved to css" />
+    <MESSAGE value="article view fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="article view fixed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1293,13 +1293,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/specificpages/templates/specificpages/BTCUSD.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/specificpages/templates/specificpages/EURUSD.html" />
     <entry file="file://$PROJECT_DIR$/specificpages/templates/specificpages/GBPUSD.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -1490,13 +1483,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/posts/static/posts/css/homepage.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="563">
-          <caret line="72" column="14" lean-forward="false" selection-start-line="72" selection-start-column="14" selection-end-line="72" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/posts/templates/posts/homepage.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="130">
@@ -1591,21 +1577,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/posts/views.py">
+    <entry file="file://$PROJECT_DIR$/posts/static/posts/css/homepage.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="208" column="42" lean-forward="false" selection-start-line="208" selection-start-column="42" selection-end-line="208" selection-end-column="42" />
-          <folding>
-            <element signature="e#24#43#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="272">
+          <caret line="178" column="13" lean-forward="false" selection-start-line="178" selection-start-column="13" selection-end-line="178" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/posts/static/posts/js/base.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="32" column="20" lean-forward="true" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
+        <state relative-caret-position="208">
+          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/posts/templates/posts/category.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/posts/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-546">
+          <caret line="181" column="36" lean-forward="true" selection-start-line="181" selection-start-column="36" selection-end-line="181" selection-end-column="36" />
+          <folding>
+            <element signature="e#24#43#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
