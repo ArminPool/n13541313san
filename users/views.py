@@ -168,7 +168,6 @@ cities = ["آذربایجان شرقی","آذربایجان غربی","اصفه�
 # request.FILES is for save uploaded picture
 @login_required
 def edit_profile(request):
-    print(cities.__len__())
     if request.method == 'POST':
         profileform = ProfileEditForm(request.POST, request.FILES, instance=request.user.userprofile)
         userform = UserEditForm(request.POST, instance=request.user)
