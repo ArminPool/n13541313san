@@ -12,6 +12,6 @@ var date = d.getFullYear() + '-' +
       document.getElementById("result").innerHTML = this.responseText;
     }
   };
-  xhttp.open("GET", "https://navasangold.com/specificpages/economicCalendar/?q="+ date, true);
+  xhttp.open("GET", "https://navasangold.com/economicCalendar/?q="+ date, true);
   xhttp.send();
   }

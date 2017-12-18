@@ -145,6 +145,7 @@ class UserProfile(models.Model):
         return "unknown"
 
     def have_vip(self):
+
         return self.vip_until > localtime(now())
 
     @classmethod

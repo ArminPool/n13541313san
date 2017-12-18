@@ -180,7 +180,7 @@ def articles(request, type):
         posts_list = Post.objects.filter(is_vip=False, is_article=True)
         title = "مقالات"
     elif request.user.is_authenticated:
-        if request.user.userprofile.have_vip:
+        if request.user.userprofile.have_vip():
             if type == 'universal_ons':
                 posts_list = Post.objects.filter(is_universal_ons=True, is_vip=True)
                 title = "تحلیلات انس جهانی"
@@ -192,6 +192,9 @@ def articles(request, type):
             elif type == 'domestic_dollar':
                 posts_list = Post.objects.filter(is_domestic_dollar=True, is_vip=True)
                 title = "تحلیلات دلار داخلی"
+
+        else:
+            return HttpResponseNotFound('<h1>.شما اشتراک لازم برای مشاهده این صفحه رو ندارید</h1>')
 
     else:
         return HttpResponseNotFound('<h1>.شما اشتراک لازم برای مشاهده این صفحه رو ندارید</h1>')
