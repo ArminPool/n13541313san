@@ -238,12 +238,16 @@ def calender(request):
 
 def economic_calender(request):
     queryset_list = None
-    query = request.GET.get('q')
+    print(request.GET.get('q'))
+
+    query = urllib.parse.unquote(request.GET.get('q'))
+    print(query)
     if query:
         queryset_list = Calender.objects.all().filter(
             Q(date__icontains=query)
 
         )
+        print(queryset_list)
 
     template_name = 'posts/economic_calender.html'
 
