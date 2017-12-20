@@ -1,3 +1,4 @@
+/*
 window.onload = function loadDoc() {
 var d = new Date();
 var month = d.getMonth()+1;
@@ -16,3 +17,4 @@ alert(date);
   xhttp.open("GET", "/economicCalendar/?q="+ date, true);
   xhttp.send();
   }
+  */

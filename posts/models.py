@@ -49,7 +49,7 @@ class Post(models.Model):
     seen = models.IntegerField(default=0)
 
     class Meta:
-        ordering = ['date_published']
+        ordering = ['-date_published']
 
     def __str__(self):
         return self.header
