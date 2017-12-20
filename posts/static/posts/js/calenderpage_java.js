@@ -5,13 +5,14 @@ var day = d.getDate();
 
 var date = d.getFullYear() + '-' +
     ((''+month).length<2 ? '0' : '') + month + '-' ;
-
+alert(date);
     var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
       document.getElementById("result").innerHTML = this.responseText;
+      alert('we did itttttt');
     }
   };
-  xhttp.open("GET", "https://navasangold.com/economicCalendar/?q="+ date, true);
+  xhttp.open("GET", "/economicCalendar/?q="+ date, true);
   xhttp.send();
   }
