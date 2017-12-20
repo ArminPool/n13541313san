@@ -36,7 +36,10 @@ def homepage(request):
 
 
 def tags(request, tag):
+
     if request.method == "GET":
+        tag = urllib.parse.unquote(tag).replace('-', ' ')
+
         posts_list = Post.objects.all().filter(
             Q(Main_Tag=tag) |
 
@@ -247,7 +250,6 @@ def economic_calender(request):
             Q(date__icontains=query)
 
         )
-        print(queryset_list)
 
     template_name = 'posts/economic_calender.html'
 

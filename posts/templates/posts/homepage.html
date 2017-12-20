@@ -76,7 +76,7 @@
                                         <span class="glyphicon glyphicon-tag" aria-hidden="true"
                                         ></span>
                                         <a href="{% url 'posts:tag' tag=post.Main_Tag%}"
-                                        >{{ post.Main_Tag}}</a>
+                                        >{{ post.get_Main_Tag}}</a>
                                     </li>
 
                                     <li><span class="fa fa-eye" aria-hidden="true" style="font-weight:500;"></span> {{post.seen}}</li>

@@ -57,6 +57,8 @@ class Post(models.Model):
     def get_absolute_url(self):
         return '/' + str(self.header).replace(' ','-') + '/'
 
+    def get_Main_Tag(self):
+        return str(self.header).replace(' ', '-')
 
 class Comment(models.Model):
     post = models.ForeignKey(Post, related_name='comments')
