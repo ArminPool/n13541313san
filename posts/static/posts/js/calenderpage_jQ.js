@@ -2,6 +2,9 @@ $(document).ready(function() {
 
 
 $("footer").css("bottom","0px");
+var d = new Date();
+var month = d.getMonth()+1;
+var day = d.getDate();
 var date = d.getFullYear() + '-' +
     ((''+month).length<2 ? '0' : '') + month + '-' ;
  $.get("/economicCalendar/?q="+ date, function(data, status){
