@@ -58,7 +58,7 @@ class Post(models.Model):
         return '/' + str(self.header).replace(' ','-') + '/'
 
     def get_Main_Tag(self):
-        return str(self.header).replace(' ', '-')
+        return str(self.Main_Tag).replace(' ', '-')
 
 class Comment(models.Model):
     post = models.ForeignKey(Post, related_name='comments')

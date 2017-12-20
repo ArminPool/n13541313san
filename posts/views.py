@@ -25,7 +25,7 @@ from users.models import Inbox, Author
 def homepage(request):
     # print(localtime(now()) + relativedelta(months=3) > localtime(now()))
 
-    posts_list = Post.objects.all()
+    posts_list = Post.objects.filter(is_vip=False)
     most_seen = Post.objects.order_by("-seen")[:10]
 
     title = "نوسان صفحه اصلی"
@@ -36,7 +36,6 @@ def homepage(request):
 
 
 def tags(request, tag):
-
     if request.method == "GET":
         tag = urllib.parse.unquote(tag).replace('-', ' ')
 
@@ -103,7 +102,14 @@ def detail(request, header):
             comment.user = request.user
             comment.save()
         return redirect('posts:detail', header=post.header)
+
+    elif (not request.user.is_authenticated and post.is_vip) or (
+            request.user.is_authenticated and post.is_vip and not request.user.userprofile.have_vip()):
+
+        return HttpResponseNotFound('<h1>.شما اشتراک لازم برای مشاهده این صفحه رو ندارید</h1>')
+
     else:
+
         pre_seen = post.seen
 
         new_seen = pre_seen + 1
@@ -182,25 +188,18 @@ def articles(request, type):
     if type == 'regular':
         posts_list = Post.objects.filter(is_vip=False, is_article=True)
         title = "مقالات"
-    elif request.user.is_authenticated:
-        if request.user.userprofile.have_vip():
-            if type == 'universal_ons':
-                posts_list = Post.objects.filter(is_universal_ons=True, is_vip=True)
-                title = "تحلیلات انس جهانی"
 
-            elif type == 'pairs_of_currencies':
-                posts_list = Post.objects.filter(is_pairs_of_currencies=True, is_vip=True)
-                title = "تحلیلات جفت ارزها"
+    if type == 'universal_ons':
+        posts_list = Post.objects.filter(is_universal_ons=True, is_vip=True)
+        title = "تحلیلات انس جهانی"
 
-            elif type == 'domestic_dollar':
-                posts_list = Post.objects.filter(is_domestic_dollar=True, is_vip=True)
-                title = "تحلیلات دلار داخلی"
+    elif type == 'pairs_of_currencies':
+        posts_list = Post.objects.filter(is_pairs_of_currencies=True, is_vip=True)
+        title = "تحلیلات جفت ارزها"
 
-        else:
-            return HttpResponseNotFound('<h1>.شما اشتراک لازم برای مشاهده این صفحه رو ندارید</h1>')
-
-    else:
-        return HttpResponseNotFound('<h1>.شما اشتراک لازم برای مشاهده این صفحه رو ندارید</h1>')
+    elif type == 'domestic_dollar':
+        posts_list = Post.objects.filter(is_domestic_dollar=True, is_vip=True)
+        title = "تحلیلات دلار داخلی"
 
     paginator = Paginator(posts_list, 6)
     template_name = 'posts/homepage.html'
