@@ -17,6 +17,8 @@ $(document).ready(function() {
 });
 
 
+var pageURL = $(location).attr("href");
+
 $('body').css('padding-top',$('.navbar-fixed-top').css("height"));
 
 
@@ -27,6 +29,9 @@ $('body').css('padding-top',$('.navbar-fixed-top').css("height"));
     $(function(){
         $('input').blur();
     });
+var pageURL = $(location).attr("href");
+
+
 
 var sideNav;
 var headerWidth = parseFloat($(".navbar-header").css("width")) ;
@@ -225,7 +230,8 @@ $("#left-side-toggle-close").css("display","inline");
 else{
 if(sideNav == 1){
 $("#main").css("display","block");
-$("footer").css("display","block");
+RemoveOrShowFooter();
+
 $("#main").css("marginRight","250px");
 $("#SideNav").css("width","250px");
 $("#left-side-toggle-open").css("display","none");
@@ -261,7 +267,8 @@ $("#left-side-toggle-close").css("display","inline");
 }
 else{
 $("#main").css("display","block");
-$("footer").css("display","block");
+RemoveOrShowFooter();
+
 $("#main").css("margin-right","250px");
 $("#SideNav").css("width","250px");
 $("#left-side-toggle-open").css("display","none");
@@ -277,7 +284,9 @@ sideNav = 2;
 var ScreenWidth = $(window).width();
 if(ScreenWidth < 586){
 
-$("footer").css("display","block");
+
+RemoveOrShowFooter();
+
 $("#main").css("display","block");
 
 
@@ -289,8 +298,8 @@ $("#left-side-toggle-close").css("display","none");
 
 }
 else{
+RemoveOrShowFooter();
 
-$("footer").css("display","block");
 $("#main").css("display","block");
 $("#main").css("margin-right","0px");
 $("#SideNav").css("width","0px");
@@ -379,6 +388,20 @@ Money_dropdown =1;
 
 
 }
+}
+
+function RemoveOrShowFooter(){
+if( pageURL == "https://navasangold.com/" || pageURL == "http://navasangold.com/"
+ || pageURL == "https://www.navasangold.com/" || pageURL == "http://www.navasangold.com/" ){
+
+$("footer").css("display","none");
+
+
+}
+else{
+$("footer").css("display","block");
+}
+
 }
 
  });
