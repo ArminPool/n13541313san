@@ -54,21 +54,21 @@
                     <div class="col-md-3 col-sm-3 col-xs-12">
 
      <img src="{{favourite_post1.img.url}}" class="img-responsive">
-                        <h3>{{favourite_post1.header}}</h3>
+                        <a class="favourites_link" href="{% url 'posts:detail' header=favourite_post1.header|fix_spaces %}">{{favourite_post1.header}}</a>
                     </div>
                     <div class="col-md-3 col-sm-3 col-xs-12">
 
                         <img src="{{favourite_post2.img.url}}" class="img-responsive">
-                        <h3>{{favourite_post2.header}}</h3>
+                        <a class="favourites_link" href="{% url 'posts:detail' header=favourite_post2.header|fix_spaces %}">{{favourite_post2.header}}</a>
                     </div>
                     <div class="col-md-3 col-sm-3 col-xs-12">
 
      <img src="{{favourite_post3.img.url}}" class="img-responsive">
-                        <h4>{{favourite_post3.header}}</h4>
+                        <a class="favourites_link" href="{% url 'posts:detail' header=favourite_post3.header|fix_spaces %}">{{favourite_post3.header}}</a>
                     </div>
                     <div class="col-md-3 col-sm-3 col-xs-12">
      <img src="{{favourite_post4.img.url}}" class="img-responsive">
-                        <h3>{{favourite_post4.header}}</h3>
+                        <a class="favourites_link" href="{% url 'posts:detail' header=favourite_post4.header|fix_spaces %}">{{favourite_post4.header}}</a>
 
                     </div>
                 </div>

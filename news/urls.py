@@ -9,7 +9,7 @@ from django.contrib.sitemaps.views import sitemap
 
 from news.sitemap import PostsSitemap, StaticSitemap
 from posts.views import search, economic_calender, calender
-from specificpages.views import specific_pages
+from specificpages.views import specific_pages, tariffs
 from users.views import contact
 from . import settings
 
@@ -30,7 +30,7 @@ urlpatterns = [
     url(r'^software/metatrader/$', TemplateView.as_view(template_name='specificpages/metatrader.html'),name='metatrader'),
     url(r'^rules/$', TemplateView.as_view(template_name='specificpages/rules.html'),name='rules'),
     url(r'^about-us/$', TemplateView.as_view(template_name='specificpages/about-us.html'),name='about-us'),
-    url(r'^tariffs/$', TemplateView.as_view(template_name='specificpages/tariffs.html'),name='tariffs'),
+    url(r'^tariffs/$', tariffs,name='tariffs'),
 
     url(r'^mql5/$', TemplateView.as_view(template_name='specificpages/mql.html'),name='mql'),
     url(r'^pamm/$', TemplateView.as_view(template_name='specificpages/pamm.html'),name='pamm'),

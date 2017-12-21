@@ -73,6 +73,10 @@ def register(request):
 def login_user(request):
     logout(request)
     username = password = ''
+    next = ''
+    if request.GET.get('next'):
+        next = request.GET.get('next')
+        print(next)
 
     if request.POST:
         if request.POST['username'] or request.POST['password1']:
@@ -83,7 +87,12 @@ def login_user(request):
             user = authenticate(username=username, password=password)
             if user is not None:
                 login(request, user)
-                return redirect(reverse('posts:tag', kwargs={'tag': 'برنامه نویسی'}))
+                if next != '':
+                    return redirect(next)
+                else:
+                    return redirect(reverse('posts:home'))
+
+
             else:
 
                 return render(request, 'users/login.html', {'error': 'نام کاربری یا کلمه ی عبور اشتباه است.'})
@@ -250,6 +259,8 @@ def contact(request):
             context = {'form': form, 'title': title}
 
             return render(request, guest_template_name, context)
+
+
 
 
 def back_from_zarinpal(user_prof, tariffs_number):

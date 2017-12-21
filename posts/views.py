@@ -106,7 +106,7 @@ def detail(request, header):
     elif (not request.user.is_authenticated and post.is_vip) or (
             request.user.is_authenticated and post.is_vip and not request.user.userprofile.have_vip()):
 
-        return HttpResponseNotFound('<h1>.شما اشتراک لازم برای مشاهده این صفحه رو ندارید</h1>')
+        return render(request,'posts/no_vip.html')
 
     else:
 
@@ -122,12 +122,15 @@ def detail(request, header):
             user_prof = request.user.userprofile
 
             tags_he_saw = user_prof.tags_he_saw
+            print(tags_he_saw)
             if Counter(tags_he_saw).get(post.Main_Tag, 0) < 5:
+                print(Counter(tags_he_saw).get(post.Main_Tag, 0))
                 tags_he_saw.append(post.Main_Tag)
                 user_prof.save()
+                print(Counter(tags_he_saw))
 
             if len(Counter(tags_he_saw)) > 4:
-
+                print(len(Counter(tags_he_saw)))
                 tag_should_remove = Counter(tags_he_saw).most_common(4)[3][0]
                 tags_he_saw.remove(tag_should_remove)
                 user_prof.save()
@@ -138,9 +141,13 @@ def detail(request, header):
                 favourite_tag2 = Counter(tags_he_saw).most_common(4)[1][0]
                 favourite_tag3 = Counter(tags_he_saw).most_common(4)[2][0]
                 favourite_tag4 = Counter(tags_he_saw).most_common(4)[3][0]
+                print(favourite_tag4)
                 favourite_post1 = Post.objects.filter(Main_Tag=favourite_tag1).order_by("-seen")[0]
                 favourite_post2 = Post.objects.filter(Main_Tag=favourite_tag2).order_by("-seen")[0]
                 favourite_post3 = Post.objects.filter(Main_Tag=favourite_tag3).order_by("-seen")[0]
+                print(Post.objects.filter(Main_Tag=favourite_tag4))
+                print('and')
+                print(Post.objects.filter(Main_Tag=favourite_tag4))
                 favourite_post4 = Post.objects.filter(Main_Tag=favourite_tag4).order_by("-seen")[0]
 
                 context = {'form': form, 'post': post,

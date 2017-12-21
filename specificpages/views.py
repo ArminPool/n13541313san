@@ -1,3 +1,4 @@
+from django.contrib.auth.decorators import login_required
 from django.http import HttpResponseNotFound
 from django.shortcuts import render, redirect
 
@@ -20,3 +21,7 @@ def specific_pages(request, page):
         return HttpResponseNotFound('<h1>Page not found</h1>')
 
     return render(request, template_name)
+
+@login_required
+def tariffs(request):
+    return render(request,'specificpages/tariffs.html')

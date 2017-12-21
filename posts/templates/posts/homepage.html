@@ -53,8 +53,8 @@
                                     {% if not user.is_authenticated and post.is_vip or user.is_authenticated and post.is_vip and not user.userprofile.have_vip %}
 
 
-                                    <p>{{ post.description|safe|striptags }}<a class="detail-link"
-                                                                     href="">بیشتر</a></p>
+                                    <p>{{ post.description|safe|striptags }}</p>
+                                    <p>برای مشاهده متن کامل  مقاله نیازمند <a href="/tariffs/">خرید اشتراک </a>ویژه ما هستید.</p>
                                    {% else %}
                                     <p>{{ post.description|safe|striptags }}<a class="detail-link"
                                                                      href="{% url 'posts:detail' header=post.header|fix_spaces %}">بیشتر</a></p>

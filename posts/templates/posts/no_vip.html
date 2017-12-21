@@ -1,0 +1,24 @@
+{% extends 'posts/base.html' %}
+
+{% load staticfiles %}
+
+
+{% block style %}
+<style>
+    footer{
+
+
+    position:absolute;
+    bottom:0px;
+
+    }
+</style>
+{% endblock %}
+
+{% block body %}
+<span style="font-size:20px;">برای مشاهده این پست نیاز به اشتراک ویژه دارید.</span>
+<p>شما اشتراک ویژه ندارید یا هنوز وارد سایت نشده اید !!!</p>
+<p>برای وارد شدن به سایت از  لینک <a href="/user/login/">این</a> استفاده کنید.</p>
+<p>برای خرید اشتراک  سایت از  لینک <a href="/tariffs/">این</a> استفاده کنید.</p>
+
+{% endblock %}
