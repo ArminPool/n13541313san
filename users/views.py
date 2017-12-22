@@ -200,6 +200,10 @@ def edit_profile(request):
                 userprofile.pro_img.name = pro_img_directory + 'uploaded/users/pro_img/' + request.user.username + '.png'
                 userprofile.save()
                 '''
+
+
+
+
                 # rename pro_img in production
                 if userprofile.pro_img != '':
                     pro_img_directory = MEDIA_ROOT + "/uploaded/users/pro_img/"
