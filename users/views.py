@@ -185,7 +185,6 @@ def edit_profile(request):
 
         if profileform.is_valid() and userform.is_valid():
             if request.FILES:
-                profileform.save()
                 userprofile = request.user.userprofile
                 os.rename(MEDIA_ROOT +'/'+userprofile.pro_img.name, request.user.username)
 

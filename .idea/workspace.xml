@@ -4,7 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/posts/templates/posts/detail.html" line="24" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83ce492f-81ab-4045-9bd2-7537fae0f724" name="Default" comment="user view problem detected">
+    <list default="true" id="83ce492f-81ab-4045-9bd2-7537fae0f724" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/users/views.py" afterPath="$PROJECT_DIR$/users/views.py" />
     </list>
@@ -41,8 +41,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/users/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="189" column="0" lean-forward="false" selection-start-line="189" selection-start-column="0" selection-end-line="189" selection-end-column="0" />
+            <state relative-caret-position="182">
+              <caret line="187" column="0" lean-forward="false" selection-start-line="187" selection-start-column="0" selection-end-line="187" selection-end-column="0" />
               <folding>
                 <element signature="e#24#33#0" expanded="true" />
               </folding>
@@ -699,13 +699,6 @@
       <option name="presentableId" value="Default" />
       <updated>1509594326097</updated>
     </task>
-    <task id="LOCAL-00147" summary="StaticSiteMap changeFreq changed to monthly">
-      <created>1513166117780</created>
-      <option name="number" value="00147" />
-      <option name="presentableId" value="LOCAL-00147" />
-      <option name="project" value="LOCAL" />
-      <updated>1513166117780</updated>
-    </task>
     <task id="LOCAL-00148" summary="sitemap sitemap sitemap">
       <created>1513182340358</created>
       <option name="number" value="00148" />
@@ -1042,7 +1035,14 @@
       <option name="project" value="LOCAL" />
       <updated>1513931560657</updated>
     </task>
-    <option name="localTasksCounter" value="196" />
+    <task id="LOCAL-00196" summary="user view problem detected">
+      <created>1513932174806</created>
+      <option name="number" value="00196" />
+      <option name="presentableId" value="LOCAL-00196" />
+      <option name="project" value="LOCAL" />
+      <updated>1513932174806</updated>
+    </task>
+    <option name="localTasksCounter" value="197" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1471,8 +1471,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/users/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="189" column="0" lean-forward="false" selection-start-line="189" selection-start-column="0" selection-end-line="189" selection-end-column="0" />
+        <state relative-caret-position="182">
+          <caret line="187" column="0" lean-forward="false" selection-start-line="187" selection-start-column="0" selection-end-line="187" selection-end-column="0" />
           <folding>
             <element signature="e#24#33#0" expanded="true" />
           </folding>
