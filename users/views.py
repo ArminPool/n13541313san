@@ -193,7 +193,7 @@ def edit_profile(request):
                 os.rename(pro_img_directory + img_name,
                           pro_img_directory + request.user.username + '.png')
 
-
+                request.user.userprofile.pro_img.name = request.user.username
             profileform.save()
             userform.save()
             request.session['django_timezone'] = request.POST['timezone']
