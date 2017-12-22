@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+import os
 
 import pytz
 from dateutil.relativedelta import relativedelta
@@ -8,6 +9,7 @@ from django.core.mail import send_mail, EmailMultiAlternatives
 from django.template.loader import get_template, render_to_string
 from django.utils.timezone import localtime, now
 
+from news.settings import BASE_DIR, MEDIA_ROOT
 from users.models import Token
 from django.http import HttpResponseRedirect, HttpResponseNotFound
 from django.shortcuts import render, redirect, render_to_response
@@ -182,6 +184,11 @@ def edit_profile(request):
         userform = UserEditForm(request.POST, instance=request.user)
 
         if profileform.is_valid() and userform.is_valid():
+            if request.FILES:
+                userprofile = request.user.userprofile
+                os.rename(MEDIA_ROOT +'/users/pro_img/'+userprofile.pro_img.name, request.user.username)
+
+                userprofile.pro_img.name = request.user.username
 
             profileform.save()
             userform.save()

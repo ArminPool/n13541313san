@@ -130,7 +130,7 @@ class UserProfile(models.Model):
         size=80,
         blank=True)
     city = models.CharField(choices=cities, max_length=25, default='tehran')
-    pro_img = ProcessedImageField(upload_to='uploaded',
+    pro_img = ProcessedImageField(upload_to='uploaded/users/pro_img',
 
                                   format='JPEG',
                                   options={'quality': 60}, null=True, blank=True)

@@ -14,7 +14,7 @@ from users.models import Author
 class Post(models.Model):
     header = models.CharField(max_length=500)
 
-    img = ProcessedImageField(upload_to='uploaded',
+    img = ProcessedImageField(upload_to='uploaded/posts/img',
                               processors=[ResizeToFill(700, 450)],
 
                               format='JPEG',
