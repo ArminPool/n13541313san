@@ -201,7 +201,7 @@ def edit_profile(request):
                 userprofile.save()
                 '''
                 # rename pro_img in production
-                if userprofile.pro_img:
+                if userprofile.pro_img != '':
                     pro_img_directory = MEDIA_ROOT + "/uploaded/users/pro_img/"
                     os.remove(img_name)
                     profileform.save()

@@ -51,8 +51,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/users/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="113">
-              <caret line="205" column="38" lean-forward="false" selection-start-line="205" selection-start-column="30" selection-end-line="205" selection-end-column="38" />
+            <state relative-caret-position="295">
+              <caret line="203" column="41" lean-forward="false" selection-start-line="203" selection-start-column="41" selection-end-line="203" selection-end-column="41" />
               <folding>
                 <element signature="e#24#33#0" expanded="true" />
               </folding>
@@ -739,13 +739,6 @@
       <option name="presentableId" value="Default" />
       <updated>1509594326097</updated>
     </task>
-    <task id="LOCAL-00172" summary="detail container changed to container fluid">
-      <created>1513335966665</created>
-      <option name="number" value="00172" />
-      <option name="presentableId" value="LOCAL-00172" />
-      <option name="project" value="LOCAL" />
-      <updated>1513335966665</updated>
-    </task>
     <task id="LOCAL-00173" summary="some bug fixed and field added to post model edit_profile page edited">
       <created>1513412758127</created>
       <option name="number" value="00173" />
@@ -1082,7 +1075,14 @@
       <option name="project" value="LOCAL" />
       <updated>1513963441826</updated>
     </task>
-    <option name="localTasksCounter" value="221" />
+    <task id="LOCAL-00221" summary="rename user pro_img testing">
+      <created>1513963517475</created>
+      <option name="number" value="00221" />
+      <option name="presentableId" value="LOCAL-00221" />
+      <option name="project" value="LOCAL" />
+      <updated>1513963517475</updated>
+    </task>
+    <option name="localTasksCounter" value="222" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1524,8 +1524,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/users/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="205" column="38" lean-forward="false" selection-start-line="205" selection-start-column="30" selection-end-line="205" selection-end-column="38" />
+        <state relative-caret-position="295">
+          <caret line="203" column="41" lean-forward="false" selection-start-line="203" selection-start-column="41" selection-end-line="203" selection-end-column="41" />
           <folding>
             <element signature="e#24#33#0" expanded="true" />
           </folding>
