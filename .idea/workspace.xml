@@ -41,9 +41,11 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/users/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="11" column="22" lean-forward="false" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-              <folding />
+            <state relative-caret-position="312">
+              <caret line="192" column="33" lean-forward="false" selection-start-line="192" selection-start-column="33" selection-end-line="192" selection-end-column="33" />
+              <folding>
+                <element signature="e#24#33#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -697,13 +699,6 @@
       <option name="presentableId" value="Default" />
       <updated>1509594326097</updated>
     </task>
-    <task id="LOCAL-00145" summary="sitemap mistake fixed">
-      <created>1513165681846</created>
-      <option name="number" value="00145" />
-      <option name="presentableId" value="LOCAL-00145" />
-      <option name="project" value="LOCAL" />
-      <updated>1513165681846</updated>
-    </task>
     <task id="LOCAL-00146" summary="reverse name fixed">
       <created>1513165775961</created>
       <option name="number" value="00146" />
@@ -1040,7 +1035,14 @@
       <option name="project" value="LOCAL" />
       <updated>1513930168023</updated>
     </task>
-    <option name="localTasksCounter" value="194" />
+    <task id="LOCAL-00194" summary="user view problem detected">
+      <created>1513931257921</created>
+      <option name="number" value="00194" />
+      <option name="presentableId" value="LOCAL-00194" />
+      <option name="project" value="LOCAL" />
+      <updated>1513931257921</updated>
+    </task>
+    <option name="localTasksCounter" value="195" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1113,7 +1115,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="SideNave changed" />
     <MESSAGE value="edif-profile form test" />
     <MESSAGE value="edif-profile fixed" />
     <MESSAGE value="edit-profile page css" />
@@ -1138,7 +1139,8 @@
     <MESSAGE value="footer remove js function added" />
     <MESSAGE value="prints removed from post view" />
     <MESSAGE value="media root changed and users view and users model for img upload m ..." />
-    <option name="LAST_COMMIT_MESSAGE" value="media root changed and users view and users model for img upload m ..." />
+    <MESSAGE value="user view problem detected" />
+    <option name="LAST_COMMIT_MESSAGE" value="user view problem detected" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1469,9 +1471,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/users/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="11" column="22" lean-forward="false" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-          <folding />
+        <state relative-caret-position="312">
+          <caret line="192" column="33" lean-forward="false" selection-start-line="192" selection-start-column="33" selection-end-line="192" selection-end-column="33" />
+          <folding>
+            <element signature="e#24#33#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
