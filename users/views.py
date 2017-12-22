@@ -205,20 +205,24 @@ def edit_profile(request):
 
 
                 # rename pro_img in production
-                if userprofile.pro_img.name != '':
-                    pro_img_directory = MEDIA_ROOT + "/uploaded/users/pro_img/"
-                    os.remove(img_name)
-                    profileform.save()
-                    os.rename(MEDIA_ROOT +'/'+ userprofile.pro_img.name,pro_img_directory+request.user.username+'.'+userprofile.pro_img.name[-3:])
-                    userprofile.pro_img.name = "uploaded/users/pro_img/"+request.user.username+'.'+userprofile.pro_img.name[-3:]
-                    userprofile.save()
-                else:
+                if userprofile.pro_img is None:
                     pro_img_directory = MEDIA_ROOT + "/uploaded/users/pro_img/"
 
                     profileform.save()
                     os.rename(MEDIA_ROOT + '/' + userprofile.pro_img.name,
                               pro_img_directory + request.user.username + '.' + userprofile.pro_img.name[-3:])
-                    userprofile.pro_img.name = "uploaded/users/pro_img/" + request.user.username + '.' + userprofile.pro_img.name[-3:]
+                    userprofile.pro_img.name = "uploaded/users/pro_img/" + request.user.username + '.' + userprofile.pro_img.name[
+                                                                                                         -3:]
+                    userprofile.save()
+
+                else:
+                    pro_img_directory = MEDIA_ROOT + "/uploaded/users/pro_img/"
+                    os.remove(img_name)
+                    profileform.save()
+                    os.rename(MEDIA_ROOT + '/' + userprofile.pro_img.name,
+                              pro_img_directory + request.user.username + '.' + userprofile.pro_img.name[-3:])
+                    userprofile.pro_img.name = "uploaded/users/pro_img/" + request.user.username + '.' + userprofile.pro_img.name[
+                                                                                                         -3:]
                     userprofile.save()
 
             profileform.save()
