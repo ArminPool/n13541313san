@@ -203,7 +203,7 @@ def edit_profile(request):
                 # rename pro_img in production
                 if userprofile.pro_img:
                     pro_img_directory = MEDIA_ROOT + "/uploaded/users/pro_img/"
-                    os.remove(MEDIA_ROOT +'/'+ userprofile.pro_img.name)
+                    os.remove(MEDIA_ROOT +'/'+ img_name)
                     profileform.save()
                     os.rename(MEDIA_ROOT +'/'+ userprofile.pro_img.name,pro_img_directory+request.user.username+'.'+userprofile.pro_img.name[-3:])
                     userprofile.pro_img.name = "uploaded/users/pro_img/"+request.user.username+'.'+userprofile.pro_img.name[-3:]
