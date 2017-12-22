@@ -184,7 +184,7 @@ def edit_profile(request):
         profileform = ProfileEditForm(request.POST, request.FILES, instance=request.user.userprofile)
         userform = UserEditForm(request.POST, instance=request.user)
         userprofile = request.user.userprofile
-        img_name = request.user.userprofile.name
+        img_name = request.user.userprofile.pro_img.name
 
         if profileform.is_valid() and userform.is_valid():
             if request.FILES:

@@ -51,8 +51,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/users/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="287">
-              <caret line="192" column="54" lean-forward="false" selection-start-line="192" selection-start-column="54" selection-end-line="192" selection-end-column="54" />
+            <state relative-caret-position="131">
+              <caret line="186" column="51" lean-forward="false" selection-start-line="186" selection-start-column="51" selection-end-line="186" selection-end-column="51" />
               <folding>
                 <element signature="e#24#33#0" expanded="true" />
               </folding>
@@ -687,13 +687,6 @@
       <option name="presentableId" value="Default" />
       <updated>1509594326097</updated>
     </task>
-    <task id="LOCAL-00159" summary="encoding-test">
-      <created>1513257878365</created>
-      <option name="number" value="00159" />
-      <option name="presentableId" value="LOCAL-00159" />
-      <option name="project" value="LOCAL" />
-      <updated>1513257878366</updated>
-    </task>
     <task id="LOCAL-00160" summary="encoding-test">
       <created>1513258669882</created>
       <option name="number" value="00160" />
@@ -1030,7 +1023,14 @@
       <option name="project" value="LOCAL" />
       <updated>1513941458868</updated>
     </task>
-    <option name="localTasksCounter" value="208" />
+    <task id="LOCAL-00208" summary="rename user pro_img testing">
+      <created>1513942388959</created>
+      <option name="number" value="00208" />
+      <option name="presentableId" value="LOCAL-00208" />
+      <option name="project" value="LOCAL" />
+      <updated>1513942388959</updated>
+    </task>
+    <option name="localTasksCounter" value="209" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1460,8 +1460,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/users/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="192" column="54" lean-forward="false" selection-start-line="192" selection-start-column="54" selection-end-line="192" selection-end-column="54" />
+        <state relative-caret-position="131">
+          <caret line="186" column="51" lean-forward="false" selection-start-line="186" selection-start-column="51" selection-end-line="186" selection-end-column="51" />
           <folding>
             <element signature="e#24#33#0" expanded="true" />
           </folding>
