@@ -51,8 +51,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/users/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="313">
-              <caret line="188" column="101" lean-forward="true" selection-start-line="188" selection-start-column="101" selection-end-line="188" selection-end-column="101" />
+            <state relative-caret-position="287">
+              <caret line="192" column="54" lean-forward="false" selection-start-line="192" selection-start-column="54" selection-end-line="192" selection-end-column="54" />
               <folding>
                 <element signature="e#24#33#0" expanded="true" />
               </folding>
@@ -687,13 +687,6 @@
       <option name="presentableId" value="Default" />
       <updated>1509594326097</updated>
     </task>
-    <task id="LOCAL-00158" summary="header decoded">
-      <created>1513257720882</created>
-      <option name="number" value="00158" />
-      <option name="presentableId" value="LOCAL-00158" />
-      <option name="project" value="LOCAL" />
-      <updated>1513257720882</updated>
-    </task>
     <task id="LOCAL-00159" summary="encoding-test">
       <created>1513257878365</created>
       <option name="number" value="00159" />
@@ -1030,7 +1023,14 @@
       <option name="project" value="LOCAL" />
       <updated>1513940916989</updated>
     </task>
-    <option name="localTasksCounter" value="207" />
+    <task id="LOCAL-00207" summary="rename user pro_img testing">
+      <created>1513941458866</created>
+      <option name="number" value="00207" />
+      <option name="presentableId" value="LOCAL-00207" />
+      <option name="project" value="LOCAL" />
+      <updated>1513941458868</updated>
+    </task>
+    <option name="localTasksCounter" value="208" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1103,7 +1103,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="edif-profile form test" />
     <MESSAGE value="edif-profile fixed" />
     <MESSAGE value="edit-profile page css" />
     <MESSAGE value="SideNav css changed and seen added to posts(in homepage) and reg-form margin-top fixed" />
@@ -1128,7 +1127,8 @@
     <MESSAGE value="prints removed from post view" />
     <MESSAGE value="media root changed and users view and users model for img upload m ..." />
     <MESSAGE value="user view problem detected" />
-    <option name="LAST_COMMIT_MESSAGE" value="user view problem detected" />
+    <MESSAGE value="rename user pro_img testing" />
+    <option name="LAST_COMMIT_MESSAGE" value="rename user pro_img testing" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1460,8 +1460,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/users/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="188" column="101" lean-forward="true" selection-start-line="188" selection-start-column="101" selection-end-line="188" selection-end-column="101" />
+        <state relative-caret-position="287">
+          <caret line="192" column="54" lean-forward="false" selection-start-line="192" selection-start-column="54" selection-end-line="192" selection-end-column="54" />
           <folding>
             <element signature="e#24#33#0" expanded="true" />
           </folding>

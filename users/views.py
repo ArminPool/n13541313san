@@ -169,10 +169,11 @@ def view_profile(request):
         return render(request, 'users/profile.html', args)
 
 
-cities = ["آذربایجان شرقی","آذربایجان غربی","اصفهان","اردبیل","بوشهر","ایلام","بوشهر","تهران","چهارمحال و بختیاری",
-          "خراسان جنوبی","خراسان رضوی","خراسان شمالی","خوزستان","خوزستان","زنجان",
-          "سیستان و بلوچستان","سمنان","فارس","قم","قزوین","کهکیلویه و بویراحمد","کردستان",
-          "کرمان","کرمانشاه","گیلان","گلستان","لرستان","مازندران","مرکزی","هرمزگان","همدان",
+cities = ["آذربایجان شرقی", "آذربایجان غربی", "اصفهان", "اردبیل", "بوشهر", "ایلام", "بوشهر", "تهران",
+          "چهارمحال و بختیاری",
+          "خراسان جنوبی", "خراسان رضوی", "خراسان شمالی", "خوزستان", "خوزستان", "زنجان",
+          "سیستان و بلوچستان", "سمنان", "فارس", "قم", "قزوین", "کهکیلویه و بویراحمد", "کردستان",
+          "کرمان", "کرمانشاه", "گیلان", "گلستان", "لرستان", "مازندران", "مرکزی", "هرمزگان", "همدان",
           "یزد"]
 
 
@@ -182,11 +183,15 @@ def edit_profile(request):
     if request.method == 'POST':
         profileform = ProfileEditForm(request.POST, request.FILES, instance=request.user.userprofile)
         userform = UserEditForm(request.POST, instance=request.user)
+        userprofile = request.user.userprofile
+        img_name = request.user.userprofile.name
 
         if profileform.is_valid() and userform.is_valid():
             if request.FILES:
-                userprofile = request.user.userprofile
-                os.rename(MEDIA_ROOT+'/uploaded/users/pro_img/'+userprofile.pro_img.name,MEDIA_ROOT+'/uploaded/users/pro_img/'+ request.user.username+'.png')
+
+                pro_img_directory = MEDIA_ROOT + '/uploaded/users/pro_img/'
+                os.rename(pro_img_directory + img_name,
+                          pro_img_directory + request.user.username + '.png')
 
                 userprofile.pro_img.name = request.user.username
                 userprofile.save()
@@ -266,8 +271,6 @@ def contact(request):
             context = {'form': form, 'title': title}
 
             return render(request, guest_template_name, context)
-
-
 
 
 def back_from_zarinpal(user_prof, tariffs_number):
