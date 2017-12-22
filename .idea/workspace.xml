@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="83ce492f-81ab-4045-9bd2-7537fae0f724" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/news/settings.py" afterPath="$PROJECT_DIR$/news/settings.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/users/views.py" afterPath="$PROJECT_DIR$/users/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -52,8 +51,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/users/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-355">
-              <caret line="187" column="0" lean-forward="true" selection-start-line="187" selection-start-column="0" selection-end-line="187" selection-end-column="0" />
+            <state relative-caret-position="113">
+              <caret line="205" column="38" lean-forward="false" selection-start-line="205" selection-start-column="30" selection-end-line="205" selection-end-column="38" />
               <folding>
                 <element signature="e#24#33#0" expanded="true" />
               </folding>
@@ -740,20 +739,6 @@
       <option name="presentableId" value="Default" />
       <updated>1509594326097</updated>
     </task>
-    <task id="LOCAL-00170" summary="SideNav css changed and seen added to posts(in homepage) and reg-form margin-top fixed">
-      <created>1513333402157</created>
-      <option name="number" value="00170" />
-      <option name="presentableId" value="LOCAL-00170" />
-      <option name="project" value="LOCAL" />
-      <updated>1513333402157</updated>
-    </task>
-    <task id="LOCAL-00171" summary="spaces inside posts links replaced with -">
-      <created>1513335047149</created>
-      <option name="number" value="00171" />
-      <option name="presentableId" value="LOCAL-00171" />
-      <option name="project" value="LOCAL" />
-      <updated>1513335047149</updated>
-    </task>
     <task id="LOCAL-00172" summary="detail container changed to container fluid">
       <created>1513335966665</created>
       <option name="number" value="00172" />
@@ -1083,7 +1068,21 @@
       <option name="project" value="LOCAL" />
       <updated>1513953504116</updated>
     </task>
-    <option name="localTasksCounter" value="219" />
+    <task id="LOCAL-00219" summary="rename user pro_img testing">
+      <created>1513963194576</created>
+      <option name="number" value="00219" />
+      <option name="presentableId" value="LOCAL-00219" />
+      <option name="project" value="LOCAL" />
+      <updated>1513963194576</updated>
+    </task>
+    <task id="LOCAL-00220" summary="rename user pro_img testing">
+      <created>1513963441826</created>
+      <option name="number" value="00220" />
+      <option name="presentableId" value="LOCAL-00220" />
+      <option name="project" value="LOCAL" />
+      <updated>1513963441826</updated>
+    </task>
+    <option name="localTasksCounter" value="221" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1525,8 +1524,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/users/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-355">
-          <caret line="187" column="0" lean-forward="true" selection-start-line="187" selection-start-column="0" selection-end-line="187" selection-end-column="0" />
+        <state relative-caret-position="113">
+          <caret line="205" column="38" lean-forward="false" selection-start-line="205" selection-start-column="30" selection-end-line="205" selection-end-column="38" />
           <folding>
             <element signature="e#24#33#0" expanded="true" />
           </folding>
