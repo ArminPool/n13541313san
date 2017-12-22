@@ -188,17 +188,35 @@ def edit_profile(request):
 
         if profileform.is_valid() and userform.is_valid():
             if request.FILES:
-                pro_img_directory = MEDIA_ROOT + '/'
-
-                os.remove(pro_img_directory + img_name)
-
+                '''
+                rename pro_img in development :
+                 pro_img_directory = MEDIA_ROOT + '\\'
+                os.remove(os.path.join(os.path.dirname(BASE_DIR), "news","news","media","uploaded", "users","pro_img","arminya.png"))
                 profileform.save()
 
                 os.rename(pro_img_directory + request.user.userprofile.pro_img.name,
-                          pro_img_directory + request.user.username + '.png')
+                          pro_img_directory +"uploaded\\users\\pro_img\\"+ request.user.username + '.png')
 
                 userprofile.pro_img.name = pro_img_directory + 'uploaded/users/pro_img/' + request.user.username + '.png'
                 userprofile.save()
+                '''
+                # rename pro_img in production
+                if userprofile.pro_img:
+                    pro_img_directory = MEDIA_ROOT + "/uploaded/users/pro_img/"
+                    os.remove(MEDIA_ROOT +'/'+ userprofile.pro_img.name)
+                    profileform.save()
+                    os.rename(MEDIA_ROOT +'/'+ userprofile.pro_img.name,pro_img_directory+request.user.username+'.'+userprofile.pro_img.name[-3:])
+                    userprofile.pro_img.name = "uploaded/users/pro_img/"+request.user.username+'.'+userprofile.pro_img.name[-3:]
+                    userprofile.save()
+                else:
+                    pro_img_directory = MEDIA_ROOT + "/uploaded/users/pro_img/"
+
+                    profileform.save()
+                    os.rename(MEDIA_ROOT + '/' + userprofile.pro_img.name,
+                              pro_img_directory + request.user.username + '.' + userprofile.pro_img.name[-3:])
+                    userprofile.pro_img.name = "uploaded/users/pro_img/" + request.user.username + '.' + userprofile.pro_img.name[-3:]
+                    userprofile.save()
+
             profileform.save()
             userform.save()
             request.session['django_timezone'] = request.POST['timezone']
