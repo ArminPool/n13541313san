@@ -188,13 +188,12 @@ def edit_profile(request):
 
         if profileform.is_valid() and userform.is_valid():
             if request.FILES:
-
+                profileform.save()
                 pro_img_directory = MEDIA_ROOT + '/uploaded/users/pro_img/'
                 os.rename(pro_img_directory + img_name,
                           pro_img_directory + request.user.username + '.png')
 
-                userprofile.pro_img.name = request.user.username
-                userprofile.save()
+
             profileform.save()
             userform.save()
             request.session['django_timezone'] = request.POST['timezone']
