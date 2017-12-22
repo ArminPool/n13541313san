@@ -196,7 +196,7 @@ def edit_profile(request):
                 os.rename(pro_img_directory + request.user.userprofile.pro_img.name,
                           pro_img_directory + request.user.username + '.png')
 
-                userprofile.pro_img.name = request.user.username + '.png'
+                userprofile.pro_img.name = pro_img_directory +'/uploaded/users/pro_img/'+ request.user.username + '.png'
                 userprofile.save()
             profileform.save()
             userform.save()
