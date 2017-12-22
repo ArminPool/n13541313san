@@ -9,7 +9,7 @@ from django.core.mail import send_mail, EmailMultiAlternatives
 from django.template.loader import get_template, render_to_string
 from django.utils.timezone import localtime, now
 
-from news.settings import BASE_DIR, MEDIA_ROOT
+from news.setting.prod import BASE_DIR, MEDIA_ROOT
 from users.models import Token
 from django.http import HttpResponseRedirect, HttpResponseNotFound
 from django.shortcuts import render, redirect, render_to_response
