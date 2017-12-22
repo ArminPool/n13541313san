@@ -52,7 +52,7 @@
         <entry file="file://$PROJECT_DIR$/users/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="313">
-              <caret line="188" column="163" lean-forward="false" selection-start-line="188" selection-start-column="163" selection-end-line="188" selection-end-column="163" />
+              <caret line="188" column="101" lean-forward="true" selection-start-line="188" selection-start-column="101" selection-end-line="188" selection-end-column="101" />
               <folding>
                 <element signature="e#24#33#0" expanded="true" />
               </folding>
@@ -95,8 +95,8 @@
       <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/news/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="183" column="10" lean-forward="false" selection-start-line="183" selection-start-column="0" selection-end-line="183" selection-end-column="10" />
+            <state relative-caret-position="171">
+              <caret line="182" column="11" lean-forward="false" selection-start-line="182" selection-start-column="0" selection-end-line="182" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -105,7 +105,7 @@
       <file leaf-file-name="prod.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/news/setting/prod.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="419">
+            <state relative-caret-position="315">
               <caret line="18" column="40" lean-forward="false" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
               <folding />
             </state>
@@ -687,13 +687,6 @@
       <option name="presentableId" value="Default" />
       <updated>1509594326097</updated>
     </task>
-    <task id="LOCAL-00157" summary="decode header in detail + add footer to sidenav">
-      <created>1513257463386</created>
-      <option name="number" value="00157" />
-      <option name="presentableId" value="LOCAL-00157" />
-      <option name="project" value="LOCAL" />
-      <updated>1513257463386</updated>
-    </task>
     <task id="LOCAL-00158" summary="header decoded">
       <created>1513257720882</created>
       <option name="number" value="00158" />
@@ -1030,7 +1023,14 @@
       <option name="project" value="LOCAL" />
       <updated>1513939306018</updated>
     </task>
-    <option name="localTasksCounter" value="206" />
+    <task id="LOCAL-00206" summary="user view problem detected">
+      <created>1513940916987</created>
+      <option name="number" value="00206" />
+      <option name="presentableId" value="LOCAL-00206" />
+      <option name="project" value="LOCAL" />
+      <updated>1513940916989</updated>
+    </task>
+    <option name="localTasksCounter" value="207" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1424,22 +1424,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/news/setting/prod.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="18" column="40" lean-forward="false" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/news/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="183" column="10" lean-forward="false" selection-start-line="183" selection-start-column="0" selection-end-line="183" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/posts/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="26">
@@ -1458,10 +1442,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/news/setting/prod.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="18" column="40" lean-forward="false" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/news/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="182" column="11" lean-forward="false" selection-start-line="182" selection-start-column="0" selection-end-line="182" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/users/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="313">
-          <caret line="188" column="163" lean-forward="false" selection-start-line="188" selection-start-column="163" selection-end-line="188" selection-end-column="163" />
+          <caret line="188" column="101" lean-forward="true" selection-start-line="188" selection-start-column="101" selection-end-line="188" selection-end-column="101" />
           <folding>
             <element signature="e#24#33#0" expanded="true" />
           </folding>
