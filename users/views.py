@@ -184,6 +184,7 @@ def edit_profile(request):
         profileform = ProfileEditForm(request.POST, request.FILES, instance=request.user.userprofile)
         userform = UserEditForm(request.POST, instance=request.user)
         userprofile = request.user.userprofile
+
         img_name = request.user.userprofile.pro_img.name
 
         if profileform.is_valid() and userform.is_valid():
@@ -217,7 +218,7 @@ def edit_profile(request):
 
                 else:
                     pro_img_directory = MEDIA_ROOT + "/uploaded/users/pro_img/"
-                    os.remove(img_name)
+                    os.remove(MEDIA_ROOT +'/'+ img_name)
                     profileform.save()
                     os.rename(MEDIA_ROOT + '/' + userprofile.pro_img.name,
                               pro_img_directory + request.user.username + '.' + userprofile.pro_img.name[-3:])
