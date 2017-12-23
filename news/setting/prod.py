@@ -17,3 +17,4 @@ DATABASES = {
 }
 
 MEDIA_ROOT = os.path.join(STATIC_ROOT, 'media')
+MEDIA_URL = '/static/media/'
