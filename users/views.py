@@ -303,8 +303,9 @@ def contact(request):
 
 def back_from_zarinpal(user_prof, tariffs_number):
     if tariffs_number == '1':
-        vip_until = localtime(now()) + relativedelta(months=1)
         userprofile = user_prof
+        vip_until = userprofile.vip_until + relativedelta(months=1)
+
         userprofile.vip_until = vip_until
         userprofile.save()
         Vip.add_vip(user_prof.user.username, 'اشتراک مقاله 1 ماهه')
