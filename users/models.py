@@ -245,10 +245,9 @@ class Vip(models.Model):
 
     @classmethod
     def add_vip(cls, username, product):
-        vip = cls.objects.create(
+        cls.objects.create(
 
             user=username
+            ,product=product
+            ,date_and_time=localtime(now())
         )
-        vip.date_and_time = localtime(now())
-        vip.product = product
-        vip.save()
