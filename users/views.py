@@ -412,6 +412,7 @@ def verify_after_zarinpal(request,user_id ,tariffs_number):
         amount = "500000"
     elif tariffs_number == "4":
         amount = "1000000"
+
     user = User.objects.get(id=user_id)
     user_prof = UserProfile.objects.get(user=user)
     client = Client(ZARINPAL_WEBSERVICE)
