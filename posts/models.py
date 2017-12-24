@@ -55,10 +55,11 @@ class Post(models.Model):
         return self.header
 
     def get_absolute_url(self):
-        return '/' + str(self.header).replace(' ','-') + '/'
+        return '/' + str(self.header).replace(' ', '-') + '/'
 
     def get_Main_Tag(self):
         return str(self.Main_Tag).replace(' ', '-')
+
 
 class Comment(models.Model):
     post = models.ForeignKey(Post, related_name='comments')
@@ -115,3 +116,52 @@ class Calender(models.Model):
     predict = CharField(max_length=60)
 
     previous = CharField(max_length=60)
+
+    def __str__(self):
+        return str(self.stock) + ' ' + str(self.date)
+
+
+class BankOrders(models.Model):
+    """
+        cooperate = 'co'
+    problem_buying = 'pb'
+    ask_game = 'ag'
+    others = 'o'
+
+    options = (
+        (cooperate, 'همکاری'), (problem_buying, 'مشکل در خرید'), (ask_game, 'درخواست بازی'), (others, 'موارد دیگر'))
+    issue_options = models.CharField(choices=options, default=cooperate, max_length=2)
+    """
+    Pair_Options = (('USDJPY', 'USDJPY'), ('EURAUD', 'EURAUD'), ('AUDCHF', 'AUDCHF'), ('CHFJPY', 'CHFJPY')
+                    , ('NZDCAD', 'NZDCAD'), ('AUDNZD', 'AUDNZD'), ('USDCAD', 'USDCAD'), ('EURCHF', 'EURCHF')
+                    , ('CADCHF', 'CADCHF'), ('CADJPY', 'CADJPY'), ('EURUSD', 'EURUSD'),
+                    ('EURGBP', 'EURGBP'), ('AUDCAD', 'AUDCAD'), ('GBPCHF', 'GBPCHF'), ('AUDUSD', 'AUDUSD'),
+                    ('GBPAUD', 'GBPAUD'))
+
+    Pair = models.CharField(choices=Pair_Options, default='', max_length=100)
+    Bank_Options = (('Goldman Sachs', 'Goldman Sachs'), ('Credit Suisse', 'Credit Suisse'), ('Citi Bank', 'Citi Bank'),
+                    ('Nomura Holdings', 'Nomura Holdings'),
+                    ('Deutsche Bank', 'Deutsche Bank'), ('TD Bank', 'TD Bank'), ('Morgan Stanley', 'Morgan Stanley'),
+                    ('Barclays', 'Barclays'),
+                    ('UOB', 'UOB'), ('Bofa Merrill Lynch', 'Bofa Merrill Lynch'),
+                    ('Credit Agricole', 'Credit Agricole'),
+                    ('Danske', 'Danske'),
+                    ('Thomson Reuters IFR', 'Thomson Reuters IFR'),)
+    Bank = models.CharField(choices=Bank_Options, default='', max_length=100)
+    Date = models.DateField()
+    Order_Options = (('sell', 'Sell'), ('sell limit', 'Sell Limit'), ('sell stop', 'Sell Stop'), ('buy', 'Buy'),
+                     ('buy limit', 'Buy Limit'), ('buy stop', 'Buy Stop'),
+                     )
+
+    Order = models.CharField(choices=Order_Options, default='', max_length=100)
+    Status_Options = (('active', 'Active'), ('pending', 'Pending'))
+
+    Status = models.CharField(choices=Status_Options, default='pending', max_length=100)
+
+    Entry = models.CharField(max_length=50)
+    Take_Profit = models.CharField(max_length=50)
+    Stop_Loss = models.CharField(max_length=50)
+
+    def __str__(self):
+        return self.Bank + ' ' + 'Order: ' + self.Order + ' ' + 'Date: ' + str(
+            self.Date) + ' ' + 'Take_Profit: ' + self.Take_Profit

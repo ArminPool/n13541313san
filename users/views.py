@@ -10,7 +10,7 @@ from django.template.loader import get_template, render_to_string
 from django.utils.timezone import localtime, now
 
 from news.setting.prod import BASE_DIR, MEDIA_ROOT
-from users.models import Token
+from users.models import Token, Vip
 from django.http import HttpResponseRedirect, HttpResponseNotFound
 from django.shortcuts import render, redirect, render_to_response
 from django.template import RequestContext, Context
@@ -202,9 +202,6 @@ def edit_profile(request):
                 userprofile.save()
                 '''
 
-
-
-
                 # rename pro_img in production
                 if img_name == '':
                     pro_img_directory = MEDIA_ROOT + "/uploaded/users/pro_img/"
@@ -218,7 +215,7 @@ def edit_profile(request):
 
                 else:
                     pro_img_directory = MEDIA_ROOT + "/uploaded/users/pro_img/"
-                    os.remove(MEDIA_ROOT +'/'+ img_name)
+                    os.remove(MEDIA_ROOT + '/' + img_name)
                     profileform.save()
                     os.rename(MEDIA_ROOT + '/' + userprofile.pro_img.name,
                               pro_img_directory + request.user.username + '.' + userprofile.pro_img.name[-3:])
@@ -310,23 +307,28 @@ def back_from_zarinpal(user_prof, tariffs_number):
         userprofile = user_prof
         userprofile.vip_until = vip_until
         userprofile.save()
+        Vip.add_vip(user_prof.user.username, 'اشتراک مقاله 1 ماهه')
+
     elif tariffs_number == '2':
         vip_until = localtime(now()) + relativedelta(months=3)
         userprofile = user_prof
         userprofile.vip_until = vip_until
         userprofile.save()
+        Vip.add_vip(user_prof.user.username, 'اشتراک مقاله 3 ماهه')
 
     elif tariffs_number == '3':
         vip_until = localtime(now()) + relativedelta(months=6)
         userprofile = user_prof
         userprofile.vip_until = vip_until
         userprofile.save()
+        Vip.add_vip(user_prof.user.username, 'اشتراک مقاله 6 ماهه')
 
     elif tariffs_number == '4':
         vip_until = localtime(now()) + relativedelta(months=12)
         userprofile = user_prof
         userprofile.vip_until = vip_until
         userprofile.save()
+        Vip.add_vip(user_prof.user.username, 'اشتراک مقاله 12 ماهه')
 
 
 MMERCHANT_ID = '07842040-dd2f-11e7-b265-005056a205be'
@@ -426,3 +428,10 @@ def verify_after_zarinpal(request, tariffs_number):
             return 'Transaction failed. Status: ' + str(result.Status)
     else:
         return 'Transaction failed or canceled by user'
+
+
+def all_vip_registered(requset):
+    template_name = 'users/all_vip_registered.html'
+    query_list = Vip.objects.all()
+    context = {'list':query_list}
+    return render(requset, template_name,context)

@@ -10,7 +10,7 @@ from django.contrib.sitemaps.views import sitemap
 from news.sitemap import PostsSitemap, StaticSitemap
 from posts.views import search, economic_calender, calender
 from specificpages.views import specific_pages, tariffs
-from users.views import contact
+from users.views import contact, all_vip_registered
 from . import settings
 
 
@@ -48,6 +48,7 @@ urlpatterns = [
     url(r'^contact-us/$', contact, name='Contact'),
 
     url(r'^calender/$', calender, name='calender'),
+    url(r'^vip/$', all_vip_registered, name='all_vip_registered'),
 
     url(r'^sitemap\.xml$', sitemap, {'sitemaps': sitemaps}, name='django.contrib.sitemaps.views.sitemap'), ]
 urlpatterns += staticfiles_urlpatterns()

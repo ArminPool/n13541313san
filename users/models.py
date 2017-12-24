@@ -145,7 +145,6 @@ class UserProfile(models.Model):
         return "unknown"
 
     def have_vip(self):
-
         return self.vip_until > localtime(now())
 
     @classmethod
@@ -234,3 +233,22 @@ class Token(models.Model):
     @staticmethod
     def delete_token(token_obj):
         token_obj.delete()
+
+
+class Vip(models.Model):
+    user = models.CharField(max_length=50)
+    date_and_time = models.DateTimeField()
+    product = models.CharField(max_length=50)
+
+    def __str__(self):
+        return self.username + ' ' + self.product + ' ' + str(self.date_and_time)
+
+    @classmethod
+    def add_vip(cls, username, product):
+        vip = cls.objects.create(
+
+            username=username
+        )
+        vip.date_and_time = localtime(now())
+        vip.product = product
+        vip.save()

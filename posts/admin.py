@@ -4,10 +4,10 @@ from django.contrib import admin
 from django.contrib.sitemaps.views import sitemap
 from django.forms import TextInput, Textarea
 
-from users.models import UserProfile, GuestMessage, UsersMessage, Inbox, Token, Author
+from users.models import UserProfile, GuestMessage, UsersMessage, Inbox, Token, Author, Vip
 
 from django.db import models
-from posts.models import Post, Comment, Calender
+from posts.models import Post, Comment, Calender, BankOrders
 
 
 class AdminModel(admin.ModelAdmin):
@@ -24,12 +24,13 @@ class AdminModel(admin.ModelAdmin):
 
 admin.site.register(Post,AdminModel)
 admin.site.register(Comment)
+admin.site.register(BankOrders)
 admin.site.register(Calender)
-
 admin.site.register(UserProfile)
 admin.site.register(Inbox)
 admin.site.register(GuestMessage)
 admin.site.register(UsersMessage)
 admin.site.register(Author)
+admin.site.register(Vip)
 
 admin.site.register(Token)
