@@ -335,11 +335,12 @@ MMERCHANT_ID = '07842040-dd2f-11e7-b265-005056a205be'
 ZARINPAL_WEBSERVICE = 'https://www.zarinpal.com/pg/services/WebGate/wsdl'
 
 
-def send_to_zarinpal(request, tariffs_number):
+def send_to_zarinpal(request,tariffs_number):
     user = request.user
     email = request.user.email
     mobile = user.userprofile.phone_number
     description = "پرداخت مبلغ اشتراک به سایت نوسان گلد"
+    user_id = request.user.id
     client = Client(ZARINPAL_WEBSERVICE)
     if tariffs_number == "1":
 
@@ -349,7 +350,7 @@ def send_to_zarinpal(request, tariffs_number):
                                                description,
                                                email,
                                                mobile,
-                                               'http://www.navasangold.com/user/verify-after-zarinpal/1/')
+                                               'https://www.navasangold.com/user/verify-after-zarinpal/'+user_id+'/1/')
 
         if result.Status == 100:
 
@@ -363,7 +364,7 @@ def send_to_zarinpal(request, tariffs_number):
                                                description,
                                                email,
                                                mobile,
-                                               '/verify/2')
+                                               '/verify/'+'/2')
         if result.Status == 100:
             return redirect('https://www.zarinpal.com/pg/StartPay/' + result.Authority)
         else:
@@ -398,7 +399,7 @@ def send_to_zarinpal(request, tariffs_number):
             return 'Error'
 
 
-def verify_after_zarinpal(request, tariffs_number):
+def verify_after_zarinpal(request,user_id ,tariffs_number):
     amount = 0
     if tariffs_number == "1":
         amount = "1000"
@@ -410,7 +411,8 @@ def verify_after_zarinpal(request, tariffs_number):
         amount = "500000"
     elif tariffs_number == "4":
         amount = "1000000"
-    user_prof = request.user.userprofile
+    user = User.objects.get(id=user_id)
+    user_prof = UserProfile.objects.get(user=user)
     client = Client(ZARINPAL_WEBSERVICE)
     if request.GET.get('Status') == 'OK':
         template_name = 'users/verify_after_zarinpal.html'

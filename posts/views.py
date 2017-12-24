@@ -27,7 +27,6 @@ def homepage(request):
 
     posts_list = Post.objects.filter(is_vip=False)
     most_seen = Post.objects.order_by("-seen")[:10]
-    print(request.user.userprofile.user.username)
     title = "نوسان صفحه اصلی"
     template_name = 'posts/homepage.html'
 
