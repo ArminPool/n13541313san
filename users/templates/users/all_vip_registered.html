@@ -1,0 +1,24 @@
+{% extends 'posts/base.html' %}
+{% load staticfiles %}
+{% load tz %}
+<!-- The block below overwrites block in base -->
+
+{% block style %}
+<link rel="stylesheet" type="text/css" href="{% static 'users/css/all_vip_registered.css' %}"/>
+{% endblock %}
+
+
+{% block title %}
+<title>اشتراک های ثبت شده</title>
+{% endblock %}
+
+ {% block body %}
+{% for item in list  %}
+
+<p>{{ item.user }}</p>
+<p>{{ item.product }}</p>
+<p>{{ item.date_and_time }}</p>
+
+
+{% endfor%}
+{% endblock %}
