@@ -241,13 +241,13 @@ class Vip(models.Model):
     product = models.CharField(max_length=50)
 
     def __str__(self):
-        return self.username + ' ' + self.product + ' ' + str(self.date_and_time)
+        return self.user + ' ' + self.product + ' ' + str(self.date_and_time)
 
     @classmethod
     def add_vip(cls, username, product):
         vip = cls.objects.create(
 
-            username=username
+            user=username
         )
         vip.date_and_time = localtime(now())
         vip.product = product

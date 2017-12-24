@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="83ce492f-81ab-4045-9bd2-7537fae0f724" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/users/templates/users/all_vip_registered.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/users/models.py" afterPath="$PROJECT_DIR$/users/models.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -30,11 +30,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/users/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="67">
-              <caret line="238" column="8" lean-forward="false" selection-start-line="238" selection-start-column="4" selection-end-line="238" selection-end-column="8" />
+            <state relative-caret-position="119">
+              <caret line="240" column="33" lean-forward="false" selection-start-line="240" selection-start-column="33" selection-end-line="240" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -52,7 +52,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="all_vip_registered.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="all_vip_registered.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/users/templates/users/all_vip_registered.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="208">
@@ -167,10 +167,10 @@
         <option value="$PROJECT_DIR$/posts/models.py" />
         <option value="$PROJECT_DIR$/posts/views.py" />
         <option value="$PROJECT_DIR$/users/views.py" />
-        <option value="$PROJECT_DIR$/users/models.py" />
         <option value="$PROJECT_DIR$/posts/admin.py" />
         <option value="$PROJECT_DIR$/news/urls.py" />
         <option value="$PROJECT_DIR$/users/templates/users/all_vip_registered.html" />
+        <option value="$PROJECT_DIR$/users/models.py" />
       </list>
     </option>
   </component>
@@ -693,13 +693,6 @@
       <option name="presentableId" value="Default" />
       <updated>1509594326097</updated>
     </task>
-    <task id="LOCAL-00181" summary="vip pages going to fix and calender check">
-      <created>1513591962808</created>
-      <option name="number" value="00181" />
-      <option name="presentableId" value="LOCAL-00181" />
-      <option name="project" value="LOCAL" />
-      <updated>1513591962808</updated>
-    </task>
     <task id="LOCAL-00182" summary="economic calender url fixed">
       <created>1513592228155</created>
       <option name="number" value="00182" />
@@ -1036,7 +1029,14 @@
       <option name="project" value="LOCAL" />
       <updated>1514120822518</updated>
     </task>
-    <option name="localTasksCounter" value="230" />
+    <task id="LOCAL-00230" summary="all_vip_registered template added to git">
+      <created>1514121077281</created>
+      <option name="number" value="00230" />
+      <option name="presentableId" value="LOCAL-00230" />
+      <option name="project" value="LOCAL" />
+      <updated>1514121077281</updated>
+    </task>
+    <option name="localTasksCounter" value="231" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1109,8 +1109,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="SideNav css changed and seen added to posts(in homepage) and reg-form margin-top fixed" />
-    <MESSAGE value="spaces inside posts links replaced with -" />
     <MESSAGE value="detail container changed to container fluid" />
     <MESSAGE value="some bug fixed and field added to post model edit_profile page edited" />
     <MESSAGE value="anonymous-user.jpg added and replaced with pythonanywhere link" />
@@ -1134,7 +1132,9 @@
     <MESSAGE value="rename user pro_img testing" />
     <MESSAGE value="media url changed in prod.py" />
     <MESSAGE value="Bank Orders added (model)&#10;Bank Orders added (model)&#10;Bank Orders added (model)&#10;Vip added (model)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Bank Orders added (model)&#10;Bank Orders added (model)&#10;Bank Orders added (model)&#10;Vip added (model)" />
+    <MESSAGE value="all_vip_registered template added to git" />
+    <MESSAGE value="vip model fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="vip model fixed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1447,14 +1447,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/users/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="67">
-          <caret line="238" column="8" lean-forward="false" selection-start-line="238" selection-start-column="4" selection-end-line="238" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/posts/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1248">
@@ -1485,6 +1477,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
           <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/users/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="240" column="33" lean-forward="false" selection-start-line="240" selection-start-column="33" selection-end-line="240" selection-end-column="33" />
           <folding />
         </state>
       </provider>
