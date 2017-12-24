@@ -422,7 +422,7 @@ def verify_after_zarinpal(request,user_id ,tariffs_number):
                                                     amount)
         if result.Status == 100:
             back_from_zarinpal(user_prof, tariffs_number)
-            context = {'refID': str(result.RefID), 'tariffs_number': tariffs_number}
+            context = {'refID': str(result.RefID), 'tariffs_number': str(tariffs_number)}
             return render(request, template_name, context)
 
         elif result.Status == 101:
