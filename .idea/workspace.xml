@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="83ce492f-81ab-4045-9bd2-7537fae0f724" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/views.py" afterPath="$PROJECT_DIR$/posts/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/users/urls.py" afterPath="$PROJECT_DIR$/users/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/users/views.py" afterPath="$PROJECT_DIR$/users/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -55,8 +53,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/users/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="414" column="7" lean-forward="true" selection-start-line="414" selection-start-column="7" selection-end-line="414" selection-end-column="7" />
+            <state relative-caret-position="234">
+              <caret line="352" column="116" lean-forward="false" selection-start-line="352" selection-start-column="116" selection-end-line="352" selection-end-column="116" />
               <folding>
                 <element signature="e#24#33#0" expanded="true" />
               </folding>
@@ -663,20 +661,6 @@
       <option name="presentableId" value="Default" />
       <updated>1509594326097</updated>
     </task>
-    <task id="LOCAL-00183" summary="economic calender url fixed">
-      <created>1513592478984</created>
-      <option name="number" value="00183" />
-      <option name="presentableId" value="LOCAL-00183" />
-      <option name="project" value="LOCAL" />
-      <updated>1513592478989</updated>
-    </task>
-    <task id="LOCAL-00184" summary="direction changed for economic_calender.html">
-      <created>1513594143942</created>
-      <option name="number" value="00184" />
-      <option name="presentableId" value="LOCAL-00184" />
-      <option name="project" value="LOCAL" />
-      <updated>1513594143942</updated>
-    </task>
     <task id="LOCAL-00185" summary="calender current month show testing">
       <created>1513747245502</created>
       <option name="number" value="00185" />
@@ -1006,7 +990,21 @@
       <option name="project" value="LOCAL" />
       <updated>1514121203743</updated>
     </task>
-    <option name="localTasksCounter" value="232" />
+    <task id="LOCAL-00232" summary="verify after zarinpal try fix that">
+      <created>1514123056902</created>
+      <option name="number" value="00232" />
+      <option name="presentableId" value="LOCAL-00232" />
+      <option name="project" value="LOCAL" />
+      <updated>1514123056902</updated>
+    </task>
+    <task id="LOCAL-00233" summary="verify after zarinpal try fix that">
+      <created>1514123369858</created>
+      <option name="number" value="00233" />
+      <option name="presentableId" value="LOCAL-00233" />
+      <option name="project" value="LOCAL" />
+      <updated>1514123369858</updated>
+    </task>
+    <option name="localTasksCounter" value="234" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1453,8 +1451,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/users/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="414" column="7" lean-forward="true" selection-start-line="414" selection-start-column="7" selection-end-line="414" selection-end-column="7" />
+        <state relative-caret-position="234">
+          <caret line="352" column="116" lean-forward="false" selection-start-line="352" selection-start-column="116" selection-end-line="352" selection-end-column="116" />
           <folding>
             <element signature="e#24#33#0" expanded="true" />
           </folding>

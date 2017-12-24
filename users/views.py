@@ -350,7 +350,7 @@ def send_to_zarinpal(request,tariffs_number):
                                                description,
                                                email,
                                                mobile,
-                                               'https://www.navasangold.com/user/verify-after-zarinpal/'+user_id+'/1/')
+                                               'https://www.navasangold.com/user/verify-after-zarinpal/'+str(user_id)+'/1/')
 
         if result.Status == 100:
 
