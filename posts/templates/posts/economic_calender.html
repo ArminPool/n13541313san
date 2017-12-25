@@ -26,7 +26,34 @@
         <td>
             {% if query.stock == 'USD' %}
 
-            <img src ="/currencies/dollar.png" style="width:50px;height:40px;">
+            <img src="/currencies/USD.png">
+
+
+            {% elif query.stock == 'EUR' %}
+            <img src="/currencies/EUR.png">
+
+            {% elif query.stock == 'CHF' %}
+            <img src="/currencies/CHF.png">
+
+            {% elif query.stock == 'CAD' %}
+            <img src="/currencies/CAD.png">
+
+            {% elif query.stock == 'AUD' %}
+            <img src="/currencies/AUD.png">
+
+            {% elif query.stock == 'JPY' %}
+            <img src="/currencies/JPY.png">
+
+            {% elif query.stock == 'BTC' %}
+            <img src="/currencies/BTC.png">
+
+            {% elif query.stock == 'NZD' %}
+            <img src="/currencies/NZD.png">
+
+            {% else %}
+            <img src="/currencies/GBP.png">
+
+
             {% endif %}
 
         </td>

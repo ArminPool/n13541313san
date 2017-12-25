@@ -105,7 +105,11 @@ class Calender(models.Model):
 
     time = TimeField()
 
-    stock = CharField(max_length=60)
+    Stock_Options = (('USD','USD'),('EUR','EUR'),('GBP','GBP'),
+                     ('CHF', 'CHF'),('JPY','JPY'),('CAD','CAD'),
+                     ('AUD', 'AUD'),('NZD','NZD'),('BTC','BTC'),
+                     )
+    stock = CharField(choices=Stock_Options, default='', max_length=100)
 
     event = CharField(max_length=60)
 

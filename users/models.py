@@ -199,11 +199,11 @@ class GuestMessage(models.Model):
     Guest_email = models.EmailField(max_length=50, null=True)
     cooperate = 'co'
     problem_buying = 'pb'
-    ask_game = 'ag'
-    others = 'o'
+    problem_activing = 'pa'
+    suggestion_criticism = 'sc'
 
     options = (
-        (cooperate, 'همکاری'), (problem_buying, 'مشکل در خرید'), (ask_game, 'درخواست بازی'), (others, 'موارد دیگر'))
+        (cooperate, 'همکاری'), (problem_buying, 'مشکل در خرید اشتراک'), (problem_activing, 'مشکل در فعال کردن اشتراک'), (suggestion_criticism, 'پیشنهاد یا انتقاد'))
     issue_options = models.CharField(choices=options, default=cooperate, max_length=2)
     message = models.TextField(max_length=250, null=True)
 

@@ -308,42 +308,42 @@ def back_from_zarinpal(user_prof, tariffs_number):
 
         userprofile.vip_until = vip_until
         userprofile.save()
-        Vip.add_vip(user_prof.user.username,'اشتراک مقاله 1 ماهه','100000تومان')
+        Vip.add_vip(user_prof.user.username, 'اشتراک مقاله 1 ماهه', '100000تومان')
 
     elif tariffs_number == '2':
         vip_until = localtime(now()) + relativedelta(months=3)
         userprofile = user_prof
         userprofile.vip_until = vip_until
         userprofile.save()
-        Vip.add_vip(user_prof.user.username,'اشتراک مقاله 1 ماهه','250000تومان')
+        Vip.add_vip(user_prof.user.username, 'اشتراک مقاله 3 ماهه', '250000تومان')
 
     elif tariffs_number == '3':
         vip_until = localtime(now()) + relativedelta(months=6)
         userprofile = user_prof
         userprofile.vip_until = vip_until
         userprofile.save()
-        Vip.add_vip(user_prof.user.username,'اشتراک مقاله 1 ماهه','500000تومان')
+        Vip.add_vip(user_prof.user.username, 'اشتراک مقاله 6 ماهه', '500000تومان')
 
     elif tariffs_number == '4':
         vip_until = localtime(now()) + relativedelta(months=12)
         userprofile = user_prof
         userprofile.vip_until = vip_until
         userprofile.save()
-        Vip.add_vip(user_prof.user.username,'اشتراک مقاله 1 ماهه','1000000تومان')
+        Vip.add_vip(user_prof.user.username, 'اشتراک مقاله 12 ماهه', '1000000تومان')
 
 
 MMERCHANT_ID = '07842040-dd2f-11e7-b265-005056a205be'
 ZARINPAL_WEBSERVICE = 'https://www.zarinpal.com/pg/services/WebGate/wsdl'
 
 
-def send_to_zarinpal(request,tariffs_number):
+def send_to_zarinpal(request, tariff_number):
     user = request.user
     email = request.user.email
     mobile = user.userprofile.phone_number
     description = "پرداخت مبلغ اشتراک به سایت نوسان گلد"
     user_id = request.user.id
     client = Client(ZARINPAL_WEBSERVICE)
-    if tariffs_number == "1":
+    if tariff_number == "1":
 
         amount = "1000"
         result = client.service.PaymentRequest(MMERCHANT_ID,
@@ -351,26 +351,28 @@ def send_to_zarinpal(request,tariffs_number):
                                                description,
                                                email,
                                                mobile,
-                                               'https://www.navasangold.com/user/verify-after-zarinpal/'+str(user_id)+'/1/')
+                                               'https://www.navasangold.com/user/verify-after-zarinpal/' + str(
+                                                   user_id) + '/1/')
 
         if result.Status == 100:
 
             return redirect('https://www.zarinpal.com/pg/StartPay/' + result.Authority)
         else:
             return 'Error'
-    elif tariffs_number == "2":
+    elif tariff_number == "2":
         amount = "250000"
         result = client.service.PaymentRequest(MMERCHANT_ID,
                                                amount,
                                                description,
                                                email,
                                                mobile,
-                                               '/verify/'+'/2')
+                                               'https://www.navasangold.com/user/verify-after-zarinpal/' + str(
+                                                   user_id) + '/2/')
         if result.Status == 100:
             return redirect('https://www.zarinpal.com/pg/StartPay/' + result.Authority)
         else:
             return 'Error'
-    elif tariffs_number == "3":
+    elif tariff_number == "3":
 
         amount = "50000"
         result = client.service.PaymentRequest(MMERCHANT_ID,
@@ -378,13 +380,14 @@ def send_to_zarinpal(request,tariffs_number):
                                                description,
                                                email,
                                                mobile,
-                                               '/verify/3')
+                                               'https://www.navasangold.com/user/verify-after-zarinpal/' + str(
+                                                   user_id) + '/3/')
         if result.Status == 100:
             return redirect('https://www.zarinpal.com/pg/StartPay/' + result.Authority)
         else:
             return 'Error'
 
-    elif tariffs_number == "4":
+    elif tariff_number == "4":
 
         amount = "1000000"
         result = client.service.PaymentRequest(MMERCHANT_ID,
@@ -392,7 +395,8 @@ def send_to_zarinpal(request,tariffs_number):
                                                description,
                                                email,
                                                mobile,
-                                               '/verify/4')
+                                               'https://www.navasangold.com/user/verify-after-zarinpal/' + str(
+                                                   user_id) + '/4/')
 
         if result.Status == 100:
             return redirect('https://www.zarinpal.com/pg/StartPay/' + result.Authority)
@@ -400,17 +404,17 @@ def send_to_zarinpal(request,tariffs_number):
             return 'Error'
 
 
-def verify_after_zarinpal(request,user_id ,tariffs_number):
+def verify_after_zarinpal(request, user_id, tariff_number):
     amount = 0
-    if tariffs_number == "1":
+    if tariff_number == "1":
         amount = "1000"
-    elif tariffs_number == "2":
+    elif tariff_number == "2":
 
         amount = "250000"
-    elif tariffs_number == "3":
+    elif tariff_number == "3":
 
         amount = "500000"
-    elif tariffs_number == "4":
+    elif tariff_number == "4":
         amount = "1000000"
 
     user = User.objects.get(id=user_id)
@@ -422,8 +426,8 @@ def verify_after_zarinpal(request,user_id ,tariffs_number):
                                                     request.GET['Authority'],
                                                     amount)
         if result.Status == 100:
-            back_from_zarinpal(user_prof, tariffs_number)
-            context = {'refID': str(result.RefID), 'tariffs_number': str(tariffs_number)}
+            back_from_zarinpal(user_prof, tariff_number)
+            context = {'refID': str(result.RefID), 'tariffs_number': str(tariff_number)}
             return render(request, template_name, context)
 
         elif result.Status == 101:
@@ -437,5 +441,5 @@ def verify_after_zarinpal(request,user_id ,tariffs_number):
 def all_vip_registered(requset):
     template_name = 'users/vip.html'
     query_list = Vip.objects.all()
-    context = {'query_list':query_list}
-    return render(requset, template_name,context)
+    context = {'query_list': query_list}
+    return render(requset, template_name, context)
