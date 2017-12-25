@@ -1,59 +1,56 @@
-
-<table id="table-block" >
-            <thead>
-            <tr>
-                <th class="date-header">تاریخ</th>
-                <th>زمان</th>
-                <th>ارز</th>
-                <th>اهمیت</th>
-                <th>رویداد</th>
-
-                <th>واقعی</th>
-
-                <th>پیش بینی</th>
-                <th>قبلی</th>
+<table id="table-block">
+    <thead>
+    <tr>
+        <th class="date-header">تاریخ</th>
+        <th>زمان</th>
+        <th>ارز</th>
+        <th>اهمیت</th>
+        <th>رویداد</th>
+        <th>واقعی</th>
+        <th>پیش بینی</th>
+        <th>قبلی</th>
 
 
-            </tr>
-            </thead>
-            <tbody>
+    </tr>
+    </thead>
+    <tbody>
 
-            {% for query in queryset %}
-            <tr>
-                <td class="date-column" dir="ltr">
-                {{ query.date }}
-                </td>
-                <td dir="ltr">
-                {{ query.time }}
-                </td>
-                <td>
-                {{ query.stock }}
+    {% for query in queryset %}
+    <tr>
+        <td class="date-column" dir="ltr">
+            {{ query.date }}
+        </td>
+        <td dir="ltr">
+            {{ query.time }}
+        </td>
+        <td>
+            {{ query.stock }}
 
-                </td>
-                <td>
-                {{ query.importance }}
+        </td>
+        <td>
+            {{ query.importance }}
 
-                </td>
-                <td>
-                {{ query.event }}
+        </td>
+        <td>
+            {{ query.event }}
 
-                </td>
-                <td dir="ltr">
-                {{ query.actual }}
+        </td>
+        <td dir="ltr">
+            {{ query.actual }}
 
-                </td>
-                <td dir="ltr">
-                {{ query.predict }}
+        </td>
+        <td dir="ltr">
+            {{ query.predict }}
 
-                </td>
-                <td dir="ltr">
-                {{ query.previous }}
+        </td>
+        <td dir="ltr">
+            {{ query.previous }}
 
-                </td>
+        </td>
 
 
-            </tr>
-            {% endfor %}
-            </tbody>
-        </table>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
 <table id="header-fixed"></table>

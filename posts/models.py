@@ -149,14 +149,14 @@ class BankOrders(models.Model):
                     ('Thomson Reuters IFR', 'Thomson Reuters IFR'),)
     Bank = models.CharField(choices=Bank_Options, default='', max_length=100)
     Date = models.DateField()
-    Order_Options = (('sell', 'Sell'), ('sell limit', 'Sell Limit'), ('sell stop', 'Sell Stop'), ('buy', 'Buy'),
-                     ('buy limit', 'Buy Limit'), ('buy stop', 'Buy Stop'),
+    Order_Options = (('Sell', 'Sell'), ('Sell Limit', 'Sell Limit'), ('Sell Stop', 'Sell Stop'), ('Buy', 'Buy'),
+                     ('Buy Limit', 'Buy Limit'), ('Buy Stop', 'Buy Stop'),
                      )
 
     Order = models.CharField(choices=Order_Options, default='', max_length=100)
-    Status_Options = (('active', 'Active'), ('pending', 'Pending'))
+    Status_Options = (('Active', 'Active'), ('Pending', 'Pending'))
 
-    Status = models.CharField(choices=Status_Options, default='pending', max_length=100)
+    Status = models.CharField(choices=Status_Options, default='Pending', max_length=100)
 
     Entry = models.CharField(max_length=50)
     Take_Profit = models.CharField(max_length=50)

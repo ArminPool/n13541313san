@@ -17,7 +17,7 @@ from django.views.generic import ListView
 from flask import Flask
 
 from posts.form import CommentForm, CalenderForm
-from posts.models import Post, Comment, Calender
+from posts.models import Post, Comment, Calender, BankOrders
 from users.forms import UsersContactForm, ContactForm
 from users.models import Inbox, Author
 
@@ -103,9 +103,9 @@ def detail(request, header):
         return redirect('posts:detail', header=post.header)
 
     elif (not request.user.is_authenticated and post.is_vip) or (
-            request.user.is_authenticated and post.is_vip and not request.user.userprofile.have_vip()):
+                    request.user.is_authenticated and post.is_vip and not request.user.userprofile.have_vip()):
 
-        return render(request,'posts/no_vip.html')
+        return render(request, 'posts/no_vip.html')
 
     else:
 
@@ -239,10 +239,8 @@ def calender(request):
 
 def economic_calender(request):
     queryset_list = None
-    print(request.GET.get('q'))
 
     query = urllib.parse.unquote(request.GET.get('q'))
-    print(query)
     if query:
         queryset_list = Calender.objects.all().filter(
             Q(date__icontains=query)
@@ -253,3 +251,10 @@ def economic_calender(request):
 
     context = {'queryset': queryset_list, }
     return render(request, template_name, context)
+
+
+def bank_orders(request):
+    query_list = BankOrders.objects.all()
+    template_name = 'posts/bankorders.html'
+    context = {'query_list':query_list}
+    return render(request,template_name,context)

@@ -8,7 +8,7 @@ from django.views.generic import TemplateView
 from django.contrib.sitemaps.views import sitemap
 
 from news.sitemap import PostsSitemap, StaticSitemap
-from posts.views import search, economic_calender, calender
+from posts.views import search, economic_calender, calender, bank_orders
 from specificpages.views import specific_pages, tariffs
 from users.views import contact, all_vip_registered
 from . import settings
@@ -46,7 +46,7 @@ urlpatterns = [
 
     url(r'^economicCalendar/$', economic_calender, name='economic_calendar'),
     url(r'^contact-us/$', contact, name='Contact'),
-
+    url(r'^bankorders/$', bank_orders, name='bankorders'),
     url(r'^calender/$', calender, name='calender'),
     url(r'^vip/$', all_vip_registered, name='all_vip_registered'),
 

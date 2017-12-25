@@ -1,34 +1,3 @@
-
-#calender-container{
-
-position:relative;
-
-padding-bottom:40px;
-
-}
-
-.form-group .glyphicon {
-
-text-align:center;
-top:28px;
-width:34px;
-
-}
-
-.form-group{
-
-margin:20px auto;
-
-}
-
-#input-picker{
-
-direction:ltr;
-
-padding-right: 36px;
-
-}
-
 th,td{
 
 text-align:center;
@@ -36,7 +5,7 @@ text-align:center;
 }
             /*       setting  horizontal  scroll bar     */
 
-#result{
+#block_vip_list{
 
 overflow-x:auto;
 

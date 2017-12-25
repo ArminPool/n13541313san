@@ -1,0 +1,70 @@
+{% extends 'posts/base.html' %}
+
+
+{% load jalali_tags %}
+{% load custom_tags %}
+{% load staticfiles %}
+
+{% block meta %}
+<meta name="keywords" content="تقویم اقتصادی">
+<meta name="description" content="مشاهده رویداد هایی که در طی ماه در بازار بورس طلا اتفاق افتاده ویا قرار است اتفاق بیفتند. ">
+
+{% endblock %}
+
+{% block style %}
+<link rel="stylesheet" href="{% static 'users/css/vip.css' %}">
+
+{% endblock %}
+ {% block title %}
+
+<title>{{title}}</title>
+    {% endblock %}
+{% block body %}
+<div class="container-fluid" id="BankOrders-container">
+    <div id="block_vip_list">
+    <table id="table-block">
+            <thead>
+            <tr>
+                <th>کاربر</th>
+                <th>محصول</th>
+                <th>زمان و تاریخ</th>
+                <th>مبلغ</th>
+
+
+
+            </tr>
+            </thead>
+            <tbody>
+
+            {% for item in query_list %}
+            <tr>
+                <td>
+                {{ item.user }}
+                </td>
+                <td>
+                    {{ item.product }}
+                </td>
+                <td>
+                {{ item.date_and_time|to_jalali|persian_numeric }}
+                </td>
+                <td>
+                {{ item.amount }}
+
+                </td>
+
+
+
+            </tr>
+            {% endfor %}
+            </tbody>
+    </table>
+        </div>
+</div>
+{% endblock %}
+
+
+{%  block script  %}
+
+<script src="{% static 'users/js/vip.js' %}"></script>
+
+{% endblock %}

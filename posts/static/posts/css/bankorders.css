@@ -1,34 +1,11 @@
 
-#calender-container{
+#BankOrders-container{
 
-position:relative;
 
-padding-bottom:40px;
 
-}
-
-.form-group .glyphicon {
-
-text-align:center;
-top:28px;
-width:34px;
+padding-bottom:60px;
 
 }
-
-.form-group{
-
-margin:20px auto;
-
-}
-
-#input-picker{
-
-direction:ltr;
-
-padding-right: 36px;
-
-}
-
 th,td{
 
 text-align:center;
@@ -36,7 +13,7 @@ text-align:center;
 }
             /*       setting  horizontal  scroll bar     */
 
-#result{
+#block_orders{
 
 overflow-x:auto;
 
@@ -59,6 +36,7 @@ table thead{
 
 
 th, td {
+    font-size:18px;
     text-align: center;
     padding: 8px;
 }
@@ -66,3 +44,12 @@ th, td {
 tbody tr:nth-child(even){
   background:#ECF0F1;
 }
+
+#take-profit{
+color:#66cd00;
+}
+
+#stop-loss{
+color:#FD0E35;
+}
+

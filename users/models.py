@@ -236,18 +236,20 @@ class Token(models.Model):
 
 
 class Vip(models.Model):
-    user = models.CharField(max_length=50)
-    date_and_time = models.DateTimeField()
-    product = models.CharField(max_length=50)
+    user = models.CharField(default='',max_length=50,blank=False,null=False)
+    date_and_time = models.DateTimeField(default=django.utils.timezone.now,blank=False,null=False)
+    product = models.CharField(default='',max_length=50,blank=False,null=False)
+    amount = models.CharField(default='0تومان',max_length=50,blank=False,null=False)
 
     def __str__(self):
         return self.user + ' ' + self.product + ' ' + str(self.date_and_time)
 
     @classmethod
-    def add_vip(cls, username, product):
+    def add_vip(cls, username, product,amount):
         cls.objects.create(
 
             user=username
-            ,product=product
-            ,date_and_time=localtime(now())
+            , product=product
+            , date_and_time=localtime(now())
+            ,amount=amount
         )

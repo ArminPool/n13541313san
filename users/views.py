@@ -308,28 +308,28 @@ def back_from_zarinpal(user_prof, tariffs_number):
 
         userprofile.vip_until = vip_until
         userprofile.save()
-        Vip.add_vip(user_prof.user.username, 'اشتراک مقاله 1 ماهه')
+        Vip.add_vip(user_prof.user.username,'اشتراک مقاله 1 ماهه','100000تومان')
 
     elif tariffs_number == '2':
         vip_until = localtime(now()) + relativedelta(months=3)
         userprofile = user_prof
         userprofile.vip_until = vip_until
         userprofile.save()
-        Vip.add_vip(user_prof.user.username, 'اشتراک مقاله 3 ماهه')
+        Vip.add_vip(user_prof.user.username,'اشتراک مقاله 1 ماهه','250000تومان')
 
     elif tariffs_number == '3':
         vip_until = localtime(now()) + relativedelta(months=6)
         userprofile = user_prof
         userprofile.vip_until = vip_until
         userprofile.save()
-        Vip.add_vip(user_prof.user.username, 'اشتراک مقاله 6 ماهه')
+        Vip.add_vip(user_prof.user.username,'اشتراک مقاله 1 ماهه','500000تومان')
 
     elif tariffs_number == '4':
         vip_until = localtime(now()) + relativedelta(months=12)
         userprofile = user_prof
         userprofile.vip_until = vip_until
         userprofile.save()
-        Vip.add_vip(user_prof.user.username, 'اشتراک مقاله 12 ماهه')
+        Vip.add_vip(user_prof.user.username,'اشتراک مقاله 1 ماهه','1000000تومان')
 
 
 MMERCHANT_ID = '07842040-dd2f-11e7-b265-005056a205be'
@@ -435,7 +435,7 @@ def verify_after_zarinpal(request,user_id ,tariffs_number):
 
 
 def all_vip_registered(requset):
-    template_name = 'users/all_vip_registered.html'
+    template_name = 'users/vip.html'
     query_list = Vip.objects.all()
-    context = {'list':query_list}
+    context = {'query_list':query_list}
     return render(requset, template_name,context)
