@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="83ce492f-81ab-4045-9bd2-7537fae0f724" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/posts/static/posts/img/arrow_forward.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/static/posts/css/base.css" afterPath="$PROJECT_DIR$/posts/static/posts/css/base.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/templates/posts/base.html" afterPath="$PROJECT_DIR$/posts/templates/posts/base.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/news/urls.py" afterPath="$PROJECT_DIR$/news/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/specificpages/templates/specificpages/tariffs.html" afterPath="$PROJECT_DIR$/specificpages/templates/specificpages/tariffs.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,26 +19,6 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/users/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="9594">
-              <caret line="398" column="65" lean-forward="false" selection-start-line="398" selection-start-column="65" selection-end-line="398" selection-end-column="65" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GOLD.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/specificpages/templates/specificpages/GOLD.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="702">
-              <caret line="27" column="28" lean-forward="false" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="USDJPY.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/specificpages/templates/specificpages/USDJPY.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -63,8 +42,28 @@
       <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/posts/templates/posts/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="35" column="62" lean-forward="false" selection-start-line="35" selection-start-column="62" selection-end-line="35" selection-end-column="62" />
+            <state relative-caret-position="127">
+              <caret line="134" column="61" lean-forward="false" selection-start-line="134" selection-start-column="61" selection-end-line="134" selection-end-column="61" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tariffs.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/specificpages/templates/specificpages/tariffs.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="155">
+              <caret line="50" column="94" lean-forward="true" selection-start-line="50" selection-start-column="94" selection-end-line="50" selection-end-column="94" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/news/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="334">
+              <caret line="40" column="105" lean-forward="false" selection-start-line="40" selection-start-column="105" selection-end-line="40" selection-end-column="105" />
               <folding />
             </state>
           </provider>
@@ -90,7 +89,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="base.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/posts/static/posts/css/base.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="490">
@@ -100,10 +99,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="USDCHF.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/specificpages/templates/specificpages/USDCHF.html">
+      <file leaf-file-name="GBPUSD.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/specificpages/templates/specificpages/GBPUSD.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
+            <state relative-caret-position="-468">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="USDCAD.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/specificpages/templates/specificpages/USDCAD.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-312">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
@@ -131,7 +140,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/specificpages/templates/specificpages/USDCHF.html" />
         <option value="$PROJECT_DIR$/users/templates/users/GuestContact.html" />
         <option value="$PROJECT_DIR$/users/templates/users/login.html" />
         <option value="$PROJECT_DIR$/users/templates/users/reg_form.html" />
@@ -161,7 +169,6 @@
         <option value="$PROJECT_DIR$/news/setting/prod.py" />
         <option value="$PROJECT_DIR$/posts/admin.py" />
         <option value="$PROJECT_DIR$/users/templates/users/all_vip_registered.html" />
-        <option value="$PROJECT_DIR$/news/urls.py" />
         <option value="$PROJECT_DIR$/posts/static/posts/css/calender.css" />
         <option value="$PROJECT_DIR$/posts/templates/posts/vip.html" />
         <option value="$PROJECT_DIR$/users/static/users/css/vip.css" />
@@ -182,6 +189,8 @@
         <option value="$PROJECT_DIR$/specificpages/templates/specificpages/USDJPY.html" />
         <option value="$PROJECT_DIR$/posts/templates/posts/base.html" />
         <option value="$PROJECT_DIR$/posts/static/posts/css/base.css" />
+        <option value="$PROJECT_DIR$/news/urls.py" />
+        <option value="$PROJECT_DIR$/specificpages/templates/specificpages/tariffs.html" />
       </list>
     </option>
   </component>
@@ -825,13 +834,6 @@
       <option name="presentableId" value="Default" />
       <updated>1509594326097</updated>
     </task>
-    <task id="LOCAL-00197" summary="user view problem detected">
-      <created>1513932334299</created>
-      <option name="number" value="00197" />
-      <option name="presentableId" value="LOCAL-00197" />
-      <option name="project" value="LOCAL" />
-      <updated>1513932334300</updated>
-    </task>
     <task id="LOCAL-00198" summary="user view problem detected">
       <created>1513932610875</created>
       <option name="number" value="00198" />
@@ -1168,13 +1170,20 @@
       <option name="project" value="LOCAL" />
       <updated>1514189851302</updated>
     </task>
-    <option name="localTasksCounter" value="246" />
+    <task id="LOCAL-00246" summary="left-size-toggle-close changed">
+      <created>1514219309726</created>
+      <option name="number" value="00246" />
+      <option name="presentableId" value="LOCAL-00246" />
+      <option name="project" value="LOCAL" />
+      <updated>1514219309727</updated>
+    </task>
+    <option name="localTasksCounter" value="247" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-31" y="0" width="1382" height="728" extended-state="0" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22767204" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22767204" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14015748" sideWeight="0.5087848" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14015748" sideWeight="0.49121523" order="10" side_tool="false" content_ui="tabs" />
@@ -1240,8 +1249,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="have vip check" />
-    <MESSAGE value="vip pages going to fix and calender check" />
     <MESSAGE value="economic calender url fixed" />
     <MESSAGE value="direction changed for economic_calender.html" />
     <MESSAGE value="calender current month show testing" />
@@ -1265,7 +1272,9 @@
     <MESSAGE value="currencies img testing" />
     <MESSAGE value="currencies img size changing" />
     <MESSAGE value="USDJPY char added and calender model changed and zarinpal view fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="USDJPY char added and calender model changed and zarinpal view fixed" />
+    <MESSAGE value="left-size-toggle-close changed" />
+    <MESSAGE value="tariffs links fixed and chart fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="tariffs links fixed and chart fixed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1274,27 +1283,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/posts/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/posts/static/posts/css/homepage.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="113" column="0" lean-forward="true" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/specificpages/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="676">
-          <caret line="26" column="50" lean-forward="false" selection-start-line="26" selection-start-column="50" selection-end-line="26" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/posts/static/posts/css/detail.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
@@ -1378,13 +1366,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="806">
           <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/news/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="910">
-          <caret line="48" column="55" lean-forward="false" selection-start-line="48" selection-start-column="55" selection-end-line="48" selection-end-column="55" />
         </state>
       </provider>
     </entry>
@@ -1615,18 +1596,50 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/posts/templates/posts/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="35" column="62" lean-forward="false" selection-start-line="35" selection-start-column="62" selection-end-line="35" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/posts/static/posts/css/base.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="490">
           <caret line="461" column="21" lean-forward="false" selection-start-line="461" selection-start-column="21" selection-end-line="461" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/specificpages/templates/specificpages/GBPUSD.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-468">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/specificpages/templates/specificpages/USDCAD.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-312">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/news/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="40" column="105" lean-forward="false" selection-start-line="40" selection-start-column="105" selection-end-line="40" selection-end-column="105" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/posts/templates/posts/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="134" column="61" lean-forward="false" selection-start-line="134" selection-start-column="61" selection-end-line="134" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/specificpages/templates/specificpages/tariffs.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="50" column="94" lean-forward="true" selection-start-line="50" selection-start-column="94" selection-end-line="50" selection-end-column="94" />
           <folding />
         </state>
       </provider>

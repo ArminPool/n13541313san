@@ -37,7 +37,8 @@ urlpatterns = [
     url(r'^chart/GOLD/$', TemplateView.as_view(template_name='specificpages/GOLD.html'),name='GOLD'),
     url(r'^chart/EURUSD/$', TemplateView.as_view(template_name='specificpages/EURUSD.html'),name='EURUSD'),
     url(r'^chart/USDJPY/$', TemplateView.as_view(template_name='specificpages/USDJPY.html'),name='USDJPY'),
-    url(r'^chart/USDJPY/$', TemplateView.as_view(template_name='specificpages/GBPUSD.html'),name='GBPUSD'),
+    url(r'^chart/GBPUSD/$', TemplateView.as_view(template_name='specificpages/GBPUSD.html'),name='GBPUSD'),
+    url(r'^chart/USDCAD/$', TemplateView.as_view(template_name='specificpages/USDCAD.html'), name='USDCAD'),
 
     url(r'^chart/USDCHF/$', TemplateView.as_view(template_name='specificpages/USDCHF.html'),name='USDCHF'),
     url(r'^chart/AUDUSD/$', TemplateView.as_view(template_name='specificpages/AUDUSD.html'),name='AUDUSD'),
