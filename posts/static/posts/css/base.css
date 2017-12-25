@@ -456,8 +456,10 @@ margin:8px;
 margin-top:20px;
 margin-right:0px;
 color:#fff;
-
-
+padding: 0px;
+background-size: 45px 40px;
+background-image:url('../img/arrow_forward.png');
+background-color:transparent;
 }
 
 #left-side-toggle-close i{
