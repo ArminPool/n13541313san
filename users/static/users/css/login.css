@@ -17,7 +17,7 @@ display:none;
 }
 
 #login-container{
-background-color:rgba(250,250,250,.5);
+
 
 margin:80px auto;
 
@@ -38,6 +38,7 @@ display:none;
 #flexible-form{
 max-width:500px;
 max-height:400px;
+background-color:rgba(250,250,250,.5);
 
 }
 
