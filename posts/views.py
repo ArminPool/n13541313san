@@ -27,7 +27,7 @@ def homepage(request):
 
     posts_list = Post.objects.filter(is_vip=False)
     most_seen = Post.objects.order_by("-seen")[:10]
-    title = "نوسان صفحه اصلی"
+    title = 'نوسان صفحه اصلی'
     template_name = 'posts/homepage.html'
 
     context = {'posts': posts_list, 'most_seen': most_seen, 'title': title}

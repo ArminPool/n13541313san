@@ -24,7 +24,10 @@
             {{ query.time }}
         </td>
         <td>
-            {{ query.stock }}
+            {% if query.stock == 'USD' %}
+
+            <img src ="/dollar.png" style="width:30px;height:20px;">
+            {% endif %}
 
         </td>
         <td>
