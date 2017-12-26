@@ -6,10 +6,11 @@ margin-right:103px;
 
 #main{
 
-background-image: url("../img/wallstreet.jpg") ;
-background-size: 1366px 800px;
-background-attachment: fixed;
-
+background: url("../img/wallstreet.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 
 }
 
