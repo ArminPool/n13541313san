@@ -6,9 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="83ce492f-81ab-4045-9bd2-7537fae0f724" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/templates/posts/base.html" afterPath="$PROJECT_DIR$/posts/templates/posts/base.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/templates/posts/detail.html" afterPath="$PROJECT_DIR$/posts/templates/posts/detail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/views.py" afterPath="$PROJECT_DIR$/posts/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -83,8 +81,8 @@
       <file leaf-file-name="detail.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/posts/templates/posts/detail.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="183" column="60" lean-forward="false" selection-start-line="183" selection-start-column="60" selection-end-line="183" selection-end-column="60" />
+            <state relative-caret-position="133">
+              <caret line="183" column="36" lean-forward="false" selection-start-line="183" selection-start-column="36" selection-end-line="183" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -103,7 +101,7 @@
       <file leaf-file-name="detail.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/posts/static/posts/js/detail.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="26">
+            <state relative-caret-position="-652">
               <caret line="10" column="21" lean-forward="false" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
               <folding />
             </state>
@@ -826,13 +824,6 @@
       <option name="presentableId" value="Default" />
       <updated>1509594326097</updated>
     </task>
-    <task id="LOCAL-00202" summary="user view problem detected">
-      <created>1513938972402</created>
-      <option name="number" value="00202" />
-      <option name="presentableId" value="LOCAL-00202" />
-      <option name="project" value="LOCAL" />
-      <updated>1513938972403</updated>
-    </task>
     <task id="LOCAL-00203" summary="user view problem detected">
       <created>1513939174225</created>
       <option name="number" value="00203" />
@@ -1169,7 +1160,14 @@
       <option name="project" value="LOCAL" />
       <updated>1514290395275</updated>
     </task>
-    <option name="localTasksCounter" value="251" />
+    <task id="LOCAL-00251" summary="some bug fixed">
+      <created>1514291548159</created>
+      <option name="number" value="00251" />
+      <option name="presentableId" value="LOCAL-00251" />
+      <option name="project" value="LOCAL" />
+      <updated>1514291548159</updated>
+    </task>
+    <option name="localTasksCounter" value="252" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1242,8 +1240,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="tag problem with unicode going to fixe" />
-    <MESSAGE value="vip posts will not show in homepage. vip posts access changed" />
     <MESSAGE value="tariffs now have login required and detail BUG understood and" />
     <MESSAGE value="footer remove js function added" />
     <MESSAGE value="prints removed from post view" />
@@ -1267,7 +1263,9 @@
     <MESSAGE value="login form background problem fixed" />
     <MESSAGE value="reg-form background-img ==&gt;cover" />
     <MESSAGE value="post model field edited and drop down menus added and an script added to detail" />
-    <option name="LAST_COMMIT_MESSAGE" value="post model field edited and drop down menus added and an script added to detail" />
+    <MESSAGE value="some bug fixed" />
+    <MESSAGE value="return to prev state" />
+    <option name="LAST_COMMIT_MESSAGE" value="return to prev state" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1610,14 +1608,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/posts/static/posts/js/detail.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="10" column="21" lean-forward="false" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/posts/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1349">
@@ -1626,10 +1616,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/posts/static/posts/js/detail.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-652">
+          <caret line="10" column="21" lean-forward="false" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/posts/templates/posts/detail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="183" column="60" lean-forward="false" selection-start-line="183" selection-start-column="60" selection-end-line="183" selection-end-column="60" />
+        <state relative-caret-position="133">
+          <caret line="183" column="36" lean-forward="false" selection-start-line="183" selection-start-column="36" selection-end-line="183" selection-end-column="36" />
           <folding />
         </state>
       </provider>
