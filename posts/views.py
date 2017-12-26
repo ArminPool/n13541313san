@@ -172,7 +172,8 @@ def search(request):
     if query:
         queryset_list = Post.objects.all().filter(
             Q(header__icontains=query) |
-
+            Q(analysis_branch__icontains=query) |
+            Q(analysis_subcategory__icontains=query) |
             Q(Main_Tag__icontains=query) |
             Q(Tags__icontains=query) |
             Q(author__icontains=query)
@@ -232,7 +233,7 @@ def articles(request, find):
 
 
 def news(request):
-    posts_list = Post.objects.filter(is_vip=False, is_article=False)
+    posts_list = Post.objects.filter(is_vip=False,post_type='news')
     title = "اخبار سهام"
     paginator = Paginator(posts_list, 1)
     template_name = 'posts/category.html'

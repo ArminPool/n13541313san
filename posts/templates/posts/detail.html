@@ -181,7 +181,7 @@
             </form>
             {% endif %}
 
-            {% if comments.children %}
+            {% if comments.children and comment.children.is_public %}
             <button class="show-replies btn btn-default btn-sm">نمایش {{comments.children.count|persian_numeric}}پاسخ
             </button>
             <div class="see-replies">
