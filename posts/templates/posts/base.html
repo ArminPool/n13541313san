@@ -2,7 +2,7 @@
 <html dir="rtl" lang="fa-IR">
 <head>
     <!-- Use boostrap and css file stored in product/base.css -->
-<meta name="google-site-verification" content="qT7F4iIPwX2s1zas81T6ky3OMPB0kBvEXYC012OkRE0" />
+    <meta name="google-site-verification" content="qT7F4iIPwX2s1zas81T6ky3OMPB0kBvEXYC012OkRE0"/>
     {% load staticfiles %}
     {% block meta %}
 
@@ -33,7 +33,7 @@
             <button type="button" id="left-side-toggle-open"
             >&#9776;
             </button>
-            <button type="button" id="left-side-toggle-close" >
+            <button type="button" id="left-side-toggle-close">
 
 
             </button>
@@ -62,7 +62,7 @@
 
                 <p class="navbar-text navbar-right"><a href="/news/" class="navbar-link">اخبار</a>
                 </p>
-                <p class="navbar-text navbar-right"><a href="{% url 'posts:articles' type='regular' %}"
+                <p class="navbar-text navbar-right"><a href="{% url 'posts:articles' find='regular' %}"
                                                        class="navbar-link">مقالات</a>
                 </p>
 
@@ -108,9 +108,42 @@
                            aria-haspopup="true" aria-expanded="false">
                             تحلیل ویژه </a>
                         <ul class="dropdown-menu menu2">
-                            <li><a href="{% url 'posts:articles' type='universal_ons' %} ">انس جهانی</a></li>
-                            <li><a href="{% url 'posts:articles' type='pairs_of_currencies' %} ">جفت ارزها</a></li>
-                            <li><a href="{% url 'posts:articles' type='domestic_dollar' %} ">دلار داخلی</a></li>
+                            <li role="presentation" class="uo-nested-dropdown dropdown"><a class="dropdown-toggle"
+                                                                                           href="#"
+                                                                                           role="button"
+                                                                                           aria-haspopup="true"
+                                                                                           aria-expanded="false">
+                                انس جهانی </a>
+                                <ul class="dropdown-menu menu4">
+                                    <li>
+                                        <a href="{% url 'posts:articles' find='price-action-uo' %}">پرایس اکشن</a>
+                                    <li>
+                                        <a href="{% url 'posts:articles' find='ichimoku-uo' %}">ایچی موکو</a>
+                                    </li>
+
+
+
+                                </ul>
+                            </li>
+
+                            <li role="presentation" class="poc-nested-dropdown dropdown"><a class="dropdown-toggle"
+                                                                                            href="#"
+                                                                                            role="button"
+                                                                                            aria-haspopup="true"
+                                                                                            aria-expanded="false">
+                                جفت ارزها </a>
+                                <ul class="dropdown-menu menu5">
+                                      <li>
+                                        <a href="{% url 'posts:articles' find='price-action-poc' %}">پرایس اکشن</a>
+                                    <li>
+                                        <a href="{% url 'posts:articles' find='ichimoku-poc' %}">ایچی موکو</a>
+                                    </li>
+
+                                    <li><a href="{% url 'posts:articles' find='domestic_dollar' %} ">دلار داخلی</a></li>
+
+                                </ul>
+                            </li>
+                            <li><a href="{% url 'posts:articles' find='domestic_dollar' %} ">دلار داخلی</a></li>
 
 
                         </ul>
@@ -260,30 +293,28 @@
 
                 <ul class="list-inline" id="SideNav-bottom-links-list">
                     <li>
-                    <a href="/about-us">
-                                درباره ما
-                            </a>
-                </li>
+                        <a href="/about-us">
+                            درباره ما
+                        </a>
+                    </li>
 
-                   <li>
-                       <a href="/contact-us/">
-                                تماس با ما
-                            </a>
-                </li>
-                       <li>
-                     <a href="/rules/">
-                                قوانین
-                            </a>
-                </li>
+                    <li>
+                        <a href="/contact-us/">
+                            تماس با ما
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/rules/">
+                            قوانین
+                        </a>
+                    </li>
                     <li>
 
-                            <a href="/tariffs/">
-                                خرید اشتراک
-                            </a>
+                        <a href="/tariffs/">
+                            خرید اشتراک
+                        </a>
                     </li>
                 </ul>
-
-
 
 
             </div>
@@ -333,7 +364,7 @@
                                                                        src="{% static 'posts/img/telegram.png' %}"
                             ></a>
                             <a href="https://www.instagram.com/navasangold/"><img id="instagram-icon"
-                                                                  src="{% static 'posts/img/instagram.png' %}"></a>
+                                                                                  src="{% static 'posts/img/instagram.png' %}"></a>
 
                             <a href="https://twitter.com/"><img id="twitter-icon"
                                                                 src="{% static 'posts/img/twitter.png' %}"

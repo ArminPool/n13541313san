@@ -182,23 +182,40 @@ def search(request):
     return render(request, template_name, context)
 
 
-def articles(request, type):
+def articles(request, find):
     title, posts_list = '', ''
-    if type == 'regular':
-        posts_list = Post.objects.filter(is_vip=False, is_article=True)
+    if find == 'regular':
+        posts_list = Post.objects.filter(post_type='article')
         title = "مقالات"
 
-    if type == 'universal_ons':
-        posts_list = Post.objects.filter(is_universal_ons=True, is_vip=True)
+    if find == 'price-action-uo':
+        posts_list = Post.objects.filter(analysis_subcategory='price_action',analysis_branch='universal_ons')
         title = "تحلیلات انس جهانی"
 
-    elif type == 'pairs_of_currencies':
-        posts_list = Post.objects.filter(is_pairs_of_currencies=True, is_vip=True)
+    elif find == 'elliott-uo':
+        posts_list = Post.objects.filter(analysis_subcategory='elliott',analysis_branch='universal_ons')
         title = "تحلیلات جفت ارزها"
 
-    elif type == 'domestic_dollar':
-        posts_list = Post.objects.filter(is_domestic_dollar=True, is_vip=True)
+    elif find == 'ichimoku-uo':
+        posts_list = Post.objects.filter(analysis_subcategory='ichimoku',analysis_branch='universal_ons')
+        title = "تحلیلات جفت ارزها"
+
+    elif find == 'price-action-poc':
+        posts_list = Post.objects.filter(analysis_subcategory='price_action',analysis_branch='pairs_of_currencies')
+        title = "تحلیلات انس جهانی"
+
+    elif find == 'elliott-poc':
+        posts_list = Post.objects.filter(analysis_subcategory='elliott',analysis_branch='pairs_of_currencies')
+        title = "تحلیلات جفت ارزها"
+
+    elif find == 'ichimoku-poc':
+        posts_list = Post.objects.filter(analysis_subcategory='ichimoku',analysis_branch='pairs_of_currencies')
+        title = "تحلیلات جفت ارزها"
+
+    elif find == 'domestic-dollar':
+        posts_list = Post.objects.filter(analysis_branch='domestic_dollar')
         title = "تحلیلات دلار داخلی"
+
 
     paginator = Paginator(posts_list, 6)
     template_name = 'posts/homepage.html'
@@ -256,5 +273,5 @@ def economic_calender(request):
 def bank_orders(request):
     query_list = BankOrders.objects.all()
     template_name = 'posts/bankorders.html'
-    context = {'query_list':query_list}
-    return render(request,template_name,context)
+    context = {'query_list': query_list}
+    return render(request, template_name, context)

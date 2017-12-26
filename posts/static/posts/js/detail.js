@@ -8,6 +8,7 @@ $(".comments span + button").click(function(event){
 
 });
 
+$("#post-text p img").addClass('img-responsive');
 
 $(".show-replies").click(function(event){
     event.preventDefault();

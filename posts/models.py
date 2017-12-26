@@ -20,6 +20,19 @@ class Post(models.Model):
                               format='JPEG',
                               options={'quality': 60}, null=True, blank=False)
 
+    Post_Options = (('news', 'خبر'), ('article', 'مقاله'),('analysis','مقاله تحلیلی'))
+    post_type = CharField(choices=Post_Options,default='news', max_length=100)
+
+    Analysis_Branch_Options = (
+        ('universal_ons', 'انس جهانی'), ('pairs_of_currencies', 'جفت ارزها'), ('domestic_dollar', 'دلار داخلی'))
+
+    analysis_branch = CharField(choices=Analysis_Branch_Options, null=True, blank=True, max_length=100)
+
+    Analysis_Subcategory_Options = (
+        ('price_action', 'پرایس اکشن'), ('elliott', 'الیوت'), ('ichimoku', 'ایچی موکو'))
+
+    analysis_subcategory = CharField(choices=Analysis_Subcategory_Options, null=True, blank=True, max_length=100)
+
     description = RichTextField(config_name='awesome_ckeditor')
 
     text = RichTextField(config_name='awesome_ckeditor')
@@ -30,15 +43,7 @@ class Post(models.Model):
 
     author = models.ForeignKey(Author, null=False)
 
-    is_article = models.BooleanField(default=False)
-
     is_vip = models.BooleanField(default=False)
-
-    is_universal_ons = models.BooleanField(default=False)
-
-    is_pairs_of_currencies = models.BooleanField(default=False)
-
-    is_domestic_dollar = models.BooleanField(default=False)
 
     public = models.BooleanField(default=False)
 
@@ -105,9 +110,9 @@ class Calender(models.Model):
 
     time = TimeField()
 
-    Stock_Options = (('USD','USD'),('EUR','EUR'),('GBP','GBP'),
-                     ('CHF', 'CHF'),('JPY','JPY'),('CAD','CAD'),
-                     ('AUD', 'AUD'),('NZD','NZD'),('BTC','BTC'),
+    Stock_Options = (('USD', 'USD'), ('EUR', 'EUR'), ('GBP', 'GBP'),
+                     ('CHF', 'CHF'), ('JPY', 'JPY'), ('CAD', 'CAD'),
+                     ('AUD', 'AUD'), ('NZD', 'NZD'), ('BTC', 'BTC'),
                      )
     stock = CharField(choices=Stock_Options, default='', max_length=100)
 

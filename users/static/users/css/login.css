@@ -2,9 +2,12 @@
 /*
 compressed imgs are .jpg
 */
-background-image: url("../img/login-background.jpg") ;
-background-size: 1366px 800px;
-background-attachment: fixed;
+background: url("../img/login-background.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
 min-height:620px;
 }
 

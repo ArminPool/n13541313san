@@ -280,6 +280,7 @@ box-shadow:none;
 }
 
 
+
                             /* blue shadow in dark background is not good  */
 #SideNav input{
 
@@ -536,11 +537,17 @@ position:absolute;
 width:34px;
 text-align:center;
 border-left:1px solid rgb(204, 204, 204);
-padding:4px; color:rgb(204, 204, 204);
+padding:4px;
+color:rgb(204, 204, 204);
 }
 
-#login-form .material-icons,.fa-user-circle:before {
+#login-form .material-icons {
 
+color:#1E90FF;
+
+}
+
+#login-form .fa-user-circle:before{
 color:#1E90FF;
 
 }
@@ -671,6 +678,14 @@ padding-top:10px;
 padding-bottom:50px;
 
 }
+.poc-nested-dropdown {
+     position: relative;
+    }
+.poc-nested-dropdown .menu5 li a,.uo-nested-dropdown .menu4 li a{
+color:#fff;
+text-align:right;
+
+}
 
 
                   /*     changing color of dropdown-menu when screen is big enough        */
@@ -695,7 +710,7 @@ color:#fff;
 
 }
 
-.dropdown:hover .dropdown-menu {
+.education-dropdown:hover .menu1 {
 
 padding-right:0px;
 display: block;
@@ -704,6 +719,65 @@ right:0px;
 
 
 }
+
+.article-dropdown:hover .menu2 {
+
+padding-right:0px;
+display: block;
+margin-top: 0;
+right:0px;
+
+
+}
+
+.money-dropdown:hover .menu3 {
+
+padding-right:0px;
+display: block;
+margin-top: 0;
+right:0px;
+
+
+}
+
+.uo-nested-dropdown .menu4,.poc-nested-dropdown .menu5{
+
+
+display:none;
+
+}
+
+.uo-nested-dropdown:hover .menu4{
+
+padding-right:0px;
+display: block;
+margin-top: 0;
+position:absolute;
+top: 0;
+right:100%;
+
+
+}
+.uo-nested-dropdown .menu4 li a,.poc-nested-dropdown .menu5 li a{
+color:#000;
+text-align:right;
+
+}
+
+.poc-nested-dropdown:hover .menu5{
+
+padding-right:0px;
+display: block;
+margin-top: 0;
+position:absolute;
+top: 0;
+right:100%;
+
+
+}
+
+
+
 .dropdown-header{
 
 color:#777;
