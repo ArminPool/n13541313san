@@ -107,8 +107,8 @@ $("#left-side-toggle-close").click(closeNav);
 
 
 $(window).on('resize', function(){
-$('.menu4').removeAttr("style");
 $('.menu5').removeAttr("style");
+$('.menu6').removeAttr("style");
 
 
 $('body').css('padding-top',"" + $('.navbar-fixed-top').css("height"));

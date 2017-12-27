@@ -50,16 +50,10 @@
                                 <div class="post-stuff">
 
                                     <h2 style="padding:10px;padding-top:0px;"> {{ post.header }}</h2>
-                                    {% if not user.is_authenticated and post.is_vip or user.is_authenticated and post.is_vip and not user.userprofile.have_vip %}
 
-
-                                    <p>{{ post.description|safe|striptags }}</p>
-                                    <p>برای مشاهده متن کامل  مقاله نیازمند <a href="/tariffs/">خرید اشتراک </a>ویژه ما هستید.</p>
-                                   {% else %}
                                     <p>{{ post.description|safe|striptags }}<a class="detail-link"
                                                                      href="{% url 'posts:detail' header=post.header|fix_spaces %}">بیشتر</a></p>
 
-                                    {% endif %}
 
                                 </div>
                                 <ul class="list-inline" style="padding-right:0px;">

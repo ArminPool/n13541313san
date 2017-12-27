@@ -41,7 +41,7 @@
                 {% endfor %}
 
 
-                <a href="" class="btn btn-sm btn-default">{{post.Main_Tag}}</a>
+                <a href="{% url 'posts:tag' tag=post.Main_Tag %}" class="btn btn-sm btn-default">{{post.Main_Tag}}</a>
 
 
             </div>
@@ -182,7 +182,8 @@
             {% endif %}
 
             {% if comments.children %}
-            <button class="show-replies btn btn-default btn-sm">نمایش {{comments.children.count|persian_numeric}}پاسخ
+
+            <button class="show-replies btn btn-default btn-sm">نمایش {{comments.public_children.count|persian_numeric}}پاسخ
             </button>
             <div class="see-replies">
 

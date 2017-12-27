@@ -25,7 +25,7 @@ from users.models import Inbox, Author
 def homepage(request):
     # print(localtime(now()) + relativedelta(months=3) > localtime(now()))
 
-    posts_list = Post.objects.filter(is_vip=False)
+    posts_list = Post.objects.all()
     most_seen = Post.objects.order_by("-seen")[:10]
     title = 'نوسان گلد | صفحه اصلی'
     template_name = 'posts/homepage.html'
@@ -102,8 +102,11 @@ def detail(request, header):
             comment.save()
         return redirect('posts:detail', header=post.header)
 
-    elif (not request.user.is_authenticated and post.is_vip) or (
-                    request.user.is_authenticated and post.is_vip and not request.user.userprofile.have_vip()):
+    elif not request.user.is_authenticated and post.is_vip:
+
+        return render(request, 'posts/no_vip.html')
+
+    elif request.user.is_authenticated and post.is_vip and not request.user.userprofile.have_vip():
 
         return render(request, 'posts/no_vip.html')
 
@@ -131,32 +134,35 @@ def detail(request, header):
                 user_prof.save()
 
             elif len(Counter(tags_he_saw)) == 4:
+                try:
+                    favourite_tag1 = Counter(tags_he_saw).most_common(4)[0][0]
+                    favourite_tag2 = Counter(tags_he_saw).most_common(4)[1][0]
+                    favourite_tag3 = Counter(tags_he_saw).most_common(4)[2][0]
+                    favourite_tag4 = Counter(tags_he_saw).most_common(4)[3][0]
+                    favourite_post1 = Post.objects.filter(Main_Tag=favourite_tag1).order_by("-seen")[0]
+                    favourite_post2 = Post.objects.filter(Main_Tag=favourite_tag2).order_by("-seen")[0]
+                    favourite_post3 = Post.objects.filter(Main_Tag=favourite_tag3).order_by("-seen")[0]
 
-                favourite_tag1 = Counter(tags_he_saw).most_common(4)[0][0]
-                favourite_tag2 = Counter(tags_he_saw).most_common(4)[1][0]
-                favourite_tag3 = Counter(tags_he_saw).most_common(4)[2][0]
-                favourite_tag4 = Counter(tags_he_saw).most_common(4)[3][0]
-                favourite_post1 = Post.objects.filter(Main_Tag=favourite_tag1).order_by("-seen")[0]
-                favourite_post2 = Post.objects.filter(Main_Tag=favourite_tag2).order_by("-seen")[0]
-                favourite_post3 = Post.objects.filter(Main_Tag=favourite_tag3).order_by("-seen")[0]
+                    favourite_post4 = Post.objects.filter(Main_Tag=favourite_tag4).order_by("-seen")[0]
 
-                favourite_post4 = Post.objects.filter(Main_Tag=favourite_tag4).order_by("-seen")[0]
+                    context = {'form': form, 'post': post,
+                               'favourite_post1': favourite_post1,
+                               'favourite_post2': favourite_post2,
+                               'favourite_post3': favourite_post3,
+                               'favourite_post4': favourite_post4, }
+                    """
+                                 favourite_posts = Post.objects.all().filter(
+    
+                                     Q(Main_Tag=favourite_tag1) |
+                                     Q(Main_Tag=favourite_tag2) |
+                                     Q(Main_Tag=favourite_tag3) |
+                                     Q(Main_Tag=favourite_tag4) 
+    
+                                 ).order_by("-seen")[:3]
+                                 """
+                except IndexError:
+                    context = {'form': form, 'post': post}
 
-                context = {'form': form, 'post': post,
-                           'favourite_post1': favourite_post1,
-                           'favourite_post2': favourite_post2,
-                           'favourite_post3': favourite_post3,
-                           'favourite_post4': favourite_post4, }
-                """
-                             favourite_posts = Post.objects.all().filter(
-
-                                 Q(Main_Tag=favourite_tag1) |
-                                 Q(Main_Tag=favourite_tag2) |
-                                 Q(Main_Tag=favourite_tag3) |
-                                 Q(Main_Tag=favourite_tag4) 
-
-                             ).order_by("-seen")[:3]
-                             """
                 template_name = 'posts/detail.html'
                 return render(request, template_name, context)
         template_name = 'posts/detail.html'

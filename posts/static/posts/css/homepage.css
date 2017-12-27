@@ -43,7 +43,7 @@ padding:0px;
 
 max-width:100%;
 height:auto;
-padding-top:10px;
+margin-top:10px;
 
 }
 
@@ -59,13 +59,13 @@ background-color:transparent;
 }
 
 .post-stuff{
-
+margin-top:10px;
 padding-bottom:36px;
-
+height:209.3px;
 }
 
 .post-stuff h2{
-
+margin-top:0px;
 font-size:20px;
 font-weight:100;
 }

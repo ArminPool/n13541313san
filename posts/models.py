@@ -106,6 +106,9 @@ class Comment(models.Model):
     def children(self):
         return Comment.objects.filter(parent=self)
 
+    def public_children(self):
+        return Comment.objects.filter(parent=self,public=True)
+
 
 class Calender(models.Model):
     date = DateField()
