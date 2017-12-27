@@ -1,5 +1,6 @@
 from ckeditor.fields import RichTextField
 from django.contrib.auth.models import User
+from django.core.exceptions import ObjectDoesNotExist
 from django.db import models
 from django.db.models import CharField, DateField, TimeField
 from django import forms
@@ -64,6 +65,7 @@ class Post(models.Model):
 
     def get_Main_Tag(self):
         return str(self.Main_Tag).replace(' ', '-')
+
 
 
 class Comment(models.Model):
