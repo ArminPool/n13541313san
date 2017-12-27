@@ -190,33 +190,32 @@ def articles(request, find):
         title = "مقالات"
 
     if find == 'price-action-uo':
-        posts_list = Post.objects.filter(analysis_subcategory='price_action',analysis_branch='universal_ons')
-        title = "تحلیلات انس جهانی"
+        posts_list = Post.objects.filter(analysis_subcategory='price_action', analysis_branch='universal_ons')
+        title = "انس جهانی | تحلیلات پرایس اکشن"
 
     elif find == 'elliott-uo':
-        posts_list = Post.objects.filter(analysis_subcategory='elliott',analysis_branch='universal_ons')
-        title = "تحلیلات جفت ارزها"
+        posts_list = Post.objects.filter(analysis_subcategory='elliott', analysis_branch='universal_ons')
+        title = "انس جهانی | تحلیلات الیوت"
 
     elif find == 'ichimoku-uo':
-        posts_list = Post.objects.filter(analysis_subcategory='ichimoku',analysis_branch='universal_ons')
-        title = "تحلیلات جفت ارزها"
+        posts_list = Post.objects.filter(analysis_subcategory='ichimoku', analysis_branch='universal_ons')
+        title = "انس جهانی | تحلیلات ایچی موکو"
 
     elif find == 'price-action-poc':
-        posts_list = Post.objects.filter(analysis_subcategory='price_action',analysis_branch='pairs_of_currencies')
-        title = "تحلیلات انس جهانی"
+        posts_list = Post.objects.filter(analysis_subcategory='price_action', analysis_branch='pairs_of_currencies')
+        title = "جفت ارزها | تحلیلات پرایس اکشن"
 
     elif find == 'elliott-poc':
-        posts_list = Post.objects.filter(analysis_subcategory='elliott',analysis_branch='pairs_of_currencies')
-        title = "تحلیلات جفت ارزها"
+        posts_list = Post.objects.filter(analysis_subcategory='elliott', analysis_branch='pairs_of_currencies')
+        title = "جفت ارزها | تحلیلات الیوت"
 
     elif find == 'ichimoku-poc':
-        posts_list = Post.objects.filter(analysis_subcategory='ichimoku',analysis_branch='pairs_of_currencies')
-        title = "تحلیلات جفت ارزها"
+        posts_list = Post.objects.filter(analysis_subcategory='ichimoku', analysis_branch='pairs_of_currencies')
+        title = "جفت ارزها | تحلیلات ایچی موکو"
 
     elif find == 'domestic-dollar':
         posts_list = Post.objects.filter(analysis_branch='domestic_dollar')
         title = "تحلیلات دلار داخلی"
-
 
     paginator = Paginator(posts_list, 6)
     template_name = 'posts/homepage.html'
@@ -233,7 +232,7 @@ def articles(request, find):
 
 
 def news(request):
-    posts_list = Post.objects.filter(is_vip=False,post_type='news')
+    posts_list = Post.objects.filter(is_vip=False, post_type='news')
     title = "اخبار سهام"
     paginator = Paginator(posts_list, 1)
     template_name = 'posts/category.html'
