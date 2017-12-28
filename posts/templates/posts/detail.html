@@ -183,8 +183,8 @@
 
             {% if comments.children %}
 
-            {% if comments.public_children.count > 1 %}
-            <button class="show-replies btn btn-default btn-sm">نمایش {{comments.public_children.count|persian_numeric}}پاسخ</button>
+
+            <button class="show-replies btn btn-default btn-sm">نمایش {{comments.children|persian_numeric}}پاسخ</button>
             {% endif %}
             <div class="see-replies">
 
