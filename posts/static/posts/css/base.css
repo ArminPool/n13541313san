@@ -690,17 +690,17 @@ padding-top:10px;
 padding-bottom:50px;
 
 }
+
 .poc-nested-dropdown {
      position: relative;
     }
+
 .uo-nested-dropdown .menu5 li a,.poc-nested-dropdown .menu6 li a{
 color:#fff;
 text-align:right;
 
 }
 
-
-                  /*     changing color of dropdown-menu when screen is big enough        */
 
 
                                                                                                                /*                        */
@@ -730,7 +730,17 @@ padding:0px;
 
 padding: 10px 20px;
 
+
 }
+
+
+
+
+
+
+
+
+
 
 .education-dropdown:hover .menu1 {
 
@@ -753,6 +763,16 @@ right:0px;
 }
 
 .money-dropdown:hover .menu3 {
+
+padding-right:0px;
+display: block;
+margin-top: 0;
+right:0px;
+
+
+}
+
+.trading-accounts-dropdown:hover .menu4 {
 
 padding-right:0px;
 display: block;

@@ -239,7 +239,7 @@ def articles(request, find):
 
 def news(request):
     posts_list = Post.objects.filter(is_vip=False, post_type='news')
-    title = "اخبار سهام"
+    title = "اخبار"
     paginator = Paginator(posts_list, 1)
     template_name = 'posts/category.html'
     page = request.GET.get('page', 1)
@@ -250,7 +250,8 @@ def news(request):
         posts = paginator.page(1)
     except EmptyPage:
         posts = paginator.page(paginator.num_pages)
-    context = {'posts': posts, 'title': title}
+        # ---- we mention to title as tag in category template and in this case ----
+    context = {'posts': posts, 'tag': title}
     return render(request, template_name, context)
 
 
