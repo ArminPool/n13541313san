@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+{% load jalali_tags %}
+{% load custom_tags %}
+ {% load staticfiles %}
+<html dir="rtl" lang="fa-IR">
+<head>
+    <title>آپلود عکس های وابسته به پست</title>
+  <link rel="stylesheet" href="{% static 'posts/css/bootstrap.min.css' %}">
+
+</head>
+<body>
+ <div style="margin-bottom: 20px;">
+     <div class="text-center">
+    <button type="button" class="btn btn-primary js-upload-photos">
+      <span class="glyphicon glyphicon-cloud-upload"></span> ارسال تصویر
+    </button>
+         </div>
+    <input id="fileupload" type="file" name="img" multiple
+           style="display: none;"
+           data-url="{% url 'posts:upload-photo-affiliate' %}"
+           data-form-data='{"csrfmiddlewaretoken": "{{ csrf_token }}"}'>
+  </div>
+
+  <table id="gallery" class="table table-bordered">
+    <thead >
+      <tr >
+        <th style="text-align:right;">تصاویر ارسال شده</th>
+          <th style="text-align:right;">تاریخ ارسال در</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for photo in photos %}
+        <tr>
+          <td><a href="{{ photo.img.url }}">{{ photo.img.name }}</a></td>
+            <td>{{ photo.uploaded_at|to_jalali|persian_numeric}} </td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+<div class="modal fade" id="modal-progress" data-backdrop="static" data-keyboard="false">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Uploading...</h4>
+        </div>
+        <div class="modal-body">
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 0%;">0%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+</body>
+<script src="{% static 'posts/js/jquery.min.js' %}"></script>
+    <script src="{% static 'posts/js/bootstrap.min.js' %}"></script>
+
+
+  <script src="{% static 'posts/js/jquery.ui.widget.js' %}"></script>
+
+  <script type="text/javascript" src="{% static 'posts/js/jquery.iframe-transport.js' %}"></script>
+
+  <script src="{% static 'posts/js/jquery.fileupload.js' %}"></script>
+  <script type="text/javascript" src="{% static 'posts/js/progress-bar-upload.js' %}"></script>
+
+
+
+</html>

@@ -21,8 +21,8 @@ class Post(models.Model):
                               format='JPEG',
                               options={'quality': 60}, null=True, blank=False)
 
-    Post_Options = (('news', 'خبر'), ('article', 'مقاله'),('analysis','مقاله تحلیلی'))
-    post_type = CharField(choices=Post_Options,default='news', max_length=100)
+    Post_Options = (('news', 'خبر'), ('article', 'مقاله'), ('analysis', 'مقاله تحلیلی'))
+    post_type = CharField(choices=Post_Options, default='news', max_length=100)
 
     Analysis_Branch_Options = (
         ('universal_ons', 'انس جهانی'), ('pairs_of_currencies', 'جفت ارزها'), ('domestic_dollar', 'دلار داخلی'))
@@ -67,6 +67,15 @@ class Post(models.Model):
         return str(self.Main_Tag).replace(' ', '-')
 
 
+class PhotoAttached(models.Model):
+    author = models.ForeignKey(Author,blank=True,null=True,related_name='photo_uploaded')
+    img = ProcessedImageField(upload_to='uploaded/posts/img',
+
+                                  format='JPEG',
+                                  options={'quality': 60}, null=True, blank=True)
+
+    uploaded_at = models.DateTimeField(auto_now_add=True)
+
 
 class Comment(models.Model):
     post = models.ForeignKey(Post, related_name='comments')
@@ -107,7 +116,7 @@ class Comment(models.Model):
         return Comment.objects.filter(parent=self)
 
     def public_children(self):
-        return Comment.objects.filter(parent=self,public=True)
+        return Comment.objects.filter(parent=self, public=True)
 
 
 class Calender(models.Model):

@@ -361,7 +361,7 @@ def send_to_zarinpal(request, tariff_number):
     client = Client(ZARINPAL_WEBSERVICE)
     if tariff_number == "1":
 
-        amount = "1000"
+        amount = "130000"
         result = client.service.PaymentRequest(MMERCHANT_ID,
                                                amount,
                                                description,
@@ -376,7 +376,7 @@ def send_to_zarinpal(request, tariff_number):
         else:
             return 'Error'
     elif tariff_number == "2":
-        amount = "250000"
+        amount = "280000"
         result = client.service.PaymentRequest(MMERCHANT_ID,
                                                amount,
                                                description,
@@ -390,7 +390,7 @@ def send_to_zarinpal(request, tariff_number):
             return 'Error'
     elif tariff_number == "3":
 
-        amount = "50000"
+        amount = "530000"
         result = client.service.PaymentRequest(MMERCHANT_ID,
                                                amount,
                                                description,
@@ -405,7 +405,7 @@ def send_to_zarinpal(request, tariff_number):
 
     elif tariff_number == "4":
 
-        amount = "1000000"
+        amount = "980000"
         result = client.service.PaymentRequest(MMERCHANT_ID,
                                                amount,
                                                description,
@@ -423,15 +423,15 @@ def send_to_zarinpal(request, tariff_number):
 def verify_after_zarinpal(request, user_id, tariff_number):
     amount = 0
     if tariff_number == "1":
-        amount = "1000"
+        amount = "130000"
     elif tariff_number == "2":
 
-        amount = "250000"
+        amount = "280000"
     elif tariff_number == "3":
 
-        amount = "500000"
+        amount = "530000"
     elif tariff_number == "4":
-        amount = "1000000"
+        amount = "980000"
 
     user = User.objects.get(id=user_id)
     user_prof = UserProfile.objects.get(user=user)

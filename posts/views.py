@@ -4,20 +4,22 @@ from collections import Counter
 
 import pytz
 from django.contrib.auth.models import User
+from django.core.exceptions import PermissionDenied
 from django.core.paginator import Paginator, PageNotAnInteger, EmptyPage
 from django.db.models import Q
 from datetime import datetime
 
-from django.http import HttpResponseNotFound
+from django.http import HttpResponseNotFound, JsonResponse, HttpResponseForbidden
 from django.shortcuts import render, redirect
 from django.core.mail import send_mail
 from django.urls import reverse
 from django.utils.timezone import localtime, now
+from django.views import View
 from django.views.generic import ListView
 from flask import Flask
 
-from posts.form import CommentForm, CalenderForm
-from posts.models import Post, Comment, Calender, BankOrders
+from posts.form import CommentForm, CalenderForm, PhotoAttachedForm
+from posts.models import Post, Comment, Calender, BankOrders, PhotoAttached
 from users.forms import UsersContactForm, ContactForm
 from users.models import Author
 
@@ -30,7 +32,7 @@ def homepage(request):
     most_seen = Post.objects.order_by("-seen")[:10]
 
     page = request.GET.get('page', 1)
-    paginator = Paginator(posts_list,1)
+    paginator = Paginator(posts_list, 1)
     try:
         posts = paginator.page(page)
     except PageNotAnInteger:
@@ -289,3 +291,38 @@ def bank_orders(request):
     template_name = 'posts/bankorders.html'
     context = {'query_list': query_list}
     return render(request, template_name, context)
+
+
+def upload_photo_affiliate(request):
+    if request.method == 'GET':
+        if request.user.is_authenticated:
+            if request.user.userprofile.is_author:
+                form = PhotoAttachedForm()
+                author = Author.objects.get(user=request.user)
+
+                photos_list = PhotoAttached.objects.filter(author=author)
+                context = {'photos': photos_list, 'form': form}
+                return render(request, 'posts/upload-photo-affiliate.html', context, )
+            else:
+                return HttpResponseForbidden('<h1>not allowed</h1>')
+        else:
+            return HttpResponseForbidden('<h1>not allowed</h1>')
+    elif request.method == 'POST':
+        if request.user.is_authenticated:
+            if request.user.userprofile.is_author:
+
+                form = PhotoAttachedForm(request.POST, request.FILES)
+                if form.is_valid():
+                    photo = form.save(commit=False)
+                    author = Author.objects.get(user=request.user)
+
+                    photo.author = author
+                    photo.save()
+                    data = {'is_valid': True, 'name': photo.img.name, 'url': photo.img.url,'uploaded_at':photo.uploaded_at}
+                else:
+                    data = {'is_valid': False}
+                return JsonResponse(data)
+            else:
+                return HttpResponseForbidden('<h1>not allowed</h1>')
+        else:
+            return HttpResponseForbidden('<h1>not allowed</h1>')

@@ -125,6 +125,7 @@ class UserProfile(models.Model):
                                   options={'quality': 60}, null=True, blank=True)
 
     vip_until = models.DateTimeField(default=django.utils.timezone.now)
+    is_author=models.BooleanField(default=None)
     # Remember Many to Many fields doesn't show in mysql commend line
 
     def __str__(self):
@@ -148,7 +149,7 @@ class UserProfile(models.Model):
 
 
 class Author(models.Model):
-    user = models.OneToOneField(User, null=False)
+    user = models.OneToOneField(User,null=False)
     bio = models.CharField(max_length=500)
 
     def __str__(self):
