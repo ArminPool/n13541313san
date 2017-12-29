@@ -68,16 +68,17 @@ class Post(models.Model):
 
 
 class PhotoAttached(models.Model):
-    author = models.ForeignKey(Author,blank=True,null=True,related_name='photo_uploaded')
+    author = models.ForeignKey(Author, blank=True, null=True, related_name='photo_uploaded')
     img = ProcessedImageField(upload_to='uploaded/posts/img-affiliate',
 
-                                  format='JPEG',
-                                  options={'quality': 60}, null=True, blank=True)
+                              format='JPEG',
+                              options={'quality': 60}, null=True, blank=True)
 
     uploaded_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        return  self.author + self.uploaded_at
+        return self.author.user.username + '  ' + str(self.uploaded_at)
+
 
 class Comment(models.Model):
     post = models.ForeignKey(Post, related_name='comments')
