@@ -141,10 +141,10 @@
         {% endif %}
 
 
-        {% for comments in post.comments.all %}
+        {% for comments in post.comments.all reversed %}
         <div class="comments">
 
-            {% if comments.is_parent and comments.is_public %}
+            {% if comments.is_parent %}
 
 
             {% if comments.user.userprofile.pro_img %}
@@ -184,7 +184,7 @@
             {% if comments.children %}
 
 
-            <button class="show-replies btn btn-default btn-sm">نمایش {{comments.children|persian_numeric}}پاسخ</button>
+            <button class="show-replies btn btn-default btn-sm">نمایش {{comments.children.count|persian_numeric}} پاسخ</button>
             {% endif %}
             <div class="see-replies">
 
@@ -195,7 +195,7 @@
                 <blockquote>
                     <div class="children">
 
-                        {% if children.is_public %}
+
 
                         {% if children.user.userprofile.pro_img %}
                         <img
@@ -232,29 +232,7 @@
                         {% endif %}
 
 
-                        {% elif not children.is_public and children.user == user %}
-                        <div class="children-not-public">
-                            {% if children.user.userprofile.pro_img %}
-                            <img
-                                    src="{{ children.user.userprofile.pro_img.url}}" alt="{{children.user.username}}">
 
-                            {% else %}
-                            <img
-                                   src="{% static 'users/img/anonymous-user.jpg' %}"
-                                    alt="{{children.user.username}}">
-                            {% endif %}
-                            <h4> {{ children.user }}</h4>
-                            <br/>
-                            <br/>
-
-                            <p>ارسال شده در:{{ children.created|to_jalali|persian_numeric }}</p>
-                            <div class="comment-body">
-                                <p>{{ children.body }}</p>
-                            </div>
-
-                            <p>نظر شما ثبت شده و منتظر تایید است.</p>
-                        </div>
-                        {% endif %}
 
                     </div>
 
@@ -263,32 +241,6 @@
             </div>
             {% endif %}
 
-
-            {% elif comments.user == user and comments.is_parent and not comments.is_public %}
-            <div class="comments-not-public">
-                {% if comments.user.userprofile.pro_img %}
-                <img
-                        src="{{ comments.user.userprofile.pro_img.url}}" alt="{{comments.user.username}}">
-
-                {% else %}
-                <img
-                        src="{% static 'users/img/anonymous-user.jpg' %}"
-                        alt="{{comments.user.username}}">
-                {% endif %}
-
-                <h4>{{ comments.user }}</h4>
-                <br/>
-                <br/>
-
-                <p>ارسال شده در:{{ comments.created|to_jalali|persian_numeric }}</p>
-                <div class="comment-body">
-
-                    <p>{{ comments.body }}</p>
-                </div>
-                <p>نظر شما ثبت شده و منتظر تایید است.</p>
-
-            </div>
-            {% endif %}
 
 
         </div>

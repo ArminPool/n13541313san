@@ -15,17 +15,6 @@ from django.contrib.auth.models import User
 from django.db import models
 from django.utils.timezone import localtime, now
 from django_mysql.models import ListTextField
-
-
-class Inbox(models.Model):
-    user = models.ForeignKey(User, default=None, null=True, related_name="message_owner")
-    sender = models.ForeignKey(User, default=None, null=True, related_name="message_sender")
-    body = models.TextField(max_length=250, null=True)
-
-    def __str__(self):
-        return self.user.username
-
-
 class UserProfile(models.Model):
     # Each user-field in UserProfile can only have one user
     user = models.OneToOneField(User, null=True)
@@ -137,7 +126,6 @@ class UserProfile(models.Model):
 
     vip_until = models.DateTimeField(default=django.utils.timezone.now)
     # Remember Many to Many fields doesn't show in mysql commend line
-    inbox = models.ManyToManyField(Inbox, blank=True)
 
     def __str__(self):
         if self.user:

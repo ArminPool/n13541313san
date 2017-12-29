@@ -7,7 +7,7 @@ from django.forms import TextInput, Textarea
 from django.http import HttpResponseNotFound
 from django.utils.safestring import mark_safe
 
-from users.models import UserProfile, GuestMessage, UsersMessage, Inbox, Token, Author, Vip
+from users.models import UserProfile, GuestMessage, UsersMessage, Token, Author, Vip
 
 from django.db import models
 from posts.models import Post, Comment, Calender, BankOrders
@@ -61,7 +61,6 @@ admin.site.register(Comment)
 admin.site.register(BankOrders)
 admin.site.register(Calender)
 admin.site.register(UserProfile)
-admin.site.register(Inbox)
 admin.site.register(GuestMessage)
 admin.site.register(UsersMessage)
 admin.site.register(Author)

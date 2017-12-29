@@ -25,11 +25,13 @@
                 <div class="jumbotron">
 
                     {% if user.userprofile.pro_img %}
-                    <img class="img-responsive" src="{{ user.userprofile.pro_img.url }}" title="{{user.username}}" alt="{{user.username}}">
+                    <img class="img-responsive" src="{{ user.userprofile.pro_img.url }}" title="{{user.username}}"
+                         alt="{{user.username}}">
 
                     {% else %}
                     <img class="img-responsive"
-                        src="{% static 'users/img/anonymous-user.jpg' %}" title="{{user.username}}" alt="{{user.username}}">
+                         src="{% static 'users/img/anonymous-user.jpg' %}" title="{{user.username}}"
+                         alt="{{user.username}}">
                     {% endif %}
                 </div>
             </div>
@@ -37,7 +39,8 @@
                 <div class="jumbotron">
                     <ul class="nav nav-tabs">
                         <li class="active"><a data-toggle="tab" href="#home">اطلاعات کاربری</a></li>
-                        <li><a data-toggle="tab" href="#menu1">پیام ها</a></li>
+                        <li><a data-toggle="tab" href="#vip_status">وضعیت اشتراک</a></li>
+                        <li><a data-toggle="tab" href="#fav_tags">تگ هایی که شما بیشتر بازدید کردید</a></li>
 
                     </ul>
 
@@ -58,19 +61,23 @@
                             {% endif %}
                             {% endfor %}
 
-                            {% if user.userprofile.have_vip %}
-                            <p>شما اشتراک ویژه دارید</p>
-                            {% else %}
-                            <p>شما اشتراک ویژه ندارید</p>
-                            {% endif %}
-                        </div>
-                        <div id="menu1" class="tab-pane fade">
-                            <h3>پیام ها </h3>
-                            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                commodo consequat.</p>
-                        </div>
 
+                        </div>
+                        <div id="vip_status" class="tab-pane fade">
+                            {% if vip_remaining > 0 %}
+                            <p> {{vip_remaining}}روز از اشتراک شما باقی مانده است.</p>
+                        </div>
+                        {% else %}
+                        <p>شما اشتراک  ندارید.</p>
+                        {% endif %}
                     </div>
+                                            <div id="fav_tags" class="tab-pane fade">
+{% for tag in favourite_tag_list %}
+                <a href="{% url 'posts:tag' tag=tag %}" class="btn btn-sm btn-default" style="">{{tag}}</a>
+                                                {% empty %}
+                                                <p>خالی</p>
+                                                {% endfor %}
+                                            </div>
 
                 </div>
             </div>

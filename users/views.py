@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 import os
-
+from collections import Counter
 import pytz
 from dateutil.relativedelta import relativedelta
 from django.contrib.auth.models import User
@@ -78,7 +78,6 @@ def login_user(request):
     next = ''
     if request.GET.get('next'):
         next = request.GET.get('next')
-        print(next)
 
     if request.POST:
         if request.POST['username'] or request.POST['password1']:
@@ -156,17 +155,34 @@ def logout_user(request):
 def view_profile(request):
     all_posts = Post.objects.all()
     users = User.objects.get(id=request.user.id)
-    try:
+
+    if request.user.userprofile.vip_until > localtime(now()):
+        vip_remaining = (request.user.userprofile.vip_until - localtime(now())).days
+
+    else:
+        vip_remaining = 0
+    tags_he_saw = request.user.userprofile.tags_he_saw
+    print(len(Counter(tags_he_saw)))
+    if len(Counter(tags_he_saw)) >= 4:
+        favourite_tag1 = Counter(tags_he_saw).most_common(4)[0][0]
+        favourite_tag2 = Counter(tags_he_saw).most_common(4)[1][0]
+        favourite_tag3 = Counter(tags_he_saw).most_common(4)[2][0]
+        favourite_tag4 = Counter(tags_he_saw).most_common(4)[3][0]
+        favourite_tag_list = []
+        favourite_tag_list.extend((favourite_tag1, favourite_tag2, favourite_tag3, favourite_tag4))
 
         args = {'user': request.user, 'userprofile': request.user.userprofile, 'all_posts': all_posts,
-                'timezones': pytz.common_timezones}
-        return render(request, 'users/profile.html', args)
 
-    except:
-
-        args = {'user': request.user, 'userprofile': request.user.userprofile, 'users': users, 'all_posts': all_posts,
+                'vip_remaining': vip_remaining, 'favourite_tag_list': favourite_tag_list,
                 'timezones': pytz.common_timezones}
-        return render(request, 'users/profile.html', args)
+
+    else:
+        favourite_tag_list = []
+        args = {'user': request.user, 'userprofile': request.user.userprofile, 'all_posts': all_posts,
+                'vip_remaining': vip_remaining,'favourite_tag_list': favourite_tag_list,
+                'timezones': pytz.common_timezones}
+
+    return render(request, 'users/profile.html', args)
 
 
 cities = ["آذربایجان شرقی", "آذربایجان غربی", "اصفهان", "اردبیل", "بوشهر", "ایلام", "بوشهر", "تهران",

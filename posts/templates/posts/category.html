@@ -11,9 +11,11 @@
 {% block title %}
 <title>{{ tag }}</title>
 {% endblock %}
-
+  {% if posts.has_other_pages %}
 {% block pagination %}
-
+ <div class="pagination-panel">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
 
 <div class="text-center">
     <ul class="pagination">
@@ -37,5 +39,11 @@
     </ul>
 
 </div>
+                        </div>
+                    </div>
+ </div>
 
-{% endblock%}
+{% endblock %}
+{% endif %}
+{% block script %}
+{% endblock %}

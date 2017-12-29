@@ -431,14 +431,20 @@ background-color:transparent;
 color:#fff;
 background-color:transparent;
 }
-#SideNav-bottom-links-list{
-margin-top:10px;
-
+#SideNav #SideNav-bottom-links-list-1{
+padding:0px;
 border-top:1px solid #808b9c;
-padding:10px;
 text-align:center;
 }
-#SideNav .create-account #SideNav-bottom-links-list a:hover{
+#SideNav #SideNav-bottom-links-list-2{
+margin:10px;
+
+border-top:1px solid #808b9c;
+padding:0px;
+text-align:center;
+}
+
+#SideNav .create-account #SideNav-bottom-links-list-2 a:hover{
 background-color:transparent;
 
 }

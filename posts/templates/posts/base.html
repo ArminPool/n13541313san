@@ -249,8 +249,32 @@
                 <p id="username-place">{{user.username}}</p>
 
                 <a href="/user/profile"><span class="glyphicon glyphicon-user"></span>مشاهده حساب کاربری </a>
-                <a style="" href="/user/profile/edit"><span class="glyphicon glyphicon-cog"></span>ویرایش پروفایل</a>
+                <a style="" href="/user/profile/edit"><span class="glyphicon glyphicon-cog"></span>ویرایش حساب کاربری</a>
                 <a href="/user/logout/"><span class="glyphicon glyphicon-off"></span>خروج</a>
+                  <ul class="list-inline" id="SideNav-bottom-links-list-1" >
+                    <li>
+                        <a href="/about-us">
+                            درباره ما
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="/contact-us/">
+                            تماس با ما
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/rules/">
+                            قوانین
+                        </a>
+                    </li>
+                    <li>
+
+                        <a href="/tariffs/">
+                            خرید اشتراک
+                        </a>
+                    </li>
+                </ul>
 
             </div>
             {% else %}
@@ -292,8 +316,9 @@
                     <a class="btn btn-primary btn-sm" href="{% url 'user:register' %}">
                         ایجاد حساب </a>
                 </div>
+            </div>
 
-                <ul class="list-inline" id="SideNav-bottom-links-list">
+                <ul class="list-inline" id="SideNav-bottom-links-list-2">
                     <li>
                         <a href="/about-us">
                             درباره ما
@@ -318,12 +343,12 @@
                     </li>
                 </ul>
 
-
+    {% endif %}
             </div>
-            {% endif %}
+
         </div>
     </div>
-</div>
+
 <div id="main">
     {% block body %}
 

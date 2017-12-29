@@ -19,18 +19,26 @@ from flask import Flask
 from posts.form import CommentForm, CalenderForm
 from posts.models import Post, Comment, Calender, BankOrders
 from users.forms import UsersContactForm, ContactForm
-from users.models import Inbox, Author
+from users.models import Author
 
 
 def homepage(request):
     # print(localtime(now()) + relativedelta(months=3) > localtime(now()))
-
-    posts_list = Post.objects.all()
-    most_seen = Post.objects.order_by("-seen")[:10]
     title = 'نوسان گلد | صفحه اصلی'
     template_name = 'posts/homepage.html'
+    posts_list = Post.objects.all()
+    most_seen = Post.objects.order_by("-seen")[:10]
 
-    context = {'posts': posts_list, 'most_seen': most_seen, 'title': title}
+    page = request.GET.get('page', 1)
+    paginator = Paginator(posts_list,1)
+    try:
+        posts = paginator.page(page)
+    except PageNotAnInteger:
+        posts = paginator.page(1)
+    except EmptyPage:
+        posts = paginator.page(paginator.num_pages)
+
+    context = {'posts': posts, 'most_seen': most_seen, 'title': title}
     return render(request, template_name, context)
 
 
@@ -95,8 +103,7 @@ def detail(request, header):
 
             if parent_id:
                 comment.parent = Comment.objects.get(pk=parent_id)
-                body = str(request.POST.get("body"))
-                massage = Inbox.objects.create(user=comment.parent.user, sender=request.user, body=body)
+
             comment.post = post
             comment.user = request.user
             comment.save()

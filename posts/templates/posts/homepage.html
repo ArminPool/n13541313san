@@ -27,13 +27,13 @@
 <div class="container-fluid" id="homepage-container-fluid">
 
     <div class="post">
-        <div class="col-xs-12 col-sm-12 col-md-8" id="right-side" style="float:right;">
+        <div class="col-xs-12 col-sm-8 col-md-8" id="right-side" style="float:right;">
 
             <div class="jumbotron">
 
-                <div class="post">
+                <div class="post infinite-container">
                     {% for post in posts %}
-                    <div class="row"
+                    <div class="row infinite-item"
                          style="">
 
                         <div class="col-xs-12 col-sm-12 col-md-5" id="post-img-column" style="float:right">
@@ -89,29 +89,36 @@
                     </div>
                     {% endfor %}
                 </div>
-                {% if posts.has_other_pages %}
-                <div class="pagination-panel">
-                    <div class="panel panel-default">
-                        <div class="panel-body">
+                {% block infinite-scroll  %}
+                            {% if posts.has_next %}
+    <a class="infinite-more-link" href="?page={{ posts.next_page_number }}"></a>
+  {% endif %}
+<br>
+  <div class="loading" style="display: none;text-align:center;">
+
+
+
+<i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
+<span class="sr-only">Loading...</span>
+  </div>
+                {% endblock %}
+
+
                             {% block pagination %}
                             {% endblock %}
 
 
-                        </div>
-                    </div>
-                </div>
-                {% endif %}
+
             </div>
         </div>
     </div>
 
 
-    <div class="hidden-xs hidden-sm col-md-4" style="float:left; " id="left-side">
+    <div class="hidden-xs col-sm-4 col-md-4" style="float:left; " id="left-side">
 
 
         <div class="jumbotron">
             <div class="container">
-
                 <div id="most-seen">
 
                     {% for item in most_seen %}
@@ -140,4 +147,21 @@
     </div>
 </div>
 
+{% endblock %}
+
+{% block script %}
+<script src="{% static 'posts/js/jquery.waypoints.min.js' %}"></script>
+<script src="{% static 'posts/js/infinite.min.js' %}"></script>
+ <script>
+    var infinite = new Waypoint.Infinite({
+      element: $('.infinite-container')[0],
+      onBeforePageLoad: function () {
+        $('.loading').show();
+      },
+      onAfterPageLoad: function ($items) {
+        $('.loading').hide();
+
+      }
+    });
+  </script>
 {% endblock %}
