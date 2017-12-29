@@ -7,7 +7,6 @@
     <list default="true" id="83ce492f-81ab-4045-9bd2-7537fae0f724" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/news/settings.py" afterPath="$PROJECT_DIR$/news/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/models.py" afterPath="$PROJECT_DIR$/posts/models.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -32,8 +31,8 @@
       <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/news/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="150" column="12" lean-forward="false" selection-start-line="150" selection-start-column="12" selection-end-line="150" selection-end-column="12" />
+            <state relative-caret-position="-26">
+              <caret line="140" column="5" lean-forward="true" selection-start-line="140" selection-start-column="5" selection-end-line="140" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -515,13 +514,6 @@
       <option name="presentableId" value="Default" />
       <updated>1509594326097</updated>
     </task>
-    <task id="LOCAL-00217" summary="rename user pro_img testing">
-      <created>1513953303357</created>
-      <option name="number" value="00217" />
-      <option name="presentableId" value="LOCAL-00217" />
-      <option name="project" value="LOCAL" />
-      <updated>1513953303357</updated>
-    </task>
     <task id="LOCAL-00218" summary="rename user pro_img testing">
       <created>1513953504116</created>
       <option name="number" value="00218" />
@@ -858,7 +850,14 @@
       <option name="project" value="LOCAL" />
       <updated>1514566749542</updated>
     </task>
-    <option name="localTasksCounter" value="266" />
+    <task id="LOCAL-00266" summary="description ckeditor changed">
+      <created>1514567842634</created>
+      <option name="number" value="00266" />
+      <option name="presentableId" value="LOCAL-00266" />
+      <option name="project" value="LOCAL" />
+      <updated>1514567842635</updated>
+    </task>
+    <option name="localTasksCounter" value="267" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -940,7 +939,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="vip until how to change ,changed" />
     <MESSAGE value="bank orders and vip page added with static files" />
     <MESSAGE value="favicon added to base" />
     <MESSAGE value="currencies img testing" />
@@ -965,7 +963,8 @@
     <MESSAGE value="upload-photo url fixed" />
     <MESSAGE value="photoattached upload_to edited" />
     <MESSAGE value="post upload_to image changed" />
-    <option name="LAST_COMMIT_MESSAGE" value="post upload_to image changed" />
+    <MESSAGE value="description ckeditor changed" />
+    <option name="LAST_COMMIT_MESSAGE" value="description ckeditor changed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1352,8 +1351,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/news/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="150" column="12" lean-forward="false" selection-start-line="150" selection-start-column="12" selection-end-line="150" selection-end-column="12" />
+        <state relative-caret-position="-26">
+          <caret line="140" column="5" lean-forward="true" selection-start-line="140" selection-start-column="5" selection-end-line="140" selection-end-column="5" />
           <folding />
         </state>
       </provider>

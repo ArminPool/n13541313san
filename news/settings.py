@@ -150,6 +150,9 @@ CKEDITOR_CONFIGS = {
             ['BidiLtr', 'BidiRtl'],
             ['Styles', 'Format', 'Font', 'FontSize'],
             ['RemoveFormat']]
+        ,
+        'height': 300,
+        'width': 600,
 
 },
     'default': {
