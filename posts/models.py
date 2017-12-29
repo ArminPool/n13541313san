@@ -69,7 +69,7 @@ class Post(models.Model):
 
 class PhotoAttached(models.Model):
     author = models.ForeignKey(Author,blank=True,null=True,related_name='photo_uploaded')
-    img = ProcessedImageField(upload_to='uploaded/posts/img',
+    img = ProcessedImageField(upload_to='uploaded/posts/img-affiliate',
 
                                   format='JPEG',
                                   options={'quality': 60}, null=True, blank=True)
