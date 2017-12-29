@@ -21,8 +21,8 @@
       <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/posts/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="78">
-              <caret line="71" column="69" lean-forward="false" selection-start-line="71" selection-start-column="69" selection-end-line="71" selection-end-column="69" />
+            <state relative-caret-position="156">
+              <caret line="17" column="61" lean-forward="false" selection-start-line="17" selection-start-column="61" selection-end-line="17" selection-end-column="61" />
               <folding />
             </state>
           </provider>
@@ -526,13 +526,6 @@
       <option name="presentableId" value="Default" />
       <updated>1509594326097</updated>
     </task>
-    <task id="LOCAL-00215" summary="rename user pro_img testing">
-      <created>1513952800680</created>
-      <option name="number" value="00215" />
-      <option name="presentableId" value="LOCAL-00215" />
-      <option name="project" value="LOCAL" />
-      <updated>1513952800680</updated>
-    </task>
     <task id="LOCAL-00216" summary="rename user pro_img testing">
       <created>1513953108038</created>
       <option name="number" value="00216" />
@@ -869,7 +862,14 @@
       <option name="project" value="LOCAL" />
       <updated>1514566104026</updated>
     </task>
-    <option name="localTasksCounter" value="264" />
+    <task id="LOCAL-00264" summary="photoattached upload_to edited">
+      <created>1514566614836</created>
+      <option name="number" value="00264" />
+      <option name="presentableId" value="LOCAL-00264" />
+      <option name="project" value="LOCAL" />
+      <updated>1514566614836</updated>
+    </task>
+    <option name="localTasksCounter" value="265" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -951,7 +951,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="verify after zarinpal try fix that" />
     <MESSAGE value="vip method edited" />
     <MESSAGE value="vip until how to change ,changed" />
     <MESSAGE value="bank orders and vip page added with static files" />
@@ -976,7 +975,8 @@
     <MESSAGE value="inbox model deleted, infinite scroll bar in homepage added, 2js file added , footer added to both SideNav with different css ,vip remaning added to userprofile page,favourite tags added to userprofile page" />
     <MESSAGE value="some js file added for upload-photo page .and upload-photo model and view addedd" />
     <MESSAGE value="upload-photo url fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="upload-photo url fixed" />
+    <MESSAGE value="photoattached upload_to edited" />
+    <option name="LAST_COMMIT_MESSAGE" value="photoattached upload_to edited" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1362,8 +1362,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/posts/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="71" column="69" lean-forward="false" selection-start-line="71" selection-start-column="69" selection-end-line="71" selection-end-column="69" />
+        <state relative-caret-position="156">
+          <caret line="17" column="61" lean-forward="false" selection-start-line="17" selection-start-column="61" selection-end-line="17" selection-end-column="61" />
           <folding />
         </state>
       </provider>
