@@ -5,20 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="83ce492f-81ab-4045-9bd2-7537fae0f724" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/posts/static/posts/js/jquery.fileupload.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/posts/static/posts/js/jquery.iframe-transport.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/posts/static/posts/js/jquery.ui.widget.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/posts/static/posts/js/progress-bar-upload.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/posts/templates/posts/upload-photo-affiliate.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/admin.py" afterPath="$PROJECT_DIR$/posts/admin.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/form.py" afterPath="$PROJECT_DIR$/posts/form.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/models.py" afterPath="$PROJECT_DIR$/posts/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/static/posts/js/detail.js" afterPath="$PROJECT_DIR$/posts/static/posts/js/detail.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/urls.py" afterPath="$PROJECT_DIR$/posts/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/views.py" afterPath="$PROJECT_DIR$/posts/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/users/models.py" afterPath="$PROJECT_DIR$/users/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/users/views.py" afterPath="$PROJECT_DIR$/users/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -102,7 +90,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jquery.ui.widget.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="jquery.ui.widget.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/posts/static/posts/js/jquery.ui.widget.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="211">
@@ -122,11 +110,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/posts/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="379">
-              <caret line="22" column="1" lean-forward="true" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+            <state relative-caret-position="118">
+              <caret line="20" column="33" lean-forward="false" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
               <folding>
                 <element signature="e#25#66#0" expanded="true" />
               </folding>
@@ -203,9 +191,9 @@
         <option value="$PROJECT_DIR$/posts/static/posts/js/basic-upload.js" />
         <option value="$PROJECT_DIR$/posts/static/posts/js/progress-bar-upload.js" />
         <option value="$PROJECT_DIR$/posts/templates/posts/upload.html" />
-        <option value="$PROJECT_DIR$/posts/urls.py" />
         <option value="$PROJECT_DIR$/posts/views.py" />
         <option value="$PROJECT_DIR$/posts/templates/posts/upload-photo-affiliate.html" />
+        <option value="$PROJECT_DIR$/posts/urls.py" />
       </list>
     </option>
   </component>
@@ -537,13 +525,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1509594326097</updated>
-    </task>
-    <task id="LOCAL-00213" summary="rename user pro_img testing">
-      <created>1513952091824</created>
-      <option name="number" value="00213" />
-      <option name="presentableId" value="LOCAL-00213" />
-      <option name="project" value="LOCAL" />
-      <updated>1513952091824</updated>
     </task>
     <task id="LOCAL-00214" summary="rename user pro_img testing">
       <created>1513952391182</created>
@@ -881,7 +862,14 @@
       <option name="project" value="LOCAL" />
       <updated>1514530405159</updated>
     </task>
-    <option name="localTasksCounter" value="262" />
+    <task id="LOCAL-00262" summary="some js file added for upload-photo page .and upload-photo model and view addedd">
+      <created>1514565851260</created>
+      <option name="number" value="00262" />
+      <option name="presentableId" value="LOCAL-00262" />
+      <option name="project" value="LOCAL" />
+      <updated>1514565851263</updated>
+    </task>
+    <option name="localTasksCounter" value="263" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -1336,16 +1324,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/posts/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="22" column="1" lean-forward="true" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
-          <folding>
-            <element signature="e#25#66#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/posts/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="7826">
@@ -1377,6 +1355,16 @@
         <state relative-caret-position="211">
           <caret line="136" column="11" lean-forward="true" selection-start-line="136" selection-start-column="11" selection-end-line="136" selection-end-column="11" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/posts/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="20" column="33" lean-forward="false" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
+          <folding>
+            <element signature="e#25#66#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
