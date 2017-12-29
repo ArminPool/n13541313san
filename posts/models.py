@@ -34,7 +34,7 @@ class Post(models.Model):
 
     analysis_subcategory = CharField(choices=Analysis_Subcategory_Options, null=True, blank=True, max_length=100)
 
-    description = RichTextField(config_name='awesome_ckeditor')
+    description = RichTextField(config_name='simple_ckeditor')
 
     text = RichTextField(config_name='awesome_ckeditor')
 
@@ -76,6 +76,8 @@ class PhotoAttached(models.Model):
 
     uploaded_at = models.DateTimeField(auto_now_add=True)
 
+    def __str__(self):
+        return  self.author + self.uploaded_at
 
 class Comment(models.Model):
     post = models.ForeignKey(Post, related_name='comments')

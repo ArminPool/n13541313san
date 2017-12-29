@@ -138,7 +138,20 @@ CKEDITOR_CONFIGS = {
         'skin': 'office2013',
         'height': 300,
         'width': 600,
-    },
+    }
+    ,'simple_ckeditor':{
+
+        'toolbar': 'Custom',
+        'skin': 'office2013',
+
+        'toolbar_Custom': [
+            ['Bold', 'Italic', 'Underline'],
+            ['Outdent', 'Indent', '-', 'JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock'],
+            ['BidiLtr', 'BidiRtl'],
+            ['Styles', 'Format', 'Font', 'FontSize'],
+            ['RemoveFormat']]
+
+},
     'default': {
         'toolbar': 'full',
         'height': 300,
