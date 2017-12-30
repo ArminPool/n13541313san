@@ -1,7 +1,13 @@
 # -*- coding: utf-8 -*-
+import datetime
 
+from dateutil.parser import parse
+from django.utils import timezone
+
+import dateutil
 from django import template
 from django.template.defaultfilters import stringfilter
+from django.utils.timezone import localtime, now
 
 register = template.Library()
 
@@ -55,3 +61,8 @@ def fix_spaces(str):
     return fixed_str
 
 
+@register.filter(name='reached_time_published')
+@stringfilter
+def reached_time_published(date_published_str):
+    date_published = parse(date_published_str)
+    return localtime(now()) >= date_published
