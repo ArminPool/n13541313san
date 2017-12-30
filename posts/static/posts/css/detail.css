@@ -30,11 +30,11 @@ padding:0px;
 
 }
 
-#detail-container #post-text p img {
+#detail-container #post-text .img-inside-text {
 
 display:inline-block;
-max-width: 800px;
-max-height: 600px;
+width: 900px;
+height: 700px;
 margin:10px auto;
 }
 
