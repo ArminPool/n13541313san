@@ -87,7 +87,7 @@
                                             <a href="{% url 'posts:author-view' author_username=post.author %}" >{{ post.author }}</a>
                                         </span>
                                         <p id="author-bio">
-                                        {{post.author.bio}}
+                                        {{post.author.bio|safe}}
                                     </p>
 
 
