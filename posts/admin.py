@@ -29,7 +29,7 @@ class AdminModel(admin.ModelAdmin):
         # obj.public = False
 
         try:
-            if obj.author == request.user.author:
+            if obj.author == request.user.author or request.user.is_superuser:
                 obj.author = Author.objects.get(user=request.user)
                 super(AdminModel, self).save_model(request, obj, form, change)
 
