@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 
+from ckeditor.fields import RichTextField
 from imagekit.models import ImageSpecField, ProcessedImageField
 from imagekit.processors import ResizeToFill
 import random
@@ -150,7 +151,7 @@ class UserProfile(models.Model):
 
 class Author(models.Model):
     user = models.OneToOneField(User,null=False)
-    bio = models.CharField(max_length=500)
+    bio = RichTextField(config_name='simple_ckeditor')
 
     def __str__(self):
         return self.user.username
