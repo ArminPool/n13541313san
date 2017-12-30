@@ -66,11 +66,12 @@
                         <div id="vip_status" class="tab-pane fade">
                             {% if vip_remaining > 0 %}
                             <p> {{vip_remaining}}روز از اشتراک شما باقی مانده است.</p>
-                        </div>
                         {% else %}
                         <p>شما اشتراک  ندارید.</p>
                         {% endif %}
-                    </div>
+                                                    </div>
+
+
                                             <div id="fav_tags" class="tab-pane fade">
 {% for tag in favourite_tag_list %}
                 <a href="{% url 'posts:tag' tag=tag %}" class="btn btn-sm btn-default" style="">{{tag}}</a>
@@ -78,6 +79,7 @@
                                                 <p>خالی</p>
                                                 {% endfor %}
                                             </div>
+                         </div>
 
                 </div>
             </div>
