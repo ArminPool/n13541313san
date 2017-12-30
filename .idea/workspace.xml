@@ -7,7 +7,6 @@
     <list default="true" id="83ce492f-81ab-4045-9bd2-7537fae0f724" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/static/posts/css/detail.css" afterPath="$PROJECT_DIR$/posts/static/posts/css/detail.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/static/posts/js/detail.js" afterPath="$PROJECT_DIR$/posts/static/posts/js/detail.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -77,7 +76,7 @@
         <entry file="file://$PROJECT_DIR$/posts/static/posts/css/detail.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="338">
-              <caret line="34" column="21" lean-forward="false" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
+              <caret line="34" column="21" lean-forward="true" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -581,13 +580,6 @@
       <option name="presentableId" value="Default" />
       <updated>1509594326097</updated>
     </task>
-    <task id="LOCAL-00224" summary="rename user pro_img testing">
-      <created>1513963830389</created>
-      <option name="number" value="00224" />
-      <option name="presentableId" value="LOCAL-00224" />
-      <option name="project" value="LOCAL" />
-      <updated>1513963830389</updated>
-    </task>
     <task id="LOCAL-00225" summary="rename user pro_img testing">
       <created>1513963944044</created>
       <option name="number" value="00225" />
@@ -924,7 +916,14 @@
       <option name="project" value="LOCAL" />
       <updated>1514620359434</updated>
     </task>
-    <option name="localTasksCounter" value="273" />
+    <task id="LOCAL-00273" summary="detail css and js edited">
+      <created>1514620763664</created>
+      <option name="number" value="00273" />
+      <option name="presentableId" value="LOCAL-00273" />
+      <option name="project" value="LOCAL" />
+      <updated>1514620763664</updated>
+    </task>
+    <option name="localTasksCounter" value="274" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -1006,7 +1005,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="left-size-toggle-close changed" />
     <MESSAGE value="tariffs links fixed and chart fixed" />
     <MESSAGE value="login form background problem fixed" />
     <MESSAGE value="reg-form background-img ==&gt;cover" />
@@ -1031,7 +1029,8 @@
     <MESSAGE value="author bio field changed to richtextfield(ckeditor)" />
     <MESSAGE value="detail.js going to fix" />
     <MESSAGE value="detail bio safe and max-width/height added to img" />
-    <option name="LAST_COMMIT_MESSAGE" value="detail bio safe and max-width/height added to img" />
+    <MESSAGE value="detail css and js edited" />
+    <option name="LAST_COMMIT_MESSAGE" value="detail css and js edited" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1402,7 +1401,7 @@
     <entry file="file://$PROJECT_DIR$/posts/static/posts/css/detail.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="338">
-          <caret line="34" column="21" lean-forward="false" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
+          <caret line="34" column="21" lean-forward="true" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
           <folding />
         </state>
       </provider>
