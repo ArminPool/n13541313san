@@ -10,6 +10,7 @@ $(".comments span + button").click(function(event){
 
 $("#post-text p img").addClass('img-responsive');
 $("#post-text p img").removeAttr("style");
+("#post-text p img").parent('p').first().css('text-align','center');
 $(".show-replies").click(function(event){
     event.preventDefault();
      $(this).nextAll('.see-replies').first().fadeToggle();
