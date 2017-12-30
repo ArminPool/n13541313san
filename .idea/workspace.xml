@@ -34,8 +34,8 @@
       <file leaf-file-name="detail.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/posts/static/posts/js/detail.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="485">
-              <caret line="20" column="13" lean-forward="true" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+            <state relative-caret-position="1326">
+              <caret line="51" column="1" lean-forward="false" selection-start-line="51" selection-start-column="1" selection-end-line="51" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -525,13 +525,6 @@
       <option name="presentableId" value="Default" />
       <updated>1509594326097</updated>
     </task>
-    <task id="LOCAL-00221" summary="rename user pro_img testing">
-      <created>1513963517475</created>
-      <option name="number" value="00221" />
-      <option name="presentableId" value="LOCAL-00221" />
-      <option name="project" value="LOCAL" />
-      <updated>1513963517475</updated>
-    </task>
     <task id="LOCAL-00222" summary="rename user pro_img testing">
       <created>1513963662594</created>
       <option name="number" value="00222" />
@@ -868,7 +861,14 @@
       <option name="project" value="LOCAL" />
       <updated>1514616251852</updated>
     </task>
-    <option name="localTasksCounter" value="270" />
+    <task id="LOCAL-00270" summary="detail.js going to fix">
+      <created>1514619661793</created>
+      <option name="number" value="00270" />
+      <option name="presentableId" value="LOCAL-00270" />
+      <option name="project" value="LOCAL" />
+      <updated>1514619661793</updated>
+    </task>
+    <option name="localTasksCounter" value="271" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -950,7 +950,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="currencies img size changing" />
     <MESSAGE value="USDJPY char added and calender model changed and zarinpal view fixed" />
     <MESSAGE value="left-size-toggle-close changed" />
     <MESSAGE value="tariffs links fixed and chart fixed" />
@@ -975,7 +974,8 @@
     <MESSAGE value="ckeditor size in admin page changed" />
     <MESSAGE value="upload_photo __str__ fixed" />
     <MESSAGE value="author bio field changed to richtextfield(ckeditor)" />
-    <option name="LAST_COMMIT_MESSAGE" value="author bio field changed to richtextfield(ckeditor)" />
+    <MESSAGE value="detail.js going to fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="detail.js going to fix" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1343,8 +1343,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/posts/static/posts/js/detail.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="485">
-          <caret line="20" column="13" lean-forward="true" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        <state relative-caret-position="1326">
+          <caret line="51" column="1" lean-forward="false" selection-start-line="51" selection-start-column="1" selection-end-line="51" selection-end-column="1" />
           <folding />
         </state>
       </provider>
