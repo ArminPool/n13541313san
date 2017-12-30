@@ -6,9 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="83ce492f-81ab-4045-9bd2-7537fae0f724" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/news/urls.py" afterPath="$PROJECT_DIR$/news/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/static/posts/css/detail.css" afterPath="$PROJECT_DIR$/posts/static/posts/css/detail.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/templates/posts/detail.html" afterPath="$PROJECT_DIR$/posts/templates/posts/detail.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -35,7 +33,7 @@
       <file leaf-file-name="detail.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/posts/static/posts/js/detail.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="26">
+            <state relative-caret-position="312">
               <caret line="12" column="61" lean-forward="false" selection-start-line="12" selection-start-column="61" selection-end-line="12" selection-end-column="61" />
               <folding />
             </state>
@@ -45,7 +43,7 @@
       <file leaf-file-name="base.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/posts/static/posts/js/base.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="572">
+            <state relative-caret-position="26">
               <caret line="22" column="10" lean-forward="false" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="31" />
               <folding />
             </state>
@@ -62,21 +60,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="detail.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="detail.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/posts/templates/posts/detail.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
+            <state relative-caret-position="78">
               <caret line="86" column="146" lean-forward="false" selection-start-line="86" selection-start-column="146" selection-end-line="86" selection-end-column="146" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="detail.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="detail.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/posts/static/posts/css/detail.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="37" column="17" lean-forward="false" selection-start-line="37" selection-start-column="17" selection-end-line="37" selection-end-column="17" />
+            <state relative-caret-position="390">
+              <caret line="36" column="12" lean-forward="false" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -152,8 +150,8 @@
         <option value="$PROJECT_DIR$/specificpages/templates/specificpages/metatrader.html" />
         <option value="$PROJECT_DIR$/posts/static/posts/js/detail.js" />
         <option value="$PROJECT_DIR$/news/urls.py" />
-        <option value="$PROJECT_DIR$/posts/static/posts/css/detail.css" />
         <option value="$PROJECT_DIR$/posts/templates/posts/detail.html" />
+        <option value="$PROJECT_DIR$/posts/static/posts/css/detail.css" />
       </list>
     </option>
   </component>
@@ -580,20 +578,6 @@
       <option name="presentableId" value="Default" />
       <updated>1509594326097</updated>
     </task>
-    <task id="LOCAL-00231" summary="vip model fixed">
-      <created>1514121203743</created>
-      <option name="number" value="00231" />
-      <option name="presentableId" value="LOCAL-00231" />
-      <option name="project" value="LOCAL" />
-      <updated>1514121203743</updated>
-    </task>
-    <task id="LOCAL-00232" summary="verify after zarinpal try fix that">
-      <created>1514123056902</created>
-      <option name="number" value="00232" />
-      <option name="presentableId" value="LOCAL-00232" />
-      <option name="project" value="LOCAL" />
-      <updated>1514123056902</updated>
-    </task>
     <task id="LOCAL-00233" summary="verify after zarinpal try fix that">
       <created>1514123369858</created>
       <option name="number" value="00233" />
@@ -923,7 +907,21 @@
       <option name="project" value="LOCAL" />
       <updated>1514621504115</updated>
     </task>
-    <option name="localTasksCounter" value="280" />
+    <task id="LOCAL-00280" summary="margin added to post-text img and author username in detail changed to first name + last name">
+      <created>1514626921959</created>
+      <option name="number" value="00280" />
+      <option name="presentableId" value="LOCAL-00280" />
+      <option name="project" value="LOCAL" />
+      <updated>1514626921961</updated>
+    </task>
+    <task id="LOCAL-00281" summary="post-inside-text size changed">
+      <created>1514627807813</created>
+      <option name="number" value="00281" />
+      <option name="presentableId" value="LOCAL-00281" />
+      <option name="project" value="LOCAL" />
+      <updated>1514627807813</updated>
+    </task>
+    <option name="localTasksCounter" value="282" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -937,6 +935,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23279649" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32913387" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1004,7 +1003,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="post model field edited and drop down menus added and an script added to detail" />
     <MESSAGE value="some bug fixed" />
     <MESSAGE value="return to prev state" />
     <MESSAGE value="admin view changed" />
@@ -1029,7 +1027,8 @@
     <MESSAGE value="detail css  edited" />
     <MESSAGE value="detail js  edited" />
     <MESSAGE value="margin added to post-text img and author username in detail changed to first name + last name" />
-    <option name="LAST_COMMIT_MESSAGE" value="margin added to post-text img and author username in detail changed to first name + last name" />
+    <MESSAGE value="post-inside-text size changed" />
+    <option name="LAST_COMMIT_MESSAGE" value="post-inside-text size changed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1303,22 +1302,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/posts/static/posts/js/base.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="22" column="10" lean-forward="false" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/posts/static/posts/js/detail.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="12" column="61" lean-forward="false" selection-start-line="12" selection-start-column="61" selection-end-line="12" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/news/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-219">
@@ -1327,18 +1310,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/posts/static/posts/css/detail.css">
+    <entry file="file://$PROJECT_DIR$/posts/templates/posts/detail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="37" column="17" lean-forward="false" selection-start-line="37" selection-start-column="17" selection-end-line="37" selection-end-column="17" />
+        <state relative-caret-position="78">
+          <caret line="86" column="146" lean-forward="false" selection-start-line="86" selection-start-column="146" selection-end-line="86" selection-end-column="146" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/posts/templates/posts/detail.html">
+    <entry file="file://$PROJECT_DIR$/posts/static/posts/js/base.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="86" column="146" lean-forward="false" selection-start-line="86" selection-start-column="146" selection-end-line="86" selection-end-column="146" />
+        <state relative-caret-position="26">
+          <caret line="22" column="10" lean-forward="false" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/posts/static/posts/js/detail.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="12" column="61" lean-forward="false" selection-start-line="12" selection-start-column="61" selection-end-line="12" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/posts/static/posts/css/detail.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="36" column="12" lean-forward="false" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="12" />
           <folding />
         </state>
       </provider>
