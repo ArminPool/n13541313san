@@ -4,10 +4,9 @@
     <bookmark url="file://$PROJECT_DIR$/posts/templates/posts/detail.html" line="24" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83ce492f-81ab-4045-9bd2-7537fae0f724" name="Default" comment="tariffs">
+    <list default="true" id="83ce492f-81ab-4045-9bd2-7537fae0f724" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/posts/static/posts/img/most-visited.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/static/posts/css/homepage.css" afterPath="$PROJECT_DIR$/posts/static/posts/css/homepage.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/templates/posts/homepage.html" afterPath="$PROJECT_DIR$/posts/templates/posts/homepage.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -835,13 +834,6 @@
       <option name="presentableId" value="Default" />
       <updated>1509594326097</updated>
     </task>
-    <task id="LOCAL-00252" summary="return to prev state">
-      <created>1514292342763</created>
-      <option name="number" value="00252" />
-      <option name="presentableId" value="LOCAL-00252" />
-      <option name="project" value="LOCAL" />
-      <updated>1514292342763</updated>
-    </task>
     <task id="LOCAL-00253" summary="admin view changed">
       <created>1514357795907</created>
       <option name="number" value="00253" />
@@ -1178,7 +1170,14 @@
       <option name="project" value="LOCAL" />
       <updated>1514708177089</updated>
     </task>
-    <option name="localTasksCounter" value="301" />
+    <task id="LOCAL-00301" summary="most visited img added to homepage">
+      <created>1514708627263</created>
+      <option name="number" value="00301" />
+      <option name="presentableId" value="LOCAL-00301" />
+      <option name="project" value="LOCAL" />
+      <updated>1514708627263</updated>
+    </task>
+    <option name="localTasksCounter" value="302" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -1260,7 +1259,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="upload-photo url fixed" />
     <MESSAGE value="photoattached upload_to edited" />
     <MESSAGE value="post upload_to image changed" />
     <MESSAGE value="description ckeditor changed" />
@@ -1285,7 +1283,8 @@
     <MESSAGE value="src fixed currencies img added" />
     <MESSAGE value="calender" />
     <MESSAGE value="tariffs" />
-    <option name="LAST_COMMIT_MESSAGE" value="tariffs" />
+    <MESSAGE value="most visited img added to homepage" />
+    <option name="LAST_COMMIT_MESSAGE" value="most visited img added to homepage" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
