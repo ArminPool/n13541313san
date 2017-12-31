@@ -66,3 +66,17 @@ th, td {
 tbody tr:nth-child(even){
   background:#ECF0F1;
 }
+
+.currency-img{
+
+
+width:100px;
+height:100px;
+
+}
+
+footer{
+
+position:relative;
+
+}
