@@ -4,9 +4,9 @@
     <bookmark url="file://$PROJECT_DIR$/posts/templates/posts/detail.html" line="24" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83ce492f-81ab-4045-9bd2-7537fae0f724" name="Default" comment="">
+    <list default="true" id="83ce492f-81ab-4045-9bd2-7537fae0f724" name="Default" comment="admin save model for changing author in superuser state changed and delete permission added to Admin Post">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/templates/posts/economic_calender.html" afterPath="$PROJECT_DIR$/posts/templates/posts/economic_calender.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/admin.py" afterPath="$PROJECT_DIR$/posts/admin.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -48,17 +48,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="admin.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="admin.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/posts/admin.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="338">
-              <caret line="31" column="77" lean-forward="false" selection-start-line="31" selection-start-column="77" selection-end-line="31" selection-end-column="77" />
+              <caret line="73" column="35" lean-forward="false" selection-start-line="73" selection-start-column="35" selection-end-line="73" selection-end-column="35" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="economic_calender.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="economic_calender.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/posts/templates/posts/economic_calender.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="341">
@@ -84,7 +84,7 @@
         <entry file="file://$PROJECT_DIR$/specificpages/static/specificpages/css/tariffs.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="312">
-              <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+              <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -180,10 +180,10 @@
         <option value="$PROJECT_DIR$/posts/templatetags/custom_tags.py" />
         <option value="$PROJECT_DIR$/posts/templates/posts/homepage.html" />
         <option value="$PROJECT_DIR$/posts/templates/posts/detail.html" />
-        <option value="$PROJECT_DIR$/posts/admin.py" />
         <option value="$PROJECT_DIR$/specificpages/static/specificpages/css/tariffs.css" />
         <option value="$PROJECT_DIR$/specificpages/templates/specificpages/tariffs.html" />
         <option value="$PROJECT_DIR$/posts/templates/posts/economic_calender.html" />
+        <option value="$PROJECT_DIR$/posts/admin.py" />
       </list>
     </option>
   </component>
@@ -828,13 +828,6 @@
       <option name="presentableId" value="Default" />
       <updated>1509594326097</updated>
     </task>
-    <task id="LOCAL-00240" summary="favicon added to base">
-      <created>1514175418591</created>
-      <option name="number" value="00240" />
-      <option name="presentableId" value="LOCAL-00240" />
-      <option name="project" value="LOCAL" />
-      <updated>1514175418591</updated>
-    </task>
     <task id="LOCAL-00241" summary="currencies img testing">
       <created>1514187374152</created>
       <option name="number" value="00241" />
@@ -1171,7 +1164,14 @@
       <option name="project" value="LOCAL" />
       <updated>1514690699152</updated>
     </task>
-    <option name="localTasksCounter" value="289" />
+    <task id="LOCAL-00289" summary="some link and src fixed">
+      <created>1514690818298</created>
+      <option name="number" value="00289" />
+      <option name="presentableId" value="LOCAL-00289" />
+      <option name="project" value="LOCAL" />
+      <updated>1514690818298</updated>
+    </task>
+    <option name="localTasksCounter" value="290" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -1545,14 +1545,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/posts/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="31" column="77" lean-forward="false" selection-start-line="31" selection-start-column="77" selection-end-line="31" selection-end-column="77" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/users/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-8669">
@@ -1564,7 +1556,7 @@
     <entry file="file://$PROJECT_DIR$/specificpages/static/specificpages/css/tariffs.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="312">
-          <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1583,6 +1575,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="341">
           <caret line="28" column="29" lean-forward="false" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/posts/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="73" column="35" lean-forward="false" selection-start-line="73" selection-start-column="35" selection-end-line="73" selection-end-column="35" />
           <folding />
         </state>
       </provider>

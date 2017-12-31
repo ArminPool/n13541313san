@@ -13,7 +13,7 @@ from django.db import models
 from posts.models import Post, Comment, Calender, BankOrders, PhotoAttached
 
 
-class AdminModel(admin.ModelAdmin):
+class AdminPost(admin.ModelAdmin):
     exclude = ('author', 'seen',)
 
     """
@@ -29,9 +29,11 @@ class AdminModel(admin.ModelAdmin):
         # obj.public = False
 
         try:
-            if obj.author == request.user.author or request.user.is_superuser:
+            if obj.author == request.user.author:
                 obj.author = Author.objects.get(user=request.user)
-                super(AdminModel, self).save_model(request, obj, form, change)
+                super(AdminPost, self).save_model(request, obj, form, change)
+            elif request.user.is_superuser:
+                super(AdminPost, self).save_model(request, obj, form, change)
 
             else:
                 messages.set_level(request, messages.ERROR)
@@ -40,7 +42,7 @@ class AdminModel(admin.ModelAdmin):
         except Post.author.RelatedObjectDoesNotExist:
             try:
                 obj.author = Author.objects.get(user=request.user)
-                super(AdminModel, self).save_model(request, obj, form, change)
+                super(AdminPost, self).save_model(request, obj, form, change)
 
             except Author.DoesNotExist:
                 messages.set_level(request, messages.ERROR)
@@ -55,8 +57,21 @@ class AdminModel(admin.ModelAdmin):
 
             messages.error(request, '.ظاهرا اسم شما در نویسنده ها ثبت نشده است . اینرا به مدیر سایت اطلاع دهید')
 
+    def has_delete_permission(self, request, obj=None):
+        super(AdminPost, self).has_delete_permission(request, obj=obj)
+        if obj is not None:
 
-admin.site.register(Post, AdminModel)
+            if obj.author.user == request.user or request.user.is_superuser:
+                print('condition 1')
+                return True
+            else:
+                print('condition 2')
+                return False
+
+        else:
+            pass
+
+admin.site.register(Post, AdminPost)
 admin.site.register(Comment)
 admin.site.register(BankOrders)
 admin.site.register(Calender)
