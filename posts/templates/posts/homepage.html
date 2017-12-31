@@ -122,7 +122,7 @@
         <div class="jumbotron">
             <div class="container">
                 <div id="most-seen">
-
+<img src="{% static 'posts/img/most-visited.png' %}" id="most-visited-img">
                     {% for item in most_seen %}
 
                     {% if item.date_published|reached_time_published %}
