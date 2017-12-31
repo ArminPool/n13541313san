@@ -1,6 +1,9 @@
 $(document).ready(function() {
 
 
+   $(document).ready(function(){
+
+
     if($('#main').height() < 340 ){
 
 
@@ -9,6 +12,30 @@ $(document).ready(function() {
     }
     else{
     }
+
+$(window).on('resize', function(){
+
+   if($('#main').height() < 340 ){
+
+
+    $('footer').css('position','absolute');
+     $('footer').css('bottom','0px');
+    }
+
+
+else{
+
+ $('footer').css('position','relative');
+}
+
+});
+
+
+
+
+
+
+
 
 $(window).on('resize', function(){
 
@@ -54,8 +81,7 @@ $("#input-picker").on("change paste keyup", function() {
 
         $.get("/economicCalendar/?q="+ date, function(data, status){
             $("#result").html(data);
-                        $(".date-header").css("display","none");
-                         $(".date-column").css("display","none");
+
 
 
         });
