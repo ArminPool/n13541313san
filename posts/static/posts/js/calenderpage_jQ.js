@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
 
-   $(document).ready(function(){
+
 
 
     if($('#main').height() < 340 ){
