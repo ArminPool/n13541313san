@@ -28,7 +28,7 @@ def homepage(request):
     # print(localtime(now()) + relativedelta(months=3) > localtime(now()))
     title = 'نوسان گلد | صفحه اصلی'
     template_name = 'posts/homepage.html'
-    posts_list = Post.objects.all()
+    posts_list = Post.objects.filter(public=True)
     most_seen = Post.objects.order_by("-seen")[:10]
 
     page = request.GET.get('page', 1)
