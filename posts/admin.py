@@ -62,14 +62,14 @@ class AdminPost(admin.ModelAdmin):
         if obj is not None:
 
             if obj.author.user == request.user or request.user.is_superuser:
-                print('condition 1')
                 return True
             else:
-                print('condition 2')
                 return False
 
         else:
+
             pass
+
 
 admin.site.register(Post, AdminPost)
 admin.site.register(Comment)

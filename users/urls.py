@@ -21,7 +21,7 @@ urlpatterns = [
     url(r'^reset-password/confirm/(?P<token>[^/]+)/(?P<user_id>[0-9]+)/$',
         views.reset_password_confirm, name='password_reset_confirm'),
 
-    url(r'^send-to-zarinpal/(?P<tariff_number>[1-3](?![\w\s,?!]))/$',send_to_zarinpal,name='send_to_zarinpal'),
+    url(r'^send-to-zarinpal/(?P<tariff_number>[1-4](?![\w\s,?!]))/$',send_to_zarinpal,name='send_to_zarinpal'),
     url(r'^verify-after-zarinpal/(?P<user_id>[1-9]+)/(?P<tariff_number>[1-4](?![\w\s,?!]))/', verify_after_zarinpal, name='verify_after_zarinpal'),
 
 ]
