@@ -125,7 +125,7 @@ class Comment(models.Model):
 class Calender(models.Model):
     date = DateField()
 
-    time = TimeField()
+    time = TimeField(blank=True,null=True)
 
     Stock_Options = (('USD', 'USD'), ('EUR', 'EUR'), ('GBP', 'GBP'),
                      ('CHF', 'CHF'), ('JPY', 'JPY'), ('CAD', 'CAD'),
