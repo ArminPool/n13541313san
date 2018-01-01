@@ -4,6 +4,7 @@
         <th class="date-header">تاریخ</th>
         <th>زمان</th>
         <th>ارز</th>
+        <th>نماد ارز</th>
         <th>اهمیت</th>
         <th>رویداد</th>
         <th>واقعی</th>
@@ -21,7 +22,10 @@
             {{ query.date }}
         </td>
         <td dir="ltr">
-            {{ query.time }}
+            {{ query.time|time:"H:i:s" }}
+        </td>
+        <td>
+            {{ query.stock }}
         </td>
         <td>
             {% if query.stock == 'USD' %}

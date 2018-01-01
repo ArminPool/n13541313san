@@ -30,7 +30,7 @@ class Post(models.Model):
     analysis_branch = CharField(choices=Analysis_Branch_Options, null=True, blank=True, max_length=100)
 
     Analysis_Subcategory_Options = (
-        ('price_action', 'پرایس اکشن'), ('elliott', 'الیوت'), ('ichimoku', 'ایچی موکو'))
+        ('price_action', 'پرایس اکشن'), ('elliott', 'الیوت'), ('ichimoku', 'ایچیموکو'))
 
     analysis_subcategory = CharField(choices=Analysis_Subcategory_Options, null=True, blank=True, max_length=100)
 
