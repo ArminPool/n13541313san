@@ -43,7 +43,7 @@ border-bottom:2px solid #fff;
 max-width:380px;
 
 }
-#contact-content .container-fluid p,a{
+#contact-content .container-fluid p,#contact-content .container-fluid a{
 
 font-size:16px;
 

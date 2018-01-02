@@ -1,5 +1,4 @@
 $(document).ready(function() {
-
            /*        form validation            */
    $("#SideForm").validate({
 
@@ -49,7 +48,7 @@ function hasScrolled() {
  $('#navbar-container').addClass('navbar-fixed-top');
            $('#main').css('top',$('#navbar-container').outerHeight());
            $('.footer').css('position','relative');
-           $('.footer').css('top',$('#navbar-container').outerHeight());
+                      $('.footer').css('top',$('#navbar-container').outerHeight());
 
 
  if(sideNav == 1) {
@@ -62,11 +61,13 @@ function hasScrolled() {
     }
     else {
         // Scroll Up
-        if(st + $(window).height() < $(document).height()) {
+        if(st + $(window).height() < $(document).height() && sideNav != 1) {
          $('#SideNav').css('width','0px');
          $('#main').css('margin-right','0px');
          $('#navbar-container').removeClass('navbar-fixed-top');
           $('#main').css('top','0px');
+                                $('.footer').css('top','0px');
+
 }
 
         }
