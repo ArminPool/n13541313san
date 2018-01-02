@@ -49,7 +49,7 @@ function hasScrolled() {
  $('#navbar-container').addClass('navbar-fixed-top');
            $('#main').css('top',$('#navbar-container').outerHeight());
            $('.footer').css('position','relative');
-                      $('footer').css('top',$('#navbar-container').outerHeight());
+           $('.footer').css('top',$('#navbar-container').outerHeight());
 
 
  if(sideNav == 1) {
