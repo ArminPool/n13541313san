@@ -16,6 +16,67 @@ $(document).ready(function() {
     }
 });
 
+var didScroll;
+var lastScrollTop = 0;
+var delta = 5;
+var navbarHeight = $('#navbar-container').outerHeight();
+
+$(window).scroll(function(event){
+    didScroll = true;
+});
+
+setInterval(function() {
+    if (didScroll) {
+        hasScrolled();
+        didScroll = false;
+    }
+}, 0);
+
+function hasScrolled() {
+
+    var st = $(this).scrollTop();
+
+    // Make sure they scroll more than delta
+    if(Math.abs(lastScrollTop - st) <= delta)
+        return;
+
+    // If they scrolled down and are past the navbar, add class .nav-up.
+    // This is necessary so you never see what is "behind" the navbar.
+    if (st < lastScrollTop && $(window).width() < 586 && sideNav == 1 ){
+    }
+    else if(st < lastScrollTop){
+        // Scroll Down
+ $('#navbar-container').addClass('navbar-fixed-top');
+           $('#main').css('top',$('#navbar-container').outerHeight());
+           $('footer').css('position','relative');
+                      $('footer').css('top',$('#navbar-container').outerHeight());
+
+
+ if(sideNav == 1) {
+ $('#SideNav').css('width','250px');
+             $('#main').css('margin-right','250px')
+
+    }} else {
+    if ( $(window).width() < 586 && sideNav == 1 ){
+
+    }
+    else {
+        // Scroll Up
+        if(st + $(window).height() < $(document).height()) {
+         $('#SideNav').css('width','0px');
+         $('#main').css('margin-right','0px');
+         $('#navbar-container').removeClass('navbar-fixed-top');
+          $('#main').css('top','0px');
+}
+
+        }
+
+    }
+       lastScrollTop = st;
+    }
+
+
+
 var uo_nested_dropdown ;
 var poc_nested_dropdown ;
 $('.uo-nested-dropdown a').on("click", function(e){
@@ -65,7 +126,6 @@ $('menu6').css('display','block');
 
 var pageURL = $(location).attr("href");
 
-$('body').css('padding-top',$('.navbar-fixed-top').css("height"));
 
 
 
@@ -87,7 +147,7 @@ if(ScreenHeight < 477){
 
 
 $('#SideNav').css('position','relative');
-$('#SideNav').css('top','0px');
+$('#SideNav').css('top',navbarHeight);
 
 
 }
@@ -145,6 +205,10 @@ $("#left-side-toggle-close").click(closeNav);
 
 
 $(window).on('resize', function(){
+
+navbarHeight = $('#navbar-container').outerHeight();
+$("#SideNav").css("top",navbarHeight);
+
 $('.uo-nested-dropdown a').removeAttr("style");
 $('.poc-nested-dropdown a').removeAttr("style");
 
@@ -152,41 +216,10 @@ $('.menu5').removeAttr("style");
 $('.menu6').removeAttr("style");
 
 
-$('body').css('padding-top',"" + $('.navbar-fixed-top').css("height"));
 
-if($(this).height() != ScreenHeight){
-
-if($(this).height() > 477){
-
-
-$('#SideNav').css('position','fixed');
-$('#SideNav').css('top',$('.navbar-fixed-top').css("height"));
-
-
-}
-/*
-else if ($(this).height() < 477 && $(this).width() < 586 ){
-$('#SideNav').css('position','relative');
-$('#SideNav').css('top','134px');
-console.log("2");
-}
-*/
-else{
-
-$('#SideNav').css('position','relative');
-$('#SideNav').css('top','0px');
-}
-
-ScreenHeight= $(this).height();
-}
-else if ($(this).height() == ScreenHeight && $(this).width() > 586 ){
-
-$('#SideNav').css('position','relative');
-$('#SideNav').css('top','0px');
-
-}
 
 if($(this).width() != ScreenWidth){
+
 
 if($(this).width() < 951){
 
@@ -295,6 +328,8 @@ RemoveOrShowFooter();
 
 $("#main").css("marginRight","250px");
 $("#SideNav").css("width","250px");
+
+
 $("#left-side-toggle-open").css("display","none");
 
 $("#left-side-toggle-close").css("display","inline");
@@ -318,7 +353,7 @@ $("footer").css("display","none");
 $("#main").css("display","none");
 $("#SideNav").css("width","100%");
 $("#SideNav").css("position","relative");
-$("#SideNav").css("top","0px");
+$("#SideNav").css("top",navbarHeight);
 
 
 $("#left-side-toggle-open").css("display","none");
@@ -327,6 +362,7 @@ $("#left-side-toggle-close").css("display","inline");
 
 }
 else{
+$("#SideNav").css("top",navbarHeight);
 $("#main").css("display","block");
 RemoveOrShowFooter();
 

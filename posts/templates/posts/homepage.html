@@ -122,7 +122,7 @@
         <div class="jumbotron">
             <div class="container">
                 <div id="most-seen">
-<img src="{% static 'posts/img/most-visited.png' %}" id="most-visited-img">
+                    <div id="header"><p>پربازدید ترین ها</p></div>
                     {% for item in most_seen %}
 
                     {% if item.date_published|reached_time_published %}
@@ -132,6 +132,11 @@
                         </div>
                         <div class="header-of-most-seen-post">
                             <a href="{% url 'posts:detail' header=item.header %}">{{item.header}}</a>
+                            <br>
+                            <a href="{% url 'posts:author-view' author_username=item.author %}">{{item.author}}</a>
+                            <br>
+                            <p style="color:#808b9c;">{{ item.date_published.date|to_jalali|persian_numeric }}</p>
+                            <br>
                         </div>
                     </div>
 

