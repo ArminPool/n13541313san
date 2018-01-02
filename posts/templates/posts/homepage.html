@@ -77,7 +77,7 @@
 
                                         <span class="glyphicon glyphicon-tag" aria-hidden="true"
                                         ></span>
-                                        <a href="{% url 'posts:tag' tag=post.Main_Tag%}"
+                                        <a href="{% url 'posts:tag' tag=post.Main_Tag %}"
                                         >{{ post.Main_Tag}}</a>
                                     </li>
 
@@ -130,10 +130,10 @@
                         <div class="img-of-most-seen-post">
                             <img src="{{item.img.url}}">
                         </div>
-                        <div class="header-of-most-seen-post">
-                            <a href="{% url 'posts:detail' header=item.header %}">{{item.header}}</a>
+                        <div class="des-of-most-seen-post">
+                            <a href="{% url 'posts:detail' header=item.header|fix_spaces %}">{{item.header}}</a>
                             <br>
-                            <a href="{% url 'posts:author-view' author_username=item.author %}">{{item.author}}</a>
+                            <a href="{% url 'posts:author-view' author_username=item.author %}">{{ item.author.user.first_name }} {{ item.author.user.last_name }}</a>
                             <br>
                             <p style="color:#808b9c;">{{ item.date_published.date|to_jalali|persian_numeric }}</p>
                             <br>

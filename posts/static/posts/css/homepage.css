@@ -193,16 +193,22 @@ height:50px;
 border-radius:100%;
 
 }
-#left-side .most-seen-post .header-of-most-seen-post{
+#left-side .most-seen-post .des-of-most-seen-post{
 float:left;
 width:80%;
 height:100%;
 
 }
-#left-side .most-seen-post .header-of-most-seen-post p{
+#left-side .most-seen-post .des-of-most-seen-post p{
 
 
 margin-bottom:0px;
+
+}
+
+#left-side .most-seen-post .des-of-most-seen-post a{
+
+color:#000;
 
 }
 

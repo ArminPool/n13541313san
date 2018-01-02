@@ -48,7 +48,7 @@ function hasScrolled() {
         // Scroll Down
  $('#navbar-container').addClass('navbar-fixed-top');
            $('#main').css('top',$('#navbar-container').outerHeight());
-           $('footer').css('position','relative');
+           $('.footer').css('position','relative');
                       $('footer').css('top',$('#navbar-container').outerHeight());
 
 
