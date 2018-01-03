@@ -130,7 +130,7 @@ def detail(request, header):
         post.save()
         form = CommentForm()
         if request.user.is_authenticated:
-            context = {}
+            context = {'form': form, 'post': post}
             user_prof = request.user.userprofile
 
             tags_he_saw = user_prof.tags_he_saw
@@ -140,14 +140,16 @@ def detail(request, header):
                 user_prof.save()
 
             if len(Counter(tags_he_saw)) > 4:
-                if Counter(tags_he_saw).most_common(4)[4][0] == post.Main_Tag:
+                if Counter(tags_he_saw).most_common(5)[4][0] == post.Main_Tag:
 
-                    tag_should_remove = Counter(tags_he_saw).most_common(4)[3][0]
+                    tag_should_remove = Counter(tags_he_saw).most_common(5)[3][0]
                 else:
-                    tag_should_remove = Counter(tags_he_saw).most_common(4)[4][0]
+                    tag_should_remove = Counter(tags_he_saw).most_common(5)[4][0]
 
                 tags_he_saw.remove(tag_should_remove)
                 user_prof.save()
+
+
                 context = {'form': form, 'post': post}
 
             elif len(Counter(tags_he_saw)) == 4:
