@@ -130,10 +130,10 @@ def detail(request, header):
         post.save()
         form = CommentForm()
         if request.user.is_authenticated:
+            context = {}
             user_prof = request.user.userprofile
 
             tags_he_saw = user_prof.tags_he_saw
-
 
             if Counter(tags_he_saw).get(post.Main_Tag, 0) < 5:
                 tags_he_saw.append(post.Main_Tag)
@@ -148,48 +148,55 @@ def detail(request, header):
 
                 tags_he_saw.remove(tag_should_remove)
                 user_prof.save()
+                context = {'form': form, 'post': post}
 
             elif len(Counter(tags_he_saw)) == 4:
+                show = True
+                favourite_tag1 = Counter(tags_he_saw).most_common(4)[0][0]
+                favourite_tag2 = Counter(tags_he_saw).most_common(4)[1][0]
+                favourite_tag3 = Counter(tags_he_saw).most_common(4)[2][0]
+                favourite_tag4 = Counter(tags_he_saw).most_common(4)[3][0]
+
                 try:
-                    favourite_tag1 = Counter(tags_he_saw).most_common(4)[0][0]
-                    favourite_tag2 = Counter(tags_he_saw).most_common(4)[1][0]
-                    favourite_tag3 = Counter(tags_he_saw).most_common(4)[2][0]
-                    favourite_tag4 = Counter(tags_he_saw).most_common(4)[3][0]
-
-
                     favourite_post1 = Post.objects.filter(Main_Tag=favourite_tag1).order_by("-seen")[0]
+                except IndexError:
+                    tags_he_saw.remove(favourite_tag1)
+                    user_prof.save()
+                    show = False
+                try:
                     favourite_post2 = Post.objects.filter(Main_Tag=favourite_tag2).order_by("-seen")[0]
+                except IndexError:
+                    tags_he_saw.remove(favourite_tag2)
+                    user_prof.save()
+                    show = False
+                try:
                     favourite_post3 = Post.objects.filter(Main_Tag=favourite_tag3).order_by("-seen")[0]
-
+                except IndexError:
+                    tags_he_saw.remove(favourite_tag3)
+                    user_prof.save()
+                    show = False
+                try:
                     favourite_post4 = Post.objects.filter(Main_Tag=favourite_tag4).order_by("-seen")[0]
-
-
-
+                except IndexError:
+                    tags_he_saw.remove(favourite_tag4)
+                    user_prof.save()
+                    show = False
+                if show:
                     context = {'form': form, 'post': post,
                                'favourite_post1': favourite_post1,
                                'favourite_post2': favourite_post2,
                                'favourite_post3': favourite_post3,
                                'favourite_post4': favourite_post4, }
 
-                    """
-                                 favourite_posts = Post.objects.all().filter(
-    
-                                     Q(Main_Tag=favourite_tag1) |
-                                     Q(Main_Tag=favourite_tag2) |
-                                     Q(Main_Tag=favourite_tag3) |
-                                     Q(Main_Tag=favourite_tag4) 
-    
-                                 ).order_by("-seen")[:3]
-                                 """
-                except IndexError:
-
+                else:
                     context = {'form': form, 'post': post}
 
-                template_name = 'posts/detail.html'
-                return render(request, template_name, context)
-        template_name = 'posts/detail.html'
-        context = {'form': form, 'post': post}
-        return render(request, template_name, context)
+            template_name = 'posts/detail.html'
+            return render(request, template_name, context)
+
+    template_name = 'posts/detail.html'
+    context = {'form': form, 'post': post}
+    return render(request, template_name, context)
 
 
 def search(request):
@@ -331,7 +338,8 @@ def upload_photo_affiliate(request):
 
                     photo.author = author
                     photo.save()
-                    data = {'is_valid': True, 'name': photo.img.name, 'url': photo.img.url,'uploaded_at':photo.uploaded_at}
+                    data = {'is_valid': True, 'name': photo.img.name, 'url': photo.img.url,
+                            'uploaded_at': photo.uploaded_at}
                 else:
                     data = {'is_valid': False}
                 return JsonResponse(data)
