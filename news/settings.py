@@ -137,7 +137,7 @@ CKEDITOR_CONFIGS = {
         'toolbar': 'full',
         'skin': 'office2013',
         'height': 300,
-        'width': 600,
+        'width': 800,
     }
     ,'simple_ckeditor':{
 
@@ -152,7 +152,7 @@ CKEDITOR_CONFIGS = {
             ['RemoveFormat']]
         ,
         'height': 300,
-        'width': 600,
+        'width': 800,
 
 },
     'default': {
