@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="83ce492f-81ab-4045-9bd2-7537fae0f724" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/static/posts/js/base.js" afterPath="$PROJECT_DIR$/posts/static/posts/js/base.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -71,8 +70,8 @@
       <file leaf-file-name="base.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/posts/static/posts/js/base.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1534">
-              <caret line="31" column="4" lean-forward="false" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
+            <state relative-caret-position="2314">
+              <caret line="101" column="0" lean-forward="true" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -830,13 +829,6 @@
       <option name="presentableId" value="Default" />
       <updated>1509594326097</updated>
     </task>
-    <task id="LOCAL-00266" summary="description ckeditor changed">
-      <created>1514567842634</created>
-      <option name="number" value="00266" />
-      <option name="presentableId" value="LOCAL-00266" />
-      <option name="project" value="LOCAL" />
-      <updated>1514567842635</updated>
-    </task>
     <task id="LOCAL-00267" summary="ckeditor size in admin page changed">
       <created>1514568057811</created>
       <option name="number" value="00267" />
@@ -1173,7 +1165,14 @@
       <option name="project" value="LOCAL" />
       <updated>1515312280891</updated>
     </task>
-    <option name="localTasksCounter" value="315" />
+    <task id="LOCAL-00315" summary="navbar fix on scroll top time changed">
+      <created>1515313126098</created>
+      <option name="number" value="00315" />
+      <option name="presentableId" value="LOCAL-00315" />
+      <option name="project" value="LOCAL" />
+      <updated>1515313126098</updated>
+    </task>
+    <option name="localTasksCounter" value="316" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -1255,7 +1254,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="margin added to post-text img and author username in detail changed to first name + last name" />
     <MESSAGE value="post-inside-text size changed" />
     <MESSAGE value="profile page content-tab fixed" />
     <MESSAGE value="date_published checked in homepage" />
@@ -1280,7 +1278,8 @@
     <MESSAGE value="recommended posts bug fixed i think (again)" />
     <MESSAGE value="is_author blank sets to true" />
     <MESSAGE value="BankOrder sets to vip" />
-    <option name="LAST_COMMIT_MESSAGE" value="BankOrder sets to vip" />
+    <MESSAGE value="navbar fix on scroll top time changed" />
+    <option name="LAST_COMMIT_MESSAGE" value="navbar fix on scroll top time changed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1624,8 +1623,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/posts/static/posts/js/base.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1534">
-          <caret line="31" column="4" lean-forward="false" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
+        <state relative-caret-position="2314">
+          <caret line="101" column="0" lean-forward="true" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
           <folding />
         </state>
       </provider>
