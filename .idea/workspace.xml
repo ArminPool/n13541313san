@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="83ce492f-81ab-4045-9bd2-7537fae0f724" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/views.py" afterPath="$PROJECT_DIR$/posts/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/static/posts/js/base.js" afterPath="$PROJECT_DIR$/posts/static/posts/js/base.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -58,11 +58,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/posts/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
+            <state relative-caret-position="-23">
               <caret line="323" column="0" lean-forward="true" selection-start-line="323" selection-start-column="0" selection-end-line="323" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/posts/static/posts/js/base.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1534">
+              <caret line="31" column="4" lean-forward="false" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -76,26 +86,6 @@
               <folding>
                 <element signature="e#24#33#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="webpack.config.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webpack.config.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="728">
-              <caret line="28" column="1" lean-forward="false" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -179,7 +169,6 @@
         <option value="$PROJECT_DIR$/posts/admin.py" />
         <option value="$PROJECT_DIR$/posts/static/posts/css/homepage.css" />
         <option value="$PROJECT_DIR$/posts/templates/posts/homepage.html" />
-        <option value="$PROJECT_DIR$/posts/static/posts/js/base.js" />
         <option value="$PROJECT_DIR$/specificpages/static/specificpages/js/about-us.js" />
         <option value="$PROJECT_DIR$/posts/templates/posts/base.html" />
         <option value="$PROJECT_DIR$/users/static/users/css/GuestContact.css" />
@@ -192,6 +181,7 @@
         <option value="$USER_HOME$/djangowebpack/package.json" />
         <option value="$PROJECT_DIR$/users/models.py" />
         <option value="$PROJECT_DIR$/posts/views.py" />
+        <option value="$PROJECT_DIR$/posts/static/posts/js/base.js" />
       </list>
     </option>
   </component>
@@ -840,13 +830,6 @@
       <option name="presentableId" value="Default" />
       <updated>1509594326097</updated>
     </task>
-    <task id="LOCAL-00265" summary="post upload_to image changed">
-      <created>1514566749541</created>
-      <option name="number" value="00265" />
-      <option name="presentableId" value="LOCAL-00265" />
-      <option name="project" value="LOCAL" />
-      <updated>1514566749542</updated>
-    </task>
     <task id="LOCAL-00266" summary="description ckeditor changed">
       <created>1514567842634</created>
       <option name="number" value="00266" />
@@ -1183,7 +1166,14 @@
       <option name="project" value="LOCAL" />
       <updated>1515312141040</updated>
     </task>
-    <option name="localTasksCounter" value="314" />
+    <task id="LOCAL-00314" summary="BankOrder sets to vip">
+      <created>1515312280891</created>
+      <option name="number" value="00314" />
+      <option name="presentableId" value="LOCAL-00314" />
+      <option name="project" value="LOCAL" />
+      <updated>1515312280891</updated>
+    </task>
+    <option name="localTasksCounter" value="315" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -1265,7 +1255,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="detail js  edited" />
     <MESSAGE value="margin added to post-text img and author username in detail changed to first name + last name" />
     <MESSAGE value="post-inside-text size changed" />
     <MESSAGE value="profile page content-tab fixed" />
@@ -1290,7 +1279,8 @@
     <MESSAGE value="recommended posts bug fixed i think,ckeditor width changed" />
     <MESSAGE value="recommended posts bug fixed i think (again)" />
     <MESSAGE value="is_author blank sets to true" />
-    <option name="LAST_COMMIT_MESSAGE" value="is_author blank sets to true" />
+    <MESSAGE value="BankOrder sets to vip" />
+    <option name="LAST_COMMIT_MESSAGE" value="BankOrder sets to vip" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1505,13 +1495,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/posts/static/posts/js/base.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/specificpages/static/specificpages/js/about-us.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="558">
@@ -1633,8 +1616,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/posts/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
+        <state relative-caret-position="-23">
           <caret line="323" column="0" lean-forward="true" selection-start-line="323" selection-start-column="0" selection-end-line="323" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/posts/static/posts/js/base.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1534">
+          <caret line="31" column="4" lean-forward="false" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
           <folding />
         </state>
       </provider>

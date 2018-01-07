@@ -29,7 +29,7 @@ setInterval(function() {
         hasScrolled();
         didScroll = false;
     }
-}, 0);
+},70);
 
 function hasScrolled() {
 
