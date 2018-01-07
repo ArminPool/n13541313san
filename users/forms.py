@@ -36,19 +36,15 @@ class RegistrationForm(UserCreationForm):
         password1 = cleaned_data.get('password1')
         password2 = cleaned_data.get('password2')
 
-        print(password2)
         try:
             if not username or not email or not first_name or not last_name:
-                print("Nothing entered")
                 self.add_error(None, 'لطفا تمام  فیلد ها را پر کنید!')
             elif User.objects.get(username=username):
-                print("user found")
                 self.add_error('username', 'این نام کاربری وجود دارد.')
 
         except User.DoesNotExist:
             try:
                 if User.objects.get(email=email):
-                    print("email found")
                     self.add_error('email', 'این ایمیل قبلا استفاده شده !!!')
             except User.DoesNotExist:
                 if password2 != password1:
@@ -93,7 +89,6 @@ class ProfileEditForm(forms.ModelForm):
     def clean(self):
         cleaned_data = super(ProfileEditForm, self).clean()
         city = cleaned_data.get('city')
-        print(city)
         pro_img = cleaned_data.get('pro_img')
 
         website = cleaned_data.get('website')
@@ -101,10 +96,10 @@ class ProfileEditForm(forms.ModelForm):
         regex = r'0\d{10}'
 
         if phone_number is None:
-            print(0)
+
             self.add_error(None, 'لطفا شماره تلفن خود را وارد کنید!')
         elif not re.match(regex, phone_number):
-            print(1)
+
             self.add_error('phone_number', 'شماره تلفن درست وارد نشده!!!')
 
 

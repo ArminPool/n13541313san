@@ -32,7 +32,7 @@ def homepage(request):
     most_seen = Post.objects.order_by("-seen")[:10]
 
     page = request.GET.get('page', 1)
-    paginator = Paginator(posts_list, 2)
+    paginator = Paginator(posts_list, 6)
     try:
         posts = paginator.page(page)
     except PageNotAnInteger:
