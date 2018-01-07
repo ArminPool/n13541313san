@@ -309,10 +309,20 @@ def economic_calender(request):
 
 
 def bank_orders(request):
-    query_list = BankOrders.objects.all()
+
     template_name = 'posts/bankorders.html'
-    context = {'query_list': query_list}
-    return render(request, template_name, context)
+    if not request.user.is_authenticated:
+
+        return render(request, 'posts/no_vip.html')
+
+    elif request.user.is_authenticated and not request.user.userprofile.have_vip():
+
+        return render(request, 'posts/no_vip.html')
+    else:
+        query_list = BankOrders.objects.all()
+        context = {'query_list': query_list}
+
+        return render(request, template_name, context)
 
 
 def upload_photo_affiliate(request):
