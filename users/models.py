@@ -2,6 +2,7 @@
 from __future__ import unicode_literals
 
 from ckeditor.fields import RichTextField
+from dateutil.relativedelta import relativedelta
 from imagekit.models import ImageSpecField, ProcessedImageField
 from imagekit.processors import ResizeToFill
 import random
@@ -16,36 +17,38 @@ from django.contrib.auth.models import User
 from django.db import models
 from django.utils.timezone import localtime, now
 from django_mysql.models import ListTextField
+
+
 class UserProfile(models.Model):
     # Each user-field in UserProfile can only have one user
     user = models.OneToOneField(User, null=True)
 
     phone_number = models.CharField(max_length=11, blank=False)
 
-    آذربایجان_شرقی = "آذربایجان شرقی"
+    آذربایجان_شرقی = "آذربایجان_شرقی"
 
-    آذربایجان_غربی = "آذربایجان غرقی"
+    آذربایجان_غربی = "آذربایجان_غربی"
 
     اصفهان = "اصفهان"
     اردبیل = "اردبیل"
     ایلام = "ایلام"
     بوشهر = "بوشهر"
     تهران = "تهران"
-    چهارمحال_و_بختیاری = "چهارمحال و بختیاری"
+    چهارمحال_و_بختیاری = "چهارمحال_و_بختیاری"
 
-    خراسان_جنوبی = "خراسان جنوبی"
-    خراسان_رضوی = "خراسان رضوی"
+    خراسان_جنوبی = "خراسان_جنوبی"
+    خراسان_رضوی = "خراسان_رضوی"
 
-    خراسان_شمالی = "خراسان شمالی"
+    خراسان_شمالی = "خراسان_شمالی"
 
     خوزستان = "خوزستان"
     زنجان = "زنجان"
-    سیستان_و_بلوچستان = "سیستان و بلوچستان"
+    سیستان_و_بلوچستان = "سیستان_و_بلوچستان"
     سمنان = "سمنان"
     فارس = "فارس"
     قم = "قم"
     قزوین = "قزوین"
-    کهکیلویه_و_بویراحمد = "کهکیلویه و بویراحمد"
+    کهکیلویه_و_بویراحمد = "کهکیلویه_و_بویراحمد"
     کردستان = "کردستان"
     کرمان = "کرمان"
     کرمانشاه = "کرمانشاه"
@@ -60,26 +63,25 @@ class UserProfile(models.Model):
 
     cities = ((آذربایجان_شرقی, 'آذربایجان شرقی'),
               (آذربایجان_غربی, "آذربایجان غربی"),
-              (اصفهان, "اصفهان"
-               ),
+              (اصفهان, "اصفهان"),
               (اردبیل, "اردبیل"),
               (ایلام, "ایلام"),
               (بوشهر, "بوشهر"),
               (تهران, "تهران"
                ),
-              (چهارمحال_و_بختیاری, "چهارمحال_و_بختیاری"
+              (چهارمحال_و_بختیاری, "چهارمحال و بختیاری"
                ),
-              (خراسان_جنوبی, "خراسان_جنوبی"
+              (خراسان_جنوبی, "خراسان جنوبی"
                ),
-              (خراسان_رضوی, "خراسان_رضوی"
+              (خراسان_رضوی, "خراسان رضوی"
                ),
-              (خراسان_شمالی, "خراسان_شمالی"
+              (خراسان_شمالی, "خراسان شمالی"
                ),
               (خوزستان, "خوزستان"
                ),
               (زنجان, "زنجان"
                ),
-              (سیستان_و_بلوچستان, "سیستان_و_بلوچستان"
+              (سیستان_و_بلوچستان, "سیستان و بلوچستان"
                ),
               (سمنان, "سمنان"
                ),
@@ -89,7 +91,7 @@ class UserProfile(models.Model):
                ),
               (قزوین, "قزوین"
                ),
-              (کهکیلویه_و_بویراحمد, "کهکیلویه_و_بویراحمد"
+              (کهکیلویه_و_بویراحمد, "کهکیلویه و بویراحمد"
                ),
               (کردستان, "کردستان"
                ),
@@ -126,7 +128,8 @@ class UserProfile(models.Model):
                                   options={'quality': 60}, null=True, blank=True)
 
     vip_until = models.DateTimeField(default=django.utils.timezone.now)
-    is_author = models.BooleanField(blank=True,default=False)
+    is_author = models.BooleanField(blank=True, default=False)
+
     # Remember Many to Many fields doesn't show in mysql commend line
 
     def __str__(self):
@@ -145,12 +148,12 @@ class UserProfile(models.Model):
         )
         userprofile.phone_number = phone_number
         userprofile.city = city
-
+        userprofile.vip_until = localtime(now()) + relativedelta(weeks=1)
         userprofile.save()
 
 
 class Author(models.Model):
-    user = models.OneToOneField(User,null=False)
+    user = models.OneToOneField(User, null=False)
     bio = RichTextField(config_name='simple_ckeditor')
 
     def __str__(self):
@@ -193,7 +196,8 @@ class GuestMessage(models.Model):
     suggestion_criticism = 'sc'
 
     options = (
-        (cooperate, 'همکاری'), (problem_buying, 'مشکل در خرید اشتراک'), (problem_activing, 'مشکل در فعال کردن اشتراک'), (suggestion_criticism, 'پیشنهاد یا انتقاد'))
+        (cooperate, 'همکاری'), (problem_buying, 'مشکل در خرید اشتراک'), (problem_activing, 'مشکل در فعال کردن اشتراک'),
+        (suggestion_criticism, 'پیشنهاد یا انتقاد'))
     issue_options = models.CharField(choices=options, default=cooperate, max_length=2)
     message = models.TextField(max_length=250, null=True)
 
@@ -226,20 +230,20 @@ class Token(models.Model):
 
 
 class Vip(models.Model):
-    user = models.CharField(default='',max_length=50,blank=False,null=False)
-    date_and_time = models.DateTimeField(default=django.utils.timezone.now,blank=False,null=False)
-    product = models.CharField(default='',max_length=50,blank=False,null=False)
-    amount = models.CharField(default='0تومان',max_length=50,blank=False,null=False)
+    user = models.CharField(default='', max_length=50, blank=False, null=False)
+    date_and_time = models.DateTimeField(default=django.utils.timezone.now, blank=False, null=False)
+    product = models.CharField(default='', max_length=50, blank=False, null=False)
+    amount = models.CharField(default='0تومان', max_length=50, blank=False, null=False)
 
     def __str__(self):
         return self.user + ' ' + self.product + ' ' + str(self.date_and_time)
 
     @classmethod
-    def add_vip(cls, username, product,amount):
+    def add_vip(cls, username, product, amount):
         cls.objects.create(
 
             user=username
             , product=product
             , date_and_time=localtime(now())
-            ,amount=amount
+            , amount=amount
         )

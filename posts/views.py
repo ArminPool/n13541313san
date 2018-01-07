@@ -32,7 +32,7 @@ def homepage(request):
     most_seen = Post.objects.order_by("-seen")[:10]
 
     page = request.GET.get('page', 1)
-    paginator = Paginator(posts_list, 6)
+    paginator = Paginator(posts_list, 2)
     try:
         posts = paginator.page(page)
     except PageNotAnInteger:
@@ -315,7 +315,7 @@ def bank_orders(request):
 
         return render(request, 'posts/no_vip.html')
 
-    elif request.user.is_authenticated and not request.user.userprofile.have_vip():
+    elif not request.user.userprofile.have_vip():
 
         return render(request, 'posts/no_vip.html')
     else:

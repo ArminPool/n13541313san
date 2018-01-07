@@ -29,7 +29,7 @@ setInterval(function() {
         hasScrolled();
         didScroll = false;
     }
-},70);
+},50);
 
 function hasScrolled() {
 
@@ -46,9 +46,8 @@ function hasScrolled() {
     else if(st < lastScrollTop){
         // Scroll Down
  $('#navbar-container').addClass('navbar-fixed-top');
-           $('#main').css('top',$('#navbar-container').outerHeight());
-           $('.footer').css('position','relative');
-                      $('.footer').css('top',$('#navbar-container').outerHeight());
+
+$("#main").css("margin-top",navbarHeight);
 
 
  if(sideNav == 1) {
@@ -62,11 +61,12 @@ function hasScrolled() {
     else {
         // Scroll Up
         if(st + $(window).height() < $(document).height() && sideNav != 1) {
+        $("#main").css("margin-top",'0px');
+
          $('#SideNav').css('width','0px');
          $('#main').css('margin-right','0px');
          $('#navbar-container').removeClass('navbar-fixed-top');
-          $('#main').css('top','0px');
-                                $('.footer').css('top','0px');
+
 
 }
 
@@ -148,7 +148,7 @@ if(ScreenHeight < 477){
 
 
 $('#SideNav').css('position','relative');
-$('#SideNav').css('top',navbarHeight);
+$('#SideNav').css('margin-top',navbarHeight);
 
 
 }
@@ -208,7 +208,6 @@ $("#left-side-toggle-close").click(closeNav);
 $(window).on('resize', function(){
 
 navbarHeight = $('#navbar-container').outerHeight();
-$("#SideNav").css("top",navbarHeight);
 
 $('.uo-nested-dropdown a').removeAttr("style");
 $('.poc-nested-dropdown a').removeAttr("style");
@@ -329,6 +328,7 @@ RemoveOrShowFooter();
 
 $("#main").css("marginRight","250px");
 $("#SideNav").css("width","250px");
+$("#SideNav").css("margin-top","0px");
 
 
 $("#left-side-toggle-open").css("display","none");
@@ -354,7 +354,7 @@ $("footer").css("display","none");
 $("#main").css("display","none");
 $("#SideNav").css("width","100%");
 $("#SideNav").css("position","relative");
-$("#SideNav").css("top",navbarHeight);
+$("#SideNav").css("margin-top",navbarHeight);
 
 
 $("#left-side-toggle-open").css("display","none");
@@ -363,11 +363,12 @@ $("#left-side-toggle-close").css("display","inline");
 
 }
 else{
-$("#SideNav").css("top",navbarHeight);
 $("#main").css("display","block");
 RemoveOrShowFooter();
 
 $("#main").css("margin-right","250px");
+$("#SideNav").css("margin-top","0px");
+
 $("#SideNav").css("width","250px");
 $("#left-side-toggle-open").css("display","none");
 

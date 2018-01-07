@@ -8,8 +8,6 @@ from imagekit.forms import ProcessedImageField
 from users.models import UserProfile, UsersMessage, GuestMessage
 
 
-
-
 class RegistrationForm(UserCreationForm):
     email = forms.EmailField(required=True)
 
@@ -34,8 +32,10 @@ class RegistrationForm(UserCreationForm):
         first_name = cleaned_data.get('first_name')
         last_name = cleaned_data.get('last_name')
         email = cleaned_data.get('email')
+
         password1 = cleaned_data.get('password1')
         password2 = cleaned_data.get('password2')
+
         print(password2)
         try:
             if not username or not email or not first_name or not last_name:
@@ -62,17 +62,6 @@ class RegistrationForm(UserCreationForm):
                     self.add_error('password1', 'تعداد  حروف رمز باید بیشتر از 8 باشد.')
 
 
-def save(self, commit=True, ):
-    user = super(RegistrationForm, self).save(commit=False)
-    user.first_name = self.cleaned_data['first_name']
-    user.last_name = self.cleaned_data['last_name']
-    user.email = self.cleaned_data['email']
-
-    if commit:
-        user.save()
-
-    return user
-
 def entire_numeric(password):
     try:
         int(password)
@@ -96,7 +85,6 @@ class ProfileEditForm(forms.ModelForm):
         model = UserProfile
         fields = {
 
-
             'city',
             'phone_number',
             'pro_img'
@@ -105,6 +93,7 @@ class ProfileEditForm(forms.ModelForm):
     def clean(self):
         cleaned_data = super(ProfileEditForm, self).clean()
         city = cleaned_data.get('city')
+        print(city)
         pro_img = cleaned_data.get('pro_img')
 
         website = cleaned_data.get('website')
@@ -117,9 +106,6 @@ class ProfileEditForm(forms.ModelForm):
         elif not re.match(regex, phone_number):
             print(1)
             self.add_error('phone_number', 'شماره تلفن درست وارد نشده!!!')
-
-
-
 
 
 class ContactForm(forms.ModelForm):
@@ -165,9 +151,7 @@ class LoginForm(UserCreationForm):
             if not username or not password:
                 self.add_error(None, 'لطفا تمام  فیلد ها را پر کنید!')
         except:
-          pass
-
-
+            pass
 
 
 class ResetUserPasswordForm(UserCreationForm):

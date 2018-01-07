@@ -9,7 +9,7 @@ color:#0066FF;
 background-color:transparent;
 
 }
-.specificpage-container .list-heading{
+.specificpage-container .heading{
 display:inline-block;
 padding-bottom:10px;
 color:#1B1B1B;
@@ -33,11 +33,17 @@ padding-top:1px;
 
 font-style:justify;
 padding-right:6px;
-font-size:15px;
+font-size:16px;
 
 }
 .specificpage-container li{
 
 padding-top:15px;
+
+}
+.specificpage-container p{
+
+
+font-size:16px;
 
 }

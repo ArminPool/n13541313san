@@ -45,14 +45,13 @@
   /* Support for IE. */
   font-feature-settings: 'liga';
 }
+
 body {
  /*
  using this font for eng text
  */
     font-family:IRANSans;
     background-color:#f4f4f4;
-    height:100%;
-
 
 }
 span,p{
@@ -342,7 +341,7 @@ overflow-x: hidden;
 
 overflow-y: auto;
 transition: 0.5s;
-top: 154px;
+
  /*    adding shadow to Side Nav                    */
 
 -webkit-box-shadow: 0 8px 6px -6px black;
@@ -599,7 +598,8 @@ margin:auto 0;
     transition: margin-right .5s;
     padding: 16px;
     position:relative;
-    top:154px;
+margin-top:154px;
+
 }
 
 #main{
