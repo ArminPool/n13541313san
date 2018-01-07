@@ -53,22 +53,26 @@
                 <div class="row">
                     <div class="col-md-3 col-sm-3 col-xs-12">
 
-     <img src="{{favourite_post1.img.url}}" class="img-responsive">
-                        <a class="favourites_link" href="{% url 'posts:detail' header=favourite_post1.header|fix_spaces %}">{{favourite_post1.header}}</a>
+                        <img src="{{favourite_post1.img.url}}" class="img-responsive">
+                        <a class="favourites_link"
+                           href="{% url 'posts:detail' header=favourite_post1.header|fix_spaces %}">{{favourite_post1.header}}</a>
                     </div>
                     <div class="col-md-3 col-sm-3 col-xs-12">
 
                         <img src="{{favourite_post2.img.url}}" class="img-responsive">
-                        <a class="favourites_link" href="{% url 'posts:detail' header=favourite_post2.header|fix_spaces %}">{{favourite_post2.header}}</a>
+                        <a class="favourites_link"
+                           href="{% url 'posts:detail' header=favourite_post2.header|fix_spaces %}">{{favourite_post2.header}}</a>
                     </div>
                     <div class="col-md-3 col-sm-3 col-xs-12">
 
-     <img src="{{favourite_post3.img.url}}" class="img-responsive">
-                        <a class="favourites_link" href="{% url 'posts:detail' header=favourite_post3.header|fix_spaces %}">{{favourite_post3.header}}</a>
+                        <img src="{{favourite_post3.img.url}}" class="img-responsive">
+                        <a class="favourites_link"
+                           href="{% url 'posts:detail' header=favourite_post3.header|fix_spaces %}">{{favourite_post3.header}}</a>
                     </div>
                     <div class="col-md-3 col-sm-3 col-xs-12">
-     <img src="{{favourite_post4.img.url}}" class="img-responsive">
-                        <a class="favourites_link" href="{% url 'posts:detail' header=favourite_post4.header|fix_spaces %}">{{favourite_post4.header}}</a>
+                        <img src="{{favourite_post4.img.url}}" class="img-responsive">
+                        <a class="favourites_link"
+                           href="{% url 'posts:detail' header=favourite_post4.header|fix_spaces %}">{{favourite_post4.header}}</a>
 
                     </div>
                 </div>
@@ -86,21 +90,21 @@
                                         <span id="author-username">
                                             <a href="{% url 'posts:author-view' author_username=post.author %}">{{ post.author.user.first_name }} {{ post.author.user.last_name }}</a>
                                         </span>
-                                        <p id="author-bio">
-                                        {{post.author.bio|safe}}
-                                    </p>
+                                <p id="author-bio">
+                                    {{post.author.bio|safe}}
+                                </p>
 
 
                             </div>
                             <div class="col-md-2 col-sm-4 col-xs-4" id="author-info-right-side">
-                    {% if post.author.user.userprofile.pro_img %}
-                                    <img class="img-responsive" id="author-img"
-                                         src="{{ post.author.user.userprofile.pro_img.url }}">
-{% else %}
-                                  <img class="img-responsive" id="author-no-img"
-                                         src="{% static 'users/img/anonymous-user.jpg' %}">
+                                {% if post.author.user.userprofile.pro_img %}
+                                <img class="img-responsive" id="author-img"
+                                     src="{{ post.author.user.userprofile.pro_img.url }}">
+                                {% else %}
+                                <img class="img-responsive anonymous-user"
+                                     src="{% static 'users/img/anonymous-user.jpg' %}">
 
-{% endif %}
+                                {% endif %}
                             </div>
 
                         </div>
@@ -153,7 +157,7 @@
 
             {% else %}
             <img
-                    src="{% static 'users/img/anonymous-user.jpg' %}"
+                    src="{% static 'users/img/anonymous-user.jpg' %}" class="img-responsive anonymous-user"
                     alt="{{comments.user.username}}">
             {% endif %}
 
@@ -184,7 +188,8 @@
             {% if comments.children %}
 
 
-            <button class="show-replies btn btn-default btn-sm">نمایش {{comments.children.count|persian_numeric}} پاسخ</button>
+            <button class="show-replies btn btn-default btn-sm">نمایش {{comments.children.count|persian_numeric}} پاسخ
+            </button>
             {% endif %}
             <div class="see-replies">
 
@@ -196,14 +201,13 @@
                     <div class="children">
 
 
-
                         {% if children.user.userprofile.pro_img %}
                         <img
                                 src="{{ children.user.userprofile.pro_img.url}}" alt="{{children.user.username}}">
 
                         {% else %}
                         <img
-                               src="{% static 'users/img/anonymous-user.jpg' %}"
+                                src="{% static 'users/img/anonymous-user.jpg' %}" class="img-responsive anonymous-user"
                                 alt="{{children.user.username}}">
                         {% endif %}
                         <h4> {{ children.user }}</h4>
@@ -232,15 +236,12 @@
                         {% endif %}
 
 
-
-
                     </div>
 
                     {% endfor %}
                 </blockquote>
             </div>
             {% endif %}
-
 
 
         </div>
