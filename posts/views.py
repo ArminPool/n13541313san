@@ -270,8 +270,10 @@ def articles(request, find):
 
 def news(request):
     posts_list = Post.objects.filter(is_vip=False, post_type='news')
+    most_seen = Post.objects.order_by("-seen")[:10]
+
     title = "اخبار"
-    paginator = Paginator(posts_list, 1)
+    paginator = Paginator(posts_list, 6)
     template_name = 'posts/category.html'
     page = request.GET.get('page', 1)
 
@@ -282,7 +284,7 @@ def news(request):
     except EmptyPage:
         posts = paginator.page(paginator.num_pages)
         # ---- we mention to title as tag in category template and in this case ----
-    context = {'posts': posts, 'tag': title}
+    context = {'posts': posts,'most_seen':most_seen, 'tag': title}
     return render(request, template_name, context)
 
 

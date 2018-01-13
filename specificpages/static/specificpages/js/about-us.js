@@ -15,7 +15,7 @@ $("#values-btn").click(function (){
             });
 $("#views-btn").click(function (){
                 $('html, body').animate({
-                    scrollTop: $("#introduction").offset().top
+                    scrollTop: $("#views").offset().top
                 }, 2000);
 
             });

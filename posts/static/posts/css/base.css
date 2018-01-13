@@ -458,15 +458,23 @@ background-color:transparent;
                             /*      setting of side toggles                  */
 #left-side-toggle-open{
 
-border:1px solid #ddd;
-border-radius:0px;
+border:2px solid #cccccc;
+border-radius:100%;
 height:40px;
 width:45px;
-padding:9px 10px;
+padding:0px;
 margin:8px;
 margin-top:20px;
 color:#fff;
 margin-right:0px;
+
+}
+#left-side-toggle-open img {
+
+position:relative;
+height:30px;
+width:35px;
+
 }
 
 #left-side-toggle-close{
@@ -494,6 +502,7 @@ margin:auto auto;
 
 }
 
+
                             /*         I changed place of my toggle and navbar toggle               */
 
 #left-side-toggle-open,#left-side-toggle-close{
@@ -505,9 +514,17 @@ background-color: transparent;
 }
                             /*      remove hover color         */
 
-#left-side-toggle-open:hover,#left-side-toggle-close:hover{
+#left-side-toggle-open:hover,{
 
 background-color: #ddd;
+
+}
+#left-side-toggle-open{
+
+
+}
+left-side-toggle-open:hover, #left-side-toggle-close:hover {
+    background-color: transparent;
 
 }
 

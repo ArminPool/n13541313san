@@ -14,66 +14,118 @@ $(document).ready(function() {
         error.insertAfter(element);
     }
 });
-
+ var st;
+var isScrolling;
 var didScroll;
 var lastScrollTop = 0;
+var navbar_added_new = false;
 var delta = 5;
+var distance_to_first=0;
 var navbarHeight = $('#navbar-container').outerHeight();
 
 $(window).scroll(function(event){
+    window.clearTimeout( isScrolling );
+
     didScroll = true;
+        st = $(this).scrollTop();
+
+    updatevariables();
+    isScrolling = setTimeout(function() {
+
+
+        // Run the callback
+        hasScrolled();
+        if ( distance_to_first < 10 ){
+
+
+           $('#navbar-container').addClass('navbar-fixed-top');
+
+        }
+ if($('.navbar-fixed-top').length > 0 && distance_to_first > 0) {
+        $("#main").css("margin-top",navbarHeight);
+
+        }
+        else if($('.navbar-fixed-top').length > 0 && distance_to_first == 0) {
+
+               $("#main").css("margin-top",navbarHeight);
+
+
+
+        }
+
+    }, 250);
 });
 
-setInterval(function() {
-    if (didScroll) {
-        hasScrolled();
-        didScroll = false;
-    }
-},50);
 
-function hasScrolled() {
+function updatevariables() {
 
-    var st = $(this).scrollTop();
 
     // Make sure they scroll more than delta
     if(Math.abs(lastScrollTop - st) <= delta)
         return;
+
+        if(st < lastScrollTop){
+                distance_to_first = distance_to_first - Math.abs(lastScrollTop - st);
+
+
+
+
+        }
+        else if (st > lastScrollTop){
+                        distance_to_first = distance_to_first + Math.abs(lastScrollTop - st);
+
+
+
+        }
+
+
+        lastScrollTop = st;
+}
+
+
+function hasScrolled() {
+
 
     // If they scrolled down and are past the navbar, add class .nav-up.
     // This is necessary so you never see what is "behind" the navbar.
     if (st < lastScrollTop && $(window).width() < 586 && sideNav == 1 ){
     }
     else if(st < lastScrollTop){
-        // Scroll Down
+        // Scroll up
+
+
  $('#navbar-container').addClass('navbar-fixed-top');
 
-$("#main").css("margin-top",navbarHeight);
 
 
  if(sideNav == 1) {
  $('#SideNav').css('width','250px');
              $('#main').css('margin-right','250px')
 
-    }} else {
+    } else {
     if ( $(window).width() < 586 && sideNav == 1 ){
 
     }
-    else {
-        // Scroll Up
+    }
+    }
+    else if(st > lastScrollTop){
+
+
+        // Scroll Down
         if(st + $(window).height() < $(document).height() && sideNav != 1) {
         $("#main").css("margin-top",'0px');
 
          $('#SideNav').css('width','0px');
          $('#main').css('margin-right','0px');
-         $('#navbar-container').removeClass('navbar-fixed-top');
+ $('#navbar-container').removeClass('navbar-fixed-top');
 
 
 }
 
         }
 
-    }
-       lastScrollTop = st;
+
+
     }
 
 
