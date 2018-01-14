@@ -125,7 +125,7 @@ class Comment(models.Model):
 class Calender(models.Model):
     date = DateField()
 
-    time = TimeField(blank=True,null=True)
+    time = TimeField(blank=True, null=True)
 
     Stock_Options = (('USD', 'USD'), ('EUR', 'EUR'), ('GBP', 'GBP'),
                      ('CHF', 'CHF'), ('JPY', 'JPY'), ('CAD', 'CAD'),
@@ -158,11 +158,15 @@ class BankOrders(models.Model):
         (cooperate, 'همکاری'), (problem_buying, 'مشکل در خرید'), (ask_game, 'درخواست بازی'), (others, 'موارد دیگر'))
     issue_options = models.CharField(choices=options, default=cooperate, max_length=2)
     """
-    Pair_Options = (('USDJPY', 'USDJPY'), ('EURAUD', 'EURAUD'), ('AUDCHF', 'AUDCHF'), ('CHFJPY', 'CHFJPY')
-                    , ('NZDCAD', 'NZDCAD'), ('AUDNZD', 'AUDNZD'), ('USDCAD', 'USDCAD'), ('EURCHF', 'EURCHF')
-                    , ('CADCHF', 'CADCHF'), ('CADJPY', 'CADJPY'), ('EURUSD', 'EURUSD'),
-                    ('EURGBP', 'EURGBP'), ('AUDCAD', 'AUDCAD'), ('GBPCHF', 'GBPCHF'), ('AUDUSD', 'AUDUSD'),
-                    ('GBPAUD', 'GBPAUD'))
+    Pair_Options = (('AUDCAD', 'AUDCAD'), ('AUDCHF', 'AUDCHF'), ('AUDNZD', 'AUDNZD'), ('AUDUSD', 'AUDUSD'),
+                    ('CADCHF', 'CADCHF'), ('CADJPY', 'CADJPY'), ('CHFJPY', 'CHFJPY'),
+
+                    ('EURAUD', 'EURAUD'), ('EURCHF', 'EURCHF'), ('EURGBP', 'EURGBP'), ('EURUSD', 'EURUSD')
+                    , ('GBPAUD', 'GBPAUD'), ('GBPCHF', 'GBPCHF'), ('GBPUSD', 'GBPUSD'), ('GOLD', 'GOLD')
+                    , ('NZDCAD', 'NZDCAD'), ('NZDUSD', 'NZDUSD')
+                    , ('USDJPY', 'USDJPY'), ('USDCAD', 'USDCAD'),
+
+                    )
 
     Pair = models.CharField(choices=Pair_Options, default='', max_length=100)
     Bank_Options = (('Goldman Sachs', 'Goldman Sachs'), ('Credit Suisse', 'Credit Suisse'), ('Citi Bank', 'Citi Bank'),
