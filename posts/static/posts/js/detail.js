@@ -11,10 +11,8 @@ $(".comments span + button").click(function(event){
 $("#post-text p img").addClass('img-responsive').addClass('img-inside-text');
 $("#post-text p img").removeAttr("style");
 $(".img-inside-text").parent('p').css('text-align','center');
-$('#detail-container #post-text p').css('font-family','IRANSans');
-$('#detail-container #post-text span').css('font-family','IRANSans');
-$('#detail-container #post-text h1').css('font-family','IRANSans');
-$('#detail-container #post-text li').css('font-family','IRANSans');
+$('*').css('font-family','');
+
 
 $(".show-replies").click(function(event){
     event.preventDefault();
