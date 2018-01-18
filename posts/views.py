@@ -212,8 +212,7 @@ def search(request):
             Q(analysis_branch__icontains=query) |
             Q(analysis_subcategory__icontains=query) |
             Q(Main_Tag__icontains=query) |
-            Q(Tags__icontains=query) |
-            Q(author=query)
+            Q(Tags__icontains=query)
 
         )
     context = {'posts': queryset_list, 'tag': query}

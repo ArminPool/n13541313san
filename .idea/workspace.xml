@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="83ce492f-81ab-4045-9bd2-7537fae0f724" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/views.py" afterPath="$PROJECT_DIR$/posts/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -38,8 +37,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/posts/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="215" column="20" lean-forward="false" selection-start-line="215" selection-start-column="20" selection-end-line="215" selection-end-column="20" />
+            <state relative-caret-position="195">
+              <caret line="214" column="36" lean-forward="false" selection-start-line="214" selection-start-column="36" selection-end-line="214" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -805,13 +804,6 @@
       <option name="presentableId" value="Default" />
       <updated>1509594326097</updated>
     </task>
-    <task id="LOCAL-00282" summary="post-inside-text size changed">
-      <created>1514628021795</created>
-      <option name="number" value="00282" />
-      <option name="presentableId" value="LOCAL-00282" />
-      <option name="project" value="LOCAL" />
-      <updated>1514628021795</updated>
-    </task>
     <task id="LOCAL-00283" summary="profile page content-tab fixed">
       <created>1514634503370</created>
       <option name="number" value="00283" />
@@ -1148,7 +1140,14 @@
       <option name="project" value="LOCAL" />
       <updated>1516264174789</updated>
     </task>
-    <option name="localTasksCounter" value="331" />
+    <task id="LOCAL-00331" summary="search bug trying to fix">
+      <created>1516264339005</created>
+      <option name="number" value="00331" />
+      <option name="presentableId" value="LOCAL-00331" />
+      <option name="project" value="LOCAL" />
+      <updated>1516264339005</updated>
+    </task>
+    <option name="localTasksCounter" value="332" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -1251,7 +1250,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="play with economic template and ichimoko spelling fixed" />
     <MESSAGE value="calender time can be blank now" />
     <MESSAGE value="min-height 1000px added to body" />
     <MESSAGE value="navbar only fix if we srcoll top ." />
@@ -1276,7 +1274,8 @@
     <MESSAGE value="big change:&#10;slides added&#10;telegram banner added&#10;signal model added&#10;signal page created&#10;pamm page edited&#10;recommended system edited&#10;register link added to login page&#10;tariffs page edited" />
     <MESSAGE value="slide img and telegram-banner img added" />
     <MESSAGE value="debug true" />
-    <option name="LAST_COMMIT_MESSAGE" value="debug true" />
+    <MESSAGE value="search bug trying to fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="search bug trying to fix" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1626,8 +1625,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/posts/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="215" column="20" lean-forward="false" selection-start-line="215" selection-start-column="20" selection-end-line="215" selection-end-column="20" />
+        <state relative-caret-position="195">
+          <caret line="214" column="36" lean-forward="false" selection-start-line="214" selection-start-column="36" selection-end-line="214" selection-end-column="36" />
           <folding />
         </state>
       </provider>
