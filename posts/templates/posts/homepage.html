@@ -130,6 +130,8 @@
 
                     </div>
                     {% endif %}
+                    {% empty %}
+                    <p style="font-size:30px;">متاسفانه پستی یافت نشد.</p>
                     {% endfor %}
                 </div>
                 {% block infinite-scroll  %}
