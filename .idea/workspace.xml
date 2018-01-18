@@ -41,8 +41,8 @@
       <file leaf-file-name="vip_email.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/users/templates/users/vip_email.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="29">
-              <caret line="22" column="21" lean-forward="false" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+            <state relative-caret-position="315">
+              <caret line="33" column="62" lean-forward="false" selection-start-line="33" selection-start-column="62" selection-end-line="33" selection-end-column="62" />
               <folding>
                 <element signature="n#style#0;n#p#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -856,13 +856,6 @@
       <option name="presentableId" value="Default" />
       <updated>1509594326097</updated>
     </task>
-    <task id="LOCAL-00295" summary="calender">
-      <created>1514706246094</created>
-      <option name="number" value="00295" />
-      <option name="presentableId" value="LOCAL-00295" />
-      <option name="project" value="LOCAL" />
-      <updated>1514706246096</updated>
-    </task>
     <task id="LOCAL-00296" summary="calender">
       <created>1514706757449</created>
       <option name="number" value="00296" />
@@ -1199,7 +1192,14 @@
       <option name="project" value="LOCAL" />
       <updated>1516293951334</updated>
     </task>
-    <option name="localTasksCounter" value="344" />
+    <task id="LOCAL-00344" summary="vip-email changed">
+      <created>1516294563804</created>
+      <option name="number" value="00344" />
+      <option name="presentableId" value="LOCAL-00344" />
+      <option name="project" value="LOCAL" />
+      <updated>1516294563804</updated>
+    </task>
+    <option name="localTasksCounter" value="345" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -1281,7 +1281,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="is_author blank sets to true" />
     <MESSAGE value="BankOrder sets to vip" />
     <MESSAGE value="navbar fix on scroll top time changed" />
     <MESSAGE value="is_author null=True" />
@@ -1306,7 +1305,8 @@
     <MESSAGE value="vip email edited" />
     <MESSAGE value="register-email changed" />
     <MESSAGE value="vip-email changed&#10;reg-form bug fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="vip-email changed&#10;reg-form bug fixed" />
+    <MESSAGE value="vip-email changed" />
+    <option name="LAST_COMMIT_MESSAGE" value="vip-email changed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1657,8 +1657,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/users/templates/users/vip_email.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="29">
-          <caret line="22" column="21" lean-forward="false" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+        <state relative-caret-position="315">
+          <caret line="33" column="62" lean-forward="false" selection-start-line="33" selection-start-column="62" selection-end-line="33" selection-end-column="62" />
           <folding>
             <element signature="n#style#0;n#p#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
