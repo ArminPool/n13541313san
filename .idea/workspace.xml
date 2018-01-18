@@ -5,8 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="83ce492f-81ab-4045-9bd2-7537fae0f724" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/specificpages/static/specificpages/img/repair.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/specificpages/templates/specificpages/repair.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/users/templates/users/register_email.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/users/templates/users/vip_email.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/news/setting/prod.py" afterPath="$PROJECT_DIR$/news/setting/prod.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/specificpages/views.py" afterPath="$PROJECT_DIR$/specificpages/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/users/views.py" afterPath="$PROJECT_DIR$/users/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,61 +23,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/posts/views.py">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/users/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="477">
-              <caret line="218" column="58" lean-forward="false" selection-start-line="218" selection-start-column="58" selection-end-line="218" selection-end-column="58" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="category.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/posts/templates/posts/category.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="49">
-              <caret line="20" column="52" lean-forward="true" selection-start-line="20" selection-start-column="52" selection-end-line="20" selection-end-column="52" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="prod.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/news/setting/prod.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="52">
-              <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dev.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/news/setting/dev.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="10" lean-forward="false" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="homepage.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/posts/static/posts/css/homepage.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6396">
-              <caret line="246" column="0" lean-forward="false" selection-start-line="246" selection-start-column="0" selection-end-line="246" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/posts/templates/posts/base.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="9568">
-              <caret line="368" column="46" lean-forward="false" selection-start-line="368" selection-start-column="37" selection-end-line="368" selection-end-column="46" />
+            <state relative-caret-position="160">
+              <caret line="446" column="14" lean-forward="true" selection-start-line="446" selection-start-column="14" selection-end-line="446" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -99,8 +54,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/posts/urls.py" />
-        <option value="$PROJECT_DIR$/specificpages/templates/specificpages/metatrader.html" />
         <option value="$PROJECT_DIR$/users/templates/users/profile.html" />
         <option value="$PROJECT_DIR$/users/templates/users/UsersContact.html" />
         <option value="$PROJECT_DIR$/posts/templatetags/custom_tags.py" />
@@ -128,12 +81,10 @@
         <option value="$PROJECT_DIR$/posts/static/posts/js/base.js" />
         <option value="$PROJECT_DIR$/posts/static/posts/css/base.css" />
         <option value="$PROJECT_DIR$/posts/static/posts/js/detail.js" />
-        <option value="$PROJECT_DIR$/specificpages/views.py" />
         <option value="$PROJECT_DIR$/specificpages/templates/specificpages/tariffs.html" />
         <option value="$PROJECT_DIR$/users/templates/users/login.html" />
         <option value="$PROJECT_DIR$/users/static/users/css/login.css" />
         <option value="$PROJECT_DIR$/users/templates/users/register_email.html" />
-        <option value="$PROJECT_DIR$/users/views.py" />
         <option value="$PROJECT_DIR$/users/templates/users/vip_email.html" />
         <option value="$PROJECT_DIR$/posts/admin.py" />
         <option value="$PROJECT_DIR$/news/urls.py" />
@@ -150,6 +101,10 @@
         <option value="$PROJECT_DIR$/posts/templates/posts/category.html" />
         <option value="$PROJECT_DIR$/posts/templates/posts/homepage.html" />
         <option value="$PROJECT_DIR$/news/setting/prod.py" />
+        <option value="$PROJECT_DIR$/specificpages/templates/specificpages/repaire.html" />
+        <option value="$PROJECT_DIR$/specificpages/templates/specificpages/repair.html" />
+        <option value="$PROJECT_DIR$/specificpages/views.py" />
+        <option value="$PROJECT_DIR$/users/views.py" />
       </list>
     </option>
   </component>
@@ -175,8 +130,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -615,6 +568,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -625,19 +580,19 @@
     <property name="add_unversioned_files" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\armin\news\specificpages\static\specificpages\img" />
+      <recent name="C:\Users\armin\news\posts\static\posts\img" />
+      <recent name="C:\Users\armin\news\specificpages\static\specificpages\img\tariffs" />
+      <recent name="C:\Users\armin\news\posts\static\posts\js" />
+      <recent name="C:\Users\armin\news\posts\templates\posts" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\armin\news\posts\static\posts\img" />
       <recent name="C:\Users\armin\news\users\templates\users" />
       <recent name="C:\Users\armin\news\news\media\uploaded\users\pro_img" />
       <recent name="C:\Users\armin\news\posts\templates" />
       <recent name="C:\Users\armin\news\news\static" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\armin\news\posts\static\posts\img" />
-      <recent name="C:\Users\armin\news\specificpages\static\specificpages\img" />
-      <recent name="C:\Users\armin\news\specificpages\static\specificpages\img\tariffs" />
-      <recent name="C:\Users\armin\news\posts\static\posts\js" />
-      <recent name="C:\Users\armin\news\posts\templates\posts" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -797,13 +752,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1509594326097</updated>
-    </task>
-    <task id="LOCAL-00286" summary="superuser can now edit posts">
-      <created>1514654670976</created>
-      <option name="number" value="00286" />
-      <option name="presentableId" value="LOCAL-00286" />
-      <option name="project" value="LOCAL" />
-      <updated>1514654670978</updated>
     </task>
     <task id="LOCAL-00287" summary="tariffs img added tariffs page edited and currencies img added">
       <created>1514690413544</created>
@@ -1141,7 +1089,14 @@
       <option name="project" value="LOCAL" />
       <updated>1516264872643</updated>
     </task>
-    <option name="localTasksCounter" value="335" />
+    <task id="LOCAL-00335" summary="debug = false">
+      <created>1516265020509</created>
+      <option name="number" value="00335" />
+      <option name="presentableId" value="LOCAL-00335" />
+      <option name="project" value="LOCAL" />
+      <updated>1516265020509</updated>
+    </task>
+    <option name="localTasksCounter" value="336" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -1223,8 +1178,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="navbar only fix if we srcoll top ." />
-    <MESSAGE value="domestic-dollar url fixed.main left side url fixed,color fixed" />
     <MESSAGE value="footer problem with scroll fixed" />
     <MESSAGE value="footer problem with scroll fixed and contact-us link fixed &#10;and footer position changed" />
     <MESSAGE value="recommended posts bug fixed i think,ckeditor width changed" />
@@ -1248,7 +1201,9 @@
     <MESSAGE value="search bug trying to fix" />
     <MESSAGE value="carousel removed from category" />
     <MESSAGE value="for empty added to homepage template" />
-    <option name="LAST_COMMIT_MESSAGE" value="for empty added to homepage template" />
+    <MESSAGE value="debug = false" />
+    <MESSAGE value="some html page added &#10;repair page added" />
+    <option name="LAST_COMMIT_MESSAGE" value="some html page added &#10;repair page added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1257,20 +1212,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/news/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4004">
-          <caret line="154" column="18" lean-forward="false" selection-start-line="154" selection-start-column="18" selection-end-line="154" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/specificpages/static/specificpages/css/about-us.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="11" column="25" lean-forward="false" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/specificpages/static/specificpages/css/rules.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-312">
@@ -1374,13 +1315,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/specificpages/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="624">
-          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/specificpages/templates/specificpages/tariffs.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="145">
@@ -1434,13 +1368,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="81">
           <caret line="12" column="4" lean-forward="true" selection-start-line="12" selection-start-column="4" selection-end-line="21" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/users/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6192">
-          <caret line="380" column="30" lean-forward="true" selection-start-line="380" selection-start-column="30" selection-end-line="380" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -1548,22 +1475,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/posts/templates/posts/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9568">
-          <caret line="368" column="46" lean-forward="false" selection-start-line="368" selection-start-column="37" selection-end-line="368" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/posts/static/posts/css/homepage.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6396">
-          <caret line="246" column="0" lean-forward="false" selection-start-line="246" selection-start-column="0" selection-end-line="246" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/news/setting/dev.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1572,42 +1483,84 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/posts/templates/posts/category.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="49">
-          <caret line="20" column="52" lean-forward="true" selection-start-line="20" selection-start-column="52" selection-end-line="20" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/posts/templates/posts/homepage.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3458">
           <caret line="133" column="45" lean-forward="false" selection-start-line="133" selection-start-column="45" selection-end-line="133" selection-end-column="45" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#a#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/posts/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="477">
-          <caret line="218" column="58" lean-forward="false" selection-start-line="218" selection-start-column="58" selection-end-line="218" selection-end-column="58" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/news/setting/prod.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
+        <state relative-caret-position="26">
           <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/specificpages/templates/specificpages/repaire.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="6" column="32" lean-forward="false" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/posts/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3406">
+          <caret line="218" column="58" lean-forward="false" selection-start-line="218" selection-start-column="58" selection-end-line="218" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/specificpages/templates/specificpages/repair.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="11" column="23" lean-forward="false" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#p#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/specificpages/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="497">
+          <caret line="29" column="8" lean-forward="false" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/posts/templates/posts/category.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="2" column="22" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/posts/static/posts/css/homepage.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="154" column="25" lean-forward="true" selection-start-line="154" selection-start-column="0" selection-end-line="155" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/posts/templates/posts/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="12" column="4" lean-forward="true" selection-start-line="12" selection-start-column="4" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/users/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="446" column="14" lean-forward="true" selection-start-line="446" selection-start-column="14" selection-end-line="446" selection-end-column="14" />
           <folding />
         </state>
       </provider>

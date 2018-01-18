@@ -24,4 +24,7 @@ def specific_pages(request, page):
 
 
 def tariffs(request):
-    return render(request,'specificpages/tariffs.html')
+    if request.user.is_superuser:
+        return render(request, 'specificpages/tariffs.html')
+    else:
+        return render(request,'specificpages/repair.html')

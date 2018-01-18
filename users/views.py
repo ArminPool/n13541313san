@@ -173,7 +173,6 @@ def view_profile(request):
     else:
         vip_remaining = 0
     tags_he_saw = request.user.userprofile.tags_he_saw
-    print(len(Counter(tags_he_saw)))
     if len(Counter(tags_he_saw)) >= 4:
         favourite_tag1 = Counter(tags_he_saw).most_common(4)[0][0]
         favourite_tag2 = Counter(tags_he_saw).most_common(4)[1][0]
@@ -385,7 +384,7 @@ def send_to_zarinpal(request, tariff_number):
     client = Client(ZARINPAL_WEBSERVICE)
     if tariff_number == "1":
 
-        amount = "130000"
+        amount = "1000"
         result = client.service.PaymentRequest(MMERCHANT_ID,
                                                amount,
                                                description,
@@ -447,7 +446,7 @@ def send_to_zarinpal(request, tariff_number):
 def verify_after_zarinpal(request, user_id, tariff_number):
     amount = 0
     if tariff_number == "1":
-        amount = "130000"
+        amount = "1000"
     elif tariff_number == "2":
 
         amount = "280000"
