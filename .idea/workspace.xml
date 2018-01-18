@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="83ce492f-81ab-4045-9bd2-7537fae0f724" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/news/setting/prod.py" afterPath="$PROJECT_DIR$/news/setting/prod.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/views.py" afterPath="$PROJECT_DIR$/posts/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -35,17 +35,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/posts/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="219" column="50" lean-forward="true" selection-start-line="219" selection-start-column="50" selection-end-line="219" selection-end-column="50" />
+            <state relative-caret-position="221">
+              <caret line="215" column="20" lean-forward="false" selection-start-line="215" selection-start-column="20" selection-end-line="215" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="prod.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="prod.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/news/setting/prod.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="52">
@@ -148,7 +148,6 @@
         <option value="$PROJECT_DIR$/posts/templates/posts/base.html" />
         <option value="$PROJECT_DIR$/posts/templates/posts/signals.html" />
         <option value="$PROJECT_DIR$/posts/models.py" />
-        <option value="$PROJECT_DIR$/posts/views.py" />
         <option value="$PROJECT_DIR$/posts/templates/posts/detail.html" />
         <option value="$PROJECT_DIR$/posts/static/posts/js/homepage.js" />
         <option value="$PROJECT_DIR$/specificpages/static/specificpages/css/pamm.css" />
@@ -157,6 +156,7 @@
         <option value="$PROJECT_DIR$/posts/templates/posts/homepage.html" />
         <option value="$PROJECT_DIR$/news/setting/dev.py" />
         <option value="$PROJECT_DIR$/news/setting/prod.py" />
+        <option value="$PROJECT_DIR$/posts/views.py" />
       </list>
     </option>
   </component>
@@ -805,13 +805,6 @@
       <option name="presentableId" value="Default" />
       <updated>1509594326097</updated>
     </task>
-    <task id="LOCAL-00281" summary="post-inside-text size changed">
-      <created>1514627807813</created>
-      <option name="number" value="00281" />
-      <option name="presentableId" value="LOCAL-00281" />
-      <option name="project" value="LOCAL" />
-      <updated>1514627807813</updated>
-    </task>
     <task id="LOCAL-00282" summary="post-inside-text size changed">
       <created>1514628021795</created>
       <option name="number" value="00282" />
@@ -1148,7 +1141,14 @@
       <option name="project" value="LOCAL" />
       <updated>1516263808499</updated>
     </task>
-    <option name="localTasksCounter" value="330" />
+    <task id="LOCAL-00330" summary="debug true">
+      <created>1516264174788</created>
+      <option name="number" value="00330" />
+      <option name="presentableId" value="LOCAL-00330" />
+      <option name="project" value="LOCAL" />
+      <updated>1516264174789</updated>
+    </task>
+    <option name="localTasksCounter" value="331" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -1616,18 +1616,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/posts/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="219" column="50" lean-forward="true" selection-start-line="219" selection-start-column="50" selection-end-line="219" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/news/setting/prod.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="52">
           <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/posts/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="215" column="20" lean-forward="false" selection-start-line="215" selection-start-column="20" selection-end-line="215" selection-end-column="20" />
           <folding />
         </state>
       </provider>

@@ -213,7 +213,7 @@ def search(request):
             Q(analysis_subcategory__icontains=query) |
             Q(Main_Tag__icontains=query) |
             Q(Tags__icontains=query) |
-            Q(author__icontains=query)
+            Q(author=query)
 
         )
     context = {'posts': queryset_list, 'tag': query}
