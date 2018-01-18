@@ -3,10 +3,7 @@
 <head>
     <meta charset="UTF-8">
   <style>
-        body p,a{
 
-        font-size:18px;
-        }
         div{
         padding:10px;
 
@@ -20,19 +17,19 @@
 <body dir="rtl">
 <div>
  <h1 >سلام {{username}}</h1>
-<p style="color:#000;">پرداخت شما با موفقیت انجام شد .</p>
-    <p>شماره تراکنش:{{transaction_number}}</p>
+<p style="color:#000;font-size:18px;">پرداخت شما با موفقیت انجام شد .</p>
+    <p style="font-size:18px;">شماره تراکنش:{{transaction_number}}</p>
    {% if tariffs_number == '1' %}
-    <p>اشتراک ۱ ماهه برای شما فعال گردید. </p>
+    <p style="font-size:18px;">اشتراک ۱ ماهه برای شما فعال گردید. </p>
     {% elif tariffs_number == '2' %}
-    <p>اشتراک ۳ ماهه برای شما فعال گردید. </p>
+    <p style="font-size:18px;">اشتراک ۳ ماهه برای شما فعال گردید. </p>
     {% elif tariffs_number == '3' %}
-    <p>اشتراک ۶ ماهه برای شما فعال گردید. </p>
+    <p style="font-size:18px;">اشتراک ۶ ماهه برای شما فعال گردید. </p>
     {% else %}
-    <p>اشتراک ۱۲ ماهه برای شما فعال گردید. </p>
+    <p style="font-size:18px;">اشتراک ۱۲ ماهه برای شما فعال گردید. </p>
 {% endif %}
-    <p>هم اکنون شما به بخش های  تحلیل های ویژه،اوردر بانک هاو سیگنال ها دسترسی دارید. </p>
-    <a href="https://navasangold.com" >نوسان گلد</a>
+    <p style="font-size:18px;">هم اکنون شما به بخش های <b>تحلیل ویژه</b>، <b>اوردر بانک ها </b>و <b>  سیگنال ها</b> دسترسی دارید. </p>
+    <a href="https://navasangold.com" style="font-size:18px;">نوسان گلد</a>
 </div>
 </body>
 
