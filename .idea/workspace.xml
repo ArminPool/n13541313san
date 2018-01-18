@@ -5,23 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="83ce492f-81ab-4045-9bd2-7537fae0f724" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/specificpages/static/specificpages/img/pamm-page.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/posts/templates/posts/signals.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/posts/static/posts/img/slide1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/posts/static/posts/img/slide2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/posts/static/posts/img/slide3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/posts/static/posts/img/telegram-banner.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/news/urls.py" afterPath="$PROJECT_DIR$/news/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/admin.py" afterPath="$PROJECT_DIR$/posts/admin.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/models.py" afterPath="$PROJECT_DIR$/posts/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/static/posts/css/homepage.css" afterPath="$PROJECT_DIR$/posts/static/posts/css/homepage.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/templates/posts/base.html" afterPath="$PROJECT_DIR$/posts/templates/posts/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/templates/posts/homepage.html" afterPath="$PROJECT_DIR$/posts/templates/posts/homepage.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/views.py" afterPath="$PROJECT_DIR$/posts/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/specificpages/static/specificpages/css/pamm.css" afterPath="$PROJECT_DIR$/specificpages/static/specificpages/css/pamm.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/specificpages/templates/specificpages/pamm.html" afterPath="$PROJECT_DIR$/specificpages/templates/specificpages/pamm.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/specificpages/templates/specificpages/tariffs.html" afterPath="$PROJECT_DIR$/specificpages/templates/specificpages/tariffs.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/specificpages/views.py" afterPath="$PROJECT_DIR$/specificpages/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/users/static/users/css/login.css" afterPath="$PROJECT_DIR$/users/static/users/css/login.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/users/templates/users/login.html" afterPath="$PROJECT_DIR$/users/templates/users/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/users/views.py" afterPath="$PROJECT_DIR$/users/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -790,13 +778,6 @@
       <option name="presentableId" value="Default" />
       <updated>1509594326097</updated>
     </task>
-    <task id="LOCAL-00278" summary="detail js  edited">
-      <created>1514621300769</created>
-      <option name="number" value="00278" />
-      <option name="presentableId" value="LOCAL-00278" />
-      <option name="project" value="LOCAL" />
-      <updated>1514621300769</updated>
-    </task>
     <task id="LOCAL-00279" summary="detail js  edited">
       <created>1514621504115</created>
       <option name="number" value="00279" />
@@ -1133,7 +1114,14 @@
       <option name="project" value="LOCAL" />
       <updated>1516006205820</updated>
     </task>
-    <option name="localTasksCounter" value="327" />
+    <task id="LOCAL-00327" summary="big change:&#10;slides added&#10;telegram banner added&#10;signal model added&#10;signal page created&#10;pamm page edited&#10;recommended system edited&#10;register link added to login page&#10;tariffs page edited">
+      <created>1516255394357</created>
+      <option name="number" value="00327" />
+      <option name="presentableId" value="LOCAL-00327" />
+      <option name="project" value="LOCAL" />
+      <updated>1516255394358</updated>
+    </task>
+    <option name="localTasksCounter" value="328" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -1147,9 +1135,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24011713" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24011713" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32913387" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.11181103" sideWeight="0.5087848" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32913387" sideWeight="0.49707174" order="2" side_tool="false" content_ui="tabs" />
