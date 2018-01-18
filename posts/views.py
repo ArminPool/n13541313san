@@ -205,6 +205,7 @@ def search(request):
     template_name = 'posts/category.html'
     queryset_list = None
     query = request.GET.get('q')
+    most_seen = Post.objects.order_by("-seen")[:10]
 
     if query:
         queryset_list = Post.objects.all().filter(
@@ -215,7 +216,7 @@ def search(request):
             Q(Tags__icontains=query)
 
         )
-    context = {'posts': queryset_list, 'tag': query}
+    context = {'posts': queryset_list, 'tag': query,'most_seen':most_seen}
     return render(request, template_name, context)
 
 

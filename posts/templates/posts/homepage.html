@@ -30,6 +30,7 @@
         <div class="col-xs-12 col-sm-8 col-md-8" id="right-side" style="float:right;">
 
             <div class="jumbotron">
+                {% block carousel %}
                 <div id="myCarousel" class="carousel slide " data-ride="carousel" dir="ltr">
     <!-- Indicators -->
     <ol class="carousel-indicators">
@@ -68,6 +69,7 @@
       <span class="sr-only">Next</span>
     </a>
   </div>
+                {% endblock %}
 
 
                 <div class="post infinite-container">
