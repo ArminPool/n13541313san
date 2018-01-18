@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="83ce492f-81ab-4045-9bd2-7537fae0f724" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/news/setting/prod.py" afterPath="$PROJECT_DIR$/news/setting/prod.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/users/templates/users/vip_email.html" afterPath="$PROJECT_DIR$/users/templates/users/vip_email.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -28,11 +28,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="prod.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="prod.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/news/setting/prod.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="26">
               <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="vip_email.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/users/templates/users/vip_email.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="468">
+              <caret line="18" column="8" lean-forward="false" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -90,7 +100,6 @@
         <option value="$PROJECT_DIR$/users/templates/users/login.html" />
         <option value="$PROJECT_DIR$/users/static/users/css/login.css" />
         <option value="$PROJECT_DIR$/users/templates/users/register_email.html" />
-        <option value="$PROJECT_DIR$/users/templates/users/vip_email.html" />
         <option value="$PROJECT_DIR$/posts/admin.py" />
         <option value="$PROJECT_DIR$/news/urls.py" />
         <option value="$PROJECT_DIR$/posts/templates/posts/base.html" />
@@ -110,6 +119,7 @@
         <option value="$PROJECT_DIR$/specificpages/views.py" />
         <option value="$PROJECT_DIR$/users/views.py" />
         <option value="$PROJECT_DIR$/news/setting/prod.py" />
+        <option value="$PROJECT_DIR$/users/templates/users/vip_email.html" />
       </list>
     </option>
   </component>
@@ -758,13 +768,6 @@
       <option name="presentableId" value="Default" />
       <updated>1509594326097</updated>
     </task>
-    <task id="LOCAL-00288" summary="some link and src fixed">
-      <created>1514690699152</created>
-      <option name="number" value="00288" />
-      <option name="presentableId" value="LOCAL-00288" />
-      <option name="project" value="LOCAL" />
-      <updated>1514690699152</updated>
-    </task>
     <task id="LOCAL-00289" summary="some link and src fixed">
       <created>1514690818298</created>
       <option name="number" value="00289" />
@@ -1101,7 +1104,14 @@
       <option name="project" value="LOCAL" />
       <updated>1516282382831</updated>
     </task>
-    <option name="localTasksCounter" value="337" />
+    <task id="LOCAL-00337" summary="debug = true">
+      <created>1516282580687</created>
+      <option name="number" value="00337" />
+      <option name="presentableId" value="LOCAL-00337" />
+      <option name="project" value="LOCAL" />
+      <updated>1516282580688</updated>
+    </task>
+    <option name="localTasksCounter" value="338" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -1183,7 +1193,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="footer problem with scroll fixed" />
     <MESSAGE value="footer problem with scroll fixed and contact-us link fixed &#10;and footer position changed" />
     <MESSAGE value="recommended posts bug fixed i think,ckeditor width changed" />
     <MESSAGE value="recommended posts bug fixed i think (again)" />
@@ -1208,7 +1217,8 @@
     <MESSAGE value="for empty added to homepage template" />
     <MESSAGE value="debug = false" />
     <MESSAGE value="some html page added &#10;repair page added" />
-    <option name="LAST_COMMIT_MESSAGE" value="some html page added &#10;repair page added" />
+    <MESSAGE value="debug = true" />
+    <option name="LAST_COMMIT_MESSAGE" value="debug = true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1359,13 +1369,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/users/templates/users/vip_email.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="17" column="43" lean-forward="true" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
         </state>
       </provider>
     </entry>
@@ -1566,6 +1569,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="26">
           <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/users/templates/users/vip_email.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="18" column="8" lean-forward="false" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
           <folding />
         </state>
       </provider>
