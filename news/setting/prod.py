@@ -1,6 +1,6 @@
 from ..settings import *
 
-DEBUG = True
+DEBUG = False
 ALLOWED_HOSTS = [u'navasangold.com', 'www.navasangold.com']
 DATABASES = {
     'default': {
