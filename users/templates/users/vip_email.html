@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
   <style>
-        body{
+        body p,a{
 
-        font-size:20px;
+        font-size:18px;
         }
         div{
         padding:10px;
@@ -19,17 +19,17 @@
 </head>
 <body dir="rtl">
 <div>
- <h1>سلام {{username}}</h1>
-<p>پرداخت شما با موفقیت انجام شد .</p>
+ <h1 >سلام {{username}}</h1>
+<p style="color:#000;">پرداخت شما با موفقیت انجام شد .</p>
     <p>شماره تراکنش:{{transaction_number}}</p>
    {% if tariffs_number == '1' %}
-    <p>اشتراک ۱ ماهه برای شما فعال شد. </p>
+    <p>اشتراک ۱ ماهه برای شما فعال گردید. </p>
     {% elif tariffs_number == '2' %}
-    <p>اشتراک ۳ ماهه برای شما فعال شد. </p>
+    <p>اشتراک ۳ ماهه برای شما فعال گردید. </p>
     {% elif tariffs_number == '3' %}
-    <p>اشتراک ۶ ماهه برای شما فعال شد. </p>
+    <p>اشتراک ۶ ماهه برای شما فعال گردید. </p>
     {% else %}
-    <p>اشتراک ۱۲ ماهه برای شما فعال شد. </p>
+    <p>اشتراک ۱۲ ماهه برای شما فعال گردید. </p>
 {% endif %}
     <a href="https://navasangold.com" >نوسان گلد</a>
 </div>
