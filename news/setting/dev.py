@@ -1,3 +1,3 @@
-from ..settings import *
+from .prod import *
 
 DEBUG = True
