@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="83ce492f-81ab-4045-9bd2-7537fae0f724" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/news/setting/dev.py" afterPath="$PROJECT_DIR$/news/setting/dev.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/news/setting/prod.py" afterPath="$PROJECT_DIR$/news/setting/prod.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -38,14 +38,24 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/posts/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="455">
-              <caret line="218" column="48" lean-forward="false" selection-start-line="218" selection-start-column="48" selection-end-line="218" selection-end-column="48" />
+            <state relative-caret-position="325">
+              <caret line="219" column="50" lean-forward="true" selection-start-line="219" selection-start-column="50" selection-end-line="219" selection-end-column="50" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dev.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="prod.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/news/setting/prod.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="52">
+              <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dev.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/news/setting/dev.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
@@ -125,7 +135,6 @@
         <option value="$PROJECT_DIR$/specificpages/static/specificpages/js/about-us.js" />
         <option value="$PROJECT_DIR$/posts/static/posts/js/base.js" />
         <option value="$PROJECT_DIR$/posts/static/posts/css/base.css" />
-        <option value="$PROJECT_DIR$/news/setting/prod.py" />
         <option value="$PROJECT_DIR$/posts/static/posts/js/detail.js" />
         <option value="$PROJECT_DIR$/specificpages/views.py" />
         <option value="$PROJECT_DIR$/specificpages/templates/specificpages/tariffs.html" />
@@ -147,6 +156,7 @@
         <option value="$PROJECT_DIR$/posts/static/posts/css/homepage.css" />
         <option value="$PROJECT_DIR$/posts/templates/posts/homepage.html" />
         <option value="$PROJECT_DIR$/news/setting/dev.py" />
+        <option value="$PROJECT_DIR$/news/setting/prod.py" />
       </list>
     </option>
   </component>
@@ -795,13 +805,6 @@
       <option name="presentableId" value="Default" />
       <updated>1509594326097</updated>
     </task>
-    <task id="LOCAL-00280" summary="margin added to post-text img and author username in detail changed to first name + last name">
-      <created>1514626921959</created>
-      <option name="number" value="00280" />
-      <option name="presentableId" value="LOCAL-00280" />
-      <option name="project" value="LOCAL" />
-      <updated>1514626921961</updated>
-    </task>
     <task id="LOCAL-00281" summary="post-inside-text size changed">
       <created>1514627807813</created>
       <option name="number" value="00281" />
@@ -1138,7 +1141,14 @@
       <option name="project" value="LOCAL" />
       <updated>1516256478903</updated>
     </task>
-    <option name="localTasksCounter" value="329" />
+    <task id="LOCAL-00329" summary="debug true">
+      <created>1516263808498</created>
+      <option name="number" value="00329" />
+      <option name="presentableId" value="LOCAL-00329" />
+      <option name="project" value="LOCAL" />
+      <updated>1516263808499</updated>
+    </task>
+    <option name="localTasksCounter" value="330" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -1241,7 +1251,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="most visited img added to homepage" />
     <MESSAGE value="play with economic template and ichimoko spelling fixed" />
     <MESSAGE value="calender time can be blank now" />
     <MESSAGE value="min-height 1000px added to body" />
@@ -1266,7 +1275,8 @@
     <MESSAGE value="font-family inline fixed" />
     <MESSAGE value="big change:&#10;slides added&#10;telegram banner added&#10;signal model added&#10;signal page created&#10;pamm page edited&#10;recommended system edited&#10;register link added to login page&#10;tariffs page edited" />
     <MESSAGE value="slide img and telegram-banner img added" />
-    <option name="LAST_COMMIT_MESSAGE" value="slide img and telegram-banner img added" />
+    <MESSAGE value="debug true" />
+    <option name="LAST_COMMIT_MESSAGE" value="debug true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1369,13 +1379,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/news/setting/prod.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="10" column="20" lean-forward="false" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -1605,18 +1608,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/posts/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="455">
-          <caret line="218" column="48" lean-forward="false" selection-start-line="218" selection-start-column="48" selection-end-line="218" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/news/setting/dev.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="10" lean-forward="false" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/posts/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="219" column="50" lean-forward="true" selection-start-line="219" selection-start-column="50" selection-end-line="219" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/news/setting/prod.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
           <folding />
         </state>
       </provider>
