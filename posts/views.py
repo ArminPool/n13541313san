@@ -291,6 +291,7 @@ def news(request):
 def calender(request):
     title = "تقویم اقتصادی"
     template_name = 'posts/calender.html'
+
     return render(request, template_name, {'title': title})
 
 
@@ -303,6 +304,7 @@ def economic_calender(request):
             Q(date__icontains=query)
 
         )
+
 
     template_name = 'posts/economic_calender.html'
 
