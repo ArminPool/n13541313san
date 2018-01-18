@@ -22,12 +22,6 @@
 
     <div id="flexible-form">
 
-
-
-
-
-
-
         {% block checker %}
             {% if message  %}
                 <input id="message-checker" value="{{message}}" hidden>
@@ -119,7 +113,10 @@
                        value="تایید">
             </div>
 
-                <a id="show_password_form"> پسورد خود را فراموش کرده اید؟ </a>
+                <a id="show_password_form" > پسورد خود را فراموش کرده اید؟ </a>
+<br>
+
+                <a href="/user/register/" style="position:relative;top:10px;"> حساب ندارید؟برای ثبت نام کلیک کنید.</a>
                 </div>
 
    {% endblock %}

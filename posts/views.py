@@ -19,7 +19,7 @@ from django.views.generic import ListView
 from flask import Flask
 
 from posts.form import CommentForm, CalenderForm, PhotoAttachedForm
-from posts.models import Post, Comment, Calender, BankOrders, PhotoAttached
+from posts.models import Post, Comment, Calender, BankOrders, PhotoAttached, Signal
 from users.forms import UsersContactForm, ContactForm
 from users.models import Author
 
@@ -140,6 +140,7 @@ def detail(request, header):
                 user_prof.save()
 
             if len(Counter(tags_he_saw)) > 4:
+
                 if Counter(tags_he_saw).most_common(5)[4][0] == post.Main_Tag:
 
                     tag_should_remove = Counter(tags_he_saw).most_common(5)[3][0]
@@ -149,10 +150,9 @@ def detail(request, header):
                 tags_he_saw.remove(tag_should_remove)
                 user_prof.save()
 
-
                 context = {'form': form, 'post': post}
 
-            elif len(Counter(tags_he_saw)) == 4:
+            if len(Counter(tags_he_saw)) == 4:
                 show = True
                 favourite_tag1 = Counter(tags_he_saw).most_common(4)[0][0]
                 favourite_tag2 = Counter(tags_he_saw).most_common(4)[1][0]
@@ -284,7 +284,7 @@ def news(request):
     except EmptyPage:
         posts = paginator.page(paginator.num_pages)
         # ---- we mention to title as tag in category template and in this case ----
-    context = {'posts': posts,'most_seen':most_seen, 'tag': title}
+    context = {'posts': posts, 'most_seen': most_seen, 'tag': title}
     return render(request, template_name, context)
 
 
@@ -311,7 +311,6 @@ def economic_calender(request):
 
 
 def bank_orders(request):
-
     template_name = 'posts/bankorders.html'
     if not request.user.is_authenticated:
 
@@ -361,3 +360,19 @@ def upload_photo_affiliate(request):
                 return HttpResponseForbidden('<h1>not allowed</h1>')
         else:
             return HttpResponseForbidden('<h1>not allowed</h1>')
+
+
+def signals(request):
+    template_name = 'posts/signals.html'
+    if not request.user.is_authenticated:
+
+        return render(request, 'posts/no_vip.html')
+
+    elif not request.user.userprofile.have_vip():
+
+        return render(request, 'posts/no_vip.html')
+    else:
+        query_list = Signal.objects.all()
+        context = {'query_list': query_list}
+
+        return render(request, template_name, context)

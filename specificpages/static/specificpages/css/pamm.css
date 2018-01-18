@@ -1,8 +1,12 @@
 
-
 .specificpage-container{
-
+font-size:20px;
 padding-top:25px;
 
+
+}
+.specificpage-container ul{
+
+    list-style-type:none;
 
 }

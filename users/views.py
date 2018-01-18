@@ -54,7 +54,18 @@ def register(request):
             user = form1.save()
 
             UserProfile.create_profile(user, phone_number, city)
+
             login(request, user)
+            email = form1.cleaned_data['email']
+            subject, from_email, to = 'ثبت نام', 'support@navasangold.com', email
+            register_message = "شما در نوسان گلد ثبت نام شدید."
+            text_content = register_message
+            context = {'username': form1.cleaned_data['username']}
+
+            html_content = render_to_string('users/register_email.html', context)
+            msg = EmailMultiAlternatives(subject, text_content, from_email, [to])
+            msg.attach_alternative(html_content, "text/html")
+            msg.send()
 
             return redirect(reverse('posts:home'))
 
@@ -317,13 +328,14 @@ def contact(request):
             return render(request, guest_template_name, context)
 
 
-def back_from_zarinpal(user_prof, tariffs_number):
+def back_from_zarinpal(user_prof, tariffs_number,transaction_number):
     if tariffs_number == '1':
         userprofile = user_prof
         vip_until = userprofile.vip_until + relativedelta(months=1)
 
         userprofile.vip_until = vip_until
         userprofile.save()
+
         Vip.add_vip(user_prof.user.username, 'اشتراک مقاله 1 ماهه', '100000تومان')
 
     elif tariffs_number == '2':
@@ -347,6 +359,18 @@ def back_from_zarinpal(user_prof, tariffs_number):
         userprofile.save()
         Vip.add_vip(user_prof.user.username, 'اشتراک مقاله 12 ماهه', '1000000تومان')
 
+    user = user_prof.user
+    email = user.email
+    subject, from_email, to = 'خرید اشتراک', 'support@navasangold.com', email
+    vip_message = "اشتراک شما فعال شد"
+    text_content = vip_message
+
+    context = {'username': user.username,'tariffs_number':tariffs_number,'transaction_number':transaction_number}
+
+    html_content = render_to_string('users/vip_email.html', context)
+    msg = EmailMultiAlternatives(subject, text_content, from_email, [to])
+    msg.attach_alternative(html_content, "text/html")
+    msg.send()
 
 MMERCHANT_ID = '07842040-dd2f-11e7-b265-005056a205be'
 ZARINPAL_WEBSERVICE = 'https://www.zarinpal.com/pg/services/WebGate/wsdl'
@@ -442,7 +466,7 @@ def verify_after_zarinpal(request, user_id, tariff_number):
                                                     request.GET['Authority'],
                                                     amount)
         if result.Status == 100:
-            back_from_zarinpal(user_prof, tariff_number)
+            back_from_zarinpal(user_prof, tariff_number,str(result.RefID))
             context = {'refID': str(result.RefID), 'tariffs_number': str(tariff_number)}
             return render(request, template_name, context)
 

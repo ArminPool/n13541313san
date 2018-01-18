@@ -28,6 +28,12 @@ max-width:500px;
 padding:0px;
 }
 
+login-container a {
+
+font-size:15px;
+
+}
+
 
 
 
@@ -40,9 +46,10 @@ display:none;
 
 #flexible-form{
 max-width:500px;
-max-height:400px;
+max-height:500px;
 background-color:rgba(250,250,250,.5);
-
+border-top-right-radius: 10px;
+border-top-left-radius: 10px;
 }
 
 #form-header{
@@ -54,6 +61,8 @@ font-size: 15px;
 text-align: center;
 
 
+border-top-right-radius: 8px;
+border-top-left-radius: 8px;
 
 }
 

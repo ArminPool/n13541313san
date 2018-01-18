@@ -195,3 +195,37 @@ class BankOrders(models.Model):
     def __str__(self):
         return self.Bank + ' ' + 'Order: ' + self.Order + ' ' + 'Date: ' + str(
             self.Date) + ' ' + 'Take_Profit: ' + self.Take_Profit
+
+
+class Signal(models.Model):
+    author = models.ForeignKey(Author, null=False)
+
+    Pair_Options = (('AUDCAD', 'AUDCAD'), ('AUDCHF', 'AUDCHF'), ('AUDNZD', 'AUDNZD'), ('AUDUSD', 'AUDUSD'),
+                    ('CADCHF', 'CADCHF'), ('CADJPY', 'CADJPY'), ('CHFJPY', 'CHFJPY'),
+
+                    ('EURAUD', 'EURAUD'), ('EURCHF', 'EURCHF'), ('EURGBP', 'EURGBP'), ('EURUSD', 'EURUSD')
+                    , ('GBPAUD', 'GBPAUD'), ('GBPCHF', 'GBPCHF'), ('GBPUSD', 'GBPUSD'), ('GOLD', 'GOLD')
+                    , ('NZDCAD', 'NZDCAD'), ('NZDUSD', 'NZDUSD')
+                    , ('USDJPY', 'USDJPY'), ('USDCAD', 'USDCAD'),
+
+                    )
+
+    Pair = models.CharField(choices=Pair_Options, default='', max_length=100)
+
+    Date = models.DateField()
+    Order_Options = (('Sell', 'Sell'), ('Sell Limit', 'Sell Limit'), ('Sell Stop', 'Sell Stop'), ('Buy', 'Buy'),
+                     ('Buy Limit', 'Buy Limit'), ('Buy Stop', 'Buy Stop'),
+                     )
+
+    Order = models.CharField(choices=Order_Options, default='', max_length=100)
+    Status_Options = (('Active', 'Active'), ('Pending', 'Pending'), ('Take Profit', 'Take Profit'), ('Stop Loss', 'Stop Loss'))
+
+    Status = models.CharField(choices=Status_Options, default='Pending', max_length=100)
+
+    Entry = models.CharField(max_length=50)
+    Take_Profit = models.CharField(max_length=50)
+    Stop_Loss = models.CharField(max_length=50)
+
+    def __str__(self):
+        return self.author.user.username + ' ' + 'Order: ' + self.Order + ' ' + 'Date: ' + str(
+            self.Date) + ' ' + 'Take_Profit: ' + self.Take_Profit

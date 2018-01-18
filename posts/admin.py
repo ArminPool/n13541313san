@@ -10,7 +10,7 @@ from django.utils.safestring import mark_safe
 from users.models import UserProfile, GuestMessage, UsersMessage, Token, Author, Vip
 
 from django.db import models
-from posts.models import Post, Comment, Calender, BankOrders, PhotoAttached
+from posts.models import Post, Comment, Calender, BankOrders, PhotoAttached, Signal
 
 
 class AdminPost(admin.ModelAdmin):
@@ -74,7 +74,10 @@ class AdminPost(admin.ModelAdmin):
 admin.site.register(Post, AdminPost)
 admin.site.register(Comment)
 admin.site.register(BankOrders)
+
 admin.site.register(Calender)
+admin.site.register(Signal)
+
 admin.site.register(PhotoAttached)
 
 admin.site.register(UserProfile)

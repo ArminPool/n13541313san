@@ -22,6 +22,6 @@ def specific_pages(request, page):
 
     return render(request, template_name)
 
-@login_required
+
 def tariffs(request):
     return render(request,'specificpages/tariffs.html')
