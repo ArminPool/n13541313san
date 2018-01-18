@@ -2,22 +2,37 @@
 <html lang="en" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+  <style>
+        body{
+
+        font-size:20px;
+        }
+        div{
+        padding:10px;
+
+
+        }
+        a{
+        text-decoration:none;
+        }
+    </style>
 </head>
-<body>
+<body dir="rtl">
+<div>
  <h1>سلام {{username}}</h1>
 <p>پرداخت شما با موفقیت انجام شد .</p>
     <p>شماره تراکنش:{{transaction_number}}</p>
    {% if tariffs_number == '1' %}
-    <p>اشتراک 1ماهه برای شما فعال شد </p>
+    <p>اشتراک ۱ ماهه برای شما فعال شد. </p>
     {% elif tariffs_number == '2' %}
-    <p>اشتراک 3ماهه برای شما فعال شد </p>
+    <p>اشتراک ۳ ماهه برای شما فعال شد. </p>
     {% elif tariffs_number == '3' %}
-    <p>اشتراک 6ماهه برای شما فعال شد </p>
+    <p>اشتراک ۶ ماهه برای شما فعال شد. </p>
     {% else %}
-    <p>اشتراک 12ماهه برای شما فعال شد </p>
+    <p>اشتراک ۱۲ ماهه برای شما فعال شد. </p>
 {% endif %}
-
+    <a href="https://navasangold.com" >نوسان گلد</a>
+</div>
 </body>
 
 </html>

@@ -1,5 +1,5 @@
 $(document).ready(function() {
-
+ $(this).scrollTop(0);
 var ScreenWidth = $(window).width();
 
 

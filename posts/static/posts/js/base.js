@@ -271,6 +271,7 @@ $('.menu6').removeAttr("style");
 
 
 if($(this).width() != ScreenWidth){
+$("#main").css("margin-top",navbarHeight);
 
 
 if($(this).width() < 951){
