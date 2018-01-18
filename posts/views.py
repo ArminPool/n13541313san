@@ -216,7 +216,7 @@ def search(request):
             Q(Tags__icontains=query)
 
         )
-    context = {'posts': queryset_list, 'tag': query,'most_seen':most_seen}
+    context = {'posts': queryset_list, 'tag': query, 'most_seen': most_seen}
     return render(request, template_name, context)
 
 
@@ -304,7 +304,6 @@ def economic_calender(request):
             Q(date__icontains=query)
 
         )
-
 
     template_name = 'posts/economic_calender.html'
 

@@ -1,3 +1,7 @@
+
+.specificpage-container{
+font-size: 20px;
+}
 ul{
 
 list-style-type:none;
@@ -5,7 +9,13 @@ list-style-type:none;
 }
 .heading{
 
-font-size:17px;
+font-size:25px;
 
+
+}
+
+#mql-heading{
+
+font-size:30px;
 
 }

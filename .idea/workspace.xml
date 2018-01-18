@@ -5,8 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="83ce492f-81ab-4045-9bd2-7537fae0f724" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/specificpages/static/specificpages/img/pamm-page.jpg" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/specificpages/static/specificpages/img/pamm-page.png" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/static/posts/img/Logo grey transparent.png" afterPath="$PROJECT_DIR$/posts/static/posts/img/Logo grey transparent.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/views.py" afterPath="$PROJECT_DIR$/posts/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/specificpages/static/specificpages/css/mql.css" afterPath="$PROJECT_DIR$/specificpages/static/specificpages/css/mql.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/specificpages/templates/specificpages/mql.html" afterPath="$PROJECT_DIR$/specificpages/templates/specificpages/mql.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/specificpages/templates/specificpages/pamm.html" afterPath="$PROJECT_DIR$/specificpages/templates/specificpages/pamm.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/specificpages/views.py" afterPath="$PROJECT_DIR$/specificpages/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/users/templates/users/vip_email.html" afterPath="$PROJECT_DIR$/users/templates/users/vip_email.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/users/views.py" afterPath="$PROJECT_DIR$/users/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,31 +27,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/users/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-572">
-              <caret line="211" column="25" lean-forward="false" selection-start-line="211" selection-start-column="25" selection-end-line="211" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/posts/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="306" column="0" lean-forward="false" selection-start-line="306" selection-start-column="0" selection-end-line="306" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="vip_email.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="vip_email.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/users/templates/users/vip_email.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="23" column="26" lean-forward="false" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
+            <state relative-caret-position="-182">
+              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#p#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -57,31 +46,41 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/specificpages/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="445">
+              <caret line="27" column="4" lean-forward="false" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mql.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/specificpages/static/specificpages/css/mql.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="286">
+              <caret line="11" column="12" lean-forward="false" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mql.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/specificpages/templates/specificpages/mql.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="275">
+              <caret line="32" column="14" lean-forward="true" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/posts/templates/posts/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="415" column="0" lean-forward="false" selection-start-line="415" selection-start-column="0" selection-end-line="416" selection-end-column="64" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="prod.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/news/setting/prod.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="52">
-              <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="reg_form.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/users/templates/users/reg_form.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3796">
-              <caret line="146" column="67" lean-forward="false" selection-start-line="146" selection-start-column="67" selection-end-line="146" selection-end-column="67" />
+            <state relative-caret-position="431">
+              <caret line="415" column="61" lean-forward="true" selection-start-line="415" selection-start-column="61" selection-end-line="415" selection-end-column="61" />
               <folding />
             </state>
           </provider>
@@ -117,6 +116,16 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="pamm.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/specificpages/templates/specificpages/pamm.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="23" column="60" lean-forward="false" selection-start-line="23" selection-start-column="60" selection-end-line="23" selection-end-column="60" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -138,7 +147,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/posts/templatetags/custom_tags.py" />
         <option value="$PROJECT_DIR$/users/urls.py" />
         <option value="$PROJECT_DIR$/posts/static/posts/js/calenderpage_jQ.js" />
         <option value="$PROJECT_DIR$/posts/static/posts/css/calender.css" />
@@ -151,7 +159,6 @@
         <option value="$USER_HOME$/projectname/package.json" />
         <option value="$PROJECT_DIR$/webpack.config.js" />
         <option value="$USER_HOME$/djangowebpack/package.json" />
-        <option value="$PROJECT_DIR$/specificpages/templates/specificpages/mql.html" />
         <option value="$PROJECT_DIR$/specificpages/templates/specificpages/about-us.html" />
         <option value="$PROJECT_DIR$/specificpages/static/specificpages/css/about-us.css" />
         <option value="$PROJECT_DIR$/users/models.py" />
@@ -172,23 +179,25 @@
         <option value="$PROJECT_DIR$/posts/templates/posts/detail.html" />
         <option value="$PROJECT_DIR$/posts/static/posts/js/homepage.js" />
         <option value="$PROJECT_DIR$/specificpages/static/specificpages/css/pamm.css" />
-        <option value="$PROJECT_DIR$/specificpages/templates/specificpages/pamm.html" />
         <option value="$PROJECT_DIR$/posts/static/posts/css/homepage.css" />
         <option value="$PROJECT_DIR$/news/setting/dev.py" />
         <option value="$PROJECT_DIR$/posts/templates/posts/category.html" />
         <option value="$PROJECT_DIR$/posts/templates/posts/homepage.html" />
         <option value="$PROJECT_DIR$/specificpages/templates/specificpages/repaire.html" />
         <option value="$PROJECT_DIR$/specificpages/templates/specificpages/repair.html" />
-        <option value="$PROJECT_DIR$/specificpages/views.py" />
-        <option value="$PROJECT_DIR$/users/views.py" />
         <option value="$PROJECT_DIR$/news/setting/prod.py" />
-        <option value="$PROJECT_DIR$/posts/views.py" />
         <option value="$PROJECT_DIR$/posts/models.py" />
         <option value="$PROJECT_DIR$/users/templates/users/register_email.html" />
         <option value="$PROJECT_DIR$/users/static/users/css/reg-form.css" />
         <option value="$PROJECT_DIR$/posts/static/posts/js/base.js" />
         <option value="$PROJECT_DIR$/users/static/users/js/reg-form.js" />
         <option value="$PROJECT_DIR$/users/templates/users/vip_email.html" />
+        <option value="$PROJECT_DIR$/users/views.py" />
+        <option value="$PROJECT_DIR$/posts/views.py" />
+        <option value="$PROJECT_DIR$/specificpages/views.py" />
+        <option value="$PROJECT_DIR$/specificpages/templates/specificpages/mql.html" />
+        <option value="$PROJECT_DIR$/specificpages/static/specificpages/css/mql.css" />
+        <option value="$PROJECT_DIR$/specificpages/templates/specificpages/pamm.html" />
       </list>
     </option>
   </component>
@@ -690,19 +699,19 @@
     <property name="add_unversioned_files" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\armin\news\specificpages\static\specificpages\img" />
-      <recent name="C:\Users\armin\news\posts\static\posts\img" />
-      <recent name="C:\Users\armin\news\specificpages\static\specificpages\img\tariffs" />
-      <recent name="C:\Users\armin\news\posts\static\posts\js" />
-      <recent name="C:\Users\armin\news\posts\templates\posts" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\armin\news\posts\static\posts\img" />
       <recent name="C:\Users\armin\news\users\templates\users" />
       <recent name="C:\Users\armin\news\news\media\uploaded\users\pro_img" />
       <recent name="C:\Users\armin\news\posts\templates" />
       <recent name="C:\Users\armin\news\news\static" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\armin\news\posts\static\posts\img" />
+      <recent name="C:\Users\armin\news\specificpages\static\specificpages\img" />
+      <recent name="C:\Users\armin\news\specificpages\static\specificpages\img\tariffs" />
+      <recent name="C:\Users\armin\news\posts\static\posts\js" />
+      <recent name="C:\Users\armin\news\posts\templates\posts" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -862,13 +871,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1509594326097</updated>
-    </task>
-    <task id="LOCAL-00297" summary="tariffs">
-      <created>1514707758317</created>
-      <option name="number" value="00297" />
-      <option name="presentableId" value="LOCAL-00297" />
-      <option name="project" value="LOCAL" />
-      <updated>1514707758317</updated>
     </task>
     <task id="LOCAL-00298" summary="tariffs">
       <created>1514707993480</created>
@@ -1206,7 +1208,14 @@
       <option name="project" value="LOCAL" />
       <updated>1516294683113</updated>
     </task>
-    <option name="localTasksCounter" value="346" />
+    <task id="LOCAL-00346" summary="vip-email changed">
+      <created>1516295216978</created>
+      <option name="number" value="00346" />
+      <option name="presentableId" value="LOCAL-00346" />
+      <option name="project" value="LOCAL" />
+      <updated>1516295216978</updated>
+    </task>
+    <option name="localTasksCounter" value="347" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -1220,9 +1229,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24011713" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24011713" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32913387" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.11181103" sideWeight="0.5087848" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32913387" sideWeight="0.49707174" order="2" side_tool="false" content_ui="tabs" />
@@ -1288,7 +1296,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="BankOrder sets to vip" />
     <MESSAGE value="navbar fix on scroll top time changed" />
     <MESSAGE value="is_author null=True" />
     <MESSAGE value="is_author default = False" />
@@ -1313,7 +1320,8 @@
     <MESSAGE value="register-email changed" />
     <MESSAGE value="vip-email changed&#10;reg-form bug fixed" />
     <MESSAGE value="vip-email changed" />
-    <option name="LAST_COMMIT_MESSAGE" value="vip-email changed" />
+    <MESSAGE value="logo size changed pamm img compressed" />
+    <option name="LAST_COMMIT_MESSAGE" value="logo size changed pamm img compressed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1322,11 +1330,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/posts/favicon.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/posts/templates/posts/no_vip.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
@@ -1484,31 +1487,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/posts/static/posts/img/slide1-3.png" />
     <entry file="file://$PROJECT_DIR$/posts/static/posts/img/slide1.jpg" />
-    <entry file="file://$PROJECT_DIR$/specificpages/templates/specificpages/mql.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="24" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/specificpages/static/specificpages/css/mql.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/specificpages/static/specificpages/css/pamm.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="52">
           <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/specificpages/templates/specificpages/pamm.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="38" column="9" lean-forward="false" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -1551,13 +1533,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/specificpages/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="497">
-          <caret line="29" column="8" lean-forward="false" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/posts/templates/posts/category.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="52">
@@ -1569,14 +1544,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="265">
           <caret line="154" column="25" lean-forward="true" selection-start-line="154" selection-start-column="0" selection-end-line="155" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/posts/templates/posts/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="415" column="0" lean-forward="false" selection-start-line="415" selection-start-column="0" selection-end-line="416" selection-end-column="64" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1638,34 +1605,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/posts/static/posts/js/base.js">
+    <entry file="file://$PROJECT_DIR$/posts/templates/posts/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="5" column="13" lean-forward="true" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/posts/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="306" column="0" lean-forward="false" selection-start-line="306" selection-start-column="0" selection-end-line="306" selection-end-column="0" />
+        <state relative-caret-position="431">
+          <caret line="415" column="61" lean-forward="true" selection-start-line="415" selection-start-column="61" selection-end-line="415" selection-end-column="61" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/users/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-572">
-          <caret line="211" column="25" lean-forward="false" selection-start-line="211" selection-start-column="25" selection-end-line="211" selection-end-column="25" />
+        <state relative-caret-position="260">
+          <caret line="45" column="24" lean-forward="false" selection-start-line="45" selection-start-column="24" selection-end-line="45" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/posts/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1337">
+          <caret line="306" column="0" lean-forward="false" selection-start-line="306" selection-start-column="0" selection-end-line="306" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/users/templates/users/vip_email.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="23" column="26" lean-forward="false" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
+        <state relative-caret-position="-182">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#p#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1677,6 +1644,51 @@
             <element signature="n#style#0;n#a#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/specificpages/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="445">
+          <caret line="27" column="4" lean-forward="false" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/specificpages/templates/specificpages/mql.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="32" column="14" lean-forward="true" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/specificpages/static/specificpages/css/mql.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="11" column="12" lean-forward="false" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/posts/static/posts/js/base.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="5" column="13" lean-forward="true" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/specificpages/templates/specificpages/pamm.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="23" column="60" lean-forward="false" selection-start-line="23" selection-start-column="60" selection-end-line="23" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/posts/static/posts/img/Logo grey transparent.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
   </component>
