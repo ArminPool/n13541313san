@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="83ce492f-81ab-4045-9bd2-7537fae0f724" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/static/posts/js/jquery.min.js" afterPath="$PROJECT_DIR$/posts/static/posts/js/jquery.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/templates/posts/base.html" afterPath="$PROJECT_DIR$/posts/templates/posts/base.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/templates/posts/homepage.html" afterPath="$PROJECT_DIR$/posts/templates/posts/homepage.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,16 +19,6 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/news/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-5067">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="jquery.iframe-transport.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/posts/static/posts/js/jquery.iframe-transport.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -54,6 +44,16 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="17187" lean-forward="false" selection-start-line="0" selection-start-column="17187" selection-end-line="0" selection-end-column="17187" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/posts/templates/posts/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="130">
+              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -99,11 +99,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="homepage.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="homepage.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/posts/templates/posts/homepage.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="260">
-              <caret line="10" column="94" lean-forward="false" selection-start-line="10" selection-start-column="94" selection-end-line="10" selection-end-column="94" />
+              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -158,7 +158,6 @@
         <option value="$PROJECT_DIR$/users/static/users/css/login.css" />
         <option value="$PROJECT_DIR$/posts/admin.py" />
         <option value="$PROJECT_DIR$/news/urls.py" />
-        <option value="$PROJECT_DIR$/posts/templates/posts/base.html" />
         <option value="$PROJECT_DIR$/posts/templates/posts/signals.html" />
         <option value="$PROJECT_DIR$/posts/templates/posts/detail.html" />
         <option value="$PROJECT_DIR$/posts/static/posts/js/homepage.js" />
@@ -191,6 +190,7 @@
         <option value="$PROJECT_DIR$/posts/static/posts/js/jquery.waypoints.min.js" />
         <option value="$PROJECT_DIR$/posts/static/posts/js/jquery.min.js" />
         <option value="$PROJECT_DIR$/posts/templates/posts/homepage.html" />
+        <option value="$PROJECT_DIR$/posts/templates/posts/base.html" />
       </list>
     </option>
   </component>
@@ -865,13 +865,6 @@
       <option name="presentableId" value="Default" />
       <updated>1509594326097</updated>
     </task>
-    <task id="LOCAL-00301" summary="most visited img added to homepage">
-      <created>1514708627263</created>
-      <option name="number" value="00301" />
-      <option name="presentableId" value="LOCAL-00301" />
-      <option name="project" value="LOCAL" />
-      <updated>1514708627263</updated>
-    </task>
     <task id="LOCAL-00302" summary="most visited img added to homepage">
       <created>1514708717508</created>
       <option name="number" value="00302" />
@@ -1208,7 +1201,14 @@
       <option name="project" value="LOCAL" />
       <updated>1516337437770</updated>
     </task>
-    <option name="localTasksCounter" value="350" />
+    <task id="LOCAL-00350" summary="google tag added &#10;jquery.min.js compressed">
+      <created>1516339234092</created>
+      <option name="number" value="00350" />
+      <option name="presentableId" value="LOCAL-00350" />
+      <option name="project" value="LOCAL" />
+      <updated>1516339234092</updated>
+    </task>
+    <option name="localTasksCounter" value="351" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -1290,7 +1290,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="is_author default = False" />
     <MESSAGE value="big change: infinite scroll bar color changed - all top style in SideNav and main changed to margin-top .1 week free vip for new users , city name fixed ,registration form extra save deleted ,container added to no vip,account links removed" />
     <MESSAGE value="print() deleted from functions and pagination item per load increased to 6" />
     <MESSAGE value="border-radius added to anonymous-user imgs in detail page" />
@@ -1315,7 +1314,8 @@
     <MESSAGE value="logo size changed pamm img compressed" />
     <MESSAGE value="posts/static/js files compressed again" />
     <MESSAGE value="homepage images optimized" />
-    <option name="LAST_COMMIT_MESSAGE" value="homepage images optimized" />
+    <MESSAGE value="google tag added &#10;jquery.min.js compressed" />
+    <option name="LAST_COMMIT_MESSAGE" value="google tag added &#10;jquery.min.js compressed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1501,14 +1501,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/posts/templates/posts/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10790">
-          <caret line="415" column="61" lean-forward="false" selection-start-line="415" selection-start-column="61" selection-end-line="415" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/users/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
@@ -1681,7 +1673,15 @@
     <entry file="file://$PROJECT_DIR$/posts/templates/posts/homepage.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
-          <caret line="10" column="94" lean-forward="false" selection-start-line="10" selection-start-column="94" selection-end-line="10" selection-end-column="94" />
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/posts/templates/posts/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding />
         </state>
       </provider>
