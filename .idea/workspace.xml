@@ -5,14 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="83ce492f-81ab-4045-9bd2-7537fae0f724" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/static/posts/img/instagram.png" afterPath="$PROJECT_DIR$/posts/static/posts/img/instagram.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/static/posts/img/slide1.png" afterPath="$PROJECT_DIR$/posts/static/posts/img/slide1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/static/posts/img/slide2.png" afterPath="$PROJECT_DIR$/posts/static/posts/img/slide2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/static/posts/img/slide3.png" afterPath="$PROJECT_DIR$/posts/static/posts/img/slide3.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/static/posts/img/telegram.png" afterPath="$PROJECT_DIR$/posts/static/posts/img/telegram.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/static/posts/img/twitter.png" afterPath="$PROJECT_DIR$/posts/static/posts/img/twitter.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/static/posts/img/user.png" afterPath="$PROJECT_DIR$/posts/static/posts/img/user.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/static/posts/js/jquery.min.js" afterPath="$PROJECT_DIR$/posts/static/posts/js/jquery.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/templates/posts/homepage.html" afterPath="$PROJECT_DIR$/posts/templates/posts/homepage.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -84,11 +79,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jquery.waypoints.min.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="jquery.waypoints.min.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/posts/static/posts/js/jquery.waypoints.min.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="8837" lean-forward="false" selection-start-line="0" selection-start-column="8837" selection-end-line="0" selection-end-column="8837" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jquery.min.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/posts/static/posts/js/jquery.min.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="86129" lean-forward="false" selection-start-line="0" selection-start-column="86129" selection-end-line="0" selection-end-column="86129" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="homepage.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/posts/templates/posts/homepage.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="260">
+              <caret line="10" column="94" lean-forward="false" selection-start-line="10" selection-start-column="94" selection-end-line="10" selection-end-column="94" />
               <folding />
             </state>
           </provider>
@@ -125,7 +140,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/news/settings.py" />
         <option value="$USER_HOME$/projectname/package.json" />
         <option value="$PROJECT_DIR$/webpack.config.js" />
         <option value="$USER_HOME$/djangowebpack/package.json" />
@@ -152,7 +166,6 @@
         <option value="$PROJECT_DIR$/posts/static/posts/css/homepage.css" />
         <option value="$PROJECT_DIR$/news/setting/dev.py" />
         <option value="$PROJECT_DIR$/posts/templates/posts/category.html" />
-        <option value="$PROJECT_DIR$/posts/templates/posts/homepage.html" />
         <option value="$PROJECT_DIR$/specificpages/templates/specificpages/repaire.html" />
         <option value="$PROJECT_DIR$/specificpages/templates/specificpages/repair.html" />
         <option value="$PROJECT_DIR$/news/setting/prod.py" />
@@ -176,6 +189,8 @@
         <option value="$PROJECT_DIR$/posts/static/posts/js/jquery.validate.js" />
         <option value="$PROJECT_DIR$/posts/static/posts/js/infinite.min.js" />
         <option value="$PROJECT_DIR$/posts/static/posts/js/jquery.waypoints.min.js" />
+        <option value="$PROJECT_DIR$/posts/static/posts/js/jquery.min.js" />
+        <option value="$PROJECT_DIR$/posts/templates/posts/homepage.html" />
       </list>
     </option>
   </component>
@@ -850,13 +865,6 @@
       <option name="presentableId" value="Default" />
       <updated>1509594326097</updated>
     </task>
-    <task id="LOCAL-00300" summary="tariffs">
-      <created>1514708177085</created>
-      <option name="number" value="00300" />
-      <option name="presentableId" value="LOCAL-00300" />
-      <option name="project" value="LOCAL" />
-      <updated>1514708177089</updated>
-    </task>
     <task id="LOCAL-00301" summary="most visited img added to homepage">
       <created>1514708627263</created>
       <option name="number" value="00301" />
@@ -1193,7 +1201,14 @@
       <option name="project" value="LOCAL" />
       <updated>1516336937029</updated>
     </task>
-    <option name="localTasksCounter" value="349" />
+    <task id="LOCAL-00349" summary="homepage images optimized">
+      <created>1516337437769</created>
+      <option name="number" value="00349" />
+      <option name="presentableId" value="LOCAL-00349" />
+      <option name="project" value="LOCAL" />
+      <updated>1516337437770</updated>
+    </task>
+    <option name="localTasksCounter" value="350" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -1275,7 +1290,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="is_author null=True" />
     <MESSAGE value="is_author default = False" />
     <MESSAGE value="big change: infinite scroll bar color changed - all top style in SideNav and main changed to margin-top .1 week free vip for new users , city name fixed ,registration form extra save deleted ,container added to no vip,account links removed" />
     <MESSAGE value="print() deleted from functions and pagination item per load increased to 6" />
@@ -1300,7 +1314,8 @@
     <MESSAGE value="vip-email changed" />
     <MESSAGE value="logo size changed pamm img compressed" />
     <MESSAGE value="posts/static/js files compressed again" />
-    <option name="LAST_COMMIT_MESSAGE" value="posts/static/js files compressed again" />
+    <MESSAGE value="homepage images optimized" />
+    <option name="LAST_COMMIT_MESSAGE" value="homepage images optimized" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1309,13 +1324,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/users/static/users/css/login.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="50" column="27" lean-forward="false" selection-start-line="50" selection-start-column="25" selection-end-line="50" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/users/templates/users/reset_password_email.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1417,13 +1425,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="10" lean-forward="false" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/posts/templates/posts/homepage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3458">
-          <caret line="133" column="45" lean-forward="false" selection-start-line="133" selection-start-column="45" selection-end-line="133" selection-end-column="45" />
         </state>
       </provider>
     </entry>
@@ -1665,6 +1666,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="8837" lean-forward="false" selection-start-line="0" selection-start-column="8837" selection-end-line="0" selection-end-column="8837" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/posts/static/posts/js/jquery.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="86129" lean-forward="false" selection-start-line="0" selection-start-column="86129" selection-end-line="0" selection-end-column="86129" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/posts/templates/posts/homepage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="10" column="94" lean-forward="false" selection-start-line="10" selection-start-column="94" selection-end-line="10" selection-end-column="94" />
           <folding />
         </state>
       </provider>
