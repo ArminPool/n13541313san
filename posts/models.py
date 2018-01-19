@@ -50,7 +50,7 @@ class Post(models.Model):
 
     Tags = ListTextField(
         base_field=models.CharField(max_length=20),
-        size=3,
+        size=6,
     )
     seen = models.IntegerField(default=0)
 
@@ -205,8 +205,8 @@ class Signal(models.Model):
 
                     ('EURAUD', 'EURAUD'), ('EURCHF', 'EURCHF'), ('EURGBP', 'EURGBP'), ('EURUSD', 'EURUSD')
                     , ('GBPAUD', 'GBPAUD'), ('GBPCHF', 'GBPCHF'), ('GBPUSD', 'GBPUSD'), ('GOLD', 'GOLD')
-                    , ('NZDCAD', 'NZDCAD'), ('NZDUSD', 'NZDUSD')
-                    , ('USDJPY', 'USDJPY'), ('USDCAD', 'USDCAD'),
+                    , ('NZDCAD', 'NZDCAD'), ('NZDUSD', 'NZDUSD'),
+                    ('USDCHF', 'USDCHF'),('USDJPY', 'USDJPY'), ('USDCAD', 'USDCAD'),
 
                     )
 
@@ -218,7 +218,8 @@ class Signal(models.Model):
                      )
 
     Order = models.CharField(choices=Order_Options, default='', max_length=100)
-    Status_Options = (('Active', 'Active'), ('Pending', 'Pending'), ('Take Profit', 'Take Profit'), ('Stop Loss', 'Stop Loss'))
+    Status_Options = (
+    ('Active', 'Active'), ('Pending', 'Pending'), ('Take Profit', 'Take Profit'), ('Stop Loss', 'Stop Loss'))
 
     Status = models.CharField(choices=Status_Options, default='Pending', max_length=100)
 
