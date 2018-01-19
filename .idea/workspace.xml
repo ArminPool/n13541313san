@@ -5,15 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="83ce492f-81ab-4045-9bd2-7537fae0f724" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/static/posts/img/instagram.png" afterPath="$PROJECT_DIR$/posts/static/posts/img/instagram.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/static/posts/img/slide1.png" afterPath="$PROJECT_DIR$/posts/static/posts/img/slide1.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/static/posts/img/slide2.png" afterPath="$PROJECT_DIR$/posts/static/posts/img/slide2.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/static/posts/img/slide3.png" afterPath="$PROJECT_DIR$/posts/static/posts/img/slide3.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/static/posts/img/telegram.png" afterPath="$PROJECT_DIR$/posts/static/posts/img/telegram.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/static/posts/img/twitter.png" afterPath="$PROJECT_DIR$/posts/static/posts/img/twitter.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/static/posts/img/user.png" afterPath="$PROJECT_DIR$/posts/static/posts/img/user.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/static/posts/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/posts/static/posts/js/bootstrap.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/static/posts/js/datepicker.min.js" afterPath="$PROJECT_DIR$/posts/static/posts/js/datepicker.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/static/posts/js/infinite.min.js" afterPath="$PROJECT_DIR$/posts/static/posts/js/infinite.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/static/posts/js/jquery.iframe-transport.js" afterPath="$PROJECT_DIR$/posts/static/posts/js/jquery.iframe-transport.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/static/posts/js/jquery.ui.widget.js" afterPath="$PROJECT_DIR$/posts/static/posts/js/jquery.ui.widget.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/static/posts/js/jquery.validate.js" afterPath="$PROJECT_DIR$/posts/static/posts/js/jquery.validate.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/static/posts/js/jquery.validate.min.js" afterPath="$PROJECT_DIR$/posts/static/posts/js/jquery.validate.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/static/posts/js/jquery.waypoints.min.js" afterPath="$PROJECT_DIR$/posts/static/posts/js/jquery.waypoints.min.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -69,7 +68,7 @@
         <entry file="file://$PROJECT_DIR$/posts/static/posts/js/datepicker.esm.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="208">
-              <caret line="8" column="3" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+              <caret line="8" column="3" lean-forward="false" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -678,19 +677,19 @@
     <property name="add_unversioned_files" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\armin\news\posts\static\posts\img" />
-      <recent name="C:\Users\armin\news\users\templates\users" />
-      <recent name="C:\Users\armin\news\news\media\uploaded\users\pro_img" />
-      <recent name="C:\Users\armin\news\posts\templates" />
-      <recent name="C:\Users\armin\news\news\static" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\armin\news\posts\static\posts\img" />
       <recent name="C:\Users\armin\news\specificpages\static\specificpages\img" />
       <recent name="C:\Users\armin\news\specificpages\static\specificpages\img\tariffs" />
       <recent name="C:\Users\armin\news\posts\static\posts\js" />
       <recent name="C:\Users\armin\news\posts\templates\posts" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\armin\news\posts\static\posts\img" />
+      <recent name="C:\Users\armin\news\users\templates\users" />
+      <recent name="C:\Users\armin\news\news\media\uploaded\users\pro_img" />
+      <recent name="C:\Users\armin\news\posts\templates" />
+      <recent name="C:\Users\armin\news\news\static" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -850,13 +849,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1509594326097</updated>
-    </task>
-    <task id="LOCAL-00299" summary="tariffs">
-      <created>1514708034480</created>
-      <option name="number" value="00299" />
-      <option name="presentableId" value="LOCAL-00299" />
-      <option name="project" value="LOCAL" />
-      <updated>1514708034480</updated>
     </task>
     <task id="LOCAL-00300" summary="tariffs">
       <created>1514708177085</created>
@@ -1194,7 +1186,14 @@
       <option name="project" value="LOCAL" />
       <updated>1516297430979</updated>
     </task>
-    <option name="localTasksCounter" value="348" />
+    <task id="LOCAL-00348" summary="posts/static/js files compressed again">
+      <created>1516336937028</created>
+      <option name="number" value="00348" />
+      <option name="presentableId" value="LOCAL-00348" />
+      <option name="project" value="LOCAL" />
+      <updated>1516336937029</updated>
+    </task>
+    <option name="localTasksCounter" value="349" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -1310,13 +1309,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/users/templates/users/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-426">
-          <caret line="22" column="28" lean-forward="false" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/users/static/users/css/login.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="237">
@@ -1635,7 +1627,7 @@
     <entry file="file://$PROJECT_DIR$/posts/static/posts/js/datepicker.esm.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
-          <caret line="8" column="3" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+          <caret line="8" column="3" lean-forward="false" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
           <folding />
         </state>
       </provider>
@@ -1662,6 +1654,11 @@
           <caret line="0" column="23032" lean-forward="false" selection-start-line="0" selection-start-column="23032" selection-end-line="0" selection-end-column="23032" />
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/posts/static/posts/img/AS_orgin.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/posts/static/posts/js/jquery.waypoints.min.js">
