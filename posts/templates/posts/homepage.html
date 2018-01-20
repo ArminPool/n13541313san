@@ -110,7 +110,7 @@
                                        <span
                                                class="glyphicon glyphicon-calendar"
                                                aria-hidden="true"></span>
-                                        {{ post.date_published|to_jalali|persian_numeric }}
+                                        {{ post.date_published.date|to_jalali|persian_numeric }}
 
                                     </li>
                                     <li>
@@ -185,13 +185,13 @@
 {% endif %}
                     {% endfor %}
 
-
-                </div>
-                <a href="https://t.me/signal_navasan">
-                    <div style="max-width:399px;">
+ <a href="https://t.me/signal_navasan">
+                    <div id="telegram-banner" style="max-width:399px;">
                     <img src="{% static 'posts/img/telegram-banner.png' %}"  class="img-responsive" >
                 </div>
                 </a>
+                </div>
+
 
 
             </div>

@@ -45,6 +45,7 @@ def homepage(request):
 
 
 def tags(request, tag):
+
     if request.method == "GET":
         tag = urllib.parse.unquote(tag).replace('-', ' ')
 
@@ -54,8 +55,9 @@ def tags(request, tag):
             Q(Tags__icontains=tag)
 
         )
+        most_seen = Post.objects.order_by("-seen")[:10]
 
-        paginator = Paginator(posts_list, 1)
+        paginator = Paginator(posts_list, 6)
         template_name = 'posts/category.html'
         page = request.GET.get('page', 1)
 
@@ -65,7 +67,7 @@ def tags(request, tag):
             posts = paginator.page(1)
         except EmptyPage:
             posts = paginator.page(paginator.num_pages)
-        context = {'posts': posts, 'tag': tag}
+        context = {'posts': posts, 'tag': tag,'most_seen':most_seen}
         return render(request, template_name, context)
 
 
@@ -73,8 +75,10 @@ def author(request, author_username):
     author_user_obj = User.objects.get(username=author_username)
     author = Author.objects.get(user=author_user_obj)
     posts_list = Post.objects.filter(author=author)
+    most_seen = Post.objects.order_by("-seen")[:10]
 
-    paginator = Paginator(posts_list, 1)
+
+    paginator = Paginator(posts_list, 6)
     template_name = 'posts/category.html'
     page = request.GET.get('page', 1)
 
@@ -84,7 +88,7 @@ def author(request, author_username):
         posts = paginator.page(1)
     except EmptyPage:
         posts = paginator.page(paginator.num_pages)
-    context = {'posts': posts, }
+    context = {'posts': posts,'most_seen':most_seen }
     return render(request, template_name, context)
 
 

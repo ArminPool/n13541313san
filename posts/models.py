@@ -61,7 +61,7 @@ class Post(models.Model):
         return self.header
 
     def get_absolute_url(self):
-        return '/' + str(self.header).replace(' ', '-') + '/'
+        return '/post/'+ str(self.header).replace(' ', '-') + '/'
 
     def get_Main_Tag(self):
         return str(self.Main_Tag).replace(' ', '-')

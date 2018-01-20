@@ -335,28 +335,28 @@ def back_from_zarinpal(user_prof, tariffs_number,transaction_number):
         userprofile.vip_until = vip_until
         userprofile.save()
 
-        Vip.add_vip(user_prof.user.username, 'اشتراک مقاله 1 ماهه', '100000تومان')
+        Vip.add_vip(user_prof.user.username, 'اشتراک مقاله 1 ماهه', '130000تومان')
 
     elif tariffs_number == '2':
         vip_until = localtime(now()) + relativedelta(months=3)
         userprofile = user_prof
         userprofile.vip_until = vip_until
         userprofile.save()
-        Vip.add_vip(user_prof.user.username, 'اشتراک مقاله 3 ماهه', '250000تومان')
+        Vip.add_vip(user_prof.user.username, 'اشتراک مقاله 3 ماهه', '280000تومان')
 
     elif tariffs_number == '3':
         vip_until = localtime(now()) + relativedelta(months=6)
         userprofile = user_prof
         userprofile.vip_until = vip_until
         userprofile.save()
-        Vip.add_vip(user_prof.user.username, 'اشتراک مقاله 6 ماهه', '500000تومان')
+        Vip.add_vip(user_prof.user.username, 'اشتراک مقاله 6 ماهه', '530000تومان')
 
     elif tariffs_number == '4':
         vip_until = localtime(now()) + relativedelta(months=12)
         userprofile = user_prof
         userprofile.vip_until = vip_until
         userprofile.save()
-        Vip.add_vip(user_prof.user.username, 'اشتراک مقاله 12 ماهه', '1000000تومان')
+        Vip.add_vip(user_prof.user.username, 'اشتراک مقاله 12 ماهه', '980000تومان')
 
     user = user_prof.user
     email = user.email

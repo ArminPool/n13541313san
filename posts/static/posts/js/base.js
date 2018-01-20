@@ -14,6 +14,7 @@ $(document).ready(function() {
         error.insertAfter(element);
     }
 });
+
  var st;
 var isScrolling;
 var didScroll;
@@ -24,10 +25,11 @@ var distance_to_first=0;
 var navbarHeight = $('#navbar-container').outerHeight();
 
 $(window).scroll(function(event){
+
     window.clearTimeout( isScrolling );
 
     didScroll = true;
-        st = $(this).scrollTop();
+    st = $(this).scrollTop();
 
     updatevariables();
     isScrolling = setTimeout(function() {
@@ -53,7 +55,7 @@ $(window).scroll(function(event){
 
         }
 
-    }, 250);
+    }, 200);
 });
 
 
