@@ -5,17 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="83ce492f-81ab-4045-9bd2-7537fae0f724" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/posts/static/posts/img/signal-down.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/posts/static/posts/img/signal-up.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/news/high-priority-page-sitemap.xml" afterPath="$PROJECT_DIR$/news/high-priority-page-sitemap.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/models.py" afterPath="$PROJECT_DIR$/posts/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/static/posts/css/base.css" afterPath="$PROJECT_DIR$/posts/static/posts/css/base.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/static/posts/css/homepage.css" afterPath="$PROJECT_DIR$/posts/static/posts/css/homepage.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/static/posts/js/base.js" afterPath="$PROJECT_DIR$/posts/static/posts/js/base.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/templates/posts/base.html" afterPath="$PROJECT_DIR$/posts/templates/posts/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/templates/posts/economic_calender.html" afterPath="$PROJECT_DIR$/posts/templates/posts/economic_calender.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/templates/posts/homepage.html" afterPath="$PROJECT_DIR$/posts/templates/posts/homepage.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/templates/posts/no_vip.html" afterPath="$PROJECT_DIR$/posts/templates/posts/no_vip.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/templates/posts/signals.html" afterPath="$PROJECT_DIR$/posts/templates/posts/signals.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/templates/posts/BankOrders.html" afterPath="$PROJECT_DIR$/posts/templates/posts/BankOrders.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -785,13 +779,6 @@
       <option name="presentableId" value="Default" />
       <updated>1509594326097</updated>
     </task>
-    <task id="LOCAL-00305" summary="min-height 1000px added to body">
-      <created>1514809577614</created>
-      <option name="number" value="00305" />
-      <option name="presentableId" value="LOCAL-00305" />
-      <option name="project" value="LOCAL" />
-      <updated>1514809577614</updated>
-    </task>
     <task id="LOCAL-00306" summary="navbar only fix if we srcoll top .">
       <created>1514891246005</created>
       <option name="number" value="00306" />
@@ -1128,7 +1115,14 @@
       <option name="project" value="LOCAL" />
       <updated>1516452645933</updated>
     </task>
-    <option name="localTasksCounter" value="354" />
+    <task id="LOCAL-00354" summary="alot of change in style and some img added and fix top navbar mekanizm changed and default value added to some field in posts/model and a pin field added to signal model">
+      <created>1516527924327</created>
+      <option name="number" value="00354" />
+      <option name="presentableId" value="LOCAL-00354" />
+      <option name="project" value="LOCAL" />
+      <updated>1516527924328</updated>
+    </task>
+    <option name="localTasksCounter" value="355" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -1210,7 +1204,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="scroll/navbar bug fixed - navbar right side icon added some change in reg_form.html and about_us.js and news page fixed" />
     <MESSAGE value="bankorders pair of currencies added" />
     <MESSAGE value="Debug = False" />
     <MESSAGE value="detail font changed" />
@@ -1235,7 +1228,8 @@
     <MESSAGE value="google tag added" />
     <MESSAGE value="post tags.length increased to 6 &#10;usdchf added to signals" />
     <MESSAGE value="sitemap url mistake fixed with correcting absolute-url &#10;pagination-bar fixed&#10;pagination limit edited in pages&#10;most-seen added to tags and author view" />
-    <option name="LAST_COMMIT_MESSAGE" value="sitemap url mistake fixed with correcting absolute-url &#10;pagination-bar fixed&#10;pagination limit edited in pages&#10;most-seen added to tags and author view" />
+    <MESSAGE value="alot of change in style and some img added and fix top navbar mekanizm changed and default value added to some field in posts/model and a pin field added to signal model" />
+    <option name="LAST_COMMIT_MESSAGE" value="alot of change in style and some img added and fix top navbar mekanizm changed and default value added to some field in posts/model and a pin field added to signal model" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

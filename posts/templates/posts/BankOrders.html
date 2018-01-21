@@ -65,10 +65,16 @@
 
                 </td>
                 <td class="take-profit" >
+                      {% if item.Take_Profit != '--' %}
+                <img src="{% static 'posts/img/signal-up.png' %}">
+                    {% endif %}
                 {{ item.Take_Profit }}
 
                 </td>
                 <td class="stop-loss" >
+                      {% if item.Stop_Loss != '--' %}
+                <img src="{% static 'posts/img/signal-down.png' %}">
+                    {% endif %}
                 {{ item.Stop_Loss }}
 
                 </td>
