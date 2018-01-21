@@ -4,10 +4,9 @@
     <bookmark url="file://$PROJECT_DIR$/posts/templates/posts/detail.html" line="24" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83ce492f-81ab-4045-9bd2-7537fae0f724" name="Default" comment="article view c">
+    <list default="true" id="83ce492f-81ab-4045-9bd2-7537fae0f724" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/posts/templates/posts/bankorders.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/templates/posts/BankOrders.html" afterPath="$PROJECT_DIR$/posts/templates/posts/BankOrders.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/views.py" afterPath="$PROJECT_DIR$/posts/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -67,8 +66,8 @@
       <file leaf-file-name="bankorders.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/posts/templates/posts/bankorders.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="65" column="21" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
+            <state relative-caret-position="523">
+              <caret line="95" column="0" lean-forward="true" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#td#6;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#td#7;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#!!top" expanded="true" />
@@ -823,13 +822,6 @@
       <option name="presentableId" value="Default" />
       <updated>1509594326097</updated>
     </task>
-    <task id="LOCAL-00307" summary="domestic-dollar url fixed.main left side url fixed,color fixed">
-      <created>1514892801135</created>
-      <option name="number" value="00307" />
-      <option name="presentableId" value="LOCAL-00307" />
-      <option name="project" value="LOCAL" />
-      <updated>1514892801135</updated>
-    </task>
     <task id="LOCAL-00308" summary="footer problem with scroll fixed">
       <created>1514893006617</created>
       <option name="number" value="00308" />
@@ -1166,7 +1158,14 @@
       <option name="project" value="LOCAL" />
       <updated>1516528077849</updated>
     </task>
-    <option name="localTasksCounter" value="356" />
+    <task id="LOCAL-00356" summary="article view changed">
+      <created>1516535403367</created>
+      <option name="number" value="00356" />
+      <option name="presentableId" value="LOCAL-00356" />
+      <option name="project" value="LOCAL" />
+      <updated>1516535403368</updated>
+    </task>
+    <option name="localTasksCounter" value="357" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -1248,8 +1247,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Debug = False" />
-    <MESSAGE value="detail font changed" />
     <MESSAGE value="font-family inline fixed" />
     <MESSAGE value="big change:&#10;slides added&#10;telegram banner added&#10;signal model added&#10;signal page created&#10;pamm page edited&#10;recommended system edited&#10;register link added to login page&#10;tariffs page edited" />
     <MESSAGE value="slide img and telegram-banner img added" />
@@ -1273,7 +1270,9 @@
     <MESSAGE value="sitemap url mistake fixed with correcting absolute-url &#10;pagination-bar fixed&#10;pagination limit edited in pages&#10;most-seen added to tags and author view" />
     <MESSAGE value="alot of change in style and some img added and fix top navbar mekanizm changed and default value added to some field in posts/model and a pin field added to signal model" />
     <MESSAGE value="2img adde" />
-    <option name="LAST_COMMIT_MESSAGE" value="2img adde" />
+    <MESSAGE value="article view changed" />
+    <MESSAGE value="bankorders added again" />
+    <option name="LAST_COMMIT_MESSAGE" value="bankorders added again" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1638,8 +1637,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/posts/templates/posts/bankorders.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="65" column="21" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
+        <state relative-caret-position="523">
+          <caret line="95" column="0" lean-forward="true" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#td#6;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#7;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#!!top" expanded="true" />
