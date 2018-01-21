@@ -69,7 +69,7 @@
                 {{ item.Entry }}
 
                 </td>
-                <td class="take-profit" style="color:#66cd00;">
+                <td id="take-profit">
                     {% if item.Take_Profit != '--' %}
                 <img src="{% static 'posts/img/signal-up.png' %}">
                     {% endif %}
@@ -77,7 +77,7 @@
 
                 </td>
 
-                <td class="stop-loss" style="color:#FD0E35;">
+                <td id="stop-loss">
                        {% if item.Stop_Loss != '--' %}
                 <img src="{% static 'posts/img/signal-down.png' %}">
                     {% endif %}
