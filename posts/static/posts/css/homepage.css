@@ -23,7 +23,8 @@ background-color:transparent;
 padding-top:0px;
 padding-left:0px;
 padding-right:0px;
-
+padding-bottom:0px;
+margin-bottom:0px;
 
 }
 
@@ -131,9 +132,9 @@ padding-right:0px;
 padding-left:0px;
 padding-top:0px;
 padding-bottom:0px;
-box-shadow: none;
+
 margin-top:20px;
-border-radius:4px;
+border-radius:8px;
 border: none;
 }
 
@@ -155,6 +156,7 @@ height:40px;
 background-color:#0066CC;
 border-top-right-radius:4px;
 border-top-left-radius:4px;
+box-shadow: 0px 1px 4px #bbb;
 
 }
 
@@ -173,8 +175,9 @@ height:80px;
 
 }
 #most-seen{
-background-color:#fff;
+border-radius:4px;
 
+background-color:#fff;
 max-width:399px;
 }
 

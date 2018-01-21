@@ -85,6 +85,7 @@ border:none;
 .navbar-fixed-top{
 box-shadow: rgba(0, 0, 0, 0.30) 0px 4px 5px 0px, rgba(0, 0, 0, 0.18) 0px 1px 10px 0px, rgba(0, 0, 0, 0.2) 0px 2px 4px -1px;
 margin-bottom:0px;
+transition: transform .3s ease-in-out;
 }
 
 .navbar-fixed-top .navbar-collapse,.navbar-default .navbar-collapse{
@@ -96,6 +97,7 @@ padding-left:0px;
 padding-right:0px;
 padding-top:15px;
 padding-bottom:0px;
+
 }
 
 

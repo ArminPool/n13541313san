@@ -189,8 +189,8 @@ class BankOrders(models.Model):
     Status = models.CharField(choices=Status_Options, default='Pending', max_length=100)
 
     Entry = models.CharField(max_length=50)
-    Take_Profit = models.CharField(max_length=50)
-    Stop_Loss = models.CharField(max_length=50)
+    Take_Profit = models.CharField(default='--',max_length=50)
+    Stop_Loss = models.CharField(default='--',max_length=50)
 
     def __str__(self):
         return self.Bank + ' ' + 'Order: ' + self.Order + ' ' + 'Date: ' + str(
@@ -224,8 +224,9 @@ class Signal(models.Model):
     Status = models.CharField(choices=Status_Options, default='Pending', max_length=100)
 
     Entry = models.CharField(max_length=50)
-    Take_Profit = models.CharField(max_length=50)
-    Stop_Loss = models.CharField(max_length=50)
+    Take_Profit = models.CharField(default='--', max_length=50)
+    Stop_Loss = models.CharField(default='--', max_length=50)
+    Pin = models.CharField(default='--', max_length=5000)
 
     def __str__(self):
         return self.author.user.username + ' ' + 'Order: ' + self.Order + ' ' + 'Date: ' + str(

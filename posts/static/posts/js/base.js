@@ -25,7 +25,7 @@ var distance_to_first=0;
 var navbarHeight = $('#navbar-container').outerHeight();
 
 $(window).scroll(function(event){
-
+console.log(navbarHeight);
     window.clearTimeout( isScrolling );
 
     didScroll = true;
@@ -39,8 +39,9 @@ $(window).scroll(function(event){
         hasScrolled();
         if ( distance_to_first < 10 ){
 
+            $('.navbar-fixed-top').css('transform','');
 
-           $('#navbar-container').addClass('navbar-fixed-top');
+           //$('#navbar-container').addClass('navbar-fixed-top');
 
         }
  if($('.navbar-fixed-top').length > 0 && distance_to_first > 0) {
@@ -55,7 +56,7 @@ $(window).scroll(function(event){
 
         }
 
-    }, 200);
+    }, 100);
 });
 
 
@@ -96,8 +97,8 @@ function hasScrolled() {
         // Scroll up
 
 
- $('#navbar-container').addClass('navbar-fixed-top');
-
+// $('#navbar-container').addClass('navbar-fixed-top');
+$('.navbar-fixed-top').css('transform','');
 
 
  if(sideNav == 1) {
@@ -119,7 +120,10 @@ function hasScrolled() {
 
          $('#SideNav').css('width','0px');
          $('#main').css('margin-right','0px');
- $('#navbar-container').removeClass('navbar-fixed-top');
+         $('.navbar-fixed-top').css('transform','translateY(-100%)');
+
+
+ //$('#navbar-container').removeClass('navbar-fixed-top');
 
 
 }
