@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="83ce492f-81ab-4045-9bd2-7537fae0f724" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/templates/posts/bankorders.html" afterPath="$PROJECT_DIR$/posts/templates/posts/bankorders.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/templates/posts/signals.html" afterPath="$PROJECT_DIR$/posts/templates/posts/signals.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/news/setting/prod.py" afterPath="$PROJECT_DIR$/news/setting/prod.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -51,11 +50,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="signals.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="signals.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/posts/templates/posts/signals.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="338">
               <caret line="79" column="34" lean-forward="false" selection-start-line="79" selection-start-column="34" selection-end-line="79" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="prod.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/news/setting/prod.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="52">
+              <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dev.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/news/setting/dev.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="52">
+              <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -114,10 +133,8 @@
         <option value="$PROJECT_DIR$/posts/admin.py" />
         <option value="$PROJECT_DIR$/news/urls.py" />
         <option value="$PROJECT_DIR$/specificpages/static/specificpages/css/pamm.css" />
-        <option value="$PROJECT_DIR$/news/setting/dev.py" />
         <option value="$PROJECT_DIR$/specificpages/templates/specificpages/repaire.html" />
         <option value="$PROJECT_DIR$/specificpages/templates/specificpages/repair.html" />
-        <option value="$PROJECT_DIR$/news/setting/prod.py" />
         <option value="$PROJECT_DIR$/users/templates/users/register_email.html" />
         <option value="$PROJECT_DIR$/users/static/users/css/reg-form.css" />
         <option value="$PROJECT_DIR$/users/static/users/js/reg-form.js" />
@@ -153,6 +170,8 @@
         <option value="$PROJECT_DIR$/posts/views.py" />
         <option value="$PROJECT_DIR$/posts/templates/posts/bankorders.html" />
         <option value="$PROJECT_DIR$/posts/templates/posts/signals.html" />
+        <option value="$PROJECT_DIR$/news/setting/dev.py" />
+        <option value="$PROJECT_DIR$/news/setting/prod.py" />
       </list>
     </option>
   </component>
@@ -827,13 +846,6 @@
       <option name="presentableId" value="Default" />
       <updated>1509594326097</updated>
     </task>
-    <task id="LOCAL-00310" summary="recommended posts bug fixed i think,ckeditor width changed">
-      <created>1514974407014</created>
-      <option name="number" value="00310" />
-      <option name="presentableId" value="LOCAL-00310" />
-      <option name="project" value="LOCAL" />
-      <updated>1514974407014</updated>
-    </task>
     <task id="LOCAL-00311" summary="recommended posts bug fixed i think,ckeditor width changed">
       <created>1514976575353</created>
       <option name="number" value="00311" />
@@ -1170,7 +1182,14 @@
       <option name="project" value="LOCAL" />
       <updated>1516535672610</updated>
     </task>
-    <option name="localTasksCounter" value="359" />
+    <task id="LOCAL-00359" summary="bankorders &amp; signal page edited">
+      <created>1516535776264</created>
+      <option name="number" value="00359" />
+      <option name="presentableId" value="LOCAL-00359" />
+      <option name="project" value="LOCAL" />
+      <updated>1516535776264</updated>
+    </task>
+    <option name="localTasksCounter" value="360" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -1252,8 +1271,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="big change:&#10;slides added&#10;telegram banner added&#10;signal model added&#10;signal page created&#10;pamm page edited&#10;recommended system edited&#10;register link added to login page&#10;tariffs page edited" />
-    <MESSAGE value="slide img and telegram-banner img added" />
     <MESSAGE value="debug true" />
     <MESSAGE value="search bug trying to fix" />
     <MESSAGE value="carousel removed from category" />
@@ -1277,7 +1294,9 @@
     <MESSAGE value="article view changed" />
     <MESSAGE value="bankorders added again" />
     <MESSAGE value="bankorders page edited" />
-    <option name="LAST_COMMIT_MESSAGE" value="bankorders page edited" />
+    <MESSAGE value="bankorders &amp; signal page edited" />
+    <MESSAGE value="debug in different environments changed" />
+    <option name="LAST_COMMIT_MESSAGE" value="debug in different environments changed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1286,7 +1305,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/specificpages/templates/specificpages/repaire.html" />
     <entry file="file://$PROJECT_DIR$/specificpages/templates/specificpages/repair.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
@@ -1406,13 +1424,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="427">
           <caret line="0" column="17187" lean-forward="false" selection-start-line="0" selection-start-column="17187" selection-end-line="0" selection-end-column="17187" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/news/setting/prod.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="3" column="59" lean-forward="true" selection-start-line="3" selection-start-column="59" selection-end-line="3" selection-end-column="59" />
         </state>
       </provider>
     </entry>
@@ -1638,10 +1649,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/news/setting/dev.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/posts/templates/posts/signals.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="338">
           <caret line="79" column="34" lean-forward="false" selection-start-line="79" selection-start-column="34" selection-end-line="79" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/news/setting/prod.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
           <folding />
         </state>
       </provider>
