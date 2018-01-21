@@ -257,9 +257,10 @@ def articles(request, find):
     elif find == 'domestic-dollar':
         posts_list = Post.objects.filter(analysis_branch='domestic_dollar')
         title = "تحلیلات دلار داخلی"
+    most_seen = Post.objects.order_by("-seen")[:10]
 
     paginator = Paginator(posts_list, 6)
-    template_name = 'posts/homepage.html'
+    template_name = 'posts/category.html'
     page = request.GET.get('page', 1)
 
     try:
@@ -268,7 +269,7 @@ def articles(request, find):
         posts = paginator.page(1)
     except EmptyPage:
         posts = paginator.page(paginator.num_pages)
-    context = {'posts': posts, 'title': title}
+    context = {'posts': posts, 'title': title,'most-seen':most_seen}
     return render(request, template_name, context)
 
 
