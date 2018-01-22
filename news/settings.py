@@ -170,6 +170,8 @@ LOGIN_EXEMPT_URLS = (
     r'^user/logout/$',
     r'^user/register/$'
 )
+
+SESSION_COOKIE_AGE = 35*60
 EMAIL_BACKEND = 'django_smtp_ssl.SSLEmailBackend'
 EMAIL_HOST = 'ir-hs01.serversgig.com'
 EMAIL_PORT = 465

@@ -1,5 +1,5 @@
 from django.conf.urls import url
-
+from django.contrib.auth.views import logout
 import posts
 from users.views import logout_user, send_to_zarinpal, verify_after_zarinpal
 from . import views
@@ -12,7 +12,7 @@ urlpatterns = [
 
     # Allows to render our own login page
     url(r'^login/$', views.login_user, name='login'),
-    url(r'^logout/$', logout_user),
+    url(r'^logout/$', logout, {'next_page': '/'}),
     url(r'register/$', views.register, name='register'),
     url(r'^profile/$', views.view_profile, name='view_profile'),
     url(r'^profile/edit/$', views.edit_profile, name='edit_profile'),
