@@ -3,7 +3,7 @@ import os
 from collections import Counter
 import pytz
 from dateutil.relativedelta import relativedelta
-from django.contrib.auth.models import User
+from django.contrib.auth.models import User, AnonymousUser
 from django.core.exceptions import ObjectDoesNotExist
 from django.core.mail import send_mail, EmailMultiAlternatives
 from django.template.loader import get_template, render_to_string
@@ -157,8 +157,10 @@ def reset_password_confirm(request, token, user_id):
 
 
 def logout_user(request):
-    user = request.user
+
     logout(request)
+    request.session.flush()
+    request.user = AnonymousUser
     return redirect(reverse('posts:home'))
 
 
