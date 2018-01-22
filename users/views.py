@@ -158,7 +158,7 @@ def reset_password_confirm(request, token, user_id):
 
 def logout_user(request):
     user = request.user
-    logout(request, user)
+    logout(request)
     return redirect(reverse('posts:home'))
 
 
