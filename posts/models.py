@@ -61,7 +61,7 @@ class Post(models.Model):
         return self.header
 
     def get_absolute_url(self):
-        return '/post/'+ str(self.header).replace(' ', '-') + '/'
+        return '/post/' + str(self.header).replace(' ', '-') + '/'
 
     def get_Main_Tag(self):
         return str(self.Main_Tag).replace(' ', '-')
@@ -158,15 +158,15 @@ class BankOrders(models.Model):
         (cooperate, 'همکاری'), (problem_buying, 'مشکل در خرید'), (ask_game, 'درخواست بازی'), (others, 'موارد دیگر'))
     issue_options = models.CharField(choices=options, default=cooperate, max_length=2)
     """
-    Pair_Options = (('AUDCAD', 'AUDCAD'), ('AUDCHF', 'AUDCHF'), ('AUDNZD', 'AUDNZD'), ('AUDUSD', 'AUDUSD'),
-                    ('CADCHF', 'CADCHF'), ('CADJPY', 'CADJPY'), ('CHFJPY', 'CHFJPY'),
-
-                    ('EURAUD', 'EURAUD'), ('EURCHF', 'EURCHF'), ('EURGBP', 'EURGBP'), ('EURUSD', 'EURUSD')
-                    , ('GBPAUD', 'GBPAUD'), ('GBPCHF', 'GBPCHF'), ('GBPUSD', 'GBPUSD'), ('GOLD', 'GOLD')
-                    , ('NZDCAD', 'NZDCAD'), ('NZDUSD', 'NZDUSD')
-                    , ('USDJPY', 'USDJPY'), ('USDCAD', 'USDCAD'),
-
-                    )
+    Pair_Options = (
+    ('AUDCAD', 'AUDCAD'), ('AUDCHF', 'AUDCHF'), ('AUDJPY', 'AUDJPY'), ('AUDNZD', 'AUDNZD'), ('AUDUSD', 'AUDUSD'),
+    ('AUS200', 'AUS200'), ('Brent', 'Brent'), ('CADCHF', 'CADCHF'), ('CADJPY', 'CADJPY'), ('CHFJPY', 'CHFJPY'),
+    ('Crude', 'Crude'), ('EURAUD', 'EURAUD'), ('EURCAD', 'EURCAD'), ('EURCHF', 'EURCHF'), ('EURDKK', 'EURDKK'),
+    ('EURGBP', 'EURGBP'), ('EURTRY', 'EURTRY'), ('EURUSD', 'EURUSD'), ('FCHI40', 'FCHI40'), ('GBPAUD', 'GBPAUD'),
+    ('GBPCAD', 'GBPCAD'), ('GBPCHF', 'GBPCHF'), ('GBPDKK', 'GBPDKK'), ('GBPJPY', 'GBPJPY'), ('GBPNZD', 'GBPNZD'),
+    ('GBPPLN', 'GBPPLN'), ('GBPSEK', 'GBPSEK'), ('GBPUSD', 'GBPUSD'), ('GDAUXIm', 'GDAUXIm'), ('Jap225', 'Jap225'),
+    ('NZDCAD', 'NZDCAD'), ('NZDUSD', 'NZDUSD'), ('NatGas', 'NatGas'), ('STOX50', 'STOX50'), ('USDCAD', 'USDCAD'),
+    ('USDJPY', 'USDJPY'), ('XAUUSD', 'XAUUSD'))
 
     Pair = models.CharField(choices=Pair_Options, default='', max_length=100)
     Bank_Options = (('Goldman Sachs', 'Goldman Sachs'), ('Credit Suisse', 'Credit Suisse'), ('Citi Bank', 'Citi Bank'),
@@ -189,8 +189,8 @@ class BankOrders(models.Model):
     Status = models.CharField(choices=Status_Options, default='Pending', max_length=100)
 
     Entry = models.CharField(max_length=50)
-    Take_Profit = models.CharField(default='--',max_length=50)
-    Stop_Loss = models.CharField(default='--',max_length=50)
+    Take_Profit = models.CharField(default='--', max_length=50)
+    Stop_Loss = models.CharField(default='--', max_length=50)
 
     def __str__(self):
         return self.Bank + ' ' + 'Order: ' + self.Order + ' ' + 'Date: ' + str(
@@ -200,15 +200,15 @@ class BankOrders(models.Model):
 class Signal(models.Model):
     author = models.ForeignKey(Author, null=False)
 
-    Pair_Options = (('AUDCAD', 'AUDCAD'), ('AUDCHF', 'AUDCHF'), ('AUDNZD', 'AUDNZD'), ('AUDUSD', 'AUDUSD'),
-                    ('CADCHF', 'CADCHF'), ('CADJPY', 'CADJPY'), ('CHFJPY', 'CHFJPY'),
-
-                    ('EURAUD', 'EURAUD'), ('EURCHF', 'EURCHF'), ('EURGBP', 'EURGBP'), ('EURUSD', 'EURUSD')
-                    , ('GBPAUD', 'GBPAUD'), ('GBPCHF', 'GBPCHF'), ('GBPUSD', 'GBPUSD'), ('GOLD', 'GOLD')
-                    , ('NZDCAD', 'NZDCAD'), ('NZDUSD', 'NZDUSD'),
-                    ('USDCHF', 'USDCHF'),('USDJPY', 'USDJPY'), ('USDCAD', 'USDCAD'),
-
-                    )
+    Pair_Options = (
+    ('AUDCAD', 'AUDCAD'), ('AUDCHF', 'AUDCHF'), ('AUDJPY', 'AUDJPY'), ('AUDNZD', 'AUDNZD'), ('AUDUSD', 'AUDUSD'),
+    ('AUS200', 'AUS200'), ('Brent', 'Brent'), ('CADCHF', 'CADCHF'), ('CADJPY', 'CADJPY'), ('CHFJPY', 'CHFJPY'),
+    ('Crude', 'Crude'), ('EURAUD', 'EURAUD'), ('EURCAD', 'EURCAD'), ('EURCHF', 'EURCHF'), ('EURDKK', 'EURDKK'),
+    ('EURGBP', 'EURGBP'), ('EURTRY', 'EURTRY'), ('EURUSD', 'EURUSD'), ('FCHI40', 'FCHI40'), ('GBPAUD', 'GBPAUD'),
+    ('GBPCAD', 'GBPCAD'), ('GBPCHF', 'GBPCHF'), ('GBPDKK', 'GBPDKK'), ('GBPJPY', 'GBPJPY'), ('GBPNZD', 'GBPNZD'),
+    ('GBPPLN', 'GBPPLN'), ('GBPSEK', 'GBPSEK'), ('GBPUSD', 'GBPUSD'), ('GDAUXIm', 'GDAUXIm'), ('Jap225', 'Jap225'),
+    ('NZDCAD', 'NZDCAD'), ('NZDUSD', 'NZDUSD'), ('NatGas', 'NatGas'), ('STOX50', 'STOX50'), ('USDCAD', 'USDCAD'),
+    ('USDJPY', 'USDJPY'), ('XAUUSD', 'XAUUSD'))
 
     Pair = models.CharField(choices=Pair_Options, default='', max_length=100)
 
@@ -219,7 +219,7 @@ class Signal(models.Model):
 
     Order = models.CharField(choices=Order_Options, default='', max_length=100)
     Status_Options = (
-    ('Active', 'Active'), ('Pending', 'Pending'), ('Take Profit', 'Take Profit'), ('Stop Loss', 'Stop Loss'))
+        ('Active', 'Active'), ('Pending', 'Pending'), ('Take Profit', 'Take Profit'), ('Stop Loss', 'Stop Loss'))
 
     Status = models.CharField(choices=Status_Options, default='Pending', max_length=100)
 

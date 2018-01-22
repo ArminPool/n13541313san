@@ -269,7 +269,7 @@ def articles(request, find):
         posts = paginator.page(1)
     except EmptyPage:
         posts = paginator.page(paginator.num_pages)
-    context = {'posts': posts, 'title': title,'most-seen':most_seen}
+    context = {'posts': posts, 'title': title,'most_seen':most_seen}
     return render(request, template_name, context)
 
 
@@ -293,9 +293,9 @@ def news(request):
     return render(request, template_name, context)
 
 
-def calender(request):
+def calendar(request):
     title = "تقویم اقتصادی"
-    template_name = 'posts/calender.html'
+    template_name = 'posts/calendar.html'
 
     return render(request, template_name, {'title': title})
 

@@ -2,3 +2,5 @@
 /users/migrations/
 /specificpages/migrations/
 /posts/migrations/
+d*.txt
+listcreator.py

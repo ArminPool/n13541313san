@@ -838,7 +838,7 @@ color:#fff;
 text-align:right;
 
 }
-.dropdown-menu > li > a:focus, .dropdown-menu > li > a:hover{
+.dropdown-menu > li > a:focus, .dropdown-menu > li > a:hover,.dropdown-menu > li > a:focus, .dropdown-menu > li > a:active{
 
 
 background:transparent;

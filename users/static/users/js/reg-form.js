@@ -23,7 +23,7 @@ $(".navbar-collapse").css("margin-right","0px");
 else{
 
 
-$(".navbar-collapse").css("margin-right","103px");
+$(".navbar-collapse").css("margin-right","200px");
 
 
 

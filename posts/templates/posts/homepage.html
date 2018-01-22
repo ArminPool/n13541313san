@@ -7,7 +7,7 @@
 {% block meta %}
 <meta name="keywords" content="navasangold, نوسان گلد, طلا, تحلیل اقتصادی, اخبار بورس">
 <meta name="description"
-      content="نوسان گلد سایت خبری و مشاوره ای امکاناتی مثل تقویم اقتصادی،اخبار و تحلیل های ویژه و تخصصی  استادان مجرد در زمینه ی طلا توسط برای شما فراهم می آورد.">
+      content="نوسان گلد سایت خبری و مشاوره ای امکاناتی مثل تقویم اقتصادی،اخبار و تحلیل های ویژه و تخصصی  استادان مجرب در زمینه ی طلا توسط برای شما فراهم می آورد.">
 {% endblock %}
 
 {% block style %}
@@ -46,13 +46,16 @@
 
       <div class="item">
         <img src="{% static 'posts/img/slide2.png' %}" alt="slide2" style="width:100%;">
+           <div class="carousel-caption" >
+                    <a href="/pamm" style="color:#b3b3b3;text-shadow:none;font-weight:700;"> کلیک کنید تا با ما بیشتر آشنا شوید</a>
+                </div>
       </div>
 
       <div class="item" >
 
            <img src="{% static 'posts/img/slide3.png' %}"  alt="slide3"  style="width:100%;">
- <div class="carousel-caption">
-                    <a href="/about-us" style="font-size:25px;color:#b3b3b3;text-shadow:none;font-weight:700;"> کلیک کنید تا با ما بیشتر آشنا شوید</a>
+ <div class="carousel-caption" >
+                    <a href="/about-us" style="color:#b3b3b3;text-shadow:none;font-weight:700;"> کلیک کنید تا با ما بیشتر آشنا شوید</a>
                 </div>
 
       </div>
@@ -185,7 +188,7 @@
 {% endif %}
                     {% endfor %}
 
- <a href="https://t.me/signal_navasan">
+ <a href="https://t.me/joinchat/AAAAAECJCZAcoaRiLNAxKg">
                     <div id="telegram-banner" style="max-width:400px;">
                     <img src="{% static 'posts/img/telegram-banner.png' %}"  class="img-responsive" >
                 </div>
@@ -205,6 +208,10 @@
 {% block script %}
 <script src="{% static 'posts/js/jquery.waypoints.min.js' %}"></script>
 <script src="{% static 'posts/js/infinite.min.js' %}"></script>
+
+
+
+
  <script>
     var infinite = new Waypoint.Infinite({
       element: $('.infinite-container')[0],
@@ -217,6 +224,7 @@
       }
     });
   </script>
+
 <!--
 <script src="{% static 'posts/js/homepage.js' %}"></script>
 -->
