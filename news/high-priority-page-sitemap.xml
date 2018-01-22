@@ -35,6 +35,13 @@
         <priority>0.9</priority>
     </url>
 
+
+        <url>
+        <loc>http://navasangold.com/tag/تحلیل تکنیکال</loc>
+        <changefreq>daily</changefreq>
+        <priority>0.9</priority>
+    </url>
+
       <url>
         <loc>http://navasangold.com/tag/تحلیل بازار ارز</loc>
         <changefreq>daily</changefreq>
@@ -84,7 +91,7 @@
         <priority>0.9</priority>
     </url>
        <url>
-        <loc>http://navasangold.com/tag/طلا</loc>
+        <loc>http://navasangold.com/tag/قیمت طلا</loc>
         <changefreq>daily</changefreq>
         <priority>0.9</priority>
     </url>
