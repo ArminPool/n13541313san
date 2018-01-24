@@ -1,8 +1,14 @@
-#main{
+body{
 /*
 compressed imgs are .jpg
 */
 background: url("../img/login-background.jpg") no-repeat center center fixed;
+
+}
+
+
+#main{
+
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

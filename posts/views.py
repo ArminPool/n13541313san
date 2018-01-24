@@ -225,38 +225,38 @@ def search(request):
 
 
 def articles(request, find):
-    title, posts_list = '', ''
+    tag, posts_list = '', ''
     if find == 'regular':
         posts_list = Post.objects.filter(post_type='article')
-        title = "مقالات"
+        tag = "مقالات"
 
     if find == 'price-action-uo':
         posts_list = Post.objects.filter(analysis_subcategory='price_action', analysis_branch='universal_ons')
-        title = "انس جهانی | تحلیلات پرایس اکشن"
+        tag = "انس جهانی | تحلیلات پرایس اکشن"
 
     elif find == 'elliott-uo':
         posts_list = Post.objects.filter(analysis_subcategory='elliott', analysis_branch='universal_ons')
-        title = "انس جهانی | تحلیلات الیوت"
+        tag = "انس جهانی | تحلیلات الیوت"
 
     elif find == 'ichimoku-uo':
         posts_list = Post.objects.filter(analysis_subcategory='ichimoku', analysis_branch='universal_ons')
-        title = "انس جهانی | تحلیلات ایچی موکو"
+        tag = "انس جهانی | تحلیلات ایچی موکو"
 
     elif find == 'price-action-poc':
         posts_list = Post.objects.filter(analysis_subcategory='price_action', analysis_branch='pairs_of_currencies')
-        title = "جفت ارزها | تحلیلات پرایس اکشن"
+        tag = "جفت ارزها | تحلیلات پرایس اکشن"
 
     elif find == 'elliott-poc':
         posts_list = Post.objects.filter(analysis_subcategory='elliott', analysis_branch='pairs_of_currencies')
-        title = "جفت ارزها | تحلیلات الیوت"
+        tag = "جفت ارزها | تحلیلات الیوت"
 
     elif find == 'ichimoku-poc':
         posts_list = Post.objects.filter(analysis_subcategory='ichimoku', analysis_branch='pairs_of_currencies')
-        title = "جفت ارزها | تحلیلات ایچی موکو"
+        tag = "جفت ارزها | تحلیلات ایچی موکو"
 
     elif find == 'domestic-dollar':
         posts_list = Post.objects.filter(analysis_branch='domestic_dollar')
-        title = "تحلیلات دلار داخلی"
+        tag = "تحلیلات دلار داخلی"
     most_seen = Post.objects.order_by("-seen")[:10]
 
     paginator = Paginator(posts_list, 6)
@@ -269,7 +269,7 @@ def articles(request, find):
         posts = paginator.page(1)
     except EmptyPage:
         posts = paginator.page(paginator.num_pages)
-    context = {'posts': posts, 'title': title,'most_seen':most_seen}
+    context = {'posts': posts, 'tag': tag,'most_seen':most_seen}
     return render(request, template_name, context)
 
 

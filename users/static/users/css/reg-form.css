@@ -1,3 +1,9 @@
+body{
+
+background: url("../img/wallstreet.jpg") no-repeat center center fixed;
+
+
+}
 .navbar-fixed-top .navbar-collapse{
 
 margin-right:200px;
@@ -6,7 +12,6 @@ margin-right:200px;
 
 #main{
 
-background: url("../img/wallstreet.jpg") no-repeat center center fixed;
 -webkit-background-size: cover;
 -moz-background-size: cover;
 -o-background-size: cover;

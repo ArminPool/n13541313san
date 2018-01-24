@@ -26,3 +26,16 @@ def specific_pages(request, page):
 def tariffs(request):
 
     return render(request, 'specificpages/tariffs.html')
+
+def tutorial(request,lesson):
+
+    if lesson == '1':
+        return render(request, 'specificpages/tutorial/lesson1.html')
+    elif lesson == '2':
+        return render(request, 'specificpages/tutorial/lesson2.html')
+
+    elif lesson == '3':
+        return render(request, 'specificpages/tutorial/lesson3.html')
+
+    elif lesson == '4':
+        return render(request, 'specificpages/tutorial/lesson4.html')

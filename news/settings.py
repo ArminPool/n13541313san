@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'jalali_date',
     'ckeditor',
     'imagekit',
+    'webpack_loader',
 
 ]
 
@@ -162,6 +163,13 @@ CKEDITOR_CONFIGS = {
     },
 }
 
+WEBPACK_LOADER = {
+    'DEFAULT': {
+        'BUNDLE_DIR_NAME': 'bundles/',
+        'STATS_FILE': os.path.join(BASE_DIR, 'webpack-stats.json'),
+    }
+}
+
 LOGIN_REDIRECT_URL = '/user'
 
 LOGIN_URL = '/user/login/'
@@ -211,3 +219,7 @@ REST_FRAMEWORK = {
         'rest_framework.permissions.IsAuthenticated',
     )
 }
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static'),
+    os.path.join(BASE_DIR, 'assets'), # We do this so that django's collectstatic copies or our bundles to the STATIC_ROOT or syncs them to whatever storage we use.
+)

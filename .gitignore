@@ -4,3 +4,10 @@
 /posts/migrations/
 d*.txt
 listcreator.py
+/node_modules/
+webpack-config.js
+webpack.config.js
+webpack-stats.json
+package-lock.json
+package.json
+gulpfile.js

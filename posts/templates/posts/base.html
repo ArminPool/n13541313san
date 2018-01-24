@@ -6,13 +6,11 @@
 
     {% endblock %}
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
-    <link rel="stylesheet" href="{% static 'posts/css/bootstrap.min.css' %}">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="{% static 'posts/css/base.css' %}">
 
-    <link href="{% static 'posts/css/font-awesome.min.css' %}" rel="stylesheet">
     {% block style %}
     {% endblock %}
 
@@ -23,12 +21,12 @@
 
 
 <body>
-<div class="navbar navbar-fixed-top" id="navbar-container" >
+<div class="navbar navbar-fixed-top" id="navbar-container">
     <nav class="navbar navbar-default" id="navbar1">
         <div class="container-fluid">
 
             <button type="button" id="left-side-toggle-open">
-<img src="{% static 'posts/img/user.png' %}" />
+<img src="{% static 'posts/img/user.png' %}">
 
             </button>
             <button type="button" id="left-side-toggle-close">
@@ -45,8 +43,7 @@
 
             <div class="navbar-header">
 
-                <button type="button" class="navbar-toggle" data-toggle="collapse"
-                        data-target=".navbar-collapse">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                    <span>منو</span>
                 </button>
 
@@ -57,57 +54,48 @@
 
                 <p class="navbar-text navbar-right"><a href="/news/" class="navbar-link">اخبار</a>
                 </p>
-                <p class="navbar-text navbar-right"><a href="{% url 'posts:articles' find='regular' %}"
-                                                       class="navbar-link">مقالات</a>
+                <p class="navbar-text navbar-right"><a href="{% url 'posts:articles' find='regular' %}" class="navbar-link">مقالات</a>
                 </p>
 
-                <ul class="nav navbar-nav  navbar-right">
+                <ul class="nav navbar-nav navbar-right">
 
                     <li role="presentation" class="dropdown education-dropdown">
 
-                        <a class="dropdown-toggle" href="#"
-                           role="button"
-                           aria-haspopup="true" aria-expanded="false">
+                        <a class="dropdown-toggle" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                             آموزش </a>
                         <ul class="dropdown-menu menu1">
                             <li class="dropdown-header" style=""><span>آموزش های آنلاین</span></li>
 
-                            <li><a href="{% url 'posts:tag' tag='مبانی بازار بورس ارز جهانی' %} ">مبانی بازار بورس ارز
+                            <li><a href="{% url 'posts:tag' tag='مبانی بازار بورس ارز جهانی' %}">مبانی بازار بورس ارز
                                 جهانی</a></li>
                             <li class="divider"></li>
 
-                            <li><a href="{% url 'posts:tag' tag='مبانی خرید و فروش جفت ارزها' %} ">مبانی خرید و فروش جفت
+                            <li><a href="{% url 'posts:tag' tag='مبانی خرید و فروش جفت ارزها' %}">مبانی خرید و فروش جفت
                                 ارزها</a></li>
                             <li class="divider"></li>
 
-                            <li><a href="{% url 'posts:tag' tag='مدیریت سرمایه و ریسک و روانشناسی بازار' %} ">مدیریت
+                            <li><a href="{% url 'posts:tag' tag='مدیریت سرمایه و ریسک و روانشناسی بازار' %}">مدیریت
                                 سرمایه و ریسک و روانشناسی بازار</a></li>
                             <li class="divider"></li>
 
-                            <li><a href="{% url 'posts:tag' tag='تحلیل تکنیکال' %} ">تحلیل تکنیکال</a></li>
+                            <li><a href="{% url 'posts:tag' tag='تحلیل تکنیکال' %}">تحلیل تکنیکال</a></li>
                             <li class="divider"></li>
                             <li class="dropdown-header">آموزش های حضوری</li>
-                            <li><a href="{% url 'posts:tag' tag='تحلیل تکنیکال' %} ">آخرین جلسات موجود</a></li>
+                            <li><a href="{% url 'posts:tag' tag='تحلیل تکنیکال' %}">آخرین جلسات موجود</a></li>
 
                         </ul>
                     </li>
 
 
                 </ul>
-                <ul class="nav navbar-nav  navbar-right">
+                <ul class="nav navbar-nav navbar-right">
 
                     <li role="presentation" class="dropdown article-dropdown">
 
-                        <a class="dropdown-toggle" href="#"
-                           role="button"
-                           aria-haspopup="true" aria-expanded="false">
+                        <a class="dropdown-toggle" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                             تحلیل ویژه </a>
                         <ul class="dropdown-menu menu2">
-                            <li role="presentation" class="uo-nested-dropdown dropdown"><a class="dropdown-toggle"
-                                                                                           href="#"
-                                                                                           role="button"
-                                                                                           aria-haspopup="true"
-                                                                                           aria-expanded="false">
+                            <li role="presentation" class="uo-nested-dropdown dropdown"><a class="dropdown-toggle" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                                 انس جهانی </a>
                                 <ul class="dropdown-menu menu5">
                                     <li>
@@ -115,7 +103,7 @@
                                     </li>
                                     <li>
                                         <a href="{% url 'posts:articles' find='elliott-uo' %}">الیوت</a>
-                                    <li>
+                                    </li><li>
                                         <a href="{% url 'posts:articles' find='ichimoku-uo' %}">ایچیموکو</a>
                                     </li>
 
@@ -124,24 +112,20 @@
                                 </ul>
                             </li>
 
-                            <li role="presentation" class="poc-nested-dropdown dropdown"><a class="dropdown-toggle"
-                                                                                            href="#"
-                                                                                            role="button"
-                                                                                            aria-haspopup="true"
-                                                                                            aria-expanded="false">
+                            <li role="presentation" class="poc-nested-dropdown dropdown"><a class="dropdown-toggle" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                                 جفت ارزها </a>
                                 <ul class="dropdown-menu menu6">
                                       <li>
                                         <a href="{% url 'posts:articles' find='price-action-poc' %}">پرایس اکشن</a>
-                                    <li>
+                                    </li><li>
                                         <a href="{% url 'posts:articles' find='elliott-poc' %}">الیوت</a>
                                     </li>
 
-                                    <li><a href="{% url 'posts:articles' find='ichimoku-poc' %} ">ایچیموکو</a></li>
+                                    <li><a href="{% url 'posts:articles' find='ichimoku-poc' %}">ایچیموکو</a></li>
 
                                 </ul>
                             </li>
-                            <li><a href="{% url 'posts:articles' find='domestic-dollar' %} ">دلار داخلی</a></li>
+                            <li><a href="{% url 'posts:articles' find='domestic-dollar' %}">دلار داخلی</a></li>
 
 
                         </ul>
@@ -154,9 +138,7 @@
 
                     <li role="presentation" class="dropdown money-dropdown">
 
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"
-                           role="button"
-                           aria-haspopup="true" aria-expanded="false">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                             چارت ها </a>
                         <ul class="dropdown-menu menu3">
                             <li><a href="/chart/GOLD/">GOLD</a></li>
@@ -178,9 +160,7 @@
 
                     <li role="presentation" class="dropdown trading-accounts-dropdown">
 
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"
-                           role="button"
-                           aria-haspopup="true" aria-expanded="false">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                             حساب ها </a>
                         <ul class="dropdown-menu menu4">
 
@@ -192,7 +172,7 @@
 
 
                 </ul>
-                <p class="navbar-text navbar-right"><a href="/calender/" class="navbar-link">تقویم اقتصادی</a>
+                <p class="navbar-text navbar-right"><a href="/calendar/" class="navbar-link">تقویم اقتصادی</a>
                 </p>
 
 <p class="navbar-text navbar-right"><a href="/bankorders/" class="navbar-link">اوردر بانک</a>
@@ -200,23 +180,22 @@
                                 <p class="navbar-text navbar-right"><a href="/signals/" class="navbar-link">سیگنال ها</a>
 
 
-            </div>
+            </p></div>
 
         </div>
     </nav>
     {% block search %}
-    <nav class=" navbar navbar-default " style="" id="navbar2">
+    <nav class="navbar navbar-default" style="" id="navbar2">
         <div class="container-fluid">
             <div class="search-nav">
 
                 <form method="get" action="/search/">
                     <div class="input-group">
 
-                        <input class="form-control" name="q" type="search"
-                               placeholder="جستجو در سایت">
+                        <input class="form-control" name="q" type="search" placeholder="جستجو در سایت">
 
                         <div class="input-group-btn">
-                            <button type="submit" class="btn btn-md " style="">
+                            <button type="submit" class="btn btn-md" style="">
                                 <i class="fa fa-search"></i>
                             </button>
                         </div>
@@ -235,14 +214,10 @@
             {% if user.is_authenticated %}
             <div class="Navigation-drawer">
                 {% if user.userprofile.pro_img %}
-                <img class="img-responsive" src="{{ user.userprofile.pro_img.url }}" title="{{user.username}}"
-                     alt="{{user.username}}"
-                     style="">
+                <img class="img-responsive" src="{{ user.userprofile.pro_img.url }}" title="{{user.username}}" alt="{{user.username}}" style="">
 
                 {% else %}
-                <img class="img-responsive"
-                     src="{% static 'users/img/anonymous-user.jpg' %}"
-                     title="{{user.username}}" alt="{{user.username}}">
+                <img class="img-responsive" src="{% static 'users/img/anonymous-user.jpg' %}" title="{{user.username}}" alt="{{user.username}}">
                 {% endif %}
 
 
@@ -251,7 +226,7 @@
                 <a href="/user/profile"><span class="glyphicon glyphicon-user"></span>مشاهده حساب کاربری </a>
                 <a style="" href="/user/profile/edit"><span class="glyphicon glyphicon-cog"></span>ویرایش حساب کاربری</a>
                 <a href="/user/logout/"><span class="glyphicon glyphicon-off"></span>خروج</a>
-                  <ul class="list-inline" id="SideNav-bottom-links-list-1" >
+                  <ul class="list-inline" id="SideNav-bottom-links-list-1">
                     <li>
                         <a href="/about-us">
                             درباره ما
@@ -285,22 +260,14 @@
                 <p class="login-label"> واردشوید </p>
                 <div class="form-group" id="login-form">
                     <div class="form-group">
-                <span class="fa fa-user-circle fa-fw "
+                <span class="fa fa-user-circle fa-fw"></span>
 
-                ></span>
-
-                        <input class="form-control" id="id_username" name="username" placeholder="نام کاربری"
-                               type="text"
-                               required/>
+                        <input class="form-control" id="id_username" name="username" placeholder="نام کاربری" type="text" required>
                     </div>
                     <div class="form-group">
 
-          <span class="material-icons"
-          >lock</span>
-                        <input class="form-control" id="password1" name="password1"
-                               placeholder="رمز عبور"
-
-                               type="password" required/>
+          <span class="material-icons">lock</span>
+                        <input class="form-control" id="password1" name="password1" placeholder="رمز عبور" type="password" required>
                     </div>
 
                     <button class="btn btn-primary" type="submit" id="submit-button" style="">ورود</button>
@@ -387,15 +354,10 @@
                     <div class="row" id="social-network">
                         <div class="col-12">
 
-                            <a href="https://t.me/signal_navasan"><img id="telegram-icon"
-                                                                       src="{% static 'posts/img/telegram.png' %}"
-                            ></a>
-                            <a href="https://www.instagram.com/navasangold/"><img id="instagram-icon"
-                                                                                  src="{% static 'posts/img/instagram.png' %}"></a>
+                            <a href="https://t.me/signal_navasan"><img id="telegram-icon" src="{% static 'posts/img/telegram.png' %}"></a>
+                            <a href="https://www.instagram.com/navasangold/"><img id="instagram-icon" src="{% static 'posts/img/instagram.png' %}"></a>
 
-                            <a href="https://twitter.com/"><img id="twitter-icon"
-                                                                src="{% static 'posts/img/twitter.png' %}"
-                            ></a>
+                            <a href="https://twitter.com/"><img id="twitter-icon" src="{% static 'posts/img/twitter.png' %}"></a>
 
 
                         </div>

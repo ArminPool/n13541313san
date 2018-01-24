@@ -6,7 +6,7 @@ from django.views.generic import TemplateView
 from posts import views
 from .views import homepage, articles, news
 from .views import detail, tags,author
-
+from specificpages.views import tutorial
 # namespace
 app_name = 'posts'
 
@@ -19,5 +19,5 @@ urlpatterns = [
     url(r'^articles/(?P<find>.+)/$', articles, name='articles'),
     url(r'^news/$', news, name='news'),
     url(r'^upload-photo-affiliate/$', views.upload_photo_affiliate, name='upload-photo-affiliate'),
-
+    url(r'^tutorial/(?P<lesson>.+)/$',tutorial,name='tutorial')
 ]
