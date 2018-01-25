@@ -47,7 +47,7 @@
       <div class="item">
         <img src="{% static 'posts/img/slide2.png' %}" alt="slide2" style="width:100%;">
            <div class="carousel-caption" >
-                    <a href="/pamm" style="color:#2887C8;text-shadow:none;font-weight:700;"> ورود به صفحه ی حساب پم</a>
+                    <a href="/pamm" style="color:#FF5349;text-shadow:none;font-weight:700;"> ورود به صفحه ی حساب پم</a>
                 </div>
       </div>
 
@@ -209,8 +209,17 @@
 <script src="{% static 'posts/js/jquery.waypoints.min.js' %}"></script>
 <script src="{% static 'posts/js/infinite.min.js' %}"></script>
 
+<script type="text/javascript" src="{% static 'posts/js/ResizeSensor.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'posts/js/theia-sticky-sidebar.min.js' %}"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    jQuery('#right-side, #left-side').theiaStickySidebar({
+          additionalMarginTop: 140
+      // Settings
 
-
+    });
+  });
+</script>
 
  <script>
     var infinite = new Waypoint.Infinite({
