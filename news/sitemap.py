@@ -21,7 +21,7 @@ class StaticSitemap(Sitemap):
 
     def items(self):
         mylist = ['pamm', 'mql', 'GOLD', 'EURUSD', 'USDJPY', 'GBPUSD', 'USDCHF', 'AUDUSD'
-            , 'NZDUSD', 'BTCUSD', 'calender', 'Contact', 'search', 'metatrader', 'rules'
+            , 'NZDUSD', 'BTCUSD', 'calendar', 'Contact', 'search', 'metatrader', 'rules'
                   ]
 
         return mylist

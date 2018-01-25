@@ -88,7 +88,7 @@ def author(request, author_username):
         posts = paginator.page(1)
     except EmptyPage:
         posts = paginator.page(paginator.num_pages)
-    context = {'posts': posts,'most_seen':most_seen }
+    context = {'posts': posts,'most_seen':most_seen ,'author':author_user_obj}
     return render(request, template_name, context)
 
 

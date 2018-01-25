@@ -4,12 +4,22 @@
 
 {% block meta %}
 <meta name="keywords" content="{{tag}}">
+{% if not author %}
 <meta name="description" content="پست های مرتبط با موضوع {{tag}}">
 
+{% else %}
+<meta name="description" content="پست های نوشته شده توسط {{author.first_name }} {{author.last_name}}">
+
+{% endif %}
 {% endblock %}
 
 {% block title %}
+{% if not author %}
 <title>{{ tag }}</title>
+{% else %}
+
+<title>{{ author.first_name }} {{author.last_name}} پست های</title>
+{% endif %}
 {% endblock %}
 
 {% block carousel %}
