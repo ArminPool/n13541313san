@@ -5,15 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="83ce492f-81ab-4045-9bd2-7537fae0f724" name="Default" comment="steacky-side">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/posts/static/posts/js/ResizeSensor.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/posts/static/posts/js/theia-sticky-sidebar.min.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/posts/static/posts/css/base.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/posts/static/posts/js/base.js" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/posts/static/posts/css/base.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/posts/static/posts/js/base-m.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/posts/static/posts/js/base.min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/news/high-priority-page-sitemap.xml" afterPath="$PROJECT_DIR$/news/high-priority-page-sitemap.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/templates/posts/base.html" afterPath="$PROJECT_DIR$/posts/templates/posts/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/templates/posts/detail.html" afterPath="$PROJECT_DIR$/posts/templates/posts/detail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/templates/posts/homepage.html" afterPath="$PROJECT_DIR$/posts/templates/posts/homepage.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -50,9 +46,11 @@
       <file leaf-file-name="homepage.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/posts/templates/posts/homepage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-4190">
-              <caret line="49" column="56" lean-forward="false" selection-start-line="49" selection-start-column="56" selection-end-line="49" selection-end-column="56" />
-              <folding />
+            <state relative-caret-position="-11">
+              <caret line="224" column="36" lean-forward="true" selection-start-line="224" selection-start-column="36" selection-end-line="224" selection-end-column="36" />
+              <folding>
+                <element signature="n#style#0;n#a#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -589,13 +587,6 @@
       <option name="presentableId" value="Default" />
       <updated>1509594326097</updated>
     </task>
-    <task id="LOCAL-00325" summary="detail font changed">
-      <created>1515955424438</created>
-      <option name="number" value="00325" />
-      <option name="presentableId" value="LOCAL-00325" />
-      <option name="project" value="LOCAL" />
-      <updated>1515955424438</updated>
-    </task>
     <task id="LOCAL-00326" summary="font-family inline fixed">
       <created>1516006205819</created>
       <option name="number" value="00326" />
@@ -932,7 +923,14 @@
       <option name="project" value="LOCAL" />
       <updated>1516849681173</updated>
     </task>
-    <option name="localTasksCounter" value="374" />
+    <task id="LOCAL-00374" summary="sticky-sidebar addedbase links corrected">
+      <created>1516863774247</created>
+      <option name="number" value="00374" />
+      <option name="presentableId" value="LOCAL-00374" />
+      <option name="project" value="LOCAL" />
+      <updated>1516863774248</updated>
+    </task>
+    <option name="localTasksCounter" value="375" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -1014,7 +1012,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="posts/static/js files compressed again" />
     <MESSAGE value="homepage images optimized" />
     <MESSAGE value="google tag added &#10;jquery.min.js compressed" />
     <MESSAGE value="google tag added" />
@@ -1039,7 +1036,8 @@
     <MESSAGE value="static dir deleted from setting" />
     <MESSAGE value="calendar.html added" />
     <MESSAGE value="sitemap changed" />
-    <option name="LAST_COMMIT_MESSAGE" value="sitemap changed" />
+    <MESSAGE value="sticky-sidebar addedbase links corrected" />
+    <option name="LAST_COMMIT_MESSAGE" value="sticky-sidebar addedbase links corrected" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1384,9 +1382,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/posts/templates/posts/homepage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4190">
-          <caret line="49" column="56" lean-forward="false" selection-start-line="49" selection-start-column="56" selection-end-line="49" selection-end-column="56" />
-          <folding />
+        <state relative-caret-position="-11">
+          <caret line="224" column="36" lean-forward="true" selection-start-line="224" selection-start-column="36" selection-end-line="224" selection-end-column="36" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
