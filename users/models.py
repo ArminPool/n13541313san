@@ -148,7 +148,6 @@ class UserProfile(models.Model):
         )
         userprofile.phone_number = phone_number
         userprofile.city = city
-        userprofile.vip_until = localtime(now()) + relativedelta(weeks=1)
         userprofile.save()
 
 

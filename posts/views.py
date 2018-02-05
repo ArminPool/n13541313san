@@ -19,7 +19,7 @@ from django.views.generic import ListView
 from flask import Flask
 
 from posts.form import CommentForm, CalenderForm, PhotoAttachedForm
-from posts.models import Post, Comment, Calender, BankOrders, PhotoAttached, Signal
+from posts.models import Post, Comment, Calender, BankOrders, PhotoAttached
 from users.forms import UsersContactForm, ContactForm
 from users.models import Author
 
@@ -367,7 +367,7 @@ def upload_photo_affiliate(request):
         else:
             return HttpResponseForbidden('<h1>not allowed</h1>')
 
-
+"""
 def signals(request):
     template_name = 'posts/signals.html'
     if not request.user.is_authenticated:
@@ -382,3 +382,5 @@ def signals(request):
         context = {'query_list': query_list}
 
         return render(request, template_name, context)
+
+"""

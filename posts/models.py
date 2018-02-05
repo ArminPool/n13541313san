@@ -21,7 +21,8 @@ class Post(models.Model):
                               format='JPEG',
                               options={'quality': 60}, null=True, blank=False)
 
-    Post_Options = (('news', 'خبر'), ('article', 'مقاله'), ('analysis', 'مقاله تحلیلی'))
+    Post_Options = (('news', 'خبر'), ('article', 'مقاله'))
+    """
     post_type = CharField(choices=Post_Options, default='news', max_length=100)
 
     Analysis_Branch_Options = (
@@ -33,7 +34,7 @@ class Post(models.Model):
         ('price_action', 'پرایس اکشن'), ('elliott', 'الیوت'), ('ichimoku', 'ایچیموکو'))
 
     analysis_subcategory = CharField(choices=Analysis_Subcategory_Options, null=True, blank=True, max_length=100)
-
+"""
     description = RichTextField(config_name='simple_ckeditor')
 
     text = RichTextField(config_name='awesome_ckeditor')
@@ -196,7 +197,7 @@ class BankOrders(models.Model):
         return self.Bank + ' ' + 'Order: ' + self.Order + ' ' + 'Date: ' + str(
             self.Date) + ' ' + 'Take_Profit: ' + self.Take_Profit
 
-
+"""
 class Signal(models.Model):
     author = models.ForeignKey(Author, null=False)
 
@@ -231,3 +232,4 @@ class Signal(models.Model):
     def __str__(self):
         return self.author.user.username + ' ' + 'Order: ' + self.Order + ' ' + 'Date: ' + str(
             self.Date) + ' ' + 'Take_Profit: ' + self.Take_Profit
+"""

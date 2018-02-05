@@ -25,12 +25,7 @@
         <span style="font-size:25px">چرا باید اشتراک تهیه کنیم؟</span>
         <br>
         <br>
-        <p>شما با خرید اشتراک میتوانید تحلیل های روز دنیا را به سه روش پرایس اکشن،الیوت و ایچیموکو مشاهده کنید.</p>
-                <p>این تحلیل ها توسط تحلیلگران تحصیل کرده و متخصص در این روش ها نوشته میشود.</p>
-
-<p>همچنین ما تحلیل های داخلی دلار و سیگنال های مطمئن خرید و فروش را در اختیار شما قرار میدهیم.</p>
-        <p>یکی دیگر از مزیت های خرید اشتراک ،مشاهده اوردر بانک ها هستش که بکمک آن میتوانید بفهمید بانک ها چه استراتژی ها و پوزیشن هایی را دنبال میکنند. </p>
-        <p>ما با این امکانات نوسان گلد را سایتی تخصصی میکنیم.شما هم میتوانید با نوسان گلد تخصصی کار کنید.</p>
+        <p style="font-size: 18px;">به کمک اوردر بانک ها میتونید بفهمید بانک ها چه استراتژی ها و پوزیشن هایی رو دنبال میکنن و معامله های خودتونو براساس اون استراتژی ها انجام بدید.</p>
 {% if not user.is_authenticated %}
         <p>برای مشاهده ی لینک خرید ابتدا وارد<a href="/user/login/?next=/tariffs/"> وارد </a>سایت شوید.</p>
     {% endif %}
@@ -38,8 +33,8 @@
 <div class="tariffs tariffs-1">
     <img src="{% static 'specificpages/img/tariffs/tariff1.png' %}" class="tariffs-img" alt="tariffs-img-1">
     <div class="description">
-    <p>  اشتراک  ۱ ماهه نوسان گلد برای دسترسی به تحلیل ها و اوردر بانک ها.</p>
-        <span>۱۳۰,۰۰۰تومان</span>
+    <p>  اشتراک  ۱ ماهه نوسان گلد برای دسترسی اوردر بانک ها.</p>
+        <span>۵۰,۰۰۰تومان</span>
         {% if user.is_authenticated %}
     <a class="btn btn-default btn-md link-to-bank" href="{% url 'user:send_to_zarinpal' tariff_number=1 %}">
 خرید
@@ -50,8 +45,8 @@
     <div class="tariffs tariffs-2">
     <img src="{% static 'specificpages/img/tariffs/tariff3.png' %}" class="tariffs-img img-responsive" alt="tariffs-img-2">
     <div class="description">
-    <p>  اشتراک  ۳ ماهه نوسان گلد برای دسترسی به تحلیل ها و اوردر بانک ها.</p>
-        <span>۲۸۰,۰۰۰تومان</span>
+    <p>  اشتراک  ۳ ماهه نوسان گلد برای دسترسی به  اوردر بانک ها.</p>
+        <span>۱۵۰,۰۰۰تومان</span>
                {% if user.is_authenticated %}
     <a class="btn btn-default btn-md link-to-bank" href="{% url 'user:send_to_zarinpal' tariff_number=2 %}">
 خرید
@@ -62,8 +57,8 @@
     <div class="tariffs tariffs-3">
     <img src="{% static 'specificpages/img/tariffs/tariff6.png' %}" class="tariffs-img" alt="tariffs-img-3">
     <div class="description">
-   <p>  اشتراک  ۶ ماهه نوسان گلد برای دسترسی به تحلیل ها و اوردر بانک ها.</p>
-        <span>۵۳۰,۰۰۰تومان</span>
+   <p>  اشتراک  ۶ ماهه نوسان گلد برای دسترسی ب  اوردر بانک ها.</p>
+        <span>۳۰۰,۰۰۰تومان</span>
                {% if user.is_authenticated %}
     <a class="btn btn-default btn-md link-to-bank" href="{% url 'user:send_to_zarinpal' tariff_number=3 %}">
 خرید
@@ -71,19 +66,9 @@
         {% endif %}
         </div>
 </div>
-    <div class="tariffs tariffs-4">
-    <img src="{% static 'specificpages/img/tariffs/tariff12.png' %}" class="tariffs-img" alt="tariffs-img-4">
-    <div class="description">
-    <p>  اشتراک ۱۲ ماهه نوسان گلد برای دسترسی به تحلیل ها و اوردر بانک ها.</p>
-        <span>۹۸۰,۰۰۰تومان</span>
-               {% if user.is_authenticated %}
-    <a class="btn btn-default btn-md link-to-bank" href="{% url 'user:send_to_zarinpal' tariff_number=4 %}">
-خرید
-    </a>
-        {% endif %}
-        </div>
+
 </div>
-    </div>
+
 
 
 
