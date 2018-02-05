@@ -13,6 +13,17 @@ from users.models import Author
 
 
 class Post(models.Model):
+    """
+        Analysis_Branch_Options = (
+            ('universal_ons', 'انس جهانی'), ('pairs_of_currencies', 'جفت ارزها'), ('domestic_dollar', 'دلار داخلی'))
+
+        analysis_branch = CharField(choices=Analysis_Branch_Options, null=True, blank=True, max_length=100)
+
+        Analysis_Subcategory_Options = (
+            ('price_action', 'پرایس اکشن'), ('elliott', 'الیوت'), ('ichimoku', 'ایچیموکو'))
+
+        analysis_subcategory = CharField(choices=Analysis_Subcategory_Options, null=True, blank=True, max_length=100)
+    """
     header = models.CharField(max_length=500)
 
     img = ProcessedImageField(upload_to='uploaded/posts/main-img',
@@ -22,19 +33,9 @@ class Post(models.Model):
                               options={'quality': 60}, null=True, blank=False)
 
     Post_Options = (('news', 'خبر'), ('article', 'مقاله'))
-    """
+
     post_type = CharField(choices=Post_Options, default='news', max_length=100)
 
-    Analysis_Branch_Options = (
-        ('universal_ons', 'انس جهانی'), ('pairs_of_currencies', 'جفت ارزها'), ('domestic_dollar', 'دلار داخلی'))
-
-    analysis_branch = CharField(choices=Analysis_Branch_Options, null=True, blank=True, max_length=100)
-
-    Analysis_Subcategory_Options = (
-        ('price_action', 'پرایس اکشن'), ('elliott', 'الیوت'), ('ichimoku', 'ایچیموکو'))
-
-    analysis_subcategory = CharField(choices=Analysis_Subcategory_Options, null=True, blank=True, max_length=100)
-"""
     description = RichTextField(config_name='simple_ckeditor')
 
     text = RichTextField(config_name='awesome_ckeditor')
@@ -160,14 +161,14 @@ class BankOrders(models.Model):
     issue_options = models.CharField(choices=options, default=cooperate, max_length=2)
     """
     Pair_Options = (
-    ('AUDCAD', 'AUDCAD'), ('AUDCHF', 'AUDCHF'), ('AUDJPY', 'AUDJPY'), ('AUDNZD', 'AUDNZD'), ('AUDUSD', 'AUDUSD'),
-    ('AUS200', 'AUS200'), ('Brent', 'Brent'), ('CADCHF', 'CADCHF'), ('CADJPY', 'CADJPY'), ('CHFJPY', 'CHFJPY'),
-    ('Crude', 'Crude'), ('EURAUD', 'EURAUD'), ('EURCAD', 'EURCAD'), ('EURCHF', 'EURCHF'), ('EURDKK', 'EURDKK'),
-    ('EURGBP', 'EURGBP'), ('EURTRY', 'EURTRY'), ('EURUSD', 'EURUSD'), ('FCHI40', 'FCHI40'), ('GBPAUD', 'GBPAUD'),
-    ('GBPCAD', 'GBPCAD'), ('GBPCHF', 'GBPCHF'), ('GBPDKK', 'GBPDKK'), ('GBPJPY', 'GBPJPY'), ('GBPNZD', 'GBPNZD'),
-    ('GBPPLN', 'GBPPLN'), ('GBPSEK', 'GBPSEK'), ('GBPUSD', 'GBPUSD'), ('GDAUXIm', 'GDAUXIm'), ('Jap225', 'Jap225'),
-    ('NZDCAD', 'NZDCAD'), ('NZDUSD', 'NZDUSD'), ('NatGas', 'NatGas'), ('STOX50', 'STOX50'), ('USDCAD', 'USDCAD'),
-    ('USDJPY', 'USDJPY'), ('XAUUSD', 'XAUUSD'))
+        ('AUDCAD', 'AUDCAD'), ('AUDCHF', 'AUDCHF'), ('AUDJPY', 'AUDJPY'), ('AUDNZD', 'AUDNZD'), ('AUDUSD', 'AUDUSD'),
+        ('AUS200', 'AUS200'), ('Brent', 'Brent'), ('CADCHF', 'CADCHF'), ('CADJPY', 'CADJPY'), ('CHFJPY', 'CHFJPY'),
+        ('Crude', 'Crude'), ('EURAUD', 'EURAUD'), ('EURCAD', 'EURCAD'), ('EURCHF', 'EURCHF'), ('EURDKK', 'EURDKK'),
+        ('EURGBP', 'EURGBP'), ('EURTRY', 'EURTRY'), ('EURUSD', 'EURUSD'), ('FCHI40', 'FCHI40'), ('GBPAUD', 'GBPAUD'),
+        ('GBPCAD', 'GBPCAD'), ('GBPCHF', 'GBPCHF'), ('GBPDKK', 'GBPDKK'), ('GBPJPY', 'GBPJPY'), ('GBPNZD', 'GBPNZD'),
+        ('GBPPLN', 'GBPPLN'), ('GBPSEK', 'GBPSEK'), ('GBPUSD', 'GBPUSD'), ('GDAUXIm', 'GDAUXIm'), ('Jap225', 'Jap225'),
+        ('NZDCAD', 'NZDCAD'), ('NZDUSD', 'NZDUSD'), ('NatGas', 'NatGas'), ('STOX50', 'STOX50'), ('USDCAD', 'USDCAD'),
+        ('USDJPY', 'USDJPY'), ('XAUUSD', 'XAUUSD'))
 
     Pair = models.CharField(choices=Pair_Options, default='', max_length=100)
     Bank_Options = (('Goldman Sachs', 'Goldman Sachs'), ('Credit Suisse', 'Credit Suisse'), ('Citi Bank', 'Citi Bank'),
@@ -196,6 +197,7 @@ class BankOrders(models.Model):
     def __str__(self):
         return self.Bank + ' ' + 'Order: ' + self.Order + ' ' + 'Date: ' + str(
             self.Date) + ' ' + 'Take_Profit: ' + self.Take_Profit
+
 
 """
 class Signal(models.Model):
