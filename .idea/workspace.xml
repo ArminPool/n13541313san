@@ -5,14 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="83ce492f-81ab-4045-9bd2-7537fae0f724" name="Default" comment="steacky-side">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/posts/static/posts/js/base-m.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/news/high-priority-page-sitemap.xml" afterPath="$PROJECT_DIR$/news/high-priority-page-sitemap.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/models.py" afterPath="$PROJECT_DIR$/posts/models.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/static/posts/css/base.min.css" afterPath="$PROJECT_DIR$/posts/static/posts/css/base.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/static/posts/js/base.min.js" afterPath="$PROJECT_DIR$/posts/static/posts/js/base.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/posts/templates/posts/base.html" afterPath="$PROJECT_DIR$/posts/templates/posts/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/users/static/users/js/login.js" afterPath="$PROJECT_DIR$/users/static/users/js/login.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -37,14 +32,14 @@
       <file leaf-file-name="base-u.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/posts/static/posts/js/base-u.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="558">
-              <caret line="583" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="611" selection-end-column="0" />
+            <state relative-caret-position="142">
+              <caret line="567" column="26" lean-forward="true" selection-start-line="567" selection-start-column="26" selection-end-line="567" selection-end-column="26" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/posts/models.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="87">
@@ -64,11 +59,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base-u.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="base-u.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/posts/static/posts/css/base-u.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="572">
-              <caret line="897" column="0" lean-forward="false" selection-start-line="897" selection-start-column="0" selection-end-line="897" selection-end-column="0" />
+            <state relative-caret-position="430">
+              <caret line="784" column="0" lean-forward="true" selection-start-line="784" selection-start-column="0" selection-end-line="784" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -152,10 +147,10 @@
         <option value="$PROJECT_DIR$/posts/static/posts/css/homepage.css" />
         <option value="$PROJECT_DIR$/posts/templates/posts/base.html" />
         <option value="$PROJECT_DIR$/users/static/users/js/login.js" />
-        <option value="$PROJECT_DIR$/posts/static/posts/css/base-u.css" />
         <option value="$PROJECT_DIR$/posts/static/posts/js/base-u.js" />
         <option value="$PROJECT_DIR$/posts/templates/posts/base-u.html" />
         <option value="$PROJECT_DIR$/posts/models.py" />
+        <option value="$PROJECT_DIR$/posts/static/posts/css/base-u.css" />
       </list>
     </option>
   </component>
@@ -736,13 +731,6 @@
       <option name="presentableId" value="Default" />
       <updated>1509594326097</updated>
     </task>
-    <task id="LOCAL-00329" summary="debug true">
-      <created>1516263808498</created>
-      <option name="number" value="00329" />
-      <option name="presentableId" value="LOCAL-00329" />
-      <option name="project" value="LOCAL" />
-      <updated>1516263808499</updated>
-    </task>
     <task id="LOCAL-00330" summary="debug true">
       <created>1516264174788</created>
       <option name="number" value="00330" />
@@ -1079,7 +1067,14 @@
       <option name="project" value="LOCAL" />
       <updated>1517835358104</updated>
     </task>
-    <option name="localTasksCounter" value="378" />
+    <task id="LOCAL-00378" summary="analysis added again side bar added">
+      <created>1519109519793</created>
+      <option name="number" value="00378" />
+      <option name="presentableId" value="LOCAL-00378" />
+      <option name="project" value="LOCAL" />
+      <updated>1519109519793</updated>
+    </task>
+    <option name="localTasksCounter" value="379" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -1161,8 +1156,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="post tags.length increased to 6 &#10;usdchf added to signals" />
-    <MESSAGE value="sitemap url mistake fixed with correcting absolute-url &#10;pagination-bar fixed&#10;pagination limit edited in pages&#10;most-seen added to tags and author view" />
     <MESSAGE value="alot of change in style and some img added and fix top navbar mekanizm changed and default value added to some field in posts/model and a pin field added to signal model" />
     <MESSAGE value="2img adde" />
     <MESSAGE value="article view changed" />
@@ -1186,7 +1179,9 @@
     <MESSAGE value="2new file added to git" />
     <MESSAGE value="signals deleted all analysis thing deleted" />
     <MESSAGE value="SideNav removed" />
-    <option name="LAST_COMMIT_MESSAGE" value="SideNav removed" />
+    <MESSAGE value="analysis added again side bar added" />
+    <MESSAGE value="drop down menu :border-radius =0" />
+    <option name="LAST_COMMIT_MESSAGE" value="drop down menu :border-radius =0" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1404,6 +1399,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
           <caret line="17" column="55" lean-forward="true" selection-start-line="17" selection-start-column="55" selection-end-line="17" selection-end-column="55" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1491,34 +1487,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/posts/static/posts/css/base-u.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="897" column="0" lean-forward="false" selection-start-line="897" selection-start-column="0" selection-end-line="897" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/navasangold project 15bahman/posts/static/posts/js/base-u.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="130">
           <caret line="5" column="13" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="611" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/posts/static/posts/js/base-u.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="583" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="611" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/navasangold project 15bahman/posts/templates/posts/base-u.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="8" column="16" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="384" selection-end-column="7" />
           <folding />
         </state>
       </provider>
@@ -1535,6 +1507,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="87">
           <caret line="16" column="4" lean-forward="false" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/navasangold project 15bahman/posts/templates/posts/base-u.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="8" column="16" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="384" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/posts/static/posts/js/base-u.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="567" column="26" lean-forward="true" selection-start-line="567" selection-start-column="26" selection-end-line="567" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/posts/static/posts/css/base-u.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="430">
+          <caret line="784" column="0" lean-forward="true" selection-start-line="784" selection-start-column="0" selection-end-line="784" selection-end-column="0" />
           <folding />
         </state>
       </provider>
