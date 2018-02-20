@@ -29,10 +29,10 @@
 <img src="{% static 'posts/img/user.png' %}">
 
             </button>
+            <button type="button" id="left-side-toggle-close">
 
 
-
-
+            </button>
 
 
             <a href="{% url 'posts:home' %}" class="navbar-brand">
@@ -88,7 +88,51 @@
 
 
                 </ul>
+                <ul class="nav navbar-nav navbar-right">
 
+                    <li role="presentation" class="dropdown article-dropdown">
+
+                        <a class="dropdown-toggle" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                            تحلیل ویژه </a>
+                        <ul class="dropdown-menu menu2">
+                            <li role="presentation" class="uo-nested-dropdown dropdown"><a class="dropdown-toggle" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                                انس جهانی </a>
+                                <ul class="dropdown-menu menu5">
+                                    <li>
+                                        <a href="{% url 'posts:articles' find='price-action-uo' %}">پرایس اکشن</a>
+                                    </li>
+                                    <li>
+                                        <a href="{% url 'posts:articles' find='elliott-uo' %}">الیوت</a>
+                                    </li><li>
+                                        <a href="{% url 'posts:articles' find='ichimoku-uo' %}">ایچیموکو</a>
+                                    </li>
+
+
+
+                                </ul>
+                            </li>
+
+                            <li role="presentation" class="poc-nested-dropdown dropdown"><a class="dropdown-toggle" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                                جفت ارزها </a>
+                                <ul class="dropdown-menu menu6">
+                                      <li>
+                                        <a href="{% url 'posts:articles' find='price-action-poc' %}">پرایس اکشن</a>
+                                    </li><li>
+                                        <a href="{% url 'posts:articles' find='elliott-poc' %}">الیوت</a>
+                                    </li>
+
+                                    <li><a href="{% url 'posts:articles' find='ichimoku-poc' %}">ایچیموکو</a></li>
+
+                                </ul>
+                            </li>
+                            <li><a href="{% url 'posts:articles' find='domestic-dollar' %}">دلار داخلی</a></li>
+
+
+                        </ul>
+                    </li>
+
+
+                </ul>
 
                 <ul class="nav navbar-nav navbar-right" style="">
 
@@ -276,9 +320,6 @@
 
     {% endblock %}
 </div>
-<!--
-<button class='btn move-top-btn' style=""><img src="{% static 'posts/img/arrow-top.png' %}"/></button>
--->
 <footer class="footer">
 
     <div class="jumbotron" id="footer-jumbotron">

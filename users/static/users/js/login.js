@@ -1,5 +1,5 @@
 $(document).ready(function(){
-
+$(this).scrollTop(0);
 $("#left-side-toggle-open").css("display","none");
 $("footer").remove();
 

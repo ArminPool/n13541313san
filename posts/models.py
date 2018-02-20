@@ -13,17 +13,17 @@ from users.models import Author
 
 
 class Post(models.Model):
-    """
-        Analysis_Branch_Options = (
+
+    Analysis_Branch_Options = (
             ('universal_ons', 'انس جهانی'), ('pairs_of_currencies', 'جفت ارزها'), ('domestic_dollar', 'دلار داخلی'))
 
-        analysis_branch = CharField(choices=Analysis_Branch_Options, null=True, blank=True, max_length=100)
+    analysis_branch = CharField(choices=Analysis_Branch_Options, null=True, blank=True, max_length=100)
 
-        Analysis_Subcategory_Options = (
+    Analysis_Subcategory_Options = (
             ('price_action', 'پرایس اکشن'), ('elliott', 'الیوت'), ('ichimoku', 'ایچیموکو'))
 
-        analysis_subcategory = CharField(choices=Analysis_Subcategory_Options, null=True, blank=True, max_length=100)
-    """
+    analysis_subcategory = CharField(choices=Analysis_Subcategory_Options, null=True, blank=True, max_length=100)
+
     header = models.CharField(max_length=500)
 
     img = ProcessedImageField(upload_to='uploaded/posts/main-img',
