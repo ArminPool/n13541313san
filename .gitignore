@@ -12,3 +12,6 @@ package-lock.json
 package.json
 gulpfile.js
 /news/high-priority-page-sitemap.xml
+/news/media/*
+/news/addtag.py
+/news/book.txt
