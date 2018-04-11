@@ -25,19 +25,18 @@ var navbarHeight = $('#navbar-container').outerHeight();
 $(window).scroll(function(event){
     console.log('window is on scroll');
 
-    window.clearTimeout( isScrolling );
 
     didScroll = true;
     st = $(this).scrollTop();
 
     updatevariables();
-    isScrolling = setTimeout(function() {
-
+    
+    console.log('st is '+st+' and last is '+lastScrollTop)  ;
 
         // Run the callback
-        hasScrolled();
-        console.log(Math.abs(lastScrollTop - st))
-        /*
+        hasScrolled(st);
+
+      /*
         if(Math.abs(lastScrollTop - st) >= 3){
             console.log('we are here');
             $('#navbar-collapse').removeClass('in');
@@ -68,7 +67,7 @@ $(window).scroll(function(event){
 
         }
 
-    }, 100);
+    
 });
 
 
@@ -94,18 +93,18 @@ function updatevariables() {
         }
 
 
-        lastScrollTop = st;
+    
 }
 
 
-function hasScrolled() {
+function hasScrolled(scroll_top) {
 
 
     // If they scrolled down and are past the navbar, add class .nav-up.
     // This is necessary so you never see what is "behind" the navbar.
-    if (st < lastScrollTop && $(window).width() < 586 && sideNav == 1 ){
+    if (scroll_top < lastScrollTop && $(window).width() < 586 && sideNav == 1 ){
     }
-    else if(st < lastScrollTop){
+    else if(scroll_top < lastScrollTop){
         console.log('in elseif 3');
 
         // Scroll up
@@ -126,11 +125,11 @@ $('.navbar-fixed-top').css('transform','');
     }
     }
     }
-    else if(st > lastScrollTop){
+    else if(scroll_top > lastScrollTop){
 
 
         // Scroll Down
-        if(st + $(window).height() < $(document).height() && sideNav != 1) {
+        if(scroll_top + $(window).height() < $(document).height() && sideNav != 1) {
 
             console.log('in if 3');
         $("#main").css('margin-top','0px');
@@ -148,6 +147,8 @@ $('.navbar-fixed-top').css('transform','');
         }
 
 
+        lastScrollTop = scroll_top;
+        console.log(lastScrollTop);
 
     }
 
