@@ -28,8 +28,8 @@ $(window).scroll(function(event){
 
     didScroll = true;
     st = $(this).scrollTop();
-
-    updatevariables();
+   
+    updatevariables(lastScrollTop,st);
     
     console.log('st is '+st+' and last is '+lastScrollTop)  ;
 
@@ -43,14 +43,14 @@ $(window).scroll(function(event){
 
         }
 */
-
+        console.log('distance to first is '+distance_to_first);
         if ( distance_to_first < 10 ){
 
             $('.navbar-fixed-top').css('transform','');
             console.log('in if 1');
 
             // Scroll up
-            $("#main").css('margin-top','');
+            $("#main").css('margin-top','154px');
 
            //$('#navbar-container').addClass('navbar-fixed-top');
 
@@ -71,22 +71,21 @@ $(window).scroll(function(event){
 });
 
 
-function updatevariables() {
+function updatevariables(last_scroll_top,scroll_top) {
 
 
     // Make sure they scroll more than delta
-    if(Math.abs(lastScrollTop - st) <= delta)
-        return;
+    
 
-        if(st < lastScrollTop){
-                distance_to_first = distance_to_first - Math.abs(lastScrollTop - st);
+        if(scroll_top < last_scroll_top){
+                distance_to_first = distance_to_first - Math.abs(last_scroll_top - scroll_top);
 
 
 
 
         }
-        else if (st > lastScrollTop){
-                        distance_to_first = distance_to_first + Math.abs(lastScrollTop - st);
+        else if (scroll_top > last_scroll_top){
+                        distance_to_first = distance_to_first + Math.abs(last_scroll_top - scroll_top);
 
 
 
