@@ -14,7 +14,7 @@ $(document).ready(function() {
         error.insertAfter(element);
     }
 });
- var st;
+var st;
 var isScrolling;
 var didScroll;
 var lastScrollTop = 0;
@@ -36,16 +36,27 @@ $(window).scroll(function(event){
 
         // Run the callback
         hasScrolled();
-        $('#navbar-collapse').removeClass('in');
+        console.log(Math.abs(lastScrollTop - st))
+        /*
+        if(Math.abs(lastScrollTop - st) >= 3){
+            console.log('we are here');
+            $('#navbar-collapse').removeClass('in');
+
+        }
+*/
 
         if ( distance_to_first < 10 ){
 
             $('.navbar-fixed-top').css('transform','');
+            console.log('in if 1');
+
+            // Scroll up
+            $("#main").css('margin-top','');
 
            //$('#navbar-container').addClass('navbar-fixed-top');
 
         }
- if($('.navbar-fixed-top').length > 0 && distance_to_first > 0) {
+ if($('.navbar-fixed-top').length > 1 && distance_to_first > 0) {
      $("#main").css("margin-top",navbarHeight);
 
         }
@@ -95,7 +106,10 @@ function hasScrolled() {
     if (st < lastScrollTop && $(window).width() < 586 && sideNav == 1 ){
     }
     else if(st < lastScrollTop){
+        console.log('in elseif 3');
+
         // Scroll up
+        $("#main").css('margin-top','');
 
 
 // $('#navbar-container').addClass('navbar-fixed-top');
@@ -117,7 +131,9 @@ $('.navbar-fixed-top').css('transform','');
 
         // Scroll Down
         if(st + $(window).height() < $(document).height() && sideNav != 1) {
-        $("#main").css("margin-top",'0px');
+
+            console.log('in if 3');
+        $("#main").css('margin-top','0px');
 
          $('#SideNav').css('width','0px');
          $('#main').css('margin-right','0px');

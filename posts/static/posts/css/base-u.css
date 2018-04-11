@@ -265,6 +265,7 @@ color:#FFF;
 .navbar-nav{
 
 padding-right:0px;
+padding
 
 }
 
@@ -614,10 +615,10 @@ margin:auto 0;
 }
                             /*   setting delay when main want go left              */
 #main {
-    transition: margin-right .5s;
+    transition: margin-right .5s,margin-top .5s;
     padding: 16px;
     position:relative;
-margin-top:154px;
+    margin-top:154px;
 
 }
 
