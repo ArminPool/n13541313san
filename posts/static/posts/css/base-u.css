@@ -1,0 +1,896 @@
+@font-face {
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/iransans/eot/IRANSansWeb_Light.eot');
+  src: url('../fonts/iransans/eot/IRANSansWeb_Light.eot?#iefix') format('embedded-opentype'), /* IE6-8 */
+  url('../fonts/iransans/woff2/IRANSansWeb_Light.woff2') format('woff2'), /* FF39+,Chrome36+, Opera24+*/
+  url('../fonts/iransans/woff/IRANSansWeb_Light.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+  url('../fonts/iransans/ttf/IRANSansWeb_Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/Material Icons/MaterialIcons-Regular.eot'); /* For IE6-8 */
+    src: local('Material Icons'),
+    local('MaterialIcons-Regular'),
+    url('../fonts/Material Icons/MaterialIcons-Regular.woff2') format('woff2'),
+    url('../fonts/Material Icons/MaterialIcons-Regular.woff') format('woff'),
+    url('../fonts/Material Icons/MaterialIcons-Regular.ttf') format('truetype');
+
+}
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+body {
+ /*
+ using this font for eng text
+ */
+    font-family:IRANSans;
+    background-color:#f4f4f4;
+
+}
+span,p{
+font-family:IRANSans;
+}
+/*
+ using this font for fa text
+ */
+
+#navbar-container{
+
+
+margin-bottom:0px;
+
+}
+
+.navbar-collapse a{
+    text-decoration:none;
+
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form{
+
+border:none;
+box-shadow:none;
+}
+.navbar,.navbar-default{
+
+border:none;
+
+}
+.navbar-fixed-top{
+box-shadow: rgba(0, 0, 0, 0.30) 0px 4px 5px 0px, rgba(0, 0, 0, 0.18) 0px 1px 10px 0px, rgba(0, 0, 0, 0.2) 0px 2px 4px -1px;
+margin-bottom:0px;
+transition: transform .3s ease-in-out;
+}
+
+.navbar-fixed-top .navbar-collapse,.navbar-default .navbar-collapse{
+
+position:relative;
+margin-right:253px;
+margin-left:0px;
+padding-left:0px;
+padding-right:0px;
+padding-top:15px;
+padding-bottom:0px;
+
+}
+
+
+#navbar1{
+
+margin-bottom:0px;
+background-color:#23262F;
+}
+
+
+
+.navbar-default .navbar-brand{
+display:inline;
+float:right;
+padding-left:15px;
+padding-right:15px;
+height:auto;
+width:auto;
+
+padding-top:20px;
+}
+.navbar-default .navbar-brand img{
+
+width:170px;
+
+height:45px;
+
+}
+
+
+
+.navbar-header .navbar-toggle span {
+
+
+color:#fff;
+
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover span{
+
+
+color:#000;
+
+}
+
+.navbar-text,.navbar-default .navbar-link,.navbar-default .navbar-nav > li > a{
+
+color:#FFF;
+
+}
+
+.navbar-text{
+
+margin:0px;
+padding:20px;
+
+}
+                            /*           remove hover color             */
+
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover,.navbar-default .navbar-link:hover
+,.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover{
+
+color:#fff;
+
+}
+
+.nav-pills{
+
+padding-right:0px;
+
+}
+
+.navbar-collapse ul.navbar-right{
+
+margin-left:0px;
+
+}
+
+.nav-pills .dropdown{
+
+float:right;
+
+}
+
+
+.navbar-default .navbar-nav > li > .dropdown-toggle{
+
+
+padding:20px 0px;
+}
+
+
+                       /*       setting color of dropdown-menus                 */
+.navbar-default .navbar-nav .open .dropdown-menu > li > a{
+
+color:#fff;
+
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover{
+
+color:#fff;
+
+}
+
+.dropdown-toggle{
+
+
+color:#000;
+
+}
+
+a.dropdown-toggle.navbar-link{
+
+padding-left:0px;
+
+}
+
+.dropdown-header{
+
+text-align:center;
+padding-bottom:10px;
+color:#fff;
+font-size:16px;
+}
+.navbar-nav .open .dropdown-menu .dropdown-header, .navbar-nav .open .dropdown-menu > li > a {
+    padding: 5px 15px 10px 25px;
+}
+
+.dropdown-menu{
+
+padding-right:35px;
+display:none;
+visibility:visible;
+margin-top:0px;
+
+}
+
+
+                            /*        pulling persian texts right                 */
+.menu1{
+
+text-align:right;
+
+}
+
+                            /*        pulling english texts right                 */
+.menu2{
+
+text-align:right;
+
+}
+.navbar-right{
+
+margin-right:0px;
+
+
+}
+
+.navbar-link{
+
+color:#FFF;
+}
+
+.navbar-nav{
+
+padding-right:0px;
+
+}
+
+.navbar-toggle{
+
+border-radius:0px;
+height:40px;
+float:left;
+margin-left:15px;
+margin-top:20px;
+
+}
+
+
+#navbar2{
+
+position:relative;
+top:0px;
+background-color:#23262F
+
+}
+
+/* remove shadow of input  */
+
+/* blue shadow in dark background is not good  */
+
+#navbar2 input:focus{
+
+
+box-shadow:none;
+
+}
+
+
+
+                            /* blue shadow in dark background is not good  */
+#SideNav input{
+
+box-shadow:none;
+
+}
+                            /*  setting position of search form     */
+.search-nav .input-group{
+max-width:600px;
+margin:10px auto;
+}
+.input-group-btn:last-child>.btn, .input-group-btn:last-child>.btn-group{
+
+margin-left:0px;
+
+}
+.search-nav .input-group .form-control{
+
+float:right;
+border-radius:0px;
+}
+
+.search-nav .input-group .input-group-btn button{
+height:34px;
+position:relative;
+border-radius:0px;
+}
+                            /*         Side Nav setting started               */
+#SideNav{
+
+font-family:'Far.Adab',Tahoma, Sans-Serif;
+position: fixed;
+float:right;
+width:250px;
+z-index: 1;
+width:0px;
+
+right: 0;
+background-image: linear-gradient(rgb(55, 73, 98), rgb(6, 7, 10) 90%);
+overflow-x: hidden;
+
+overflow-y: auto;
+transition: 0.5s;
+
+ /*    adding shadow to Side Nav                    */
+
+-webkit-box-shadow: 0 8px 6px -6px black;
+-moz-box-shadow: 0 8px 6px -6px black;
+box-shadow: 0 8px 6px -6px black;
+
+
+}
+
+
+#SideNav a {
+
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #808b9c;
+    display: block;
+    padding: 10px 0px;
+
+    font-size:15px;
+
+    transition: 0.3s;
+}
+
+#SideNav a:hover {
+    color: #f1f1f1;
+}
+
+#SideNav .create-account a{
+
+color:#808b9c;
+background-color:transparent;
+}
+#SideNav .create-account a:hover{
+color:#fff;
+background-color:#337ab7;
+}
+#SideNav span{
+
+padding:10px;
+
+}
+
+#SideNav .jumbotron{
+padding-top:10px;
+background-color:transparent;
+}
+
+#SideNav .jumbotron .img-responsive {
+
+border:.5px solid #808b9c;
+border-radius:100%;
+width:100px;
+height:100px;
+margin:10px auto;
+}
+#SideNav .jumbotron #username-place{
+
+padding-bottom:15px;
+}
+#SideNav .jumbotron p{
+
+text-align:center;
+font-size:15px;
+color:white;
+}
+                            /*       Size of icons          */
+#SideNav .jumbotron .fa,.material-icons {
+
+font-size:25px;
+}
+#SideNav label.error{
+
+
+font-weight:500;
+
+}
+
+
+#SideNav .jumbotron .btn-primary{
+margin:auto;
+width:100%;
+max-width:200px;
+border-color: #808b9c;
+}
+#SideNav button[type='submit'] {
+
+color:#808b9c;
+background-color:transparent;
+}
+#SideNav button[type='submit']:hover,#SideNav a.btn-primary:hover {
+
+color:#fff;
+background-color:transparent;
+}
+#SideNav #SideNav-bottom-links-list-1{
+padding:0px;
+border-top:1px solid #808b9c;
+text-align:center;
+}
+#SideNav #SideNav-bottom-links-list-2{
+margin:10px;
+
+border-top:1px solid #808b9c;
+padding:0px;
+text-align:center;
+}
+
+#SideNav .create-account #SideNav-bottom-links-list-2 a:hover{
+background-color:transparent;
+
+}
+
+                            /*      setting of side toggles                  */
+#left-side-toggle-open{
+
+border:2px solid #cccccc;
+border-radius:100%;
+height:40px;
+width:45px;
+padding:0px;
+margin:8px;
+margin-top:20px;
+color:#fff;
+margin-right:0px;
+
+}
+#left-side-toggle-open img {
+
+position:relative;
+height:30px;
+width:35px;
+
+}
+
+#left-side-toggle-close{
+
+display:none;
+border:1px solid #ddd;
+border-radius:0px;
+height:40px;
+width:45px;
+padding:9px 10px;
+margin:8px;
+margin-top:20px;
+margin-right:0px;
+color:#fff;
+padding: 0px;
+background-size: 45px 40px;
+background-image:url('../img/arrow_forward.png');
+background-color:transparent;
+}
+
+#left-side-toggle-close i{
+
+
+margin:auto auto;
+
+}
+
+
+                            /*         I changed place of my toggle and navbar toggle               */
+
+#left-side-toggle-open,#left-side-toggle-close{
+
+float:right;
+
+background-color: transparent;
+
+}
+                            /*      remove hover color         */
+
+#left-side-toggle-open:hover,{
+
+background-color: #ddd;
+
+}
+#left-side-toggle-open{
+
+
+}
+left-side-toggle-open:hover, #left-side-toggle-close:hover {
+    background-color: transparent;
+
+}
+
+
+
+#username-place{
+
+border-bottom:1px solid #808b9c;
+padding-bottom:5px;
+}
+
+
+.navbar-default{
+margin:0px;
+border-radius:0px;
+text-decoration:none;
+
+}
+
+.form-group{
+
+max-width:200px;
+
+}
+                            /*      Setting  of login form  started                  */
+#login-form{
+
+margin:20px auto;
+
+}
+
+.login-label,.nav-side-label{
+
+color:#fff;
+font-size:20px;
+text-align:center;
+
+}
+
+#login-form .form-control{
+
+border:1px solid rgb(204, 204, 204);
+border-radius:0px;
+padding-right:36px;
+
+}                            /*     setting of icons in login-form            */
+#login-form span{
+
+display:block;
+position:absolute;
+width:34px;
+text-align:center;
+border-left:1px solid rgb(204, 204, 204);
+padding:4px;
+color:rgb(204, 204, 204);
+}
+
+#login-form .material-icons {
+
+color:#1E90FF;
+
+}
+
+#login-form .fa-user-circle:before{
+color:#1E90FF;
+
+}
+#register-label{
+
+font-family:'Far.Adab',Tahoma, Sans-Serif;
+color:#fff;
+font-size:15px;
+text-align:center;
+
+}
+
+.create-account{
+margin:auto 0;
+
+}
+                               /*       setting of Side Nav ended             */
+
+#main a{
+    text-decoration:none;
+}
+                            /*   setting delay when main want go left              */
+#main {
+    transition: margin-right .5s;
+    padding: 16px;
+    position:relative;
+margin-top:154px;
+
+}
+
+#main{
+margin-left:0px;
+
+}
+                          /*    Pagination setting         */
+.pagination {
+
+padding:0px;
+
+}
+
+
+.stock-table{
+padding:20px;
+}
+                            /*        footer setting started                */
+footer{
+position:relative;
+
+font-family:'Far.Adab',Tahoma, Sans-Serif;
+
+background-color:#232531;
+
+}
+
+#footer-jumbotron{
+
+padding:20px;
+background-color:#232531;
+margin-bottom:0px;
+
+}
+
+.footer a{
+
+color:#fff;
+margin:10px;
+font-size:15px;
+text-decoration:none;
+
+}
+
+#copy-right-row{
+
+color:#fff;
+
+padding-top:10px;
+}
+#copy-right-row i{
+
+
+position:relative;
+top:5px;
+}
+
+#twitter-icon{
+
+height:31px;
+width:31px;
+
+}
+#telegram-icon{
+
+height:34px;
+width:34px;
+
+}
+#instagram-icon{
+
+height:31px;
+width:31px;
+
+}
+#social-network{
+
+padding-top:10px;
+}
+
+.navbar-collapse::-webkit-scrollbar {
+    width: 16px;
+    background-color:#47484a;
+}
+
+/* Track */
+.navbar-collapse::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+/* Handle */
+.navbar-collapse::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background:#f0e9ee;
+}
+                           /*     setting of footed ended           */
+
+.specificpage-container{
+
+padding-bottom:50px;
+
+}
+
+.poc-nested-dropdown {
+     position: relative;
+    }
+
+.uo-nested-dropdown .menu5 li a,.poc-nested-dropdown .menu6 li a{
+color:#fff;
+text-align:right;
+
+}
+
+
+
+                                                                                                               /*                        */
+@media only screen and (min-width:768px){
+
+.navbar-fixed-top .navbar-collapse{
+
+
+padding-top:15px;
+
+}
+.navbar-default .navbar-nav > li > .dropdown-toggle{
+
+padding:20px;
+}
+.dropdown-toggle{
+
+color:#fff;
+
+}
+.dropdown-menu{
+
+padding:0px;
+
+}
+.dropdown-menu li a{
+
+padding: 10px 20px;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+.education-dropdown:hover .menu1 {
+
+padding-right:0px;
+display: block;
+margin-top: 0;
+right:0px;
+
+
+}
+
+.article-dropdown:hover .menu2 {
+
+padding-right:0px;
+display: block;
+margin-top: 0;
+right:0px;
+
+
+}
+
+.money-dropdown:hover .menu3 {
+
+padding-right:0px;
+display: block;
+margin-top: 0;
+right:0px;
+
+
+}
+
+.trading-accounts-dropdown:hover .menu4 {
+
+padding-right:0px;
+display: block;
+margin-top: 0;
+right:0px;
+
+
+}
+
+.uo-nested-dropdown .menu5,.poc-nested-dropdown .menu6{
+
+
+display:none;
+
+}
+
+.uo-nested-dropdown:hover .menu5{
+
+padding-right:0px;
+display: block;
+margin-top: 0;
+position:absolute;
+top: 0;
+right:100%;
+border-radius:0px;
+
+background:#63B76C;
+}
+.uo-nested-dropdown .menu5 li a,.poc-nested-dropdown .menu6 li a{
+color:#fff;
+text-align:right;
+
+}
+.dropdown-menu > li > a:focus, .dropdown-menu > li > a:hover,.dropdown-menu > li > a:focus, .dropdown-menu > li > a:active{
+
+
+background:transparent;
+
+}
+
+.poc-nested-dropdown:hover .menu6{
+
+padding-right:0px;
+display: block;
+margin-top: 0;
+position:absolute;
+top: 0;
+right:100%;
+background:#63B76C;
+border-radius:0px;
+
+
+}
+
+
+.dropdown-header{
+
+color:#777;
+
+
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu > li > a{
+
+color:#000;
+
+}
+
+
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
+
+color:#000;
+}
+.dropdown-menu{
+
+
+padding-right:0px;
+
+}
+
+.navbar-right:hover{
+
+background-color:rgb(0,0,0,.3);
+
+}
+
+}
+
+
